@@ -14,6 +14,7 @@ import {
 } from "viem";
 import { mnemonicToAccount } from "viem/accounts";
 import { foundry } from "viem/chains";
+import { STATIC } from "@/lib/demo";
 
 export const RPC_URL = process.env.NEXT_PUBLIC_RPC_URL ?? "http://127.0.0.1:8545";
 // Anvil's well-known development mnemonic. Public test keys: never use them on a real network.
@@ -48,6 +49,12 @@ function write(s: WalletState) {
     /* ignore */
   }
   listeners.forEach((l) => l());
+}
+
+/** Address of the active wallet, outside React (used by the static demo's simulated transactions). */
+export function currentAddress(): Address {
+  const s = read();
+  return s.kind === "demo" ? demoAccount(s.index).address : s.address;
 }
 
 const SERVER_STATE: WalletState = { kind: "demo", index: DEMO_INDEX };
@@ -142,12 +149,18 @@ export async function runTx(title: string, steps: ((w: WalletClient) => Promise<
   const id = ++toastId;
   setToasts([...toasts, { id, title, status: "pending" }]);
   try {
-    const w = walletClient(s);
     let hash: Hash | undefined;
-    for (const step of steps) {
-      hash = await step(w);
-      const r = await publicClient.waitForTransactionReceipt({ hash });
-      if (r.status !== "success") throw new Error("reverted");
+    if (STATIC) {
+      // Static demo: steps are simulated in the browser; a short delay mimics block confirmation.
+      for (const step of steps) hash = await step(null as unknown as WalletClient);
+      await new Promise((r) => setTimeout(r, 700));
+    } else {
+      const w = walletClient(s);
+      for (const step of steps) {
+        hash = await step(w);
+        const r = await publicClient.waitForTransactionReceipt({ hash });
+        if (r.status !== "success") throw new Error("reverted");
+      }
     }
     setToasts(toasts.map((t) => (t.id === id ? { ...t, status: "success", title: success, hash } : t)));
     bumpChain();

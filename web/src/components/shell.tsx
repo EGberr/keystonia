@@ -8,6 +8,7 @@ import { api, type Config } from "@/lib/api";
 import { dismissToast, useApi, useToasts, useWallet } from "@/lib/chain";
 import { COUNTRIES, cx, shortAddr } from "@/lib/format";
 import { useLang, type TKey } from "@/lib/i18n";
+import { STATIC } from "@/lib/demo";
 
 const NAV: { href: string; key: TKey }[] = [
   { href: "/invest", key: "nav.invest" },
@@ -20,11 +21,9 @@ const NAV: { href: string; key: TKey }[] = [
 
 export function Logo({ size = 22 }: { size?: number }) {
   return (
-    <span className="flex items-baseline gap-1 leading-none">
-      <span className="font-serif tracking-[-0.03em]" style={{ fontSize: size }}>
-        Keystonia
-      </span>
-      <span aria-hidden className="text-accent" style={{ fontSize: size * 0.5 }}>
+    <span className="font-display flex items-center gap-1.5 leading-none tracking-[-0.03em]" style={{ fontSize: size }}>
+      Keystonia
+      <span aria-hidden className="text-accent" style={{ fontSize: size * 0.55 }}>
         ✦
       </span>
     </span>
@@ -36,7 +35,7 @@ function LangSwitch() {
   return (
     <div className="flex items-center gap-0.5 font-mono text-[10.5px] tracking-[0.14em]" role="group" aria-label="Language">
       {(["en", "fr"] as const).map((l) => (
-        <button key={l} onClick={() => setLang(l)} aria-pressed={lang === l} className={cx("rounded-full px-2 py-1 uppercase transition-colors", lang === l ? "text-ink" : "text-muted/70 hover:text-ink")}>
+        <button key={l} onClick={() => setLang(l)} aria-pressed={lang === l} className={cx("rounded-full px-2 py-1 uppercase transition-colors", lang === l ? "opacity-100" : "opacity-45 hover:opacity-100")}>
           {l}
         </button>
       ))}
@@ -61,8 +60,8 @@ function WalletMenu() {
   const group = (role: "investor" | "issuer") => config?.personas.filter((p) => p.role === role) ?? [];
   return (
     <div ref={ref} className="relative">
-      <button onClick={() => setOpen((o) => !o)} className="flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] py-1 pl-1 pr-3 text-[13px] transition hover:bg-white/[0.08]">
-        <span className="flex h-7 w-7 items-center justify-center rounded-full bg-accent text-[11px] font-semibold text-[#1a140b]">
+      <button onClick={() => setOpen((o) => !o)} className="flex items-center gap-2 rounded-full border border-current/15 bg-white/10 py-1 pl-1 pr-3 text-[13px] transition hover:bg-white/25">
+        <span className="flex h-7 w-7 items-center justify-center rounded-full bg-accent text-[11px] font-semibold text-white">
           {(persona?.name ?? "W").slice(0, 1)}
         </span>
         <span className="hidden max-w-[130px] truncate sm:block">{persona?.name ?? shortAddr(wallet.address)}</span>
@@ -99,12 +98,12 @@ function WalletMenu() {
             ))}
           </div>
           <div className="mt-1 border-t hairline pt-2">
-            <button
+            {!STATIC && <button
               onClick={() => wallet.connectInjected().then(() => setOpen(false)).catch((e) => alert(String(e)))}
               className="flex w-full items-center gap-2 rounded-lg px-2 py-2 text-[13px] text-accent-ink hover:bg-surface-2"
             >
               <Wallet size={15} /> {t("wallet.connect")}
-            </button>
+            </button>}
             {!wallet.isDemo && (
               <button onClick={() => wallet.useDemo(10)} className="w-full rounded-lg px-2 py-2 text-left text-[13px] text-muted hover:bg-surface-2">
                 {t("wallet.disconnect")}
@@ -136,18 +135,18 @@ export function TopNav() {
   return (
     <>
       <header className="fixed inset-x-0 top-0 z-50">
-        <p className="flex items-center justify-center gap-2 bg-black/60 px-4 py-1.5 text-center font-mono text-[9.5px] uppercase tracking-[0.2em] text-muted backdrop-blur">
+        <p className="flex items-center justify-center gap-2 bg-ink px-4 py-1.5 text-center font-mono text-[9.5px] uppercase tracking-[0.18em] text-white/70">
           <ShieldCheck size={11} className="shrink-0 text-accent" />
           {t("banner.demo")}
         </p>
         <div className="px-3 pt-3 sm:px-5">
-          <div className={cx("mx-auto flex h-14 max-w-[1320px] items-center gap-6 rounded-full pl-6 pr-2 transition-all duration-500", scrolled || !home || open ? "glass" : "border border-transparent")}>
+          <div className={cx("mx-auto flex h-14 max-w-[1400px] items-center gap-6 rounded-full pl-6 pr-2 transition-all duration-500", scrolled || !home || open ? "glass text-ink" : "border border-transparent text-white")}>
             <Link href="/" aria-label="Keystonia" onClick={() => setOpen(false)}>
               <Logo />
             </Link>
             <nav className="hidden items-center gap-1 xl:flex">
               {NAV.map(({ href, key }) => (
-                <Link key={href} href={href} className={cx("relative rounded-full px-3.5 py-1.5 text-[13px] tracking-[-0.005em] transition-colors", active(href) ? "text-ink" : "text-ink-2 hover:text-ink")}>
+                <Link key={href} href={href} className={cx("relative rounded-full px-3.5 py-1.5 text-[13.5px] font-medium transition-opacity", active(href) ? "opacity-100" : "opacity-70 hover:opacity-100")}>
                   {t(key)}
                   {active(href) && <span className="absolute inset-x-3.5 -bottom-0.5 h-px bg-accent" />}
                 </Link>
@@ -156,7 +155,7 @@ export function TopNav() {
             <div className="ml-auto flex items-center gap-2">
               <LangSwitch />
               <WalletMenu />
-              <button aria-label={t("nav.menu")} onClick={() => setOpen((o) => !o)} className="rounded-full p-2.5 hover:bg-white/5 xl:hidden">
+              <button aria-label={t("nav.menu")} onClick={() => setOpen((o) => !o)} className="rounded-full p-2.5 hover:bg-black/5 xl:hidden">
                 {open ? <X size={18} /> : <Menu size={18} />}
               </button>
             </div>
@@ -164,7 +163,7 @@ export function TopNav() {
           {open && (
             <nav className="glass mx-auto mt-2 flex max-w-[1320px] flex-col gap-1 rounded-[28px] p-3 xl:hidden">
               {NAV.map(({ href, key }) => (
-                <Link key={href} href={href} onClick={() => setOpen(false)} className={cx("rounded-2xl px-4 py-3 font-serif text-[22px]", active(href) ? "text-ink" : "text-ink-2")}>
+                <Link key={href} href={href} onClick={() => setOpen(false)} className={cx("font-display rounded-2xl px-4 py-3 text-[26px]", active(href) ? "text-ink" : "text-ink-2")}>
                   {t(key)}
                 </Link>
               ))}
@@ -208,7 +207,7 @@ export function Footer() {
           </a>
         </div>
       </div>
-      <p aria-hidden className="pointer-events-none -mb-[0.2em] select-none whitespace-nowrap text-center font-serif text-[23vw] leading-[0.8] tracking-[-0.06em] text-white/[0.035]">
+      <p aria-hidden className="font-display pointer-events-none -mb-[0.16em] select-none whitespace-nowrap text-center text-[21vw] font-semibold leading-[0.8] tracking-[-0.06em] text-ink">
         Keystonia
       </p>
     </footer>

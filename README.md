@@ -1,26 +1,26 @@
 # Keystonia
 
-**Tokenized real estate across Paris, London, Marrakech and Lisbon — full stack, on a local chain.**
+**Real estate, tokenized: Paris, London, Marrakech and Lisbon, from contracts to a cinematic web app.**
 
-Keystonia splits apartments, boutique hotels, shops, student residences and vineyards into on-chain shares from €50.
-Verified investors buy into all-or-nothing offerings, receive rent every month, trade shares peer-to-peer and vote on
-decisions about each asset. Every rule (who may hold a share, refunds, rent splits, quorum) is enforced by smart
-contracts, and an AI analyst answers questions with citations to each asset's documents and on-chain data.
+### ▶ [Open the live demo](https://egberr.github.io/keystonia/) — runs in your browser, nothing to install
 
-> **Demonstration project.** Everything runs on a local Anvil test network. Assets are fictional, money is a test
-> token (kEUR), identity checks are simulated and no document is collected. Nothing here is an offer to invest.
+Keystonia turns buildings into tokens. Each fictional property sits in its own company (SPV), and the company's
+shares become 20,000 tokens of €50. Verified investors buy them in all-or-nothing offerings, collect the rent every
+month, resell tokens peer-to-peer and vote on decisions about the building. Every rule (who may hold a token,
+refunds, rent splits, quorum) is enforced by smart contracts, every property opens as a 360° visit made of real
+photographs, and an AI analyst answers questions with citations to the property's documents.
 
-![Home: the share tower](docs/screenshots/home.png)
+> **Demonstration project.** Assets are fictional, money is a test token (kEUR), identity checks are simulated and no
+> document is collected. Nothing here is an offer to invest. The live demo replays a snapshot of the local chain and
+> simulates transactions in your browser; the full stack (Foundry contracts, API, indexer) runs locally.
 
-The hero is a real-time 3D building made of its own shares. Scrolling turns it into an exploded drawing of
-thousands of blocks, then one block leaves the facade in brass: *one of them is yours*.
+![Home](docs/screenshots/home.png)
 
 | | |
 | --- | --- |
-| ![Exploded into shares](docs/screenshots/exploded.png) | ![One share, yours](docs/screenshots/share.png) |
-| ![3D walkthrough: riad courtyard](docs/screenshots/riad.png) | ![3D walkthrough: Haussmann apartment](docs/screenshots/apartment.png) |
-| ![3D walkthrough: vineyard estate](docs/screenshots/vineyard.png) | ![3D walkthrough: hotel lobby](docs/screenshots/hotel.png) |
-| ![The collection](docs/screenshots/collection.png) | ![Asset page](docs/screenshots/asset.png) |
+| ![A real building, cut into tokens](docs/screenshots/tokenize-cut.png) | ![One token lands in your wallet](docs/screenshots/tokenize-wallet.png) |
+| ![The collection](docs/screenshots/collection.png) | ![360° visit made of real photographs](docs/screenshots/visit.png) |
+| ![360° visit on an asset page](docs/screenshots/asset.png) | ![How it works](docs/screenshots/how.png) |
 | ![Portfolio](docs/screenshots/portfolio.png) | ![Exchange](docs/screenshots/market.png) |
 | ![Home in French](docs/screenshots/home-fr.png) | ![Mobile, French](docs/screenshots/mobile-fr.png) |
 
@@ -38,15 +38,18 @@ thousands of blocks, then one block leaves the facade in brass: *one of them is 
 | **Issuer flow** | Owners submit a listing request on-chain; the operator approves or rejects it with a note. |
 | **AI analyst** | Claude with tool use (`search_documents`, `get_asset`, `list_assets`, `compare_assets`) over BM25 retrieval and live indexed chain data. Answers cite passages `[S1]` and datasets `[D1]`, shown with their evidence. Without an API key, a rule-based offline analyst streams the same events. |
 | **History** | The seed replays ~13 months of activity (2,350 transactions in ~20 s): KYC, offerings, monthly rent, claims, trades, votes and listing requests, using `evm_setNextBlockTimestamp`. |
-| **3D walkthroughs** | Every property opens as a real-time visit built procedurally from its type: Haussmann enfilade, riad courtyard with zellige and a roof terrace, hotel lobby and suite, student hall, loft offices, vineyard or olive estate at golden hour. Camera paths with chapters, auto-play, drag to look, fullscreen. No 3D files are downloaded: textures are drawn on canvas and furniture is built from primitives. |
-| **Cinematic UI** | React Three Fiber hero pinned over 280vh of scroll, bloom and vignette, Bodoni Moda / Manrope / JetBrains Mono, one brass accent on warm black. English and French, responsive down to phone width, `prefers-reduced-motion` respected. Spec in [`docs/design.md`](docs/design.md). |
+| **360° visits from real photographs** | Every property opens as a WebGL 360° visit through four rooms or places, built from real equirectangular photographs (62 CC0 captures from Poly Haven). Progressive loading (1K then 4K), crossfade with a lens push between rooms, drag with inertia, auto-play, fullscreen. Card photos are real stills of the same places. |
+| **Tokenization, shown** | The home page pins a real façade to the scroll: it is cut into a grid, the tiles lift off in 3D, flip into €50 tokens, and one of them lands in a wallet with its monthly rent. |
+| **Motion everywhere** | GSAP + ScrollTrigger + SplitText and Lenis smooth scrolling: preloader, masked headline reveals, pinned horizontal collection rail, stacking cards, count-ups, parallax, magnetic buttons, page transitions. `prefers-reduced-motion` collapses everything to the final state. |
+| **Design** | Daylight editorial look after the reference the owner picked: inset photographic hero, Clash Display + General Sans, paper and ink with one signal orange reserved for tokens. English and French, responsive down to phone width. |
+| **Public static demo** | `NEXT_PUBLIC_STATIC=1` exports the app for GitHub Pages: it reads a JSON snapshot of the API (`backend/app/export_static.py`), simulates investing, trading, rent, votes and KYC in the browser (`web/src/lib/demo.ts`), and runs the offline analyst client-side. Deployed by `.github/workflows/pages.yml`. |
 
 ## Architecture
 
 ```
 contracts/   Solidity 0.8.31 · OpenZeppelin 5 · Foundry      40 tests, 96.9% line coverage
 backend/     Python 3.12 · FastAPI · web3.py · SQLite indexer · Anthropic SDK
-web/         Next.js 16 · React 19 · Tailwind v4 · React Three Fiber · viem · Recharts · Leaflet
+web/         Next.js 16 · React 19 · Tailwind v4 · GSAP · Lenis · React Three Fiber · viem · Recharts · Leaflet
 scripts/     catalogue builder, open-data market reference, image fetcher, chain reset
 data/        catalogue + generated documents, market reference (chain state is local only)
 ```
@@ -114,8 +117,9 @@ CI runs all three, seeding a fresh chain for the backend job.
 
 - DVF 2024 (data.gouv.fr, Licence Ouverte 2.0) and HM Land Registry Price Paid Data 2024 (OGL v3.0) for the Paris and
   London market references.
-- Photos: openly licensed images found through the Openverse API, listed with authors and licences on `/credits`.
-  They illustrate the fictional assets and do not depict real properties.
+- Photos and 360° panoramas: [Poly Haven](https://polyhaven.com) (CC0), fetched by `scripts/fetch_panoramas.py` and
+  listed on `/credits`. They are real places used to illustrate fictional assets; none of the assets exists.
+- Fonts: Clash Display and General Sans by the Indian Type Foundry (Fontshare free licence), JetBrains Mono (OFL).
 - Map tiles © OpenStreetMap contributors.
 
 ## Legal note

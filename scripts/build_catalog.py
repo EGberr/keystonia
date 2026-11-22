@@ -10,6 +10,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from catalog_spec import ASSETS, CATEGORIES, CITIES, FX, INDICATIVE_EUR_M2  # noqa: E402
+from tours import TOURS  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 REF = json.loads((ROOT / "data" / "market" / "reference.json").read_text())
@@ -117,7 +118,8 @@ def build_asset(a: dict) -> dict:
         "highlights": a["highlights"],
         "risks": a["risks"],
         "image_query": a["image_query"],
-        "images": [f"/img/assets/{a['id'].lower()}-{i}.webp" for i in range(3)],
+        "images": [f"/img/assets/{a['id'].lower()}-{i}.jpg" for i in range(3)],
+        "tour": [{"pano": f"/pano/{p}.jpg", "preview": f"/pano/{p}_preview.jpg", "en": en, "fr": fr} for p, en, fr in TOURS[a["id"]]],
     }
 
 

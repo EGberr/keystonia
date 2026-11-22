@@ -52,9 +52,35 @@
   ],
   "image_query": "loft apartment interior",
   "images": [
-   "/img/assets/kst-par-001-0.webp",
-   "/img/assets/kst-par-001-1.webp",
-   "/img/assets/kst-par-001-2.webp"
+   "/img/assets/kst-par-001-0.jpg",
+   "/img/assets/kst-par-001-1.jpg",
+   "/img/assets/kst-par-001-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/photo_studio_loft_hall.jpg",
+    "preview": "/pano/photo_studio_loft_hall_preview.jpg",
+    "en": "The atelier",
+    "fr": "L'atelier"
+   },
+   {
+    "pano": "/pano/brown_photostudio_02.jpg",
+    "preview": "/pano/brown_photostudio_02_preview.jpg",
+    "en": "Living room",
+    "fr": "Le séjour"
+   },
+   {
+    "pano": "/pano/brown_photostudio_05.jpg",
+    "preview": "/pano/brown_photostudio_05_preview.jpg",
+    "en": "Bedroom",
+    "fr": "La chambre"
+   },
+   {
+    "pano": "/pano/kiara_interior.jpg",
+    "preview": "/pano/kiara_interior_preview.jpg",
+    "en": "Kitchen",
+    "fr": "La cuisine"
+   }
   ]
  },
  {
@@ -108,9 +134,35 @@
   ],
   "image_query": "parisian balcony apartment",
   "images": [
-   "/img/assets/kst-par-002-0.webp",
-   "/img/assets/kst-par-002-1.webp",
-   "/img/assets/kst-par-002-2.webp"
+   "/img/assets/kst-par-002-0.jpg",
+   "/img/assets/kst-par-002-1.jpg",
+   "/img/assets/kst-par-002-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/glasshouse_interior.jpg",
+    "preview": "/pano/glasshouse_interior_preview.jpg",
+    "en": "Salon with a view",
+    "fr": "Le salon panoramique"
+   },
+   {
+    "pano": "/pano/brown_photostudio_04.jpg",
+    "preview": "/pano/brown_photostudio_04_preview.jpg",
+    "en": "Living room",
+    "fr": "Le séjour"
+   },
+   {
+    "pano": "/pano/brown_photostudio_07.jpg",
+    "preview": "/pano/brown_photostudio_07_preview.jpg",
+    "en": "Bedroom",
+    "fr": "La chambre"
+   },
+   {
+    "pano": "/pano/treetop_balcony.jpg",
+    "preview": "/pano/treetop_balcony_preview.jpg",
+    "en": "Balcony",
+    "fr": "Le balcon"
+   }
   ]
  },
  {
@@ -164,9 +216,35 @@
   ],
   "image_query": "student room desk",
   "images": [
-   "/img/assets/kst-par-003-0.webp",
-   "/img/assets/kst-par-003-1.webp",
-   "/img/assets/kst-par-003-2.webp"
+   "/img/assets/kst-par-003-0.jpg",
+   "/img/assets/kst-par-003-1.jpg",
+   "/img/assets/kst-par-003-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/newman_lobby.jpg",
+    "preview": "/pano/newman_lobby_preview.jpg",
+    "en": "Lobby",
+    "fr": "Le hall"
+   },
+   {
+    "pano": "/pano/small_empty_room_1.jpg",
+    "preview": "/pano/small_empty_room_1_preview.jpg",
+    "en": "Studio",
+    "fr": "Le studio"
+   },
+   {
+    "pano": "/pano/newman_cafeteria.jpg",
+    "preview": "/pano/newman_cafeteria_preview.jpg",
+    "en": "Canteen",
+    "fr": "La cantine"
+   },
+   {
+    "pano": "/pano/school_hall.jpg",
+    "preview": "/pano/school_hall_preview.jpg",
+    "en": "Study hall",
+    "fr": "La salle d'étude"
+   }
   ]
  },
  {
@@ -221,9 +299,35 @@
   ],
   "image_query": "boutique shop front",
   "images": [
-   "/img/assets/kst-par-004-0.webp",
-   "/img/assets/kst-par-004-1.webp",
-   "/img/assets/kst-par-004-2.webp"
+   "/img/assets/kst-par-004-0.jpg",
+   "/img/assets/kst-par-004-1.jpg",
+   "/img/assets/kst-par-004-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/decor_shop.jpg",
+    "preview": "/pano/decor_shop_preview.jpg",
+    "en": "Boutique",
+    "fr": "La boutique"
+   },
+   {
+    "pano": "/pano/comfy_cafe.jpg",
+    "preview": "/pano/comfy_cafe_preview.jpg",
+    "en": "Café corner",
+    "fr": "Le coin café"
+   },
+   {
+    "pano": "/pano/phone_shop.jpg",
+    "preview": "/pano/phone_shop_preview.jpg",
+    "en": "Counter",
+    "fr": "Le comptoir"
+   },
+   {
+    "pano": "/pano/art_studio.jpg",
+    "preview": "/pano/art_studio_preview.jpg",
+    "en": "Atelier",
+    "fr": "L'atelier"
+   }
   ]
  },
  {
@@ -278,9 +382,35 @@
   ],
   "image_query": "boutique hotel room",
   "images": [
-   "/img/assets/kst-par-005-0.webp",
-   "/img/assets/kst-par-005-1.webp",
-   "/img/assets/kst-par-005-2.webp"
+   "/img/assets/kst-par-005-0.jpg",
+   "/img/assets/kst-par-005-1.jpg",
+   "/img/assets/kst-par-005-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/entrance_hall.jpg",
+    "preview": "/pano/entrance_hall_preview.jpg",
+    "en": "Lobby",
+    "fr": "Le hall"
+   },
+   {
+    "pano": "/pano/large_corridor.jpg",
+    "preview": "/pano/large_corridor_preview.jpg",
+    "en": "Corridor",
+    "fr": "Le couloir"
+   },
+   {
+    "pano": "/pano/hotel_room.jpg",
+    "preview": "/pano/hotel_room_preview.jpg",
+    "en": "Room",
+    "fr": "La chambre"
+   },
+   {
+    "pano": "/pano/warm_restaurant.jpg",
+    "preview": "/pano/warm_restaurant_preview.jpg",
+    "en": "Restaurant",
+    "fr": "Le restaurant"
+   }
   ]
  },
  {
@@ -334,9 +464,35 @@
   ],
   "image_query": "haussmann apartment",
   "images": [
-   "/img/assets/kst-par-006-0.webp",
-   "/img/assets/kst-par-006-1.webp",
-   "/img/assets/kst-par-006-2.webp"
+   "/img/assets/kst-par-006-0.jpg",
+   "/img/assets/kst-par-006-1.jpg",
+   "/img/assets/kst-par-006-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/combination_room.jpg",
+    "preview": "/pano/combination_room_preview.jpg",
+    "en": "Grand salon",
+    "fr": "Le grand salon"
+   },
+   {
+    "pano": "/pano/entrance_hall.jpg",
+    "preview": "/pano/entrance_hall_preview.jpg",
+    "en": "Entrance hall",
+    "fr": "Le vestibule"
+   },
+   {
+    "pano": "/pano/anniversary_lounge.jpg",
+    "preview": "/pano/anniversary_lounge_preview.jpg",
+    "en": "Drawing room",
+    "fr": "Le salon de réception"
+   },
+   {
+    "pano": "/pano/lythwood_room.jpg",
+    "preview": "/pano/lythwood_room_preview.jpg",
+    "en": "Bedroom",
+    "fr": "La chambre"
+   }
   ]
  },
  {
@@ -390,9 +546,35 @@
   ],
   "image_query": "london loft apartment",
   "images": [
-   "/img/assets/kst-lon-001-0.webp",
-   "/img/assets/kst-lon-001-1.webp",
-   "/img/assets/kst-lon-001-2.webp"
+   "/img/assets/kst-lon-001-0.jpg",
+   "/img/assets/kst-lon-001-1.jpg",
+   "/img/assets/kst-lon-001-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/brown_photostudio_01.jpg",
+    "preview": "/pano/brown_photostudio_01_preview.jpg",
+    "en": "The loft",
+    "fr": "Le loft"
+   },
+   {
+    "pano": "/pano/brown_photostudio_03.jpg",
+    "preview": "/pano/brown_photostudio_03_preview.jpg",
+    "en": "Living space",
+    "fr": "L'espace de vie"
+   },
+   {
+    "pano": "/pano/cayley_interior.jpg",
+    "preview": "/pano/cayley_interior_preview.jpg",
+    "en": "Lounge",
+    "fr": "Le salon"
+   },
+   {
+    "pano": "/pano/brown_photostudio_06.jpg",
+    "preview": "/pano/brown_photostudio_06_preview.jpg",
+    "en": "Bedroom",
+    "fr": "La chambre"
+   }
   ]
  },
  {
@@ -446,9 +628,35 @@
   ],
   "image_query": "warehouse conversion apartment",
   "images": [
-   "/img/assets/kst-lon-002-0.webp",
-   "/img/assets/kst-lon-002-1.webp",
-   "/img/assets/kst-lon-002-2.webp"
+   "/img/assets/kst-lon-002-0.jpg",
+   "/img/assets/kst-lon-002-1.jpg",
+   "/img/assets/kst-lon-002-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/photo_studio_london_hall.jpg",
+    "preview": "/pano/photo_studio_london_hall_preview.jpg",
+    "en": "Warehouse flat",
+    "fr": "L'appartement-entrepôt"
+   },
+   {
+    "pano": "/pano/brown_photostudio_06.jpg",
+    "preview": "/pano/brown_photostudio_06_preview.jpg",
+    "en": "Living room",
+    "fr": "Le séjour"
+   },
+   {
+    "pano": "/pano/kiara_interior.jpg",
+    "preview": "/pano/kiara_interior_preview.jpg",
+    "en": "Kitchen",
+    "fr": "La cuisine"
+   },
+   {
+    "pano": "/pano/urban_courtyard.jpg",
+    "preview": "/pano/urban_courtyard_preview.jpg",
+    "en": "Courtyard",
+    "fr": "La cour"
+   }
   ]
  },
  {
@@ -502,9 +710,35 @@
   ],
   "image_query": "student accommodation room",
   "images": [
-   "/img/assets/kst-lon-003-0.webp",
-   "/img/assets/kst-lon-003-1.webp",
-   "/img/assets/kst-lon-003-2.webp"
+   "/img/assets/kst-lon-003-0.jpg",
+   "/img/assets/kst-lon-003-1.jpg",
+   "/img/assets/kst-lon-003-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/newman_lobby.jpg",
+    "preview": "/pano/newman_lobby_preview.jpg",
+    "en": "Lobby",
+    "fr": "Le hall"
+   },
+   {
+    "pano": "/pano/small_empty_room_3.jpg",
+    "preview": "/pano/small_empty_room_3_preview.jpg",
+    "en": "Studio",
+    "fr": "Le studio"
+   },
+   {
+    "pano": "/pano/newman_cafeteria.jpg",
+    "preview": "/pano/newman_cafeteria_preview.jpg",
+    "en": "Canteen",
+    "fr": "La cantine"
+   },
+   {
+    "pano": "/pano/urban_courtyard_02.jpg",
+    "preview": "/pano/urban_courtyard_02_preview.jpg",
+    "en": "Courtyard",
+    "fr": "La cour"
+   }
   ]
  },
  {
@@ -558,9 +792,35 @@
   ],
   "image_query": "modern office loft",
   "images": [
-   "/img/assets/kst-lon-004-0.webp",
-   "/img/assets/kst-lon-004-1.webp",
-   "/img/assets/kst-lon-004-2.webp"
+   "/img/assets/kst-lon-004-0.jpg",
+   "/img/assets/kst-lon-004-1.jpg",
+   "/img/assets/kst-lon-004-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/art_studio.jpg",
+    "preview": "/pano/art_studio_preview.jpg",
+    "en": "Studio floor",
+    "fr": "Le plateau"
+   },
+   {
+    "pano": "/pano/poly_haven_studio.jpg",
+    "preview": "/pano/poly_haven_studio_preview.jpg",
+    "en": "Office",
+    "fr": "Le bureau"
+   },
+   {
+    "pano": "/pano/events_hall_interior.jpg",
+    "preview": "/pano/events_hall_interior_preview.jpg",
+    "en": "Event hall",
+    "fr": "La salle d'événements"
+   },
+   {
+    "pano": "/pano/unfinished_office.jpg",
+    "preview": "/pano/unfinished_office_preview.jpg",
+    "en": "Meeting room",
+    "fr": "La salle de réunion"
+   }
   ]
  },
  {
@@ -614,9 +874,35 @@
   ],
   "image_query": "townhouse hotel london",
   "images": [
-   "/img/assets/kst-lon-005-0.webp",
-   "/img/assets/kst-lon-005-1.webp",
-   "/img/assets/kst-lon-005-2.webp"
+   "/img/assets/kst-lon-005-0.jpg",
+   "/img/assets/kst-lon-005-1.jpg",
+   "/img/assets/kst-lon-005-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/country_club.jpg",
+    "preview": "/pano/country_club_preview.jpg",
+    "en": "Lobby lounge",
+    "fr": "Le salon du hall"
+   },
+   {
+    "pano": "/pano/ballroom.jpg",
+    "preview": "/pano/ballroom_preview.jpg",
+    "en": "Ballroom",
+    "fr": "La salle de bal"
+   },
+   {
+    "pano": "/pano/relax_inn_seaview_suite.jpg",
+    "preview": "/pano/relax_inn_seaview_suite_preview.jpg",
+    "en": "Suite",
+    "fr": "La suite"
+   },
+   {
+    "pano": "/pano/indoor_pool.jpg",
+    "preview": "/pano/indoor_pool_preview.jpg",
+    "en": "Spa",
+    "fr": "Le spa"
+   }
   ]
  },
  {
@@ -670,9 +956,35 @@
   ],
   "image_query": "garden flat london",
   "images": [
-   "/img/assets/kst-lon-006-0.webp",
-   "/img/assets/kst-lon-006-1.webp",
-   "/img/assets/kst-lon-006-2.webp"
+   "/img/assets/kst-lon-006-0.jpg",
+   "/img/assets/kst-lon-006-1.jpg",
+   "/img/assets/kst-lon-006-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/lythwood_lounge.jpg",
+    "preview": "/pano/lythwood_lounge_preview.jpg",
+    "en": "Lounge",
+    "fr": "Le salon"
+   },
+   {
+    "pano": "/pano/lythwood_room.jpg",
+    "preview": "/pano/lythwood_room_preview.jpg",
+    "en": "Bedroom",
+    "fr": "La chambre"
+   },
+   {
+    "pano": "/pano/reading_room.jpg",
+    "preview": "/pano/reading_room_preview.jpg",
+    "en": "Study",
+    "fr": "Le bureau"
+   },
+   {
+    "pano": "/pano/lythwood_terrace.jpg",
+    "preview": "/pano/lythwood_terrace_preview.jpg",
+    "en": "Garden",
+    "fr": "Le jardin"
+   }
   ]
  },
  {
@@ -727,9 +1039,35 @@
   ],
   "image_query": "riad courtyard",
   "images": [
-   "/img/assets/kst-rak-001-0.webp",
-   "/img/assets/kst-rak-001-1.webp",
-   "/img/assets/kst-rak-001-2.webp"
+   "/img/assets/kst-rak-001-0.jpg",
+   "/img/assets/kst-rak-001-1.jpg",
+   "/img/assets/kst-rak-001-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/historic_cloister_passage.jpg",
+    "preview": "/pano/historic_cloister_passage_preview.jpg",
+    "en": "Gallery",
+    "fr": "La galerie"
+   },
+   {
+    "pano": "/pano/sepulchral_chapel_rotunda.jpg",
+    "preview": "/pano/sepulchral_chapel_rotunda_preview.jpg",
+    "en": "Hammam",
+    "fr": "Le hammam"
+   },
+   {
+    "pano": "/pano/medieval_cafe.jpg",
+    "preview": "/pano/medieval_cafe_preview.jpg",
+    "en": "Courtyard",
+    "fr": "La cour"
+   },
+   {
+    "pano": "/pano/veranda.jpg",
+    "preview": "/pano/veranda_preview.jpg",
+    "en": "Veranda",
+    "fr": "La véranda"
+   }
   ]
  },
  {
@@ -784,9 +1122,35 @@
   ],
   "image_query": "luxury villa pool",
   "images": [
-   "/img/assets/kst-rak-002-0.webp",
-   "/img/assets/kst-rak-002-1.webp",
-   "/img/assets/kst-rak-002-2.webp"
+   "/img/assets/kst-rak-002-0.jpg",
+   "/img/assets/kst-rak-002-1.jpg",
+   "/img/assets/kst-rak-002-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/pool.jpg",
+    "preview": "/pano/pool_preview.jpg",
+    "en": "Pool",
+    "fr": "La piscine"
+   },
+   {
+    "pano": "/pano/lapa.jpg",
+    "preview": "/pano/lapa_preview.jpg",
+    "en": "Garden lounge",
+    "fr": "Le salon de jardin"
+   },
+   {
+    "pano": "/pano/veranda.jpg",
+    "preview": "/pano/veranda_preview.jpg",
+    "en": "Veranda",
+    "fr": "La véranda"
+   },
+   {
+    "pano": "/pano/relax_inn_seaview_suite.jpg",
+    "preview": "/pano/relax_inn_seaview_suite_preview.jpg",
+    "en": "Villa suite",
+    "fr": "La suite"
+   }
   ]
  },
  {
@@ -840,9 +1204,35 @@
   ],
   "image_query": "modern apartment balcony",
   "images": [
-   "/img/assets/kst-rak-003-0.webp",
-   "/img/assets/kst-rak-003-1.webp",
-   "/img/assets/kst-rak-003-2.webp"
+   "/img/assets/kst-rak-003-0.jpg",
+   "/img/assets/kst-rak-003-1.jpg",
+   "/img/assets/kst-rak-003-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/old_room.jpg",
+    "preview": "/pano/old_room_preview.jpg",
+    "en": "Salon",
+    "fr": "Le salon"
+   },
+   {
+    "pano": "/pano/reading_room.jpg",
+    "preview": "/pano/reading_room_preview.jpg",
+    "en": "Library",
+    "fr": "La bibliothèque"
+   },
+   {
+    "pano": "/pano/veranda.jpg",
+    "preview": "/pano/veranda_preview.jpg",
+    "en": "Veranda",
+    "fr": "La véranda"
+   },
+   {
+    "pano": "/pano/pool.jpg",
+    "preview": "/pano/pool_preview.jpg",
+    "en": "Garden pool",
+    "fr": "La piscine"
+   }
   ]
  },
  {
@@ -897,9 +1287,35 @@
   ],
   "image_query": "concept store interior",
   "images": [
-   "/img/assets/kst-rak-004-0.webp",
-   "/img/assets/kst-rak-004-1.webp",
-   "/img/assets/kst-rak-004-2.webp"
+   "/img/assets/kst-rak-004-0.jpg",
+   "/img/assets/kst-rak-004-1.jpg",
+   "/img/assets/kst-rak-004-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/decor_shop.jpg",
+    "preview": "/pano/decor_shop_preview.jpg",
+    "en": "Concept store",
+    "fr": "Le concept store"
+   },
+   {
+    "pano": "/pano/art_studio.jpg",
+    "preview": "/pano/art_studio_preview.jpg",
+    "en": "Gallery",
+    "fr": "La galerie"
+   },
+   {
+    "pano": "/pano/comfy_cafe.jpg",
+    "preview": "/pano/comfy_cafe_preview.jpg",
+    "en": "Café",
+    "fr": "Le café"
+   },
+   {
+    "pano": "/pano/palermo_sidewalk.jpg",
+    "preview": "/pano/palermo_sidewalk_preview.jpg",
+    "en": "The street",
+    "fr": "La rue"
+   }
   ]
  },
  {
@@ -954,9 +1370,35 @@
   ],
   "image_query": "olive grove",
   "images": [
-   "/img/assets/kst-rak-005-0.webp",
-   "/img/assets/kst-rak-005-1.webp",
-   "/img/assets/kst-rak-005-2.webp"
+   "/img/assets/kst-rak-005-0.jpg",
+   "/img/assets/kst-rak-005-1.jpg",
+   "/img/assets/kst-rak-005-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/lonely_road_afternoon.jpg",
+    "preview": "/pano/lonely_road_afternoon_preview.jpg",
+    "en": "Valley road",
+    "fr": "La route de la vallée"
+   },
+   {
+    "pano": "/pano/waterkloof_farm.jpg",
+    "preview": "/pano/waterkloof_farm_preview.jpg",
+    "en": "Farmland",
+    "fr": "Les terres"
+   },
+   {
+    "pano": "/pano/sabie_tent.jpg",
+    "preview": "/pano/sabie_tent_preview.jpg",
+    "en": "Lodge",
+    "fr": "Le lodge"
+   },
+   {
+    "pano": "/pano/stone_pines.jpg",
+    "preview": "/pano/stone_pines_preview.jpg",
+    "en": "The grove",
+    "fr": "Le bosquet"
+   }
   ]
  },
  {
@@ -1010,9 +1452,35 @@
   ],
   "image_query": "moroccan garden",
   "images": [
-   "/img/assets/kst-rak-006-0.webp",
-   "/img/assets/kst-rak-006-1.webp",
-   "/img/assets/kst-rak-006-2.webp"
+   "/img/assets/kst-rak-006-0.jpg",
+   "/img/assets/kst-rak-006-1.jpg",
+   "/img/assets/kst-rak-006-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/medieval_cafe.jpg",
+    "preview": "/pano/medieval_cafe_preview.jpg",
+    "en": "Courtyard",
+    "fr": "La cour"
+   },
+   {
+    "pano": "/pano/stone_alley_02.jpg",
+    "preview": "/pano/stone_alley_02_preview.jpg",
+    "en": "The derb",
+    "fr": "Le derb"
+   },
+   {
+    "pano": "/pano/lapa.jpg",
+    "preview": "/pano/lapa_preview.jpg",
+    "en": "Garden lounge",
+    "fr": "Le salon de jardin"
+   },
+   {
+    "pano": "/pano/pool.jpg",
+    "preview": "/pano/pool_preview.jpg",
+    "en": "Pool",
+    "fr": "La piscine"
+   }
   ]
  },
  {
@@ -1067,9 +1535,35 @@
   ],
   "image_query": "lisbon apartment view",
   "images": [
-   "/img/assets/kst-lis-001-0.webp",
-   "/img/assets/kst-lis-001-1.webp",
-   "/img/assets/kst-lis-001-2.webp"
+   "/img/assets/kst-lis-001-0.jpg",
+   "/img/assets/kst-lis-001-1.jpg",
+   "/img/assets/kst-lis-001-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/vignaioli.jpg",
+    "preview": "/pano/vignaioli_preview.jpg",
+    "en": "The view",
+    "fr": "La vue"
+   },
+   {
+    "pano": "/pano/cayley_interior.jpg",
+    "preview": "/pano/cayley_interior_preview.jpg",
+    "en": "Living room",
+    "fr": "Le séjour"
+   },
+   {
+    "pano": "/pano/brown_photostudio_04.jpg",
+    "preview": "/pano/brown_photostudio_04_preview.jpg",
+    "en": "Bedroom",
+    "fr": "La chambre"
+   },
+   {
+    "pano": "/pano/stone_alley.jpg",
+    "preview": "/pano/stone_alley_preview.jpg",
+    "en": "The lane",
+    "fr": "La ruelle"
+   }
   ]
  },
  {
@@ -1123,9 +1617,35 @@
   ],
   "image_query": "guesthouse room",
   "images": [
-   "/img/assets/kst-lis-002-0.webp",
-   "/img/assets/kst-lis-002-1.webp",
-   "/img/assets/kst-lis-002-2.webp"
+   "/img/assets/kst-lis-002-0.jpg",
+   "/img/assets/kst-lis-002-1.jpg",
+   "/img/assets/kst-lis-002-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/wooden_lounge.jpg",
+    "preview": "/pano/wooden_lounge_preview.jpg",
+    "en": "Lounge",
+    "fr": "Le salon"
+   },
+   {
+    "pano": "/pano/hotel_room.jpg",
+    "preview": "/pano/hotel_room_preview.jpg",
+    "en": "Room",
+    "fr": "La chambre"
+   },
+   {
+    "pano": "/pano/warm_restaurant.jpg",
+    "preview": "/pano/warm_restaurant_preview.jpg",
+    "en": "Breakfast room",
+    "fr": "La salle du petit-déjeuner"
+   },
+   {
+    "pano": "/pano/hotel_rooftop_balcony.jpg",
+    "preview": "/pano/hotel_rooftop_balcony_preview.jpg",
+    "en": "Rooftop",
+    "fr": "Le toit-terrasse"
+   }
   ]
  },
  {
@@ -1179,9 +1699,35 @@
   ],
   "image_query": "student room desk",
   "images": [
-   "/img/assets/kst-lis-003-0.webp",
-   "/img/assets/kst-lis-003-1.webp",
-   "/img/assets/kst-lis-003-2.webp"
+   "/img/assets/kst-lis-003-0.jpg",
+   "/img/assets/kst-lis-003-1.jpg",
+   "/img/assets/kst-lis-003-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/small_empty_room_1.jpg",
+    "preview": "/pano/small_empty_room_1_preview.jpg",
+    "en": "Studio",
+    "fr": "Le studio"
+   },
+   {
+    "pano": "/pano/school_hall.jpg",
+    "preview": "/pano/school_hall_preview.jpg",
+    "en": "Study hall",
+    "fr": "La salle d'étude"
+   },
+   {
+    "pano": "/pano/newman_cafeteria.jpg",
+    "preview": "/pano/newman_cafeteria_preview.jpg",
+    "en": "Canteen",
+    "fr": "La cantine"
+   },
+   {
+    "pano": "/pano/urban_courtyard_02.jpg",
+    "preview": "/pano/urban_courtyard_02_preview.jpg",
+    "en": "Courtyard",
+    "fr": "La cour"
+   }
   ]
  },
  {
@@ -1235,9 +1781,35 @@
   ],
   "image_query": "coworking space",
   "images": [
-   "/img/assets/kst-lis-004-0.webp",
-   "/img/assets/kst-lis-004-1.webp",
-   "/img/assets/kst-lis-004-2.webp"
+   "/img/assets/kst-lis-004-0.jpg",
+   "/img/assets/kst-lis-004-1.jpg",
+   "/img/assets/kst-lis-004-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/industrial_wooden_attic.jpg",
+    "preview": "/pano/industrial_wooden_attic_preview.jpg",
+    "en": "Open floor",
+    "fr": "Le plateau"
+   },
+   {
+    "pano": "/pano/poly_haven_studio.jpg",
+    "preview": "/pano/poly_haven_studio_preview.jpg",
+    "en": "Studio",
+    "fr": "Le studio"
+   },
+   {
+    "pano": "/pano/events_hall_interior.jpg",
+    "preview": "/pano/events_hall_interior_preview.jpg",
+    "en": "Event hall",
+    "fr": "La salle d'événements"
+   },
+   {
+    "pano": "/pano/unfinished_office.jpg",
+    "preview": "/pano/unfinished_office_preview.jpg",
+    "en": "Meeting room",
+    "fr": "La salle de réunion"
+   }
   ]
  },
  {
@@ -1291,9 +1863,35 @@
   ],
   "image_query": "vineyard rows",
   "images": [
-   "/img/assets/kst-lis-005-0.webp",
-   "/img/assets/kst-lis-005-1.webp",
-   "/img/assets/kst-lis-005-2.webp"
+   "/img/assets/kst-lis-005-0.jpg",
+   "/img/assets/kst-lis-005-1.jpg",
+   "/img/assets/kst-lis-005-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/stone_pines.jpg",
+    "preview": "/pano/stone_pines_preview.jpg",
+    "en": "Stone pines",
+    "fr": "Les pins parasols"
+   },
+   {
+    "pano": "/pano/sunny_country_road.jpg",
+    "preview": "/pano/sunny_country_road_preview.jpg",
+    "en": "Estate road",
+    "fr": "Le chemin du domaine"
+   },
+   {
+    "pano": "/pano/straw_rolls_field_01.jpg",
+    "preview": "/pano/straw_rolls_field_01_preview.jpg",
+    "en": "Harvested fields",
+    "fr": "Les champs moissonnés"
+   },
+   {
+    "pano": "/pano/lythwood_terrace.jpg",
+    "preview": "/pano/lythwood_terrace_preview.jpg",
+    "en": "Terrace",
+    "fr": "La terrasse"
+   }
   ]
  },
  {
@@ -1347,9 +1945,35 @@
   ],
   "image_query": "bright apartment living room",
   "images": [
-   "/img/assets/kst-lis-006-0.webp",
-   "/img/assets/kst-lis-006-1.webp",
-   "/img/assets/kst-lis-006-2.webp"
+   "/img/assets/kst-lis-006-0.jpg",
+   "/img/assets/kst-lis-006-1.jpg",
+   "/img/assets/kst-lis-006-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/glasshouse_interior.jpg",
+    "preview": "/pano/glasshouse_interior_preview.jpg",
+    "en": "Living room",
+    "fr": "Le séjour"
+   },
+   {
+    "pano": "/pano/studio_country_hall.jpg",
+    "preview": "/pano/studio_country_hall_preview.jpg",
+    "en": "Hall",
+    "fr": "Le hall"
+   },
+   {
+    "pano": "/pano/brown_photostudio_05.jpg",
+    "preview": "/pano/brown_photostudio_05_preview.jpg",
+    "en": "Bedroom",
+    "fr": "La chambre"
+   },
+   {
+    "pano": "/pano/palermo_sidewalk.jpg",
+    "preview": "/pano/palermo_sidewalk_preview.jpg",
+    "en": "The street",
+    "fr": "La rue"
+   }
   ]
  }
 ]

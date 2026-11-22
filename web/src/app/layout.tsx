@@ -1,23 +1,29 @@
 import type { Metadata } from "next";
-import { Bodoni_Moda, JetBrains_Mono, Manrope } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 import { Suspense } from "react";
 import { Footer, Toasts, TopNav } from "@/components/shell";
+import { SmoothScroll } from "@/components/motion/smooth-scroll";
 import { LangProvider } from "@/lib/i18n";
 import "leaflet/dist/leaflet.css";
 import "./globals.css";
 
-const display = Bodoni_Moda({ variable: "--font-display", subsets: ["latin"], weight: ["400", "500"], style: ["normal", "italic"] });
-const text = Manrope({ variable: "--font-text", subsets: ["latin"], weight: ["400", "500", "600"] });
 const label = JetBrains_Mono({ variable: "--font-label", subsets: ["latin"], weight: ["400", "500"] });
 
 export const metadata: Metadata = {
-  title: "Keystonia — own the address, not the mortgage",
+  title: "Keystonia — real estate, tokenized",
   description: "A full-stack tokenization platform: compliant share tokens, all-or-nothing offerings, on-chain income, secondary market and shareholder governance.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${display.variable} ${text.variable} ${label.variable} h-full antialiased`}>
+    <html lang="en" className={`${label.variable} h-full antialiased`}>
+      <head>
+        {/* Clash Display + General Sans (Indian Type Foundry, free licence), served by Fontshare. */}
+        <link rel="preconnect" href="https://api.fontshare.com" />
+        <link rel="preconnect" href="https://cdn.fontshare.com" crossOrigin="" />
+        <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600&display=swap" />
+        <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" />
+      </head>
       <body className="flex min-h-full flex-col bg-bg text-ink">
         <LangProvider>
           <Suspense fallback={<div className="h-[84px]" />}>
@@ -26,6 +32,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <main className="min-w-0 flex-1">{children}</main>
           <Footer />
           <Toasts />
+          <Suspense fallback={null}>
+            <SmoothScroll />
+          </Suspense>
           <div className="grain" aria-hidden />
         </LangProvider>
       </body>

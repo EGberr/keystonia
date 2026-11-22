@@ -21,3 +21,6 @@ data/raw/
 !.env.example
 .DS_Store
 data/chain/
+data/pano-src/
+web/.pages/
+web/out/

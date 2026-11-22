@@ -37,6 +37,7 @@ export type Asset = {
   highlights: string[];
   risks: string[];
   images: string[];
+  tour?: { pano: string; preview: string; en: string; fr: string }[];
   // live (chain index)
   listed: boolean;
   token: string;
@@ -138,7 +139,10 @@ export type Config = {
 
 export type Health = { status: string; chain_id: number; block: number; chain_time: number; indexed_block: string; assistant: "claude" | "offline"; demo_controls: boolean };
 
+import { STATIC, simulate, staticAssistant, staticGet } from "@/lib/demo";
+
 async function get<T>(path: string): Promise<T> {
+  if (STATIC) return staticGet<T>(path);
   const res = await fetch(`/api${path}`, { cache: "no-store" });
   if (!res.ok) throw new Error(`${res.status} ${await res.text()}`);
   return res.json() as Promise<T>;
@@ -157,6 +161,7 @@ export const api = {
   assets: (q = "") => get<Asset[]>(`/assets${q}`),
   asset: (id: string) => get<AssetDetail>(`/assets/${id}`),
   document: async (id: string, kind: string) => {
+    if (STATIC) return staticGet<string>(`/assets/${id}/documents/${kind}`);
     const r = await fetch(`/api/assets/${id}/documents/${kind}`, { cache: "no-store" });
     if (!r.ok) throw new Error(String(r.status));
     return r.text();
@@ -166,9 +171,9 @@ export const api = {
   governance: () => get<Proposal[]>("/governance"),
   requests: () => get<ListingRequest[]>("/requests"),
   activity: (limit = 30) => get<Activity[]>(`/activity?limit=${limit}`),
-  kyc: (wallet: string, country: number) => post<{ tx: string }>("/demo/kyc", { wallet, country }),
-  faucet: (wallet: string, amount_eur = 10000) => post<{ tx: string }>("/demo/faucet", { wallet, amount_eur }),
-  advanceMonth: () => post<{ period: string; income_paid: string[]; offerings_settled: string[] }>("/demo/advance-month", {}),
+  kyc: (wallet: string, country: number) => (STATIC ? simulate.kyc(wallet, country) : post<{ tx: string }>("/demo/kyc", { wallet, country })),
+  faucet: (wallet: string, amount_eur = 10000) => (STATIC ? simulate.faucet(wallet, amount_eur) : post<{ tx: string }>("/demo/faucet", { wallet, amount_eur })),
+  advanceMonth: () => (STATIC ? simulate.advanceMonth() : post<{ period: string; income_paid: string[]; offerings_settled: string[] }>("/demo/advance-month", {})),
 };
 
 export type StreamEvent =
@@ -185,6 +190,7 @@ export async function streamAssistant(
   onEvent: (e: StreamEvent) => void,
   opts: { signal?: AbortSignal; assetId?: string; lang?: "en" | "fr" } = {},
 ) {
+  if (STATIC) return staticAssistant(messages, onEvent, opts);
   const res = await fetch(`/api/assistant`, {
     method: "POST",
     headers: { "content-type": "application/json", accept: "text/event-stream" },

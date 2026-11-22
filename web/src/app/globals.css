@@ -1,35 +1,36 @@
 @import "tailwindcss";
 
 /* ── Design tokens ───────────────────────────────────────────────────────────
-   Nocturnal, architectural, expensive: warm black, bone type, one brass accent.
-   Dark only, so WebGL scenes, photography and type share a single exposure.
-   See docs/design.md. */
+   Daylight editorial (after the Mostar reference): paper, ink, real photography,
+   one signal orange reserved for tokens. Clash Display + General Sans. See docs/design.md. */
 :root {
-  color-scheme: dark;
-  --bg: #0b0a09;
-  --surface: #131210;
-  --surface-2: #1a1815;
-  --surface-3: #23201c;
-  --border: rgba(236, 230, 218, 0.08);
-  --border-strong: rgba(236, 230, 218, 0.16);
-  --text: #ece6da;
-  --text-2: rgba(236, 230, 218, 0.72);
-  --muted: #8d867a;
-  --accent: #c9a26b;
-  --accent-ink: #e9dcc0;
-  --accent-soft: rgba(201, 162, 107, 0.12);
-  --positive: #86c29d;
-  --negative: #e2775d;
-  --warning: #e0b866;
-  --shadow: 0 1px 0 rgba(236, 230, 218, 0.03) inset, 0 24px 60px -30px rgba(0, 0, 0, 0.9);
-  --chart-1: #c9a26b;
-  --chart-2: #e9dcc0;
-  --chart-3: #7f9c8c;
-  --chart-4: #b5654e;
-  --chart-5: #8a8fb0;
-  --chart-6: #6f8f6a;
-  --chart-7: #a08a6c;
-  --chart-grid: rgba(236, 230, 218, 0.06);
+  color-scheme: light;
+  --font-display: "Clash Display";
+  --font-text: "General Sans";
+  --bg: #f2f0eb;
+  --surface: #ffffff;
+  --surface-2: #e9e6df;
+  --surface-3: #dcd8cf;
+  --border: rgba(15, 15, 13, 0.1);
+  --border-strong: rgba(15, 15, 13, 0.2);
+  --text: #0f0f0d;
+  --text-2: rgba(15, 15, 13, 0.68);
+  --muted: #77736a;
+  --accent: #ff5b1f;
+  --accent-ink: #0f0f0d;
+  --accent-soft: rgba(255, 91, 31, 0.1);
+  --positive: #1f8a5b;
+  --negative: #d2452b;
+  --warning: #b7791f;
+  --shadow: 0 1px 2px rgba(15, 15, 13, 0.04), 0 18px 40px -24px rgba(15, 15, 13, 0.25);
+  --chart-1: #ff5b1f;
+  --chart-2: #0f0f0d;
+  --chart-3: #5b7fa6;
+  --chart-4: #c9a26b;
+  --chart-5: #6f8f6a;
+  --chart-6: #a0a0a0;
+  --chart-7: #d98c6a;
+  --chart-grid: rgba(15, 15, 13, 0.07);
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -70,7 +71,7 @@ body {
 }
 
 ::selection {
-  background: rgba(201, 162, 107, 0.3);
+  background: rgba(255, 91, 31, 0.25);
   color: var(--text);
 }
 
@@ -80,10 +81,12 @@ body {
   letter-spacing: -0.03em;
 }
 
-/* Display type: Bodoni Moda, tight and tall. */
-.font-serif {
+/* Display type: Clash Display, tight. */
+.font-serif,
+.font-display {
+  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 500;
   letter-spacing: -0.035em;
-  font-optical-sizing: auto;
 }
 
 /* Mono micro-labels: [ 01 ] Collection */
@@ -97,19 +100,27 @@ body {
 }
 
 .card {
-  background: linear-gradient(180deg, rgba(236, 230, 218, 0.025), transparent 40%), var(--surface);
+  background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 22px;
+  border-radius: 24px;
   box-shadow: var(--shadow);
 }
 
 /* The one material: smoked glass for anything that floats over imagery or WebGL. */
 .glass {
-  background: rgba(20, 18, 16, 0.42);
-  backdrop-filter: blur(18px) saturate(140%);
-  -webkit-backdrop-filter: blur(18px) saturate(140%);
-  border: 1px solid rgba(236, 230, 218, 0.1);
-  box-shadow: inset 0 1px 0 rgba(236, 230, 218, 0.06);
+  background: rgba(255, 255, 255, 0.62);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 8px 30px -12px rgba(15, 15, 13, 0.18);
+}
+/* Glass over photography (white text) */
+.glass-dark {
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(16px) saturate(150%);
+  -webkit-backdrop-filter: blur(16px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  color: #fff;
 }
 
 /* Film grain over everything; kills banding in gradients and WebGL fog. */
@@ -118,7 +129,7 @@ body {
   inset: -50%;
   z-index: 80;
   pointer-events: none;
-  opacity: 0.06;
+  opacity: 0.035;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
 }
 
@@ -328,10 +339,15 @@ body {
   }
 }
 
-/* Map tiles: OpenStreetMap, inverted and desaturated to sit in the night palette. */
-.ks-tiles { filter: invert(0.93) hue-rotate(180deg) saturate(0.25) brightness(0.85) contrast(0.9); }
+/* Map tiles: OpenStreetMap, desaturated to sit in the paper palette. */
+.ks-tiles { filter: saturate(0.35) contrast(0.95) brightness(1.02); }
 
 @keyframes tour-progress {
   from { width: 0%; }
   to { width: 100%; }
 }
+
+/* Lenis smooth scroll */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: hidden; }

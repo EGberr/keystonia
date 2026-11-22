@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { cx } from "@/lib/format";
+import { cx, withBase } from "@/lib/format";
 
 /** Local, openly licensed photo with a graceful gradient fallback while assets are missing. */
 export function Photo({
@@ -27,13 +27,13 @@ export function Photo({
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,var(--accent-soft),transparent_60%),linear-gradient(135deg,var(--surface-2),var(--surface-3))]" />
       ) : (
         <Image
-          src={src}
+          src={withBase(src)}
           alt={alt}
           fill
           sizes={sizes}
           priority={priority}
           onError={() => setFailed(true)}
-          className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+          className="object-cover transition-transform duration-[1200ms] ease-[var(--ease-out)] group-hover:scale-[1.05]"
         />
       )}
     </div>

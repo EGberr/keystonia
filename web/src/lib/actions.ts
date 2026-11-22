@@ -4,7 +4,8 @@
 import { maxUint256, type Address, type WalletClient } from "viem";
 import { foundry } from "viem/chains";
 import { AssetGovernorAbi, AssetRegistryAbi, AssetTokenAbi, KEURAbi, MarketplaceAbi, OfferingAbi } from "@/lib/abi";
-import { publicClient } from "@/lib/chain";
+import { currentAddress, publicClient } from "@/lib/chain";
+import { STATIC, simulate } from "@/lib/demo";
 
 const E6 = BigInt(1_000_000);
 const opts = (w: WalletClient) => ({ account: w.account!, chain: foundry });
@@ -15,7 +16,7 @@ async function ensureAllowance(w: WalletClient, keur: Address, spender: Address,
   return w.writeContract({ ...opts(w), address: keur, abi: KEURAbi, functionName: "approve", args: [spender, maxUint256] });
 }
 
-export const actions = {
+const liveActions = {
   invest: (keur: Address, offering: Address, shares: number, priceEur: number) => [
     async (w: WalletClient) => (await ensureAllowance(w, keur, offering, BigInt(shares) * BigInt(priceEur) * E6)) ?? (await noop(w)),
     (w: WalletClient) => w.writeContract({ ...opts(w), address: offering, abi: OfferingAbi, functionName: "invest", args: [BigInt(shares)] }),
@@ -57,3 +58,20 @@ export const actions = {
 async function noop(w: WalletClient) {
   return w.sendTransaction({ ...opts(w), to: w.account!.address, value: BigInt(0) });
 }
+
+// Static demo (GitHub Pages): the same actions, simulated in the browser.
+type Step = (w: WalletClient) => Promise<`0x${string}`>;
+const one = (fn: () => Promise<`0x${string}`>): Step[] => [() => fn()];
+const staticActions: typeof liveActions = {
+  invest: (_k, offering, shares, price) => one(() => simulate.invest(currentAddress(), offering, shares, price)),
+  claimShares: (offering) => one(() => simulate.claimShares(currentAddress(), offering)),
+  refund: (offering) => one(() => simulate.refund(currentAddress(), offering)),
+  claimIncome: (tokens) => one(() => simulate.claimIncome(currentAddress(), tokens)),
+  list: (_m, token, shares, price) => one(() => simulate.list(currentAddress(), token, shares, price)),
+  buy: (_k, _m, id, shares, price) => one(() => simulate.buy(currentAddress(), id, shares, price)),
+  cancel: (_m, id) => one(() => simulate.cancel(id)),
+  vote: (_g, id, support) => one(() => simulate.vote(currentAddress(), id, support)),
+  submitListing: (_r, category, city, uri) => one(() => simulate.submitListing(currentAddress(), category, city, uri)),
+};
+
+export const actions = STATIC ? staticActions : liveActions;

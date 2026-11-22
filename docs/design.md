@@ -1,58 +1,49 @@
 # Keystonia — design spec
 
-**Who:** a curious, well-off visitor who has never bought tokenized property, and a recruiter skimming a portfolio.
-**Mood:** nocturnal · architectural · expensive.
-**Signature:** a real-time 3D building made of its own shares. As you scroll, it comes apart into
-thousands of blocks, one block lights up in brass and becomes "yours". Every property then gets a
-cinematic 3D walkthrough, built procedurally from its layout (rooms, courtyard, vineyard rows).
+**Who:** a curious visitor who has never bought tokenized property, and a recruiter opening the live demo from a CV.
+**Reference picked by the owner:** a cinematic, photographic travel page (inset frame, giant title over a real photo).
+**Mood:** daylight · editorial · precise.
+**Signature:** the tokenization sequence. A real façade is pinned to the scroll, cut into a grid, the tiles lift off
+in 3D and flip into €50 tokens, and one of them lands in a wallet with its rent. Every property then opens as a 360°
+visit made of real photographs.
 
 ## Tokens
 
 | Token | Value | Use |
 | --- | --- | --- |
-| `--bg` | `#0b0a09` | page, canvas clear colour, fog (no seams between WebGL and DOM) |
-| `--surface` / `-2` / `-3` | `#131210` / `#1a1815` / `#23201c` | cards, panels |
-| `--text` | `#ece6da` (bone) | headlines, primary |
-| `--text-2` | `rgba(236,230,218,.72)` | body |
-| `--muted` | `#8d867a` | labels, meta |
-| `--border` / `-strong` | bone at 8% / 16% | hairlines |
-| `--accent` | `#c9a26b` (brass) | one share lit, progress, dots, italic accents — max 3 element types |
-| `--accent-ink` | `#e9dcc0` (champagne) | primary pill (inverse on dark), links |
-| `--positive` / `--negative` | `#86c29d` / `#e2775d` | ledger only |
+| `--bg` | `#f2f0eb` | paper |
+| `--surface` / `-2` / `-3` | `#ffffff` / `#e9e6df` / `#dcd8cf` | cards, panels |
+| `--text` | `#0f0f0d` | ink, primary buttons |
+| `--text-2` | ink at 68% | body |
+| `--muted` | `#77736a` | labels, meta |
+| `--border` / `-strong` | ink at 10% / 20% | hairlines |
+| `--accent` | `#ff5b1f` | tokens only: the token face, CTA arrows, live dots, progress |
+| `--positive` / `--negative` | `#1f8a5b` / `#d2452b` | ledger, P&L |
 
-Selection `rgba(201,162,107,.3)`. Grain: SVG fractal noise, 0.06 opacity, fixed, `pointer-events:none`.
-Dark only: the WebGL scenes, photos and type are tuned for one exposure.
+Glass: `.glass` (white 62%, blur 20px) for the nav over paper; `.glass-dark` (white 14%, blur 16px) over photographs.
+Grain at 3.5%. Selection in accent at 25%.
 
 ## Type
 
-- **Display:** Bodoni Moda 400/500, italic for accent words. H1 `clamp(48px, 8.4vw, 132px)`, line-height .9, tracking −.035em. Section titles `clamp(36px, 5.4vw, 84px)`, line-height .95.
-- **Text:** Manrope 400/500/600. Body 15–17px, line-height 1.55, tracking −.01em.
-- **Labels:** JetBrains Mono 500, 10.5–11.5px, uppercase, tracking +.18em, 55% opacity. Formats: `[ 01 ]`, `— Collection`, coordinates `31.6295° N`.
-- Scale contrast: H1 ≈ 7× body.
+- **Display:** Clash Display 500/600 (Fontshare). Hero wordmark 18.6vw (16.4vw on phones), tracking −.055em;
+  H1 `clamp(46px, 7vw, 104px)`; section titles `clamp(40px, 6vw, 96px)`, line-height .92, tracking −.04em.
+- **Text:** General Sans 400/500, 15–17px, line-height 1.55.
+- **Labels and figures:** JetBrains Mono, 10.5px uppercase +.18em for labels; tabular numbers for money.
 
-## Home — structure and copy
+## Motion (GSAP + ScrollTrigger + SplitText, Lenis)
 
-1. **Floating nav** (glass pill, 12px from top, blur 18px, bone 6% fill, 1px bone 10% border): wordmark `Keystonia` in Bodoni with a brass `✦`; links Collection · Exchange · Portfolio · Votes · Ledger; language switch; wallet pill.
-   Demo notice moves to a single mono line at the very top (still visible on every page).
-2. **Hero, pinned for 260vh.** Full-bleed canvas: the share tower at dusk, warm key light from the low left,
-   cool rim from behind, black fog from 14 → 46 units, contact shadow, bloom (threshold .85) on lit windows,
-   vignette .55, film grain.
-   - Bottom-left stack: label `[ Fractional property · settled on-chain ]` → H1
-     **"Own the address."** / *"Not the mortgage."* (second line italic, bone 55%) → sub (max 34rem):
-     "A riad in the Medina, a loft in Camden, vines above the Sado. Each one divided into shares from €50, each share paid rent every month."
-     → CTAs: solid champagne pill **Enter the collection ↗**, glass pill **Watch a walkthrough**.
-   - Bottom-right: three stats (Bodoni numerals 300, mono labels): tokenized value · paid out in rent · average net yield.
-   - Scroll beats (right column, crossfading): `01` **One building.** → `02` **Twenty thousand shares.** "Each a token. Each a legal claim on the rent." → `03` **One of them is yours.** As the beats advance the tower separates (0 → 1), rotates 35°, and one block rises and turns brass.
-   - Entrance: nav → label → H1 lines (masked rise from 110%, 0.9s, stagger .12s, `cubic-bezier(.16,1,.3,1)`) → sub → CTAs → stats, done by 1.6s. Canvas fades in from black over 1.2s.
-3. **The collection** — `[ 02 ]` title "Twenty-four addresses." Horizontal rail of tall cinematic cards (4:5, photo, bottom gradient, Bodoni name, mono city + yield). Drag/scroll-snap.
-4. **Walk in before you buy** — split: live 3D walkthrough preview (riad courtyard) on the left at 16:10, chapter list on the right with mono timestamps; CTA "Open the full visit".
-5. **Four cities** — editorial index rows: giant Bodoni city name, coordinates, number of assets, value; hovering a row reveals that city's photo in a floating frame that follows the pointer.
-6. **The ledger** — marquee of live on-chain events in mono, plus the four rules enforced by contract ("Enforced by code, not by promise.").
-7. **Closing** — "The keys are on-chain." / CTA, then footer.
+- Preloader once per session: counter 000 → 100 (1.5s), then the ink panel wipes up (`expo.inOut`, 1s).
+- Hero: photo settles from scale 1.25 (2.2s), wordmark letters rise from 110% (stagger 45ms), headline lines rise,
+  copy and token card fade up. On scroll the photo drifts 14% and the wordmark lifts and fades.
+- Tokenization: pinned for 320% of the viewport, scrubbed: tilt → grid lines → tiles lift (random z ±220, rotate)
+  → flip to token faces (stagger from edges) → all but one recede → the chosen token comes forward → wallet card.
+- Sections: masked word reveals on every heading, staggered lists, count-ups, pinned horizontal collection rail,
+  sticky stacking "how it works" cards, pointer-following city photo, ledger marquee, parallax closing image,
+  magnetic primary buttons, curtain page transitions.
+- `prefers-reduced-motion`: no smoothing, no pinning, everything in its final state.
 
-## Walkthroughs
+## 360° visits
 
-Procedural scene per category (and Marrakech hospitality = riad):
-apartment enfilade (salon, dining, bedroom; tall windows, mouldings, herringbone oak), riad (zellige courtyard, arcades, fountain, orange trees, roof terrace), hotel (lobby, corridor, suite), student studio (corridor + room), retail/office (glass front, open plan), vineyard/olive estate (terrain, instanced rows, farmhouse at sunset).
-Camera follows a Catmull-Rom path through 4 chapters (auto-play, 6s each, ease in/out), pointer drag adds ±25° look offset, chapter list is clickable. Lighting: warm practicals (point lights + emissive shades), daylight through windows, ACES tone mapping, bloom .6, vignette.
-Reduced motion: no auto-play, jumps between chapters.
+Four rooms or places per property, each a real equirectangular photograph (Poly Haven, CC0) on an inverted sphere.
+1K preview first, 4K after. Room change: crossfade over 1.1s while the field of view pushes from 56° back to 70°.
+Drag with inertia, slow auto-rotation after 2.5s idle, auto-advance every 9s with a progress bar, fullscreen.
