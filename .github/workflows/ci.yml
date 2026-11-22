@@ -1,0 +1,62 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  contracts:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: contracts
+    steps:
+      - uses: actions/checkout@v4
+      - uses: foundry-rs/foundry-toolchain@v1
+      - run: forge fmt --check src test
+      - run: forge build --sizes
+      - run: forge test -vv
+
+  backend:
+    # Seeds a fresh Anvil chain (~2,350 transactions) and runs the API tests against it.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: foundry-rs/foundry-toolchain@v1
+      - uses: astral-sh/setup-uv@v6
+      - run: forge build
+        working-directory: contracts
+      - run: uv sync --frozen
+        working-directory: backend
+      - run: uv run ruff check . && uv run ruff format --check .
+        working-directory: backend
+      - name: Seed the demo chain and run the tests
+        run: |
+          mkdir -p data/chain
+          anvil --accounts 40 --balance 10000 --timestamp $(( $(date +%s) - 400*86400 )) --silent &
+          until curl -s -X POST -H 'content-type: application/json' \
+            --data '{"jsonrpc":"2.0","id":1,"method":"eth_blockNumber","params":[]}' localhost:8545 >/dev/null; do sleep 0.5; done
+          cd backend
+          uv run python -m app.seed
+          uv run pytest -q
+
+  web:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          package_json_file: web/package.json
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+          cache-dependency-path: web/pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm exec next typegen && pnpm exec tsc --noEmit
+      - run: pnpm lint
+      - run: pnpm build

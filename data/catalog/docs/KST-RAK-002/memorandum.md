@@ -12,7 +12,7 @@ type: memorandum
 Palmeraie Villa Resort is a 12 pool villas (2,400 m²) in Palmeraie, Marrakech, Morocco. Twelve private-pool villas in the palm grove. The asset is valued at €2,714,000 and divided into 27,140 shares of €100. 45% of the shares (12,213) are offered to investors; the owner retains 14,927 shares.
 
 ## Income
-Gross yield is 7.6% and the projected net yield after operating costs is 7.0%, i.e. a net operating income of €190,000 per year, distributed monthly (€15,833 per month across all shares). Occupancy is 71%. Operator / tenant: Resort management company.
+Gross yield is 9.59% and the projected net yield after operating costs is 7.0%, i.e. a net operating income of €190,000 per year, distributed monthly (€15,833 per month across all shares). Occupancy is 71%. Operator / tenant: Resort management company.
 
 ## Highlights
 - Strong demand from European winter travellers

@@ -12,7 +12,7 @@ type: memorandum
 Arroios Student House is a 26 student rooms (640 m²) in Arroios, Lisbon, Portugal. 26 rooms near the Instituto Superior Técnico. The asset is valued at €2,285,500 and divided into 45,710 shares of €50. 60% of the shares (27,426) are offered to investors; the owner retains 18,284 shares.
 
 ## Income
-Gross yield is 6.1% and the projected net yield after operating costs is 5.6%, i.e. a net operating income of €128,000 per year, distributed monthly (€10,667 per month across all shares). Occupancy is 96%. Operator / tenant: Student-housing operator.
+Gross yield is 7.67% and the projected net yield after operating costs is 5.6%, i.e. a net operating income of €128,000 per year, distributed monthly (€10,667 per month across all shares). Occupancy is 96%. Operator / tenant: Student-housing operator.
 
 ## Highlights
 - Chronic undersupply of student beds in Lisbon

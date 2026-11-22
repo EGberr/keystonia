@@ -12,7 +12,7 @@ type: memorandum
 Hôtel des Batignolles is a 22-room boutique hotel (780 m²) in Batignolles, Paris, France. A 22-room boutique hotel by the Martin-Luther-King park. The asset is valued at €6,200,000 and divided into 62,000 shares of €100. 40% of the shares (24,800) are offered to investors; the owner retains 37,200 shares.
 
 ## Income
-Gross yield is 6.2% and the projected net yield after operating costs is 5.0%, i.e. a net operating income of €310,000 per year, distributed monthly (€25,833 per month across all shares). Occupancy is 81%. Operator / tenant: Independent hotel operator (management contract).
+Gross yield is 6.85% and the projected net yield after operating costs is 5.0%, i.e. a net operating income of €310,000 per year, distributed monthly (€25,833 per month across all shares). Occupancy is 81%. Operator / tenant: Independent hotel operator (management contract).
 
 ## Highlights
 - 81% average occupancy, €168 average daily rate

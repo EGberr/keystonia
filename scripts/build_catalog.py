@@ -74,6 +74,8 @@ def build_asset(a: dict) -> dict:
     else:
         noi = v * a["gross_yield"] / 100 * (1 - OPERATING_COST_SHARE)
     net_yield = noi / v * 100
+    # Cap-rate valued assets start from NOI, so gross yield is derived from it (never below net).
+    gross_yield = noi / (1 - OPERATING_COST_SHARE) / v * 100 if a["value"] == "income" else a["gross_yield"]
     offered_shares = int(total_shares * a["offered"] / 100)
     city = CITIES[a["city"]]
     return {
@@ -106,7 +108,7 @@ def build_asset(a: dict) -> dict:
         "offered_shares": offered_shares,
         "retained_shares": total_shares - offered_shares,
         "offered_pct": a["offered"],
-        "gross_yield_pct": round(a["gross_yield"], 2),
+        "gross_yield_pct": round(gross_yield, 2),
         "net_yield_pct": round(net_yield, 2),
         "annual_noi_eur": round(noi),
         "monthly_distribution_eur": round(noi / 12),

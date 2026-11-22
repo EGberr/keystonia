@@ -12,7 +12,7 @@ type: memorandum
 Guéliz Concept Store is a retail and café (210 m²) in Guéliz, Marrakech, Morocco. Art-deco retail space on a Guéliz boulevard. The asset is valued at €353,000 and divided into 7,060 shares of €50. 55% of the shares (3,883) are offered to investors; the owner retains 3,177 shares.
 
 ## Income
-Gross yield is 7.2% and the projected net yield after operating costs is 6.8%, i.e. a net operating income of €24,000 per year, distributed monthly (€2,000 per month across all shares). Occupancy is 100%. Operator / tenant: Design concept store (6-year lease).
+Gross yield is 9.31% and the projected net yield after operating costs is 6.8%, i.e. a net operating income of €24,000 per year, distributed monthly (€2,000 per month across all shares). Occupancy is 100%. Operator / tenant: Design concept store (6-year lease).
 
 ## Highlights
 - High footfall shopping boulevard

@@ -12,7 +12,7 @@ type: memorandum
 Résidence Jussieu is a 24 furnished studios (520 m²) in Latin Quarter, Paris, France. 24 studios next to Sorbonne Université. The asset is valued at €2,682,000 and divided into 53,640 shares of €50. 60% of the shares (32,184) are offered to investors; the owner retains 21,456 shares.
 
 ## Income
-Gross yield is 5.1% and the projected net yield after operating costs is 4.4%, i.e. a net operating income of €118,000 per year, distributed monthly (€9,833 per month across all shares). Occupancy is 97%. Operator / tenant: Operated by a student-housing manager (9-year lease).
+Gross yield is 6.03% and the projected net yield after operating costs is 4.4%, i.e. a net operating income of €118,000 per year, distributed monthly (€9,833 per month across all shares). Occupancy is 97%. Operator / tenant: Operated by a student-housing manager (9-year lease).
 
 ## Highlights
 - Waiting list every September

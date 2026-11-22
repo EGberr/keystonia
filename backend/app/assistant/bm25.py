@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import math
 import re
+import unicodedata
 from collections import Counter
 
 import numpy as np
@@ -87,9 +88,14 @@ def _stem(tok: str) -> str:
     return tok
 
 
+def fold(text: str) -> str:
+    """Lowercase and strip accents so "Évaluation" and "evaluation" index the same way."""
+    return "".join(c for c in unicodedata.normalize("NFKD", text.lower()) if not unicodedata.combining(c))
+
+
 def tokenize(text: str) -> list[str]:
     out = []
-    for tok in TOKEN.findall(text.lower()):
+    for tok in TOKEN.findall(fold(text)):
         if tok in STOPWORDS:
             continue
         out.append(_stem(tok))

@@ -12,7 +12,7 @@ type: memorandum
 Boutique Oberkampf is a street-level retail unit (85 m²) in Oberkampf, Paris, France. Street retail on one of Paris' liveliest streets. The asset is valued at €788,500 and divided into 15,770 shares of €50. 55% of the shares (8,673) are offered to investors; the owner retains 7,097 shares.
 
 ## Income
-Gross yield is 5.6% and the projected net yield after operating costs is 5.2%, i.e. a net operating income of €41,000 per year, distributed monthly (€3,417 per month across all shares). Occupancy is 100%. Operator / tenant: Concept store (commercial lease 3-6-9).
+Gross yield is 7.12% and the projected net yield after operating costs is 5.2%, i.e. a net operating income of €41,000 per year, distributed monthly (€3,417 per month across all shares). Occupancy is 100%. Operator / tenant: Concept store (commercial lease 3-6-9).
 
 ## Highlights
 - Corner unit with 9 m of frontage
