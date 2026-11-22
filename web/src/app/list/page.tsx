@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import type { Address } from "viem";
-import { BedDouble, Check, GraduationCap, Grape, Home, ShieldCheck, Store } from "lucide-react";
+import { BedDouble, Check, Palmtree, Grape, Home, ShieldCheck, Store } from "lucide-react";
 import { api, type Config, type ListingRequest, type Portfolio } from "@/lib/api";
 import { actions } from "@/lib/actions";
 import { runTx, useApi, useWallet } from "@/lib/chain";
@@ -16,10 +16,10 @@ const CATS = [
   { id: "residential", icon: Home },
   { id: "hospitality", icon: BedDouble },
   { id: "commercial", icon: Store },
-  { id: "student", icon: GraduationCap },
+  { id: "resort", icon: Palmtree },
   { id: "land", icon: Grape },
 ] as const;
-const CITIES = ["Paris", "London", "Marrakech", "Lisbon", "Barcelona", "Porto", "Milan", "Berlin"];
+const CITIES = ["New York", "Paris", "Dubai", "London", "Marrakech", "Melbourne", "Miami", "Monaco", "Singapore"];
 const STATUS_STYLE: Record<ListingRequest["status"], string> = {
   pending: "bg-accent-soft text-accent-ink",
   approved: "bg-positive/15 text-positive",

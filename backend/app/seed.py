@@ -314,15 +314,15 @@ class Seeder:
             "KST-PAR-001",
             "KST-LON-003",
             "KST-RAK-001",
-            "KST-LIS-002",
-            "KST-PAR-005",
+            "KST-NYC-002",
+            "KST-PAR-004",
         ):
             tickets = {
                 "KST-PAR-001": 40,
                 "KST-LON-003": 60,
                 "KST-RAK-001": 50,
-                "KST-LIS-002": 30,
-                "KST-PAR-005": 12,
+                "KST-NYC-002": 30,
+                "KST-PAR-004": 12,
             }
             first = plan[0]
             plan[0] = (first[0], first[1], max(1, first[2] - tickets[a["id"]]))
@@ -437,16 +437,16 @@ class Seeder:
                 "KST-PAR-001",
                 120,
                 14,
-                "Replace the windows to reach energy rating C",
-                "Quote €18,400 funded from the maintenance reserve; expected rating C.",
+                "Replace the terrace glazing to reach energy rating B",
+                "Quote €84,000 funded from the maintenance reserve; expected rating B.",
                 "past_for",
             ),
             (
                 "KST-LON-002",
                 70,
                 10,
-                "Refinance the building at a 4.1% fixed rate",
-                "Raise £400k to fund loft conversions; increases leverage.",
+                "Refinance the hotel at a 4.1% fixed rate",
+                "Raise £6m to add eight suites in the mansard; increases leverage.",
                 "past_against",
             ),
             (
@@ -454,15 +454,15 @@ class Seeder:
                 6,
                 12,
                 "Open a rooftop restaurant for guests",
-                "€42,000 fit-out; operator forecasts +9% revenue per available room.",
+                "€420,000 fit-out; operator forecasts +9% revenue per available room.",
                 "active",
             ),
             (
-                "KST-LIS-002",
+                "KST-NYC-002",
                 3,
                 9,
-                "Renew the operator lease for nine years",
-                "Fixed rent indexed on Portuguese CPI with a 3% floor.",
+                "Renew the hotel management contract for ten years",
+                "Base fee plus 12% of gross operating profit, with a performance test every three years.",
                 "active",
             ),
         ]

@@ -13,7 +13,7 @@ import { Chip, ErrorState, PageHeader, Skeleton } from "@/components/ui";
 
 const SORTS = ["net_yield_pct", "progress_pct", "valuation_eur", "ends_at"] as const;
 const PHASES = ["live", "funded", "upcoming"] as const;
-const CITY_FR: Record<string, string> = { London: "Londres", Lisbon: "Lisbonne" };
+const CITY_FR: Record<string, string> = { London: "Londres", Dubai: "Dubaï" };
 
 function Invest() {
   const { t, lang } = useLang();

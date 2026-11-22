@@ -1,27 +1,29 @@
 ---
 id: KST-PAR-002-memorandum
-title: Belvédère Montmartre — Investment memorandum
+title: Hôtel Particulier Saint-Germain — Investment memorandum
 asset: KST-PAR-002
 type: memorandum
 ---
-# Belvédère Montmartre — Investment memorandum
+# Hôtel Particulier Saint-Germain — Investment memorandum
 
 > **Demo document.** This asset is fictional and part of the Keystonia demonstration network. No real investment is offered.
 
 ## Summary
-Belvédère Montmartre is a 1 bedroom (48 m²) in Montmartre, Paris, France. Balcony views over Paris from the Butte. The asset is valued at €436,000 and divided into 8,720 shares of €50. 50% of the shares (4,360) are offered to investors; the owner retains 4,360 shares.
+Hôtel Particulier Saint-Germain is a 28-suite five-star hotel, garden, spa (2,400 m²) in Saint-Germain-des-Prés, Paris, France. An 18th-century mansion with 28 suites and a hidden garden. The asset is valued at €36,000,000 and divided into 144,000 shares of €250. 40% of the shares (57,600) are offered to investors; the owner retains 86,400 shares.
 
 ## Income
-Gross yield is 3.9% and the projected net yield after operating costs is 2.85%, i.e. a net operating income of €12,413 per year, distributed monthly (€1,034 per month across all shares). Occupancy is 100%. Operator / tenant: Long-term tenant (furnished lease).
+Gross yield is 6.16% and the projected net yield after operating costs is 4.5%, i.e. a net operating income of €1,620,000 per year, distributed monthly (€135,000 per month across all shares). Occupancy is 79%. Operator / tenant: Independent palace operator (management contract).
 
 ## Highlights
-- South-facing balcony with a city view
-- Renovated in 2022 (kitchen, wiring, windows)
+- 79% occupancy at a EUR 890 average daily rate
+- Listed mansion with a 400 m² private garden
+- Spa and restaurant leased to a starred chef
 
 ## Key risks
-- Tourist-heavy street: higher tenant turnover than average
+- Listed building: works need heritage approval
+- Revenue depends on high-end tourism
 - Shares are illiquid outside the Keystonia secondary market; prices may differ from the valuation.
 - Valuations can go down as well as up.
 
 ## Location
-Montmartre (Paris). Coordinates 48.8867, 2.3431.
+Saint-Germain-des-Prés (Paris). Coordinates 48.8546, 2.3331.

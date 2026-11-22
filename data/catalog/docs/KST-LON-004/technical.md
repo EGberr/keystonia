@@ -1,15 +1,15 @@
 ---
 id: KST-LON-004-technical
-title: Shoreditch Studio Offices — Technical survey
+title: Bond Street Gallery — Technical survey
 asset: KST-LON-004
 type: technical
 ---
-# Shoreditch Studio Offices — Technical survey
+# Bond Street Gallery — Technical survey
 
 > **Demo document.** This asset is fictional and part of the Keystonia demonstration network. No real investment is offered.
 
 ## Building
-Built in 1924. Layout: Creative office floor. Surface: 640 m².
+Built in 1904. Layout: Art gallery and private dining club. Surface: 640 m².
 
 ## Energy
 Energy rating C. Meets current efficiency expectations.

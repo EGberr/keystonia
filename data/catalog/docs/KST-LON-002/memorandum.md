@@ -1,27 +1,28 @@
 ---
 id: KST-LON-002-memorandum
-title: Hackney Warehouse Flats — Investment memorandum
+title: Mayfair Townhouse Hotel — Investment memorandum
 asset: KST-LON-002
 type: memorandum
 ---
-# Hackney Warehouse Flats — Investment memorandum
+# Mayfair Townhouse Hotel — Investment memorandum
 
 > **Demo document.** This asset is fictional and part of the Keystonia demonstration network. No real investment is offered.
 
 ## Summary
-Hackney Warehouse Flats is a 6 flats in a converted warehouse (410 m²) in Hackney, London, United Kingdom. Six flats in a converted Victorian warehouse. The asset is valued at €3,805,000 and divided into 76,100 shares of €50. 55% of the shares (41,855) are offered to investors; the owner retains 34,245 shares.
+Mayfair Townhouse Hotel is a 42-key five-star townhouse hotel (3,600 m²) in Mayfair, London, United Kingdom. Six Georgian townhouses, one five-star hotel. The asset is valued at €50,000,000 and divided into 200,000 shares of €250. 35% of the shares (70,000) are offered to investors; the owner retains 130,000 shares.
 
 ## Income
-Gross yield is 4.9% and the projected net yield after operating costs is 3.58%, i.e. a net operating income of €136,105 per year, distributed monthly (€11,342 per month across all shares). Occupancy is 96%. Operator / tenant: Managed by a letting agent.
+Gross yield is 6.58% and the projected net yield after operating costs is 4.8%, i.e. a net operating income of €2,400,000 per year, distributed monthly (€200,000 per month across all shares). Occupancy is 83%. Operator / tenant: Boutique hotel group (lease).
 
 ## Highlights
-- Diversified income across 6 tenants
-- London Fields park on the doorstep
+- 83% occupancy at a GBP 640 average daily rate
+- 25-year lease with a turnover top-up
 
 ## Key risks
-- Older building: higher maintenance budget
+- Listed buildings limit alterations
+- Income is exposed to GBP
 - Shares are illiquid outside the Keystonia secondary market; prices may differ from the valuation.
 - Valuations can go down as well as up.
 
 ## Location
-Hackney (London). Coordinates 51.5450, -0.0553.
+Mayfair (London). Coordinates 51.5099, -0.1478.

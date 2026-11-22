@@ -1,4 +1,16 @@
 {
+ "newyork": {
+  "name": "New York",
+  "country": "United States",
+  "iso": 840,
+  "currency": "USD",
+  "lat": 40.7128,
+  "lon": -74.006,
+  "tagline_en": "Penthouses, flagships and five-star keys",
+  "tagline_fr": "Penthouses, flagships et hôtels cinq étoiles",
+  "image_query": "new york skyline",
+  "assets": 4
+ },
  "paris": {
   "name": "Paris",
   "country": "France",
@@ -6,10 +18,22 @@
   "currency": "EUR",
   "lat": 48.8566,
   "lon": 2.3522,
-  "tagline_en": "Haussmann stone, timeless demand",
-  "tagline_fr": "La pierre haussmannienne, une demande intemporelle",
+  "tagline_en": "The Golden Triangle and the Left Bank",
+  "tagline_fr": "Le Triangle d'or et la Rive gauche",
   "image_query": "paris rooftops",
-  "assets": 6
+  "assets": 4
+ },
+ "dubai": {
+  "name": "Dubai",
+  "country": "United Arab Emirates",
+  "iso": 784,
+  "currency": "AED",
+  "lat": 25.2048,
+  "lon": 55.2708,
+  "tagline_en": "Palm villas and marina hotels",
+  "tagline_fr": "Villas de la Palm et hôtels de marina",
+  "image_query": "dubai skyline",
+  "assets": 4
  },
  "london": {
   "name": "London",
@@ -18,10 +42,10 @@
   "currency": "GBP",
   "lat": 51.5072,
   "lon": -0.1276,
-  "tagline_en": "Global capital, deep rental market",
-  "tagline_fr": "Capitale mondiale, marché locatif profond",
-  "image_query": "london street houses",
-  "assets": 6
+  "tagline_en": "Mayfair, Belgravia, Chelsea",
+  "tagline_fr": "Mayfair, Belgravia, Chelsea",
+  "image_query": "london mayfair",
+  "assets": 4
  },
  "marrakech": {
   "name": "Marrakech",
@@ -30,21 +54,21 @@
   "currency": "MAD",
   "lat": 31.6295,
   "lon": -7.9811,
-  "tagline_en": "Riads, resorts and a tourism boom",
-  "tagline_fr": "Riads, resorts et boom touristique",
+  "tagline_en": "Five-star riads and palace resorts",
+  "tagline_fr": "Riads cinq étoiles et resorts de palais",
   "image_query": "marrakech riad",
-  "assets": 6
+  "assets": 4
  },
- "lisbon": {
-  "name": "Lisbon",
-  "country": "Portugal",
-  "iso": 620,
-  "currency": "EUR",
-  "lat": 38.7223,
-  "lon": -9.1393,
-  "tagline_en": "Europe's sunniest growth story",
-  "tagline_fr": "La croissance la plus ensoleillée d'Europe",
-  "image_query": "lisbon tram street",
-  "assets": 6
+ "melbourne": {
+  "name": "Melbourne",
+  "country": "Australia",
+  "iso": 36,
+  "currency": "AUD",
+  "lat": -37.8136,
+  "lon": 144.9631,
+  "tagline_en": "Grand hotels and Yarra Valley estates",
+  "tagline_fr": "Grands hôtels et domaines de la Yarra Valley",
+  "image_query": "melbourne skyline",
+  "assets": 4
  }
 }

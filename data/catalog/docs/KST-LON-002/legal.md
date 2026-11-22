@@ -1,10 +1,10 @@
 ---
 id: KST-LON-002-legal
-title: Hackney Warehouse Flats — Legal structure
+title: Mayfair Townhouse Hotel — Legal structure
 asset: KST-LON-002
 type: legal
 ---
-# Hackney Warehouse Flats — Legal structure
+# Mayfair Townhouse Hotel — Legal structure
 
 > **Demo document.** This asset is fictional and part of the Keystonia demonstration network. No real investment is offered.
 

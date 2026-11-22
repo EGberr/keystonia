@@ -16,7 +16,7 @@ contract AssetRegistry is AccessControl {
         Residential,
         Hospitality,
         Commercial,
-        StudentLiving,
+        Resort,
         Land
     }
 

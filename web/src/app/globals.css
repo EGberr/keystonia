@@ -351,3 +351,33 @@ body {
 html.lenis, html.lenis body { height: auto; }
 .lenis.lenis-smooth { scroll-behavior: auto !important; }
 .lenis.lenis-stopped { overflow: hidden; }
+
+/* Night theme: the home page sets .theme-night and the whole document follows (nav, footer). */
+body:has(.theme-night) {
+  color-scheme: dark;
+  --bg: #080506;
+  --surface: #140c0d;
+  --surface-2: #1d1213;
+  --surface-3: #2a1a1b;
+  --border: rgba(244, 236, 228, 0.1);
+  --border-strong: rgba(244, 236, 228, 0.2);
+  --text: #f4ece4;
+  --text-2: rgba(244, 236, 228, 0.7);
+  --muted: #9c8f88;
+  --accent-ink: #f4ece4;
+  --shadow: 0 30px 80px -40px rgba(0, 0, 0, 0.9);
+}
+body:has(.theme-night) .glass {
+  background: rgba(20, 12, 13, 0.55);
+  border-color: rgba(244, 236, 228, 0.12);
+  box-shadow: none;
+}
+@keyframes iso-blink {
+  0%, 100% { stroke-opacity: 0.9; }
+  50% { stroke-opacity: 0.25; }
+}
+.iso-lit { animation: iso-blink 5s ease-in-out infinite; }
+.iso-floor { will-change: transform; }
+@media (prefers-reduced-motion: reduce) {
+  .iso-lit { animation: none; }
+}

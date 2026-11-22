@@ -12,8 +12,8 @@ type: valuation
 Income capitalisation.
 
 ## Market evidence
-Net operating income €62,000 capitalised at 7.4%. Source: Operator accounts (fictional) and market cap rates.
+Net operating income €520,000 capitalised at 7.0%. Source: Operator accounts (fictional) and market cap rates.
 This market has no open transaction dataset: the figure is an indicative estimate and should be treated with caution.
 
 ## Conclusion
-Adjustment: None. Concluded value: €838,000 (€1,995 per m²). Share price: €50.
+Adjustment: None. Concluded value: €7,428,500 (€6,753 per m²). Share price: €50.

@@ -1,56 +1,390 @@
 [
  {
+  "id": "KST-NYC-001",
+  "slug": "kst-nyc-001",
+  "name": "Tribeca Sky Penthouse",
+  "name_fr": "Penthouse Tribeca Sky",
+  "tagline": "A full-floor penthouse above the Hudson",
+  "tagline_fr": "Un penthouse d'étage entier au-dessus de l'Hudson",
+  "city": "newyork",
+  "city_name": "New York",
+  "country": "United States",
+  "country_iso": 840,
+  "currency": "USD",
+  "district": "Tribeca",
+  "category": "residential",
+  "category_index": 0,
+  "lat": 40.7195,
+  "lon": -74.0089,
+  "surface_m2": 390,
+  "units": 1,
+  "layout": "4 bedrooms, double-height living room, terrace",
+  "year_built": 2019,
+  "energy_rating": "B",
+  "operator": "Corporate tenant (3-year lease)",
+  "occupancy_pct": 100,
+  "valuation_eur": 8580000,
+  "share_price_eur": 100,
+  "total_shares": 85800,
+  "offered_shares": 38610,
+  "retained_shares": 47190,
+  "offered_pct": 45,
+  "gross_yield_pct": 3.4,
+  "net_yield_pct": 2.48,
+  "annual_noi_eur": 212956,
+  "monthly_distribution_eur": 17746,
+  "status": "funded",
+  "valuation_evidence": {
+   "method": "Indicative price per m²",
+   "reference": "Indicative €22,000/m² for Tribeca",
+   "source": "Keystonia indicative estimate (no open transaction dataset for this market)",
+   "adjustment": "None",
+   "indicative": true
+  },
+  "highlights": [
+   "Full-floor layout with a 90 m² wrap-around terrace",
+   "Doorman building with private lift landing",
+   "Leased to a corporate tenant until 2028"
+  ],
+  "risks": [
+   "Single tenant: a departure would pause distributions",
+   "U.S. property taxes and common charges are high and can rise"
+  ],
+  "image_query": "new york penthouse interior",
+  "images": [
+   "/img/assets/kst-nyc-001-0.jpg",
+   "/img/assets/kst-nyc-001-1.jpg",
+   "/img/assets/kst-nyc-001-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/brown_photostudio_03.jpg",
+    "preview": "/pano/brown_photostudio_03_preview.jpg",
+    "en": "Living room",
+    "fr": "Le séjour"
+   },
+   {
+    "pano": "/pano/glasshouse_interior.jpg",
+    "preview": "/pano/glasshouse_interior_preview.jpg",
+    "en": "Great room",
+    "fr": "La grande pièce"
+   },
+   {
+    "pano": "/pano/modern_bathroom.jpg",
+    "preview": "/pano/modern_bathroom_preview.jpg",
+    "en": "Bathroom",
+    "fr": "La salle de bain"
+   },
+   {
+    "pano": "/pano/hotel_rooftop_balcony.jpg",
+    "preview": "/pano/hotel_rooftop_balcony_preview.jpg",
+    "en": "Terrace",
+    "fr": "La terrasse"
+   }
+  ]
+ },
+ {
+  "id": "KST-NYC-002",
+  "slug": "kst-nyc-002",
+  "name": "The Mercer Row Hotel",
+  "name_fr": "Hôtel The Mercer Row",
+  "tagline": "A cast-iron landmark turned five-star hotel in SoHo",
+  "tagline_fr": "Un immeuble en fonte classé devenu hôtel cinq étoiles à SoHo",
+  "city": "newyork",
+  "city_name": "New York",
+  "country": "United States",
+  "country_iso": 840,
+  "currency": "USD",
+  "district": "SoHo",
+  "category": "hospitality",
+  "category_index": 1,
+  "lat": 40.7243,
+  "lon": -73.9985,
+  "surface_m2": 5200,
+  "units": 64,
+  "layout": "64-key five-star hotel, rooftop bar",
+  "year_built": 1894,
+  "energy_rating": "C",
+  "operator": "Luxury hotel operator (management contract)",
+  "occupancy_pct": 84,
+  "valuation_eur": 59615000,
+  "share_price_eur": 250,
+  "total_shares": 238460,
+  "offered_shares": 83461,
+  "retained_shares": 154999,
+  "offered_pct": 35,
+  "gross_yield_pct": 7.12,
+  "net_yield_pct": 5.2,
+  "annual_noi_eur": 3100000,
+  "monthly_distribution_eur": 258333,
+  "status": "funded",
+  "valuation_evidence": {
+   "method": "Income capitalisation",
+   "reference": "Net operating income €3,100,000 capitalised at 5.2%",
+   "source": "Operator accounts (fictional) and market cap rates",
+   "adjustment": "None",
+   "indicative": true
+  },
+  "highlights": [
+   "84% occupancy at a USD 720 average daily rate",
+   "Rooftop bar contributes 18% of revenue",
+   "Landmarked cast-iron facade restored in 2021"
+  ],
+  "risks": [
+   "Hotel income moves with tourism and business travel",
+   "Unionised labour costs weigh on margins"
+  ],
+  "image_query": "luxury hotel lobby new york",
+  "images": [
+   "/img/assets/kst-nyc-002-0.jpg",
+   "/img/assets/kst-nyc-002-1.jpg",
+   "/img/assets/kst-nyc-002-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/vestibule.jpg",
+    "preview": "/pano/vestibule_preview.jpg",
+    "en": "Lobby",
+    "fr": "Le lobby"
+   },
+   {
+    "pano": "/pano/warm_bar.jpg",
+    "preview": "/pano/warm_bar_preview.jpg",
+    "en": "Rooftop bar",
+    "fr": "Le bar"
+   },
+   {
+    "pano": "/pano/hotel_room.jpg",
+    "preview": "/pano/hotel_room_preview.jpg",
+    "en": "Suite",
+    "fr": "La suite"
+   },
+   {
+    "pano": "/pano/large_corridor.jpg",
+    "preview": "/pano/large_corridor_preview.jpg",
+    "en": "Gallery",
+    "fr": "La galerie"
+   }
+  ]
+ },
+ {
+  "id": "KST-NYC-003",
+  "slug": "kst-nyc-003",
+  "name": "Fifth Avenue Flagship",
+  "name_fr": "Flagship Cinquième Avenue",
+  "tagline": "Three floors of flagship retail on the world's most expensive street",
+  "tagline_fr": "Trois niveaux de flagship sur la rue la plus chère du monde",
+  "city": "newyork",
+  "city_name": "New York",
+  "country": "United States",
+  "country_iso": 840,
+  "currency": "USD",
+  "district": "Fifth Avenue",
+  "category": "commercial",
+  "category_index": 2,
+  "lat": 40.7616,
+  "lon": -73.9747,
+  "surface_m2": 1100,
+  "units": 1,
+  "layout": "Three-level flagship store",
+  "year_built": 1926,
+  "energy_rating": "C",
+  "operator": "Luxury maison (15-year lease)",
+  "occupancy_pct": 100,
+  "valuation_eur": 59090000,
+  "share_price_eur": 250,
+  "total_shares": 236360,
+  "offered_shares": 94544,
+  "retained_shares": 141816,
+  "offered_pct": 40,
+  "gross_yield_pct": 6.03,
+  "net_yield_pct": 4.4,
+  "annual_noi_eur": 2600000,
+  "monthly_distribution_eur": 216667,
+  "status": "live",
+  "valuation_evidence": {
+   "method": "Income capitalisation",
+   "reference": "Net operating income €2,600,000 capitalised at 4.4%",
+   "source": "Operator accounts (fictional) and market cap rates",
+   "adjustment": "None",
+   "indicative": true
+  },
+  "highlights": [
+   "15-year lease with 3% annual escalations",
+   "12 m of frontage between 56th and 57th Street"
+  ],
+  "risks": [
+   "Single-tenant income",
+   "Prime retail rents are cyclical"
+  ],
+  "image_query": "luxury flagship store",
+  "images": [
+   "/img/assets/kst-nyc-003-0.jpg",
+   "/img/assets/kst-nyc-003-1.jpg",
+   "/img/assets/kst-nyc-003-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/decor_shop.jpg",
+    "preview": "/pano/decor_shop_preview.jpg",
+    "en": "Sales floor",
+    "fr": "L'espace de vente"
+   },
+   {
+    "pano": "/pano/art_studio.jpg",
+    "preview": "/pano/art_studio_preview.jpg",
+    "en": "Atelier",
+    "fr": "L'atelier"
+   },
+   {
+    "pano": "/pano/comfy_cafe.jpg",
+    "preview": "/pano/comfy_cafe_preview.jpg",
+    "en": "Client lounge",
+    "fr": "Le salon clients"
+   },
+   {
+    "pano": "/pano/modern_evening_street.jpg",
+    "preview": "/pano/modern_evening_street_preview.jpg",
+    "en": "The avenue",
+    "fr": "L'avenue"
+   }
+  ]
+ },
+ {
+  "id": "KST-NYC-004",
+  "slug": "kst-nyc-004",
+  "name": "Central Park Tower Residence",
+  "name_fr": "Résidence Central Park Tower",
+  "tagline": "Park views from the 78th floor",
+  "tagline_fr": "Vue sur Central Park depuis le 78e étage",
+  "city": "newyork",
+  "city_name": "New York",
+  "country": "United States",
+  "country_iso": 840,
+  "currency": "USD",
+  "district": "Midtown",
+  "category": "residential",
+  "category_index": 0,
+  "lat": 40.7663,
+  "lon": -73.9807,
+  "surface_m2": 280,
+  "units": 1,
+  "layout": "3 bedrooms on the 78th floor",
+  "year_built": 2021,
+  "energy_rating": "A",
+  "operator": "Furnished executive rental",
+  "occupancy_pct": 100,
+  "valuation_eur": 7280000,
+  "share_price_eur": 100,
+  "total_shares": 72800,
+  "offered_shares": 36400,
+  "retained_shares": 36400,
+  "offered_pct": 50,
+  "gross_yield_pct": 3.2,
+  "net_yield_pct": 2.34,
+  "annual_noi_eur": 170061,
+  "monthly_distribution_eur": 14172,
+  "status": "upcoming",
+  "valuation_evidence": {
+   "method": "Indicative price per m²",
+   "reference": "Indicative €26,000/m² for Midtown",
+   "source": "Keystonia indicative estimate (no open transaction dataset for this market)",
+   "adjustment": "None",
+   "indicative": true
+  },
+  "highlights": [
+   "Floor-to-ceiling views over Central Park",
+   "Hotel-grade amenities: pool, club, concierge"
+  ],
+  "risks": [
+   "New-build supertall: high monthly charges",
+   "Ultra-prime resale market is thin"
+  ],
+  "image_query": "skyscraper apartment view",
+  "images": [
+   "/img/assets/kst-nyc-004-0.jpg",
+   "/img/assets/kst-nyc-004-1.jpg",
+   "/img/assets/kst-nyc-004-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/cayley_interior.jpg",
+    "preview": "/pano/cayley_interior_preview.jpg",
+    "en": "Living room",
+    "fr": "Le séjour"
+   },
+   {
+    "pano": "/pano/brown_photostudio_04.jpg",
+    "preview": "/pano/brown_photostudio_04_preview.jpg",
+    "en": "Bedroom",
+    "fr": "La chambre"
+   },
+   {
+    "pano": "/pano/modern_bathroom.jpg",
+    "preview": "/pano/modern_bathroom_preview.jpg",
+    "en": "Bathroom",
+    "fr": "La salle de bain"
+   },
+   {
+    "pano": "/pano/hotel_rooftop_balcony.jpg",
+    "preview": "/pano/hotel_rooftop_balcony_preview.jpg",
+    "en": "Sky terrace",
+    "fr": "La terrasse"
+   }
+  ]
+ },
+ {
   "id": "KST-PAR-001",
   "slug": "kst-par-001",
-  "name": "Atelier du Marais",
-  "name_fr": "Atelier du Marais",
-  "tagline": "Exposed beams and a glass roof in the historic Marais",
-  "tagline_fr": "Poutres apparentes et verrière au cœur du Marais historique",
+  "name": "Montaigne Penthouse",
+  "name_fr": "Penthouse Montaigne",
+  "tagline": "A top-floor terrace in the Golden Triangle",
+  "tagline_fr": "Un dernier étage avec terrasse dans le Triangle d'or",
   "city": "paris",
   "city_name": "Paris",
   "country": "France",
   "country_iso": 250,
   "currency": "EUR",
-  "district": "Le Marais",
+  "district": "Avenue Montaigne",
   "category": "residential",
   "category_index": 0,
-  "lat": 48.8627,
-  "lon": 2.3622,
-  "surface_m2": 62,
+  "lat": 48.8662,
+  "lon": 2.3046,
+  "surface_m2": 215,
   "units": 1,
-  "layout": "2 bedrooms",
-  "year_built": 1880,
-  "energy_rating": "D",
-  "operator": "Long-term tenant (3-year lease)",
+  "layout": "3 bedrooms, terrace facing the Eiffel Tower",
+  "year_built": 1898,
+  "energy_rating": "C",
+  "operator": "Long-term tenant (diplomatic lease)",
   "occupancy_pct": 100,
-  "valuation_eur": 762000,
-  "share_price_eur": 50,
-  "total_shares": 15240,
-  "offered_shares": 6858,
-  "retained_shares": 8382,
+  "valuation_eur": 2754000,
+  "share_price_eur": 100,
+  "total_shares": 27540,
+  "offered_shares": 12393,
+  "retained_shares": 15147,
   "offered_pct": 45,
-  "gross_yield_pct": 3.6,
-  "net_yield_pct": 2.63,
-  "annual_noi_eur": 20025,
-  "monthly_distribution_eur": 1669,
+  "gross_yield_pct": 3.1,
+  "net_yield_pct": 2.26,
+  "annual_noi_eur": 62323,
+  "monthly_distribution_eur": 5194,
   "status": "funded",
   "valuation_evidence": {
    "method": "Comparable sales",
-   "reference": "Median €11,707/m² for apartments in 75003 (520 sales in 2024)",
+   "reference": "Median €12,198/m² for apartments in 75008 (552 sales in 2024)",
    "source": "DVF 2024, data.gouv.fr (Licence Ouverte 2.0)",
    "adjustment": "+5% for condition and floor",
    "indicative": false
   },
   "highlights": [
-   "Top-floor atelier with a 4 m glass roof",
-   "Three minutes from Saint-Paul metro",
-   "Lease indexed on the French rent reference index (IRL)"
+   "60 m² terrace with an Eiffel Tower view",
+   "Haussmann building with concierge",
+   "Diplomatic lease renewed in 2025"
   ],
   "risks": [
-   "Energy rating D: works needed before 2034 rental rules tighten",
-   "Historic building: renovations require heritage approval"
+   "Energy rating C: glazing upgrade planned",
+   "Prime Paris yields are low by design"
   ],
-  "image_query": "loft apartment interior",
+  "image_query": "paris penthouse terrace",
   "images": [
    "/img/assets/kst-par-001-0.jpg",
    "/img/assets/kst-par-001-1.jpg",
@@ -58,428 +392,10 @@
   ],
   "tour": [
    {
-    "pano": "/pano/photo_studio_loft_hall.jpg",
-    "preview": "/pano/photo_studio_loft_hall_preview.jpg",
-    "en": "The atelier",
-    "fr": "L'atelier"
-   },
-   {
-    "pano": "/pano/brown_photostudio_02.jpg",
-    "preview": "/pano/brown_photostudio_02_preview.jpg",
-    "en": "Living room",
-    "fr": "Le séjour"
-   },
-   {
-    "pano": "/pano/brown_photostudio_05.jpg",
-    "preview": "/pano/brown_photostudio_05_preview.jpg",
-    "en": "Bedroom",
-    "fr": "La chambre"
-   },
-   {
-    "pano": "/pano/kiara_interior.jpg",
-    "preview": "/pano/kiara_interior_preview.jpg",
-    "en": "Kitchen",
-    "fr": "La cuisine"
-   }
-  ]
- },
- {
-  "id": "KST-PAR-002",
-  "slug": "kst-par-002",
-  "name": "Belvédère Montmartre",
-  "name_fr": "Belvédère Montmartre",
-  "tagline": "Balcony views over Paris from the Butte",
-  "tagline_fr": "Vue sur Paris depuis un balcon de la Butte",
-  "city": "paris",
-  "city_name": "Paris",
-  "country": "France",
-  "country_iso": 250,
-  "currency": "EUR",
-  "district": "Montmartre",
-  "category": "residential",
-  "category_index": 0,
-  "lat": 48.8867,
-  "lon": 2.3431,
-  "surface_m2": 48,
-  "units": 1,
-  "layout": "1 bedroom",
-  "year_built": 1912,
-  "energy_rating": "C",
-  "operator": "Long-term tenant (furnished lease)",
-  "occupancy_pct": 100,
-  "valuation_eur": 436000,
-  "share_price_eur": 50,
-  "total_shares": 8720,
-  "offered_shares": 4360,
-  "retained_shares": 4360,
-  "offered_pct": 50,
-  "gross_yield_pct": 3.9,
-  "net_yield_pct": 2.85,
-  "annual_noi_eur": 12413,
-  "monthly_distribution_eur": 1034,
-  "status": "funded",
-  "valuation_evidence": {
-   "method": "Comparable sales",
-   "reference": "Median €8,654/m² for apartments in 75018 (2,337 sales in 2024)",
-   "source": "DVF 2024, data.gouv.fr (Licence Ouverte 2.0)",
-   "adjustment": "+5% for condition and floor",
-   "indicative": false
-  },
-  "highlights": [
-   "South-facing balcony with a city view",
-   "Renovated in 2022 (kitchen, wiring, windows)"
-  ],
-  "risks": [
-   "Tourist-heavy street: higher tenant turnover than average"
-  ],
-  "image_query": "parisian balcony apartment",
-  "images": [
-   "/img/assets/kst-par-002-0.jpg",
-   "/img/assets/kst-par-002-1.jpg",
-   "/img/assets/kst-par-002-2.jpg"
-  ],
-  "tour": [
-   {
-    "pano": "/pano/glasshouse_interior.jpg",
-    "preview": "/pano/glasshouse_interior_preview.jpg",
-    "en": "Salon with a view",
-    "fr": "Le salon panoramique"
-   },
-   {
-    "pano": "/pano/brown_photostudio_04.jpg",
-    "preview": "/pano/brown_photostudio_04_preview.jpg",
-    "en": "Living room",
-    "fr": "Le séjour"
-   },
-   {
-    "pano": "/pano/brown_photostudio_07.jpg",
-    "preview": "/pano/brown_photostudio_07_preview.jpg",
-    "en": "Bedroom",
-    "fr": "La chambre"
-   },
-   {
-    "pano": "/pano/treetop_balcony.jpg",
-    "preview": "/pano/treetop_balcony_preview.jpg",
-    "en": "Balcony",
-    "fr": "Le balcon"
-   }
-  ]
- },
- {
-  "id": "KST-PAR-003",
-  "slug": "kst-par-003",
-  "name": "Résidence Jussieu",
-  "name_fr": "Résidence Jussieu",
-  "tagline": "24 studios next to Sorbonne Université",
-  "tagline_fr": "24 studios à deux pas de Sorbonne Université",
-  "city": "paris",
-  "city_name": "Paris",
-  "country": "France",
-  "country_iso": 250,
-  "currency": "EUR",
-  "district": "Latin Quarter",
-  "category": "student",
-  "category_index": 3,
-  "lat": 48.8462,
-  "lon": 2.3546,
-  "surface_m2": 520,
-  "units": 24,
-  "layout": "24 furnished studios",
-  "year_built": 1965,
-  "energy_rating": "C",
-  "operator": "Operated by a student-housing manager (9-year lease)",
-  "occupancy_pct": 97,
-  "valuation_eur": 2682000,
-  "share_price_eur": 50,
-  "total_shares": 53640,
-  "offered_shares": 32184,
-  "retained_shares": 21456,
-  "offered_pct": 60,
-  "gross_yield_pct": 6.03,
-  "net_yield_pct": 4.4,
-  "annual_noi_eur": 118000,
-  "monthly_distribution_eur": 9833,
-  "status": "funded",
-  "valuation_evidence": {
-   "method": "Income capitalisation",
-   "reference": "Net operating income €118,000 capitalised at 4.4%",
-   "source": "Operator accounts (fictional) and market cap rates",
-   "adjustment": "None",
-   "indicative": false
-  },
-  "highlights": [
-   "Waiting list every September",
-   "Operator guarantees 92% minimum occupancy"
-  ],
-  "risks": [
-   "Rent caps (encadrement des loyers) limit annual increases"
-  ],
-  "image_query": "student room desk",
-  "images": [
-   "/img/assets/kst-par-003-0.jpg",
-   "/img/assets/kst-par-003-1.jpg",
-   "/img/assets/kst-par-003-2.jpg"
-  ],
-  "tour": [
-   {
-    "pano": "/pano/newman_lobby.jpg",
-    "preview": "/pano/newman_lobby_preview.jpg",
-    "en": "Lobby",
-    "fr": "Le hall"
-   },
-   {
-    "pano": "/pano/small_empty_room_1.jpg",
-    "preview": "/pano/small_empty_room_1_preview.jpg",
-    "en": "Studio",
-    "fr": "Le studio"
-   },
-   {
-    "pano": "/pano/newman_cafeteria.jpg",
-    "preview": "/pano/newman_cafeteria_preview.jpg",
-    "en": "Canteen",
-    "fr": "La cantine"
-   },
-   {
-    "pano": "/pano/school_hall.jpg",
-    "preview": "/pano/school_hall_preview.jpg",
-    "en": "Study hall",
-    "fr": "La salle d'étude"
-   }
-  ]
- },
- {
-  "id": "KST-PAR-004",
-  "slug": "kst-par-004",
-  "name": "Boutique Oberkampf",
-  "name_fr": "Boutique Oberkampf",
-  "tagline": "Street retail on one of Paris' liveliest streets",
-  "tagline_fr": "Commerce de rue sur l'une des rues les plus vivantes de Paris",
-  "city": "paris",
-  "city_name": "Paris",
-  "country": "France",
-  "country_iso": 250,
-  "currency": "EUR",
-  "district": "Oberkampf",
-  "category": "commercial",
-  "category_index": 2,
-  "lat": 48.865,
-  "lon": 2.378,
-  "surface_m2": 85,
-  "units": 1,
-  "layout": "Street-level retail unit",
-  "year_built": 1900,
-  "energy_rating": "E",
-  "operator": "Concept store (commercial lease 3-6-9)",
-  "occupancy_pct": 100,
-  "valuation_eur": 788500,
-  "share_price_eur": 50,
-  "total_shares": 15770,
-  "offered_shares": 8673,
-  "retained_shares": 7097,
-  "offered_pct": 55,
-  "gross_yield_pct": 7.12,
-  "net_yield_pct": 5.2,
-  "annual_noi_eur": 41000,
-  "monthly_distribution_eur": 3417,
-  "status": "live",
-  "valuation_evidence": {
-   "method": "Income capitalisation",
-   "reference": "Net operating income €41,000 capitalised at 5.2%",
-   "source": "Operator accounts (fictional) and market cap rates",
-   "adjustment": "None",
-   "indicative": false
-  },
-  "highlights": [
-   "Corner unit with 9 m of frontage",
-   "Tenant renewed its lease in 2025"
-  ],
-  "risks": [
-   "Single-tenant income: a vacancy would pause distributions",
-   "Retail rents are sensitive to footfall and e-commerce"
-  ],
-  "image_query": "boutique shop front",
-  "images": [
-   "/img/assets/kst-par-004-0.jpg",
-   "/img/assets/kst-par-004-1.jpg",
-   "/img/assets/kst-par-004-2.jpg"
-  ],
-  "tour": [
-   {
-    "pano": "/pano/decor_shop.jpg",
-    "preview": "/pano/decor_shop_preview.jpg",
-    "en": "Boutique",
-    "fr": "La boutique"
-   },
-   {
-    "pano": "/pano/comfy_cafe.jpg",
-    "preview": "/pano/comfy_cafe_preview.jpg",
-    "en": "Café corner",
-    "fr": "Le coin café"
-   },
-   {
-    "pano": "/pano/phone_shop.jpg",
-    "preview": "/pano/phone_shop_preview.jpg",
-    "en": "Counter",
-    "fr": "Le comptoir"
-   },
-   {
-    "pano": "/pano/art_studio.jpg",
-    "preview": "/pano/art_studio_preview.jpg",
-    "en": "Atelier",
-    "fr": "L'atelier"
-   }
-  ]
- },
- {
-  "id": "KST-PAR-005",
-  "slug": "kst-par-005",
-  "name": "Hôtel des Batignolles",
-  "name_fr": "Hôtel des Batignolles",
-  "tagline": "A 22-room boutique hotel by the Martin-Luther-King park",
-  "tagline_fr": "Un hôtel de charme de 22 chambres près du parc Martin-Luther-King",
-  "city": "paris",
-  "city_name": "Paris",
-  "country": "France",
-  "country_iso": 250,
-  "currency": "EUR",
-  "district": "Batignolles",
-  "category": "hospitality",
-  "category_index": 1,
-  "lat": 48.8846,
-  "lon": 2.3175,
-  "surface_m2": 780,
-  "units": 22,
-  "layout": "22-room boutique hotel",
-  "year_built": 1890,
-  "energy_rating": "D",
-  "operator": "Independent hotel operator (management contract)",
-  "occupancy_pct": 81,
-  "valuation_eur": 6200000,
-  "share_price_eur": 100,
-  "total_shares": 62000,
-  "offered_shares": 24800,
-  "retained_shares": 37200,
-  "offered_pct": 40,
-  "gross_yield_pct": 6.85,
-  "net_yield_pct": 5.0,
-  "annual_noi_eur": 310000,
-  "monthly_distribution_eur": 25833,
-  "status": "live",
-  "valuation_evidence": {
-   "method": "Income capitalisation",
-   "reference": "Net operating income €310,000 capitalised at 5.0%",
-   "source": "Operator accounts (fictional) and market cap rates",
-   "adjustment": "None",
-   "indicative": false
-  },
-  "highlights": [
-   "81% average occupancy, €168 average daily rate",
-   "New Line 14 station two minutes away"
-  ],
-  "risks": [
-   "Hotel income varies with tourism seasonality",
-   "Refurbishment of rooms planned in 2028"
-  ],
-  "image_query": "boutique hotel room",
-  "images": [
-   "/img/assets/kst-par-005-0.jpg",
-   "/img/assets/kst-par-005-1.jpg",
-   "/img/assets/kst-par-005-2.jpg"
-  ],
-  "tour": [
-   {
-    "pano": "/pano/entrance_hall.jpg",
-    "preview": "/pano/entrance_hall_preview.jpg",
-    "en": "Lobby",
-    "fr": "Le hall"
-   },
-   {
-    "pano": "/pano/large_corridor.jpg",
-    "preview": "/pano/large_corridor_preview.jpg",
-    "en": "Corridor",
-    "fr": "Le couloir"
-   },
-   {
-    "pano": "/pano/hotel_room.jpg",
-    "preview": "/pano/hotel_room_preview.jpg",
-    "en": "Room",
-    "fr": "La chambre"
-   },
-   {
-    "pano": "/pano/warm_restaurant.jpg",
-    "preview": "/pano/warm_restaurant_preview.jpg",
-    "en": "Restaurant",
-    "fr": "Le restaurant"
-   }
-  ]
- },
- {
-  "id": "KST-PAR-006",
-  "slug": "kst-par-006",
-  "name": "Passy Haussmannien",
-  "name_fr": "Passy Haussmannien",
-  "tagline": "Haussmann apartment with mouldings and parquet",
-  "tagline_fr": "Appartement haussmannien, moulures et parquet",
-  "city": "paris",
-  "city_name": "Paris",
-  "country": "France",
-  "country_iso": 250,
-  "currency": "EUR",
-  "district": "Passy",
-  "category": "residential",
-  "category_index": 0,
-  "lat": 48.858,
-  "lon": 2.284,
-  "surface_m2": 118,
-  "units": 1,
-  "layout": "3 bedrooms",
-  "year_built": 1898,
-  "energy_rating": "D",
-  "operator": "Long-term tenant (family, 6-year lease)",
-  "occupancy_pct": 100,
-  "valuation_eur": 1338000,
-  "share_price_eur": 100,
-  "total_shares": 13380,
-  "offered_shares": 4683,
-  "retained_shares": 8697,
-  "offered_pct": 35,
-  "gross_yield_pct": 3.1,
-  "net_yield_pct": 2.26,
-  "annual_noi_eur": 30279,
-  "monthly_distribution_eur": 2523,
-  "status": "upcoming",
-  "valuation_evidence": {
-   "method": "Comparable sales",
-   "reference": "Median €10,800/m² for apartments in 75016 (1,860 sales in 2024)",
-   "source": "DVF 2024, data.gouv.fr (Licence Ouverte 2.0)",
-   "adjustment": "+5% for condition and floor",
-   "indicative": false
-  },
-  "highlights": [
-   "Classic Haussmann layout, 3.2 m ceilings",
-   "Prime western Paris family district"
-  ],
-  "risks": [
-   "Lower yield typical of prime districts"
-  ],
-  "image_query": "haussmann apartment",
-  "images": [
-   "/img/assets/kst-par-006-0.jpg",
-   "/img/assets/kst-par-006-1.jpg",
-   "/img/assets/kst-par-006-2.jpg"
-  ],
-  "tour": [
-   {
     "pano": "/pano/combination_room.jpg",
     "preview": "/pano/combination_room_preview.jpg",
     "en": "Grand salon",
     "fr": "Le grand salon"
-   },
-   {
-    "pano": "/pano/entrance_hall.jpg",
-    "preview": "/pano/entrance_hall_preview.jpg",
-    "en": "Entrance hall",
-    "fr": "Le vestibule"
    },
    {
     "pano": "/pano/anniversary_lounge.jpg",
@@ -492,404 +408,84 @@
     "preview": "/pano/lythwood_room_preview.jpg",
     "en": "Bedroom",
     "fr": "La chambre"
+   },
+   {
+    "pano": "/pano/treetop_balcony.jpg",
+    "preview": "/pano/treetop_balcony_preview.jpg",
+    "en": "Terrace",
+    "fr": "La terrasse"
    }
   ]
  },
  {
-  "id": "KST-LON-001",
-  "slug": "kst-lon-001",
-  "name": "Camden Lock Loft",
-  "name_fr": "Loft Camden Lock",
-  "tagline": "Canal-side loft a short walk from Camden Market",
-  "tagline_fr": "Loft au bord du canal, près du marché de Camden",
-  "city": "london",
-  "city_name": "London",
-  "country": "United Kingdom",
-  "country_iso": 826,
-  "currency": "GBP",
-  "district": "Camden",
-  "category": "residential",
-  "category_index": 0,
-  "lat": 51.5413,
-  "lon": -0.146,
-  "surface_m2": 74,
-  "units": 1,
-  "layout": "2 bedrooms",
-  "year_built": 1998,
-  "energy_rating": "C",
-  "operator": "Assured shorthold tenancy",
-  "occupancy_pct": 100,
-  "valuation_eur": 866000,
-  "share_price_eur": 50,
-  "total_shares": 17320,
-  "offered_shares": 8660,
-  "retained_shares": 8660,
-  "offered_pct": 50,
-  "gross_yield_pct": 4.4,
-  "net_yield_pct": 3.21,
-  "annual_noi_eur": 27816,
-  "monthly_distribution_eur": 2318,
-  "status": "funded",
-  "valuation_evidence": {
-   "method": "Comparable sales",
-   "reference": "Median flat price £720,000 in Camden (1,854 sales in 2024), size-adjusted",
-   "source": "HM Land Registry Price Paid 2024 (OGL v3.0)",
-   "adjustment": "GBP converted at 1.17 EUR",
-   "indicative": false
-  },
-  "highlights": [
-   "Canal views and a private terrace",
-   "Northern Line and Overground nearby"
-  ],
-  "risks": [
-   "UK rental reform may change tenancy terms"
-  ],
-  "image_query": "london loft apartment",
-  "images": [
-   "/img/assets/kst-lon-001-0.jpg",
-   "/img/assets/kst-lon-001-1.jpg",
-   "/img/assets/kst-lon-001-2.jpg"
-  ],
-  "tour": [
-   {
-    "pano": "/pano/brown_photostudio_01.jpg",
-    "preview": "/pano/brown_photostudio_01_preview.jpg",
-    "en": "The loft",
-    "fr": "Le loft"
-   },
-   {
-    "pano": "/pano/brown_photostudio_03.jpg",
-    "preview": "/pano/brown_photostudio_03_preview.jpg",
-    "en": "Living space",
-    "fr": "L'espace de vie"
-   },
-   {
-    "pano": "/pano/cayley_interior.jpg",
-    "preview": "/pano/cayley_interior_preview.jpg",
-    "en": "Lounge",
-    "fr": "Le salon"
-   },
-   {
-    "pano": "/pano/brown_photostudio_06.jpg",
-    "preview": "/pano/brown_photostudio_06_preview.jpg",
-    "en": "Bedroom",
-    "fr": "La chambre"
-   }
-  ]
- },
- {
-  "id": "KST-LON-002",
-  "slug": "kst-lon-002",
-  "name": "Hackney Warehouse Flats",
-  "name_fr": "Appartements Warehouse Hackney",
-  "tagline": "Six flats in a converted Victorian warehouse",
-  "tagline_fr": "Six appartements dans un entrepôt victorien réhabilité",
-  "city": "london",
-  "city_name": "London",
-  "country": "United Kingdom",
-  "country_iso": 826,
-  "currency": "GBP",
-  "district": "Hackney",
-  "category": "residential",
-  "category_index": 0,
-  "lat": 51.545,
-  "lon": -0.0553,
-  "surface_m2": 410,
-  "units": 6,
-  "layout": "6 flats in a converted warehouse",
-  "year_built": 1905,
-  "energy_rating": "C",
-  "operator": "Managed by a letting agent",
-  "occupancy_pct": 96,
-  "valuation_eur": 3805000,
-  "share_price_eur": 50,
-  "total_shares": 76100,
-  "offered_shares": 41855,
-  "retained_shares": 34245,
-  "offered_pct": 55,
-  "gross_yield_pct": 4.9,
-  "net_yield_pct": 3.58,
-  "annual_noi_eur": 136105,
-  "monthly_distribution_eur": 11342,
-  "status": "funded",
-  "valuation_evidence": {
-   "method": "Comparable sales",
-   "reference": "Median flat price £548,625 in Hackney (1,861 sales in 2024), size-adjusted",
-   "source": "HM Land Registry Price Paid 2024 (OGL v3.0)",
-   "adjustment": "GBP converted at 1.17 EUR",
-   "indicative": false
-  },
-  "highlights": [
-   "Diversified income across 6 tenants",
-   "London Fields park on the doorstep"
-  ],
-  "risks": [
-   "Older building: higher maintenance budget"
-  ],
-  "image_query": "warehouse conversion apartment",
-  "images": [
-   "/img/assets/kst-lon-002-0.jpg",
-   "/img/assets/kst-lon-002-1.jpg",
-   "/img/assets/kst-lon-002-2.jpg"
-  ],
-  "tour": [
-   {
-    "pano": "/pano/photo_studio_london_hall.jpg",
-    "preview": "/pano/photo_studio_london_hall_preview.jpg",
-    "en": "Warehouse flat",
-    "fr": "L'appartement-entrepôt"
-   },
-   {
-    "pano": "/pano/brown_photostudio_06.jpg",
-    "preview": "/pano/brown_photostudio_06_preview.jpg",
-    "en": "Living room",
-    "fr": "Le séjour"
-   },
-   {
-    "pano": "/pano/kiara_interior.jpg",
-    "preview": "/pano/kiara_interior_preview.jpg",
-    "en": "Kitchen",
-    "fr": "La cuisine"
-   },
-   {
-    "pano": "/pano/urban_courtyard.jpg",
-    "preview": "/pano/urban_courtyard_preview.jpg",
-    "en": "Courtyard",
-    "fr": "La cour"
-   }
-  ]
- },
- {
-  "id": "KST-LON-003",
-  "slug": "kst-lon-003",
-  "name": "Southwark Student Quarter",
-  "name_fr": "Quartier étudiant de Southwark",
-  "tagline": "48 en-suite rooms near King's College and LSE",
-  "tagline_fr": "48 chambres avec salle de bain près de King's College et de la LSE",
-  "city": "london",
-  "city_name": "London",
-  "country": "United Kingdom",
-  "country_iso": 826,
-  "currency": "GBP",
-  "district": "Southwark",
-  "category": "student",
-  "category_index": 3,
-  "lat": 51.498,
-  "lon": -0.09,
-  "surface_m2": 1350,
-  "units": 48,
-  "layout": "48 en-suite rooms",
-  "year_built": 2016,
-  "energy_rating": "B",
-  "operator": "Purpose-built student accommodation operator",
-  "occupancy_pct": 98,
-  "valuation_eur": 8367500,
-  "share_price_eur": 50,
-  "total_shares": 167350,
-  "offered_shares": 100410,
-  "retained_shares": 66940,
-  "offered_pct": 60,
-  "gross_yield_pct": 6.71,
-  "net_yield_pct": 4.9,
-  "annual_noi_eur": 410000,
-  "monthly_distribution_eur": 34167,
+  "id": "KST-PAR-002",
+  "slug": "kst-par-002",
+  "name": "Hôtel Particulier Saint-Germain",
+  "name_fr": "Hôtel Particulier Saint-Germain",
+  "tagline": "An 18th-century mansion with 28 suites and a hidden garden",
+  "tagline_fr": "Un hôtel particulier du XVIIIe : 28 suites et un jardin caché",
+  "city": "paris",
+  "city_name": "Paris",
+  "country": "France",
+  "country_iso": 250,
+  "currency": "EUR",
+  "district": "Saint-Germain-des-Prés",
+  "category": "hospitality",
+  "category_index": 1,
+  "lat": 48.8546,
+  "lon": 2.3331,
+  "surface_m2": 2400,
+  "units": 28,
+  "layout": "28-suite five-star hotel, garden, spa",
+  "year_built": 1740,
+  "energy_rating": "D",
+  "operator": "Independent palace operator (management contract)",
+  "occupancy_pct": 79,
+  "valuation_eur": 36000000,
+  "share_price_eur": 250,
+  "total_shares": 144000,
+  "offered_shares": 57600,
+  "retained_shares": 86400,
+  "offered_pct": 40,
+  "gross_yield_pct": 6.16,
+  "net_yield_pct": 4.5,
+  "annual_noi_eur": 1620000,
+  "monthly_distribution_eur": 135000,
   "status": "funded",
   "valuation_evidence": {
    "method": "Income capitalisation",
-   "reference": "Net operating income €410,000 capitalised at 4.9%",
+   "reference": "Net operating income €1,620,000 capitalised at 4.5%",
    "source": "Operator accounts (fictional) and market cap rates",
    "adjustment": "None",
    "indicative": false
   },
   "highlights": [
-   "Fully let for the 2026/27 academic year",
-   "Energy rating B"
+   "79% occupancy at a EUR 890 average daily rate",
+   "Listed mansion with a 400 m² private garden",
+   "Spa and restaurant leased to a starred chef"
   ],
   "risks": [
-   "Dependence on international student numbers"
+   "Listed building: works need heritage approval",
+   "Revenue depends on high-end tourism"
   ],
-  "image_query": "student accommodation room",
+  "image_query": "paris luxury hotel suite",
   "images": [
-   "/img/assets/kst-lon-003-0.jpg",
-   "/img/assets/kst-lon-003-1.jpg",
-   "/img/assets/kst-lon-003-2.jpg"
+   "/img/assets/kst-par-002-0.jpg",
+   "/img/assets/kst-par-002-1.jpg",
+   "/img/assets/kst-par-002-2.jpg"
   ],
   "tour": [
    {
-    "pano": "/pano/newman_lobby.jpg",
-    "preview": "/pano/newman_lobby_preview.jpg",
+    "pano": "/pano/entrance_hall.jpg",
+    "preview": "/pano/entrance_hall_preview.jpg",
     "en": "Lobby",
     "fr": "Le hall"
    },
    {
-    "pano": "/pano/small_empty_room_3.jpg",
-    "preview": "/pano/small_empty_room_3_preview.jpg",
-    "en": "Studio",
-    "fr": "Le studio"
-   },
-   {
-    "pano": "/pano/newman_cafeteria.jpg",
-    "preview": "/pano/newman_cafeteria_preview.jpg",
-    "en": "Canteen",
-    "fr": "La cantine"
-   },
-   {
-    "pano": "/pano/urban_courtyard_02.jpg",
-    "preview": "/pano/urban_courtyard_02_preview.jpg",
-    "en": "Courtyard",
-    "fr": "La cour"
-   }
-  ]
- },
- {
-  "id": "KST-LON-004",
-  "slug": "kst-lon-004",
-  "name": "Shoreditch Studio Offices",
-  "name_fr": "Bureaux Shoreditch Studio",
-  "tagline": "A loft office floor in the heart of Tech City",
-  "tagline_fr": "Un plateau de bureaux loft au cœur de la Tech City",
-  "city": "london",
-  "city_name": "London",
-  "country": "United Kingdom",
-  "country_iso": 826,
-  "currency": "GBP",
-  "district": "Shoreditch",
-  "category": "commercial",
-  "category_index": 2,
-  "lat": 51.526,
-  "lon": -0.078,
-  "surface_m2": 640,
-  "units": 1,
-  "layout": "Creative office floor",
-  "year_built": 1924,
-  "energy_rating": "C",
-  "operator": "Design agency (10-year lease)",
-  "occupancy_pct": 100,
-  "valuation_eur": 4727000,
-  "share_price_eur": 100,
-  "total_shares": 47270,
-  "offered_shares": 23635,
-  "retained_shares": 23635,
-  "offered_pct": 50,
-  "gross_yield_pct": 7.53,
-  "net_yield_pct": 5.5,
-  "annual_noi_eur": 260000,
-  "monthly_distribution_eur": 21667,
-  "status": "live",
-  "valuation_evidence": {
-   "method": "Income capitalisation",
-   "reference": "Net operating income €260,000 capitalised at 5.5%",
-   "source": "Operator accounts (fictional) and market cap rates",
-   "adjustment": "None",
-   "indicative": false
-  },
-  "highlights": [
-   "10-year lease with a 5-year break",
-   "Upward-only rent reviews"
-  ],
-  "risks": [
-   "Office demand uncertainty with hybrid work"
-  ],
-  "image_query": "modern office loft",
-  "images": [
-   "/img/assets/kst-lon-004-0.jpg",
-   "/img/assets/kst-lon-004-1.jpg",
-   "/img/assets/kst-lon-004-2.jpg"
-  ],
-  "tour": [
-   {
-    "pano": "/pano/art_studio.jpg",
-    "preview": "/pano/art_studio_preview.jpg",
-    "en": "Studio floor",
-    "fr": "Le plateau"
-   },
-   {
-    "pano": "/pano/poly_haven_studio.jpg",
-    "preview": "/pano/poly_haven_studio_preview.jpg",
-    "en": "Office",
-    "fr": "Le bureau"
-   },
-   {
-    "pano": "/pano/events_hall_interior.jpg",
-    "preview": "/pano/events_hall_interior_preview.jpg",
-    "en": "Event hall",
-    "fr": "La salle d'événements"
-   },
-   {
-    "pano": "/pano/unfinished_office.jpg",
-    "preview": "/pano/unfinished_office_preview.jpg",
-    "en": "Meeting room",
-    "fr": "La salle de réunion"
-   }
-  ]
- },
- {
-  "id": "KST-LON-005",
-  "slug": "kst-lon-005",
-  "name": "Kensington Mews Hotel",
-  "name_fr": "Hôtel Kensington Mews",
-  "tagline": "A townhouse hotel near the museums of South Kensington",
-  "tagline_fr": "Un hôtel particulier près des musées de South Kensington",
-  "city": "london",
-  "city_name": "London",
-  "country": "United Kingdom",
-  "country_iso": 826,
-  "currency": "GBP",
-  "district": "Kensington",
-  "category": "hospitality",
-  "category_index": 1,
-  "lat": 51.499,
-  "lon": -0.193,
-  "surface_m2": 900,
-  "units": 16,
-  "layout": "16-room townhouse hotel",
-  "year_built": 1860,
-  "energy_rating": "D",
-  "operator": "Boutique hotel group (lease)",
-  "occupancy_pct": 84,
-  "valuation_eur": 10833000,
-  "share_price_eur": 100,
-  "total_shares": 108330,
-  "offered_shares": 43332,
-  "retained_shares": 64998,
-  "offered_pct": 40,
-  "gross_yield_pct": 6.58,
-  "net_yield_pct": 4.8,
-  "annual_noi_eur": 520000,
-  "monthly_distribution_eur": 43333,
-  "status": "live",
-  "valuation_evidence": {
-   "method": "Income capitalisation",
-   "reference": "Net operating income €520,000 capitalised at 4.8%",
-   "source": "Operator accounts (fictional) and market cap rates",
-   "adjustment": "None",
-   "indicative": false
-  },
-  "highlights": [
-   "£290 average daily rate",
-   "Walking distance to the V&A and Hyde Park"
-  ],
-  "risks": [
-   "Listed building: strict planning constraints"
-  ],
-  "image_query": "townhouse hotel london",
-  "images": [
-   "/img/assets/kst-lon-005-0.jpg",
-   "/img/assets/kst-lon-005-1.jpg",
-   "/img/assets/kst-lon-005-2.jpg"
-  ],
-  "tour": [
-   {
-    "pano": "/pano/country_club.jpg",
-    "preview": "/pano/country_club_preview.jpg",
-    "en": "Lobby lounge",
-    "fr": "Le salon du hall"
-   },
-   {
     "pano": "/pano/ballroom.jpg",
     "preview": "/pano/ballroom_preview.jpg",
-    "en": "Ballroom",
-    "fr": "La salle de bal"
+    "en": "Salon d'honneur",
+    "fr": "Le salon d'honneur"
    },
    {
     "pano": "/pano/relax_inn_seaview_suite.jpg",
@@ -898,73 +494,573 @@
     "fr": "La suite"
    },
    {
-    "pano": "/pano/indoor_pool.jpg",
-    "preview": "/pano/indoor_pool_preview.jpg",
-    "en": "Spa",
-    "fr": "Le spa"
+    "pano": "/pano/warm_restaurant.jpg",
+    "preview": "/pano/warm_restaurant_preview.jpg",
+    "en": "Restaurant",
+    "fr": "Le restaurant"
    }
   ]
  },
  {
-  "id": "KST-LON-006",
-  "slug": "kst-lon-006",
-  "name": "Islington Garden Maisonette",
-  "name_fr": "Maisonnette avec jardin à Islington",
-  "tagline": "Georgian maisonette with a private garden",
-  "tagline_fr": "Maisonnette géorgienne avec jardin privé",
+  "id": "KST-PAR-003",
+  "slug": "kst-par-003",
+  "name": "Saint-Honoré Flagship",
+  "name_fr": "Flagship Saint-Honoré",
+  "tagline": "A couture boutique on Rue Saint-Honoré",
+  "tagline_fr": "Une boutique de couture rue Saint-Honoré",
+  "city": "paris",
+  "city_name": "Paris",
+  "country": "France",
+  "country_iso": 250,
+  "currency": "EUR",
+  "district": "Rue Saint-Honoré",
+  "category": "commercial",
+  "category_index": 2,
+  "lat": 48.8662,
+  "lon": 2.3275,
+  "surface_m2": 420,
+  "units": 1,
+  "layout": "Two-level luxury boutique",
+  "year_built": 1870,
+  "energy_rating": "D",
+  "operator": "Couture maison (lease 3-6-9)",
+  "occupancy_pct": 100,
+  "valuation_eur": 29487500,
+  "share_price_eur": 250,
+  "total_shares": 117950,
+  "offered_shares": 53077,
+  "retained_shares": 64873,
+  "offered_pct": 45,
+  "gross_yield_pct": 5.34,
+  "net_yield_pct": 3.9,
+  "annual_noi_eur": 1150000,
+  "monthly_distribution_eur": 95833,
+  "status": "live",
+  "valuation_evidence": {
+   "method": "Income capitalisation",
+   "reference": "Net operating income €1,150,000 capitalised at 3.9%",
+   "source": "Operator accounts (fictional) and market cap rates",
+   "adjustment": "None",
+   "indicative": false
+  },
+  "highlights": [
+   "Tenant in place since 2016, lease renewed in 2025",
+   "9 m of frontage near Place Vendôme"
+  ],
+  "risks": [
+   "Single-tenant income",
+   "Luxury retail depends on international visitors"
+  ],
+  "image_query": "paris luxury boutique",
+  "images": [
+   "/img/assets/kst-par-003-0.jpg",
+   "/img/assets/kst-par-003-1.jpg",
+   "/img/assets/kst-par-003-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/decor_shop.jpg",
+    "preview": "/pano/decor_shop_preview.jpg",
+    "en": "Boutique",
+    "fr": "La boutique"
+   },
+   {
+    "pano": "/pano/large_corridor.jpg",
+    "preview": "/pano/large_corridor_preview.jpg",
+    "en": "Gallery",
+    "fr": "La galerie"
+   },
+   {
+    "pano": "/pano/comfy_cafe.jpg",
+    "preview": "/pano/comfy_cafe_preview.jpg",
+    "en": "Private salon",
+    "fr": "Le salon privé"
+   },
+   {
+    "pano": "/pano/art_studio.jpg",
+    "preview": "/pano/art_studio_preview.jpg",
+    "en": "Atelier",
+    "fr": "L'atelier"
+   }
+  ]
+ },
+ {
+  "id": "KST-PAR-004",
+  "slug": "kst-par-004",
+  "name": "Quai d'Anjou Residence",
+  "name_fr": "Résidence Quai d'Anjou",
+  "tagline": "Seine views from a 17th-century quay",
+  "tagline_fr": "Vue sur la Seine depuis un quai du XVIIe siècle",
+  "city": "paris",
+  "city_name": "Paris",
+  "country": "France",
+  "country_iso": 250,
+  "currency": "EUR",
+  "district": "Île Saint-Louis",
+  "category": "residential",
+  "category_index": 0,
+  "lat": 48.8527,
+  "lon": 2.3585,
+  "surface_m2": 168,
+  "units": 1,
+  "layout": "3 bedrooms on the Seine, 3.6 m ceilings",
+  "year_built": 1642,
+  "energy_rating": "D",
+  "operator": "Long-term tenant (6-year lease)",
+  "occupancy_pct": 100,
+  "valuation_eur": 2230000,
+  "share_price_eur": 100,
+  "total_shares": 22300,
+  "offered_shares": 8920,
+  "retained_shares": 13380,
+  "offered_pct": 40,
+  "gross_yield_pct": 3.0,
+  "net_yield_pct": 2.19,
+  "annual_noi_eur": 48837,
+  "monthly_distribution_eur": 4070,
+  "status": "live",
+  "valuation_evidence": {
+   "method": "Comparable sales",
+   "reference": "Median €12,640/m² for apartments in 75004 (431 sales in 2024)",
+   "source": "DVF 2024, data.gouv.fr (Licence Ouverte 2.0)",
+   "adjustment": "+5% for condition and floor",
+   "indicative": false
+  },
+  "highlights": [
+   "Five windows on the Seine",
+   "Period panelling and Versailles parquet restored in 2023"
+  ],
+  "risks": [
+   "Listed building with strict renovation rules",
+   "Flood-zone insurance premium"
+  ],
+  "image_query": "paris classic apartment interior",
+  "images": [
+   "/img/assets/kst-par-004-0.jpg",
+   "/img/assets/kst-par-004-1.jpg",
+   "/img/assets/kst-par-004-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/old_room.jpg",
+    "preview": "/pano/old_room_preview.jpg",
+    "en": "Salon",
+    "fr": "Le salon"
+   },
+   {
+    "pano": "/pano/reading_room.jpg",
+    "preview": "/pano/reading_room_preview.jpg",
+    "en": "Library",
+    "fr": "La bibliothèque"
+   },
+   {
+    "pano": "/pano/brown_photostudio_05.jpg",
+    "preview": "/pano/brown_photostudio_05_preview.jpg",
+    "en": "Bedroom",
+    "fr": "La chambre"
+   },
+   {
+    "pano": "/pano/studio_country_hall.jpg",
+    "preview": "/pano/studio_country_hall_preview.jpg",
+    "en": "Hall",
+    "fr": "Le hall"
+   }
+  ]
+ },
+ {
+  "id": "KST-DXB-001",
+  "slug": "kst-dxb-001",
+  "name": "Palm Signature Villas",
+  "name_fr": "Villas Signature de la Palm",
+  "tagline": "Six beachfront villas on the Palm's outer frond",
+  "tagline_fr": "Six villas pieds dans l'eau sur la Palm",
+  "city": "dubai",
+  "city_name": "Dubai",
+  "country": "United Arab Emirates",
+  "country_iso": 784,
+  "currency": "AED",
+  "district": "Palm Jumeirah",
+  "category": "resort",
+  "category_index": 3,
+  "lat": 25.1124,
+  "lon": 55.139,
+  "surface_m2": 5400,
+  "units": 6,
+  "layout": "6 beachfront villas with private pools",
+  "year_built": 2018,
+  "energy_rating": "B",
+  "operator": "Resort management company",
+  "occupancy_pct": 77,
+  "valuation_eur": 34375000,
+  "share_price_eur": 250,
+  "total_shares": 137500,
+  "offered_shares": 55000,
+  "retained_shares": 82500,
+  "offered_pct": 40,
+  "gross_yield_pct": 8.77,
+  "net_yield_pct": 6.4,
+  "annual_noi_eur": 2200000,
+  "monthly_distribution_eur": 183333,
+  "status": "funded",
+  "valuation_evidence": {
+   "method": "Income capitalisation",
+   "reference": "Net operating income €2,200,000 capitalised at 6.4%",
+   "source": "Operator accounts (fictional) and market cap rates",
+   "adjustment": "None",
+   "indicative": true
+  },
+  "highlights": [
+   "Private beach and pool for every villa",
+   "Average nightly rate above AED 14,000",
+   "Managed with hotel services and a guaranteed floor"
+  ],
+  "risks": [
+   "Seasonal demand: summer occupancy falls sharply",
+   "New supply on the Palm could pressure rates"
+  ],
+  "image_query": "dubai beach villa pool",
+  "images": [
+   "/img/assets/kst-dxb-001-0.jpg",
+   "/img/assets/kst-dxb-001-1.jpg",
+   "/img/assets/kst-dxb-001-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/pool.jpg",
+    "preview": "/pano/pool_preview.jpg",
+    "en": "Private pool",
+    "fr": "La piscine privée"
+   },
+   {
+    "pano": "/pano/lapa.jpg",
+    "preview": "/pano/lapa_preview.jpg",
+    "en": "Pool lounge",
+    "fr": "Le salon de piscine"
+   },
+   {
+    "pano": "/pano/sundowner_deck.jpg",
+    "preview": "/pano/sundowner_deck_preview.jpg",
+    "en": "Sunset deck",
+    "fr": "La terrasse du couchant"
+   },
+   {
+    "pano": "/pano/relax_inn_seaview_suite.jpg",
+    "preview": "/pano/relax_inn_seaview_suite_preview.jpg",
+    "en": "Master suite",
+    "fr": "La suite"
+   }
+  ]
+ },
+ {
+  "id": "KST-DXB-002",
+  "slug": "kst-dxb-002",
+  "name": "Burj Vista Penthouse",
+  "name_fr": "Penthouse Burj Vista",
+  "tagline": "A duplex penthouse facing Burj Khalifa",
+  "tagline_fr": "Un penthouse en duplex face à la Burj Khalifa",
+  "city": "dubai",
+  "city_name": "Dubai",
+  "country": "United Arab Emirates",
+  "country_iso": 784,
+  "currency": "AED",
+  "district": "Downtown Dubai",
+  "category": "residential",
+  "category_index": 0,
+  "lat": 25.1951,
+  "lon": 55.2796,
+  "surface_m2": 420,
+  "units": 1,
+  "layout": "4 bedrooms facing Burj Khalifa",
+  "year_built": 2020,
+  "energy_rating": "B",
+  "operator": "Furnished executive rental",
+  "occupancy_pct": 100,
+  "valuation_eur": 4410000,
+  "share_price_eur": 100,
+  "total_shares": 44100,
+  "offered_shares": 22050,
+  "retained_shares": 22050,
+  "offered_pct": 50,
+  "gross_yield_pct": 5.6,
+  "net_yield_pct": 4.09,
+  "annual_noi_eur": 180281,
+  "monthly_distribution_eur": 15023,
+  "status": "funded",
+  "valuation_evidence": {
+   "method": "Indicative price per m²",
+   "reference": "Indicative €10,500/m² for Downtown Dubai",
+   "source": "Keystonia indicative estimate (no open transaction dataset for this market)",
+   "adjustment": "None",
+   "indicative": true
+  },
+  "highlights": [
+   "Unobstructed Burj Khalifa and fountain view",
+   "No income tax on rents in the UAE"
+  ],
+  "risks": [
+   "Dubai prices are volatile across cycles",
+   "Service charges are high in tower residences"
+  ],
+  "image_query": "dubai penthouse view",
+  "images": [
+   "/img/assets/kst-dxb-002-0.jpg",
+   "/img/assets/kst-dxb-002-1.jpg",
+   "/img/assets/kst-dxb-002-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/glasshouse_interior.jpg",
+    "preview": "/pano/glasshouse_interior_preview.jpg",
+    "en": "Living room",
+    "fr": "Le séjour"
+   },
+   {
+    "pano": "/pano/cayley_interior.jpg",
+    "preview": "/pano/cayley_interior_preview.jpg",
+    "en": "Lounge",
+    "fr": "Le salon"
+   },
+   {
+    "pano": "/pano/modern_bathroom.jpg",
+    "preview": "/pano/modern_bathroom_preview.jpg",
+    "en": "Bathroom",
+    "fr": "La salle de bain"
+   },
+   {
+    "pano": "/pano/hotel_rooftop_balcony.jpg",
+    "preview": "/pano/hotel_rooftop_balcony_preview.jpg",
+    "en": "Terrace",
+    "fr": "La terrasse"
+   }
+  ]
+ },
+ {
+  "id": "KST-DXB-003",
+  "slug": "kst-dxb-003",
+  "name": "Marina Yacht Club Hotel",
+  "name_fr": "Hôtel Marina Yacht Club",
+  "tagline": "A five-star hotel with its own yacht berths",
+  "tagline_fr": "Un cinq étoiles avec ses propres anneaux de yacht",
+  "city": "dubai",
+  "city_name": "Dubai",
+  "country": "United Arab Emirates",
+  "country_iso": 784,
+  "currency": "AED",
+  "district": "Dubai Marina",
+  "category": "hospitality",
+  "category_index": 1,
+  "lat": 25.0805,
+  "lon": 55.1403,
+  "surface_m2": 9800,
+  "units": 80,
+  "layout": "80-key five-star hotel with 12 berths",
+  "year_built": 2016,
+  "energy_rating": "B",
+  "operator": "International five-star brand (franchise)",
+  "occupancy_pct": 81,
+  "valuation_eur": 50000000,
+  "share_price_eur": 250,
+  "total_shares": 200000,
+  "offered_shares": 70000,
+  "retained_shares": 130000,
+  "offered_pct": 35,
+  "gross_yield_pct": 9.32,
+  "net_yield_pct": 6.8,
+  "annual_noi_eur": 3400000,
+  "monthly_distribution_eur": 283333,
+  "status": "live",
+  "valuation_evidence": {
+   "method": "Income capitalisation",
+   "reference": "Net operating income €3,400,000 capitalised at 6.8%",
+   "source": "Operator accounts (fictional) and market cap rates",
+   "adjustment": "None",
+   "indicative": true
+  },
+  "highlights": [
+   "81% occupancy, 12 superyacht berths",
+   "Three restaurants and a beach club"
+  ],
+  "risks": [
+   "Hotel supply in Dubai keeps growing",
+   "Brand franchise fees reduce margins"
+  ],
+  "image_query": "dubai marina hotel",
+  "images": [
+   "/img/assets/kst-dxb-003-0.jpg",
+   "/img/assets/kst-dxb-003-1.jpg",
+   "/img/assets/kst-dxb-003-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/country_club.jpg",
+    "preview": "/pano/country_club_preview.jpg",
+    "en": "Lobby lounge",
+    "fr": "Le salon du lobby"
+   },
+   {
+    "pano": "/pano/indoor_pool.jpg",
+    "preview": "/pano/indoor_pool_preview.jpg",
+    "en": "Spa",
+    "fr": "Le spa"
+   },
+   {
+    "pano": "/pano/hotel_room.jpg",
+    "preview": "/pano/hotel_room_preview.jpg",
+    "en": "Room",
+    "fr": "La chambre"
+   },
+   {
+    "pano": "/pano/aft_lounge.jpg",
+    "preview": "/pano/aft_lounge_preview.jpg",
+    "en": "Yacht club lounge",
+    "fr": "Le salon du yacht club"
+   }
+  ]
+ },
+ {
+  "id": "KST-DXB-004",
+  "slug": "kst-dxb-004",
+  "name": "DIFC Dining Pavilion",
+  "name_fr": "Pavillon gastronomique DIFC",
+  "tagline": "Three fine-dining venues in the financial district",
+  "tagline_fr": "Trois tables gastronomiques dans le quartier financier",
+  "city": "dubai",
+  "city_name": "Dubai",
+  "country": "United Arab Emirates",
+  "country_iso": 784,
+  "currency": "AED",
+  "district": "DIFC",
+  "category": "commercial",
+  "category_index": 2,
+  "lat": 25.2131,
+  "lon": 55.2796,
+  "surface_m2": 1350,
+  "units": 3,
+  "layout": "Three fine-dining venues",
+  "year_built": 2022,
+  "energy_rating": "A",
+  "operator": "Three restaurant groups (10-year leases)",
+  "occupancy_pct": 100,
+  "valuation_eur": 15000000,
+  "share_price_eur": 100,
+  "total_shares": 150000,
+  "offered_shares": 67500,
+  "retained_shares": 82500,
+  "offered_pct": 45,
+  "gross_yield_pct": 8.22,
+  "net_yield_pct": 6.0,
+  "annual_noi_eur": 900000,
+  "monthly_distribution_eur": 75000,
+  "status": "live",
+  "valuation_evidence": {
+   "method": "Income capitalisation",
+   "reference": "Net operating income €900,000 capitalised at 6.0%",
+   "source": "Operator accounts (fictional) and market cap rates",
+   "adjustment": "None",
+   "indicative": true
+  },
+  "highlights": [
+   "Base rent plus a share of turnover",
+   "Fully let on 10-year leases"
+  ],
+  "risks": [
+   "Restaurant tenants fail more often than retailers",
+   "Turnover rent varies with the season"
+  ],
+  "image_query": "fine dining restaurant interior",
+  "images": [
+   "/img/assets/kst-dxb-004-0.jpg",
+   "/img/assets/kst-dxb-004-1.jpg",
+   "/img/assets/kst-dxb-004-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/warm_restaurant.jpg",
+    "preview": "/pano/warm_restaurant_preview.jpg",
+    "en": "Dining room",
+    "fr": "La salle"
+   },
+   {
+    "pano": "/pano/warm_bar.jpg",
+    "preview": "/pano/warm_bar_preview.jpg",
+    "en": "Bar",
+    "fr": "Le bar"
+   },
+   {
+    "pano": "/pano/wooden_lounge.jpg",
+    "preview": "/pano/wooden_lounge_preview.jpg",
+    "en": "Lounge",
+    "fr": "Le salon"
+   },
+   {
+    "pano": "/pano/sundowner_deck.jpg",
+    "preview": "/pano/sundowner_deck_preview.jpg",
+    "en": "Terrace",
+    "fr": "La terrasse"
+   }
+  ]
+ },
+ {
+  "id": "KST-LON-001",
+  "slug": "kst-lon-001",
+  "name": "Chelsea Garden Townhouse",
+  "name_fr": "Townhouse avec jardin à Chelsea",
+  "tagline": "A stucco townhouse off the King's Road",
+  "tagline_fr": "Une townhouse en stuc près de King's Road",
   "city": "london",
   "city_name": "London",
   "country": "United Kingdom",
   "country_iso": 826,
   "currency": "GBP",
-  "district": "Islington",
+  "district": "Chelsea",
   "category": "residential",
   "category_index": 0,
-  "lat": 51.538,
-  "lon": -0.103,
-  "surface_m2": 96,
-  "units": 1,
-  "layout": "3 bedrooms with garden",
-  "year_built": 1850,
-  "energy_rating": "D",
-  "operator": "Assured shorthold tenancy",
+  "lat": 51.4875,
+  "lon": -0.1687,
+  "surface_m2": 420,
+  "units": 3,
+  "layout": "Three lateral apartments and a private garden",
+  "year_built": 1856,
+  "energy_rating": "C",
+  "operator": "Assured shorthold tenancies",
   "occupancy_pct": 100,
-  "valuation_eur": 849500,
-  "share_price_eur": 50,
-  "total_shares": 16990,
-  "offered_shares": 7645,
-  "retained_shares": 9345,
+  "valuation_eur": 5014000,
+  "share_price_eur": 100,
+  "total_shares": 50140,
+  "offered_shares": 22563,
+  "retained_shares": 27577,
   "offered_pct": 45,
-  "gross_yield_pct": 3.9,
-  "net_yield_pct": 2.85,
-  "annual_noi_eur": 24185,
-  "monthly_distribution_eur": 2015,
-  "status": "upcoming",
+  "gross_yield_pct": 3.3,
+  "net_yield_pct": 2.41,
+  "annual_noi_eur": 120787,
+  "monthly_distribution_eur": 10066,
+  "status": "funded",
   "valuation_evidence": {
    "method": "Comparable sales",
-   "reference": "Median flat price £620,000 in Islington (1,809 sales in 2024), size-adjusted",
+   "reference": "Median flat price £1,010,000 in Kensington And Chelsea (1,415 sales in 2024), size-adjusted",
    "source": "HM Land Registry Price Paid 2024 (OGL v3.0)",
    "adjustment": "GBP converted at 1.17 EUR",
    "indicative": false
   },
   "highlights": [
-   "Rare private garden in Zone 1-2",
-   "Upper Street shops nearby"
+   "Three lateral apartments, all let",
+   "South-facing private garden"
   ],
   "risks": [
-   "Period property: higher upkeep"
+   "Stamp duty and regulation changes affect prime London",
+   "Period building: higher maintenance"
   ],
-  "image_query": "garden flat london",
+  "image_query": "london townhouse interior",
   "images": [
-   "/img/assets/kst-lon-006-0.jpg",
-   "/img/assets/kst-lon-006-1.jpg",
-   "/img/assets/kst-lon-006-2.jpg"
+   "/img/assets/kst-lon-001-0.jpg",
+   "/img/assets/kst-lon-001-1.jpg",
+   "/img/assets/kst-lon-001-2.jpg"
   ],
   "tour": [
    {
     "pano": "/pano/lythwood_lounge.jpg",
     "preview": "/pano/lythwood_lounge_preview.jpg",
-    "en": "Lounge",
+    "en": "Drawing room",
     "fr": "Le salon"
    },
    {
@@ -988,12 +1084,261 @@
   ]
  },
  {
+  "id": "KST-LON-002",
+  "slug": "kst-lon-002",
+  "name": "Mayfair Townhouse Hotel",
+  "name_fr": "Hôtel Townhouse Mayfair",
+  "tagline": "Six Georgian townhouses, one five-star hotel",
+  "tagline_fr": "Six maisons géorgiennes, un seul cinq étoiles",
+  "city": "london",
+  "city_name": "London",
+  "country": "United Kingdom",
+  "country_iso": 826,
+  "currency": "GBP",
+  "district": "Mayfair",
+  "category": "hospitality",
+  "category_index": 1,
+  "lat": 51.5099,
+  "lon": -0.1478,
+  "surface_m2": 3600,
+  "units": 42,
+  "layout": "42-key five-star townhouse hotel",
+  "year_built": 1785,
+  "energy_rating": "D",
+  "operator": "Boutique hotel group (lease)",
+  "occupancy_pct": 83,
+  "valuation_eur": 50000000,
+  "share_price_eur": 250,
+  "total_shares": 200000,
+  "offered_shares": 70000,
+  "retained_shares": 130000,
+  "offered_pct": 35,
+  "gross_yield_pct": 6.58,
+  "net_yield_pct": 4.8,
+  "annual_noi_eur": 2400000,
+  "monthly_distribution_eur": 200000,
+  "status": "funded",
+  "valuation_evidence": {
+   "method": "Income capitalisation",
+   "reference": "Net operating income €2,400,000 capitalised at 4.8%",
+   "source": "Operator accounts (fictional) and market cap rates",
+   "adjustment": "None",
+   "indicative": false
+  },
+  "highlights": [
+   "83% occupancy at a GBP 640 average daily rate",
+   "25-year lease with a turnover top-up"
+  ],
+  "risks": [
+   "Listed buildings limit alterations",
+   "Income is exposed to GBP"
+  ],
+  "image_query": "london luxury hotel",
+  "images": [
+   "/img/assets/kst-lon-002-0.jpg",
+   "/img/assets/kst-lon-002-1.jpg",
+   "/img/assets/kst-lon-002-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/country_club.jpg",
+    "preview": "/pano/country_club_preview.jpg",
+    "en": "Lobby",
+    "fr": "Le lobby"
+   },
+   {
+    "pano": "/pano/ballroom.jpg",
+    "preview": "/pano/ballroom_preview.jpg",
+    "en": "Ballroom",
+    "fr": "La salle de bal"
+   },
+   {
+    "pano": "/pano/hotel_room.jpg",
+    "preview": "/pano/hotel_room_preview.jpg",
+    "en": "Room",
+    "fr": "La chambre"
+   },
+   {
+    "pano": "/pano/warm_bar.jpg",
+    "preview": "/pano/warm_bar_preview.jpg",
+    "en": "Bar",
+    "fr": "Le bar"
+   }
+  ]
+ },
+ {
+  "id": "KST-LON-003",
+  "slug": "kst-lon-003",
+  "name": "Belgravia Mews Residences",
+  "name_fr": "Résidences Belgravia Mews",
+  "tagline": "Four mews houses on a private cobbled lane",
+  "tagline_fr": "Quatre mews houses sur une allée pavée privée",
+  "city": "london",
+  "city_name": "London",
+  "country": "United Kingdom",
+  "country_iso": 826,
+  "currency": "GBP",
+  "district": "Belgravia",
+  "category": "residential",
+  "category_index": 0,
+  "lat": 51.4977,
+  "lon": -0.1526,
+  "surface_m2": 520,
+  "units": 4,
+  "layout": "Four mews houses around a cobbled lane",
+  "year_built": 1830,
+  "energy_rating": "C",
+  "operator": "Long-term tenants",
+  "occupancy_pct": 100,
+  "valuation_eur": 5581000,
+  "share_price_eur": 100,
+  "total_shares": 55810,
+  "offered_shares": 27905,
+  "retained_shares": 27905,
+  "offered_pct": 50,
+  "gross_yield_pct": 3.5,
+  "net_yield_pct": 2.55,
+  "annual_noi_eur": 142595,
+  "monthly_distribution_eur": 11883,
+  "status": "funded",
+  "valuation_evidence": {
+   "method": "Comparable sales",
+   "reference": "Median flat price £875,000 in City Of Westminster (2,072 sales in 2024), size-adjusted",
+   "source": "HM Land Registry Price Paid 2024 (OGL v3.0)",
+   "adjustment": "GBP converted at 1.17 EUR",
+   "indicative": false
+  },
+  "highlights": [
+   "Private gated lane",
+   "All four houses refurbished in 2024"
+  ],
+  "risks": [
+   "Low yield typical of Belgravia",
+   "Leasehold with ground rent to the estate"
+  ],
+  "image_query": "london mews house",
+  "images": [
+   "/img/assets/kst-lon-003-0.jpg",
+   "/img/assets/kst-lon-003-1.jpg",
+   "/img/assets/kst-lon-003-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/brown_photostudio_02.jpg",
+    "preview": "/pano/brown_photostudio_02_preview.jpg",
+    "en": "Living room",
+    "fr": "Le séjour"
+   },
+   {
+    "pano": "/pano/fireplace.jpg",
+    "preview": "/pano/fireplace_preview.jpg",
+    "en": "Sitting room",
+    "fr": "Le petit salon"
+   },
+   {
+    "pano": "/pano/brown_photostudio_07.jpg",
+    "preview": "/pano/brown_photostudio_07_preview.jpg",
+    "en": "Bedroom",
+    "fr": "La chambre"
+   },
+   {
+    "pano": "/pano/stone_alley.jpg",
+    "preview": "/pano/stone_alley_preview.jpg",
+    "en": "The mews",
+    "fr": "L'allée"
+   }
+  ]
+ },
+ {
+  "id": "KST-LON-004",
+  "slug": "kst-lon-004",
+  "name": "Bond Street Gallery",
+  "name_fr": "Galerie Bond Street",
+  "tagline": "A gallery and a members' dining club on Bond Street",
+  "tagline_fr": "Une galerie d'art et un club privé sur Bond Street",
+  "city": "london",
+  "city_name": "London",
+  "country": "United Kingdom",
+  "country_iso": 826,
+  "currency": "GBP",
+  "district": "Bond Street",
+  "category": "commercial",
+  "category_index": 2,
+  "lat": 51.5124,
+  "lon": -0.1447,
+  "surface_m2": 640,
+  "units": 2,
+  "layout": "Art gallery and private dining club",
+  "year_built": 1904,
+  "energy_rating": "C",
+  "operator": "Gallery and members' club (15-year leases)",
+  "occupancy_pct": 100,
+  "valuation_eur": 23333000,
+  "share_price_eur": 100,
+  "total_shares": 233330,
+  "offered_shares": 104998,
+  "retained_shares": 128332,
+  "offered_pct": 45,
+  "gross_yield_pct": 5.75,
+  "net_yield_pct": 4.2,
+  "annual_noi_eur": 980000,
+  "monthly_distribution_eur": 81667,
+  "status": "live",
+  "valuation_evidence": {
+   "method": "Income capitalisation",
+   "reference": "Net operating income €980,000 capitalised at 4.2%",
+   "source": "Operator accounts (fictional) and market cap rates",
+   "adjustment": "None",
+   "indicative": false
+  },
+  "highlights": [
+   "Two tenants on 15-year leases",
+   "Upward-only rent reviews every five years"
+  ],
+  "risks": [
+   "Art-market tenants are cyclical",
+   "Business rates revaluation risk"
+  ],
+  "image_query": "art gallery interior",
+  "images": [
+   "/img/assets/kst-lon-004-0.jpg",
+   "/img/assets/kst-lon-004-1.jpg",
+   "/img/assets/kst-lon-004-2.jpg"
+  ],
+  "tour": [
+   {
+    "pano": "/pano/art_studio.jpg",
+    "preview": "/pano/art_studio_preview.jpg",
+    "en": "Gallery",
+    "fr": "La galerie"
+   },
+   {
+    "pano": "/pano/large_corridor.jpg",
+    "preview": "/pano/large_corridor_preview.jpg",
+    "en": "Enfilade",
+    "fr": "L'enfilade"
+   },
+   {
+    "pano": "/pano/warm_restaurant.jpg",
+    "preview": "/pano/warm_restaurant_preview.jpg",
+    "en": "Members' dining",
+    "fr": "La salle du club"
+   },
+   {
+    "pano": "/pano/music_hall_02.jpg",
+    "preview": "/pano/music_hall_02_preview.jpg",
+    "en": "Salon",
+    "fr": "Le salon"
+   }
+  ]
+ },
+ {
   "id": "KST-RAK-001",
   "slug": "kst-rak-001",
   "name": "Riad Dar Zellij",
   "name_fr": "Riad Dar Zellij",
-  "tagline": "Seven suites around a zellige courtyard and plunge pool",
-  "tagline_fr": "Sept suites autour d'un patio en zellige et d'une piscine",
+  "tagline": "Twelve suites around a zellige patio and pool",
+  "tagline_fr": "Douze suites autour d'un patio en zellige et d'un bassin",
   "city": "marrakech",
   "city_name": "Marrakech",
   "country": "Morocco",
@@ -1002,42 +1347,43 @@
   "district": "Medina",
   "category": "hospitality",
   "category_index": 1,
-  "lat": 31.631,
-  "lon": -7.989,
-  "surface_m2": 420,
-  "units": 7,
-  "layout": "7-suite riad",
-  "year_built": 1920,
+  "lat": 31.6312,
+  "lon": -7.9866,
+  "surface_m2": 1100,
+  "units": 12,
+  "layout": "12-suite five-star riad, patio pool, hammam",
+  "year_built": 1820,
   "energy_rating": "-",
-  "operator": "Guesthouse operator (management contract)",
+  "operator": "Riad operator (management contract)",
   "occupancy_pct": 78,
-  "valuation_eur": 838000,
+  "valuation_eur": 7428500,
   "share_price_eur": 50,
-  "total_shares": 16760,
-  "offered_shares": 8380,
-  "retained_shares": 8380,
-  "offered_pct": 50,
-  "gross_yield_pct": 10.14,
-  "net_yield_pct": 7.4,
-  "annual_noi_eur": 62000,
-  "monthly_distribution_eur": 5167,
+  "total_shares": 148570,
+  "offered_shares": 66856,
+  "retained_shares": 81714,
+  "offered_pct": 45,
+  "gross_yield_pct": 9.59,
+  "net_yield_pct": 7.0,
+  "annual_noi_eur": 520000,
+  "monthly_distribution_eur": 43333,
   "status": "funded",
   "valuation_evidence": {
    "method": "Income capitalisation",
-   "reference": "Net operating income €62,000 capitalised at 7.4%",
+   "reference": "Net operating income €520,000 capitalised at 7.0%",
    "source": "Operator accounts (fictional) and market cap rates",
    "adjustment": "None",
    "indicative": true
   },
   "highlights": [
-   "Rooftop terrace with Atlas views",
-   "Rated 9.4 by guests"
+   "Rated five stars, 9.5 guest score",
+   "Rooftop terrace facing the Atlas",
+   "Traditional hammam and spa"
   ],
   "risks": [
    "Tourism-dependent income",
-   "Currency risk: revenue in dirham, distributions in euro"
+   "Dirham revenues, distributions in euro"
   ],
-  "image_query": "riad courtyard",
+  "image_query": "marrakech riad pool",
   "images": [
    "/img/assets/kst-rak-001-0.jpg",
    "/img/assets/kst-rak-001-1.jpg",
@@ -1073,54 +1419,54 @@
  {
   "id": "KST-RAK-002",
   "slug": "kst-rak-002",
-  "name": "Palmeraie Villa Resort",
-  "name_fr": "Resort Villas de la Palmeraie",
-  "tagline": "Twelve private-pool villas in the palm grove",
-  "tagline_fr": "Douze villas avec piscine privée dans la palmeraie",
+  "name": "Palmeraie Royal Villas",
+  "name_fr": "Villas Royales de la Palmeraie",
+  "tagline": "Fourteen private-pool villas among the palms",
+  "tagline_fr": "Quatorze villas avec piscine privée au milieu des palmiers",
   "city": "marrakech",
   "city_name": "Marrakech",
   "country": "Morocco",
   "country_iso": 504,
   "currency": "MAD",
   "district": "Palmeraie",
-  "category": "hospitality",
-  "category_index": 1,
-  "lat": 31.672,
-  "lon": -7.964,
-  "surface_m2": 2400,
-  "units": 12,
-  "layout": "12 pool villas",
+  "category": "resort",
+  "category_index": 3,
+  "lat": 31.673,
+  "lon": -7.9611,
+  "surface_m2": 6200,
+  "units": 14,
+  "layout": "14 pool villas in a five-star resort",
   "year_built": 2012,
   "energy_rating": "-",
   "operator": "Resort management company",
-  "occupancy_pct": 71,
-  "valuation_eur": 2714000,
+  "occupancy_pct": 72,
+  "valuation_eur": 26389000,
   "share_price_eur": 100,
-  "total_shares": 27140,
-  "offered_shares": 12213,
-  "retained_shares": 14927,
-  "offered_pct": 45,
-  "gross_yield_pct": 9.59,
-  "net_yield_pct": 7.0,
-  "annual_noi_eur": 190000,
-  "monthly_distribution_eur": 15833,
-  "status": "live",
+  "total_shares": 263890,
+  "offered_shares": 105556,
+  "retained_shares": 158334,
+  "offered_pct": 40,
+  "gross_yield_pct": 9.86,
+  "net_yield_pct": 7.2,
+  "annual_noi_eur": 1900000,
+  "monthly_distribution_eur": 158333,
+  "status": "funded",
   "valuation_evidence": {
    "method": "Income capitalisation",
-   "reference": "Net operating income €190,000 capitalised at 7.0%",
+   "reference": "Net operating income €1,900,000 capitalised at 7.2%",
    "source": "Operator accounts (fictional) and market cap rates",
    "adjustment": "None",
    "indicative": true
   },
   "highlights": [
-   "Strong demand from European winter travellers",
-   "On-site spa and restaurant"
+   "Eight hectares of gardens",
+   "Golf and spa partnership"
   ],
   "risks": [
-   "Seasonality: summer occupancy drops",
-   "Currency risk (MAD/EUR)"
+   "Seasonality: July and August are weak",
+   "Water costs are rising"
   ],
-  "image_query": "luxury villa pool",
+  "image_query": "marrakech luxury villa pool",
   "images": [
    "/img/assets/kst-rak-002-0.jpg",
    "/img/assets/kst-rak-002-1.jpg",
@@ -1156,53 +1502,54 @@
  {
   "id": "KST-RAK-003",
   "slug": "kst-rak-003",
-  "name": "Résidence Hivernage",
-  "name_fr": "Résidence Hivernage",
-  "tagline": "Modern apartments in Marrakech's most sought-after district",
-  "tagline_fr": "Appartements modernes dans le quartier le plus prisé de Marrakech",
+  "name": "Palais Kasbah & Spa",
+  "name_fr": "Palais Kasbah & Spa",
+  "tagline": "A restored palace by the Saadian Tombs",
+  "tagline_fr": "Un palais restauré près des tombeaux saadiens",
   "city": "marrakech",
   "city_name": "Marrakech",
   "country": "Morocco",
   "country_iso": 504,
   "currency": "MAD",
-  "district": "Hivernage",
-  "category": "residential",
-  "category_index": 0,
-  "lat": 31.623,
-  "lon": -8.013,
-  "surface_m2": 540,
-  "units": 6,
-  "layout": "6 apartments",
-  "year_built": 2018,
+  "district": "Kasbah",
+  "category": "hospitality",
+  "category_index": 1,
+  "lat": 31.6168,
+  "lon": -7.9892,
+  "surface_m2": 3100,
+  "units": 22,
+  "layout": "22-suite palace riad with spa",
+  "year_built": 1880,
   "energy_rating": "-",
-  "operator": "Long-term rentals via local agency",
-  "occupancy_pct": 95,
-  "valuation_eur": 1296000,
-  "share_price_eur": 50,
-  "total_shares": 25920,
-  "offered_shares": 12960,
-  "retained_shares": 12960,
-  "offered_pct": 50,
-  "gross_yield_pct": 6.3,
-  "net_yield_pct": 4.6,
-  "annual_noi_eur": 59603,
-  "monthly_distribution_eur": 4967,
-  "status": "funded",
+  "operator": "Luxury hotel group (lease)",
+  "occupancy_pct": 74,
+  "valuation_eur": 17857000,
+  "share_price_eur": 100,
+  "total_shares": 178570,
+  "offered_shares": 71428,
+  "retained_shares": 107142,
+  "offered_pct": 40,
+  "gross_yield_pct": 9.59,
+  "net_yield_pct": 7.0,
+  "annual_noi_eur": 1250000,
+  "monthly_distribution_eur": 104167,
+  "status": "live",
   "valuation_evidence": {
-   "method": "Indicative price per m²",
-   "reference": "Indicative €2,400/m² for Hivernage",
-   "source": "Keystonia indicative estimate (no open transaction dataset for this market)",
+   "method": "Income capitalisation",
+   "reference": "Net operating income €1,250,000 capitalised at 7.0%",
+   "source": "Operator accounts (fictional) and market cap rates",
    "adjustment": "None",
    "indicative": true
   },
   "highlights": [
-   "Gated residence with shared pool",
-   "Walking distance to the Mamounia"
+   "Three courtyards and a 600 m² spa",
+   "20-year lease to a luxury group"
   ],
   "risks": [
-   "Indicative valuation: no open transaction data in Morocco"
+   "Restoration reserve needed for a historic palace",
+   "Currency risk on dirham income"
   ],
-  "image_query": "modern apartment balcony",
+  "image_query": "moroccan palace courtyard",
   "images": [
    "/img/assets/kst-rak-003-0.jpg",
    "/img/assets/kst-rak-003-1.jpg",
@@ -1210,121 +1557,38 @@
   ],
   "tour": [
    {
-    "pano": "/pano/old_room.jpg",
-    "preview": "/pano/old_room_preview.jpg",
+    "pano": "/pano/sepulchral_chapel_rotunda.jpg",
+    "preview": "/pano/sepulchral_chapel_rotunda_preview.jpg",
+    "en": "Rotunda",
+    "fr": "La rotonde"
+   },
+   {
+    "pano": "/pano/historic_cloister_passage.jpg",
+    "preview": "/pano/historic_cloister_passage_preview.jpg",
+    "en": "Arcades",
+    "fr": "Les arcades"
+   },
+   {
+    "pano": "/pano/indoor_pool.jpg",
+    "preview": "/pano/indoor_pool_preview.jpg",
+    "en": "Spa",
+    "fr": "Le spa"
+   },
+   {
+    "pano": "/pano/entrance_hall.jpg",
+    "preview": "/pano/entrance_hall_preview.jpg",
     "en": "Salon",
     "fr": "Le salon"
-   },
-   {
-    "pano": "/pano/reading_room.jpg",
-    "preview": "/pano/reading_room_preview.jpg",
-    "en": "Library",
-    "fr": "La bibliothèque"
-   },
-   {
-    "pano": "/pano/veranda.jpg",
-    "preview": "/pano/veranda_preview.jpg",
-    "en": "Veranda",
-    "fr": "La véranda"
-   },
-   {
-    "pano": "/pano/pool.jpg",
-    "preview": "/pano/pool_preview.jpg",
-    "en": "Garden pool",
-    "fr": "La piscine"
    }
   ]
  },
  {
   "id": "KST-RAK-004",
   "slug": "kst-rak-004",
-  "name": "Guéliz Concept Store",
-  "name_fr": "Concept store de Guéliz",
-  "tagline": "Art-deco retail space on a Guéliz boulevard",
-  "tagline_fr": "Local art déco sur un boulevard de Guéliz",
-  "city": "marrakech",
-  "city_name": "Marrakech",
-  "country": "Morocco",
-  "country_iso": 504,
-  "currency": "MAD",
-  "district": "Guéliz",
-  "category": "commercial",
-  "category_index": 2,
-  "lat": 31.637,
-  "lon": -8.01,
-  "surface_m2": 210,
-  "units": 1,
-  "layout": "Retail and café",
-  "year_built": 1955,
-  "energy_rating": "-",
-  "operator": "Design concept store (6-year lease)",
-  "occupancy_pct": 100,
-  "valuation_eur": 353000,
-  "share_price_eur": 50,
-  "total_shares": 7060,
-  "offered_shares": 3883,
-  "retained_shares": 3177,
-  "offered_pct": 55,
-  "gross_yield_pct": 9.31,
-  "net_yield_pct": 6.8,
-  "annual_noi_eur": 24000,
-  "monthly_distribution_eur": 2000,
-  "status": "funded",
-  "valuation_evidence": {
-   "method": "Income capitalisation",
-   "reference": "Net operating income €24,000 capitalised at 6.8%",
-   "source": "Operator accounts (fictional) and market cap rates",
-   "adjustment": "None",
-   "indicative": true
-  },
-  "highlights": [
-   "High footfall shopping boulevard",
-   "Tenant is an established local brand"
-  ],
-  "risks": [
-   "Single tenant",
-   "Currency risk (MAD/EUR)"
-  ],
-  "image_query": "concept store interior",
-  "images": [
-   "/img/assets/kst-rak-004-0.jpg",
-   "/img/assets/kst-rak-004-1.jpg",
-   "/img/assets/kst-rak-004-2.jpg"
-  ],
-  "tour": [
-   {
-    "pano": "/pano/decor_shop.jpg",
-    "preview": "/pano/decor_shop_preview.jpg",
-    "en": "Concept store",
-    "fr": "Le concept store"
-   },
-   {
-    "pano": "/pano/art_studio.jpg",
-    "preview": "/pano/art_studio_preview.jpg",
-    "en": "Gallery",
-    "fr": "La galerie"
-   },
-   {
-    "pano": "/pano/comfy_cafe.jpg",
-    "preview": "/pano/comfy_cafe_preview.jpg",
-    "en": "Café",
-    "fr": "Le café"
-   },
-   {
-    "pano": "/pano/palermo_sidewalk.jpg",
-    "preview": "/pano/palermo_sidewalk_preview.jpg",
-    "en": "The street",
-    "fr": "La rue"
-   }
-  ]
- },
- {
-  "id": "KST-RAK-005",
-  "slug": "kst-rak-005",
-  "name": "Ourika Olive Grove",
-  "name_fr": "Oliveraie de l'Ourika",
-  "tagline": "3,400 olive trees at the foot of the Atlas",
-  "tagline_fr": "3 400 oliviers au pied de l'Atlas",
+  "name": "Atlas Olive & Wine Estate",
+  "name_fr": "Domaine Atlas Oliviers & Vignes",
+  "tagline": "Olive groves and vines at the foot of the Atlas",
+  "tagline_fr": "Oliviers et vignes au pied de l'Atlas",
   "city": "marrakech",
   "city_name": "Marrakech",
   "country": "Morocco",
@@ -1335,44 +1599,44 @@
   "category_index": 4,
   "lat": 31.355,
   "lon": -7.769,
-  "surface_m2": 120000,
+  "surface_m2": 280000,
   "units": 1,
-  "layout": "12 hectares, 3,400 olive trees",
-  "year_built": 1990,
+  "layout": "28 hectares: olive groves, vines, guest house",
+  "year_built": 2005,
   "energy_rating": "-",
-  "operator": "Agricultural cooperative (harvest contract)",
+  "operator": "Agricultural cooperative (long lease)",
   "occupancy_pct": 100,
-  "valuation_eur": 350000,
+  "valuation_eur": 3500000,
   "share_price_eur": 50,
-  "total_shares": 7000,
-  "offered_shares": 4200,
-  "retained_shares": 2800,
+  "total_shares": 70000,
+  "offered_shares": 42000,
+  "retained_shares": 28000,
   "offered_pct": 60,
   "gross_yield_pct": 8.22,
   "net_yield_pct": 6.0,
-  "annual_noi_eur": 21000,
-  "monthly_distribution_eur": 1750,
-  "status": "live",
+  "annual_noi_eur": 210000,
+  "monthly_distribution_eur": 17500,
+  "status": "upcoming",
   "valuation_evidence": {
    "method": "Income capitalisation",
-   "reference": "Net operating income €21,000 capitalised at 6.0%",
+   "reference": "Net operating income €210,000 capitalised at 6.0%",
    "source": "Operator accounts (fictional) and market cap rates",
    "adjustment": "None",
    "indicative": true
   },
   "highlights": [
-   "Organic certification since 2021",
-   "Oil sold to a regional mill under contract"
+   "4,800 olive trees and 6 hectares of vines",
+   "Guest house with eight rooms"
   ],
   "risks": [
-   "Harvest depends on rainfall",
-   "Agricultural land rules for foreign owners (held via local SPV)"
+   "Harvests vary with rainfall",
+   "Agricultural income is seasonal"
   ],
-  "image_query": "olive grove",
+  "image_query": "olive grove estate",
   "images": [
-   "/img/assets/kst-rak-005-0.jpg",
-   "/img/assets/kst-rak-005-1.jpg",
-   "/img/assets/kst-rak-005-2.jpg"
+   "/img/assets/kst-rak-004-0.jpg",
+   "/img/assets/kst-rak-004-1.jpg",
+   "/img/assets/kst-rak-004-2.jpg"
   ],
   "tour": [
    {
@@ -1390,7 +1654,7 @@
    {
     "pano": "/pano/sabie_tent.jpg",
     "preview": "/pano/sabie_tent_preview.jpg",
-    "en": "Lodge",
+    "en": "Guest lodge",
     "fr": "Le lodge"
    },
    {
@@ -1402,155 +1666,73 @@
   ]
  },
  {
-  "id": "KST-RAK-006",
-  "slug": "kst-rak-006",
-  "name": "Riad Kasbah Garden",
-  "name_fr": "Riad Jardin de la Kasbah",
-  "tagline": "A garden riad near the Saadian Tombs, opening 2027",
-  "tagline_fr": "Un riad-jardin près des tombeaux saadiens, ouverture en 2027",
-  "city": "marrakech",
-  "city_name": "Marrakech",
-  "country": "Morocco",
-  "country_iso": 504,
-  "currency": "MAD",
-  "district": "Kasbah",
-  "category": "hospitality",
-  "category_index": 1,
-  "lat": 31.618,
-  "lon": -7.987,
-  "surface_m2": 360,
-  "units": 6,
-  "layout": "6-room riad",
-  "year_built": 1930,
-  "energy_rating": "-",
-  "operator": "Opening after renovation",
-  "occupancy_pct": 0,
-  "valuation_eur": 640000,
-  "share_price_eur": 50,
-  "total_shares": 12800,
-  "offered_shares": 6400,
-  "retained_shares": 6400,
-  "offered_pct": 50,
-  "gross_yield_pct": 10.27,
-  "net_yield_pct": 7.5,
-  "annual_noi_eur": 48000,
-  "monthly_distribution_eur": 4000,
-  "status": "upcoming",
-  "valuation_evidence": {
-   "method": "Income capitalisation",
-   "reference": "Net operating income €48,000 capitalised at 7.5%",
-   "source": "Operator accounts (fictional) and market cap rates",
-   "adjustment": "None",
-   "indicative": true
-  },
-  "highlights": [
-   "Renovation financed by this offering",
-   "Orange-tree garden patio"
-  ],
-  "risks": [
-   "Development risk: income starts after works"
-  ],
-  "image_query": "moroccan garden",
-  "images": [
-   "/img/assets/kst-rak-006-0.jpg",
-   "/img/assets/kst-rak-006-1.jpg",
-   "/img/assets/kst-rak-006-2.jpg"
-  ],
-  "tour": [
-   {
-    "pano": "/pano/medieval_cafe.jpg",
-    "preview": "/pano/medieval_cafe_preview.jpg",
-    "en": "Courtyard",
-    "fr": "La cour"
-   },
-   {
-    "pano": "/pano/stone_alley_02.jpg",
-    "preview": "/pano/stone_alley_02_preview.jpg",
-    "en": "The derb",
-    "fr": "Le derb"
-   },
-   {
-    "pano": "/pano/lapa.jpg",
-    "preview": "/pano/lapa_preview.jpg",
-    "en": "Garden lounge",
-    "fr": "Le salon de jardin"
-   },
-   {
-    "pano": "/pano/pool.jpg",
-    "preview": "/pano/pool_preview.jpg",
-    "en": "Pool",
-    "fr": "La piscine"
-   }
-  ]
- },
- {
-  "id": "KST-LIS-001",
-  "slug": "kst-lis-001",
-  "name": "Alfama Miradouro",
-  "name_fr": "Alfama Miradouro",
-  "tagline": "Tagus river views from the oldest district of Lisbon",
-  "tagline_fr": "Vue sur le Tage depuis le plus vieux quartier de Lisbonne",
-  "city": "lisbon",
-  "city_name": "Lisbon",
-  "country": "Portugal",
-  "country_iso": 620,
-  "currency": "EUR",
-  "district": "Alfama",
+  "id": "KST-MEL-001",
+  "slug": "kst-mel-001",
+  "name": "South Yarra Skyline Residence",
+  "name_fr": "Résidence Skyline South Yarra",
+  "tagline": "A sky residence above the Botanic Gardens",
+  "tagline_fr": "Une résidence en hauteur au-dessus des jardins botaniques",
+  "city": "melbourne",
+  "city_name": "Melbourne",
+  "country": "Australia",
+  "country_iso": 36,
+  "currency": "AUD",
+  "district": "South Yarra",
   "category": "residential",
   "category_index": 0,
-  "lat": 38.711,
-  "lon": -9.13,
-  "surface_m2": 70,
+  "lat": -37.8386,
+  "lon": 144.9925,
+  "surface_m2": 310,
   "units": 1,
-  "layout": "2 bedrooms",
-  "year_built": 1900,
-  "energy_rating": "C",
-  "operator": "Long-term tenant",
+  "layout": "3 bedrooms, winter garden, city view",
+  "year_built": 2022,
+  "energy_rating": "A",
+  "operator": "Executive tenant (2-year lease)",
   "occupancy_pct": 100,
-  "valuation_eur": 392000,
-  "share_price_eur": 50,
-  "total_shares": 7840,
-  "offered_shares": 3920,
-  "retained_shares": 3920,
+  "valuation_eur": 3038000,
+  "share_price_eur": 100,
+  "total_shares": 30380,
+  "offered_shares": 15190,
+  "retained_shares": 15190,
   "offered_pct": 50,
-  "gross_yield_pct": 4.8,
-  "net_yield_pct": 3.5,
-  "annual_noi_eur": 13736,
-  "monthly_distribution_eur": 1145,
+  "gross_yield_pct": 4.1,
+  "net_yield_pct": 2.99,
+  "annual_noi_eur": 90927,
+  "monthly_distribution_eur": 7577,
   "status": "funded",
   "valuation_evidence": {
    "method": "Indicative price per m²",
-   "reference": "Indicative €5,600/m² for Alfama",
+   "reference": "Indicative €9,800/m² for South Yarra",
    "source": "Keystonia indicative estimate (no open transaction dataset for this market)",
    "adjustment": "None",
    "indicative": true
   },
   "highlights": [
-   "River-view balcony",
-   "Fully renovated in 2023"
+   "Skyline and Botanic Gardens views",
+   "Seven-star energy-rated tower"
   ],
   "risks": [
-   "Indicative valuation",
-   "Steep street access"
+   "Foreign-owner surcharges in Victoria",
+   "AUD income"
   ],
-  "image_query": "lisbon apartment view",
+  "image_query": "modern luxury apartment interior",
   "images": [
-   "/img/assets/kst-lis-001-0.jpg",
-   "/img/assets/kst-lis-001-1.jpg",
-   "/img/assets/kst-lis-001-2.jpg"
+   "/img/assets/kst-mel-001-0.jpg",
+   "/img/assets/kst-mel-001-1.jpg",
+   "/img/assets/kst-mel-001-2.jpg"
   ],
   "tour": [
    {
-    "pano": "/pano/vignaioli.jpg",
-    "preview": "/pano/vignaioli_preview.jpg",
-    "en": "The view",
-    "fr": "La vue"
-   },
-   {
-    "pano": "/pano/cayley_interior.jpg",
-    "preview": "/pano/cayley_interior_preview.jpg",
+    "pano": "/pano/brown_photostudio_03.jpg",
+    "preview": "/pano/brown_photostudio_03_preview.jpg",
     "en": "Living room",
     "fr": "Le séjour"
+   },
+   {
+    "pano": "/pano/glasshouse_interior.jpg",
+    "preview": "/pano/glasshouse_interior_preview.jpg",
+    "en": "Winter garden",
+    "fr": "Le jardin d'hiver"
    },
    {
     "pano": "/pano/brown_photostudio_04.jpg",
@@ -1559,74 +1741,81 @@
     "fr": "La chambre"
    },
    {
-    "pano": "/pano/stone_alley.jpg",
-    "preview": "/pano/stone_alley_preview.jpg",
-    "en": "The lane",
-    "fr": "La ruelle"
+    "pano": "/pano/treetop_balcony.jpg",
+    "preview": "/pano/treetop_balcony_preview.jpg",
+    "en": "Balcony",
+    "fr": "Le balcon"
    }
   ]
  },
  {
-  "id": "KST-LIS-002",
-  "slug": "kst-lis-002",
-  "name": "Príncipe Real Guesthouse",
-  "name_fr": "Maison d'hôtes Príncipe Real",
-  "tagline": "A tiled 19th-century townhouse turned guesthouse",
-  "tagline_fr": "Une maison du XIXe en azulejos devenue maison d'hôtes",
-  "city": "lisbon",
-  "city_name": "Lisbon",
-  "country": "Portugal",
-  "country_iso": 620,
-  "currency": "EUR",
-  "district": "Príncipe Real",
+  "id": "KST-MEL-002",
+  "slug": "kst-mel-002",
+  "name": "Collins Street Grand Hotel",
+  "name_fr": "Grand Hôtel Collins Street",
+  "tagline": "A gold-rush era grand hotel on the Paris end of Collins Street",
+  "tagline_fr": "Un grand hôtel de la ruée vers l'or sur Collins Street",
+  "city": "melbourne",
+  "city_name": "Melbourne",
+  "country": "Australia",
+  "country_iso": 36,
+  "currency": "AUD",
+  "district": "Collins Street",
   "category": "hospitality",
   "category_index": 1,
-  "lat": 38.716,
-  "lon": -9.148,
-  "surface_m2": 520,
-  "units": 10,
-  "layout": "10-room guesthouse",
-  "year_built": 1885,
+  "lat": -37.8153,
+  "lon": 144.9697,
+  "surface_m2": 6100,
+  "units": 56,
+  "layout": "56-key five-star heritage hotel",
+  "year_built": 1888,
   "energy_rating": "C",
-  "operator": "Guesthouse operator (lease)",
-  "occupancy_pct": 83,
-  "valuation_eur": 2586000,
-  "share_price_eur": 50,
-  "total_shares": 51720,
-  "offered_shares": 23274,
-  "retained_shares": 28446,
-  "offered_pct": 45,
-  "gross_yield_pct": 7.95,
-  "net_yield_pct": 5.8,
-  "annual_noi_eur": 150000,
-  "monthly_distribution_eur": 12500,
+  "operator": "Heritage hotel operator (management contract)",
+  "occupancy_pct": 82,
+  "valuation_eur": 37500000,
+  "share_price_eur": 250,
+  "total_shares": 150000,
+  "offered_shares": 60000,
+  "retained_shares": 90000,
+  "offered_pct": 40,
+  "gross_yield_pct": 7.67,
+  "net_yield_pct": 5.6,
+  "annual_noi_eur": 2100000,
+  "monthly_distribution_eur": 175000,
   "status": "funded",
   "valuation_evidence": {
    "method": "Income capitalisation",
-   "reference": "Net operating income €150,000 capitalised at 5.8%",
+   "reference": "Net operating income €2,100,000 capitalised at 5.6%",
    "source": "Operator accounts (fictional) and market cap rates",
    "adjustment": "None",
    "indicative": true
   },
   "highlights": [
-   "Garden and rooftop terrace",
-   "Lisbon's trendiest neighbourhood"
+   "82% occupancy, restored ballroom",
+   "Events contribute a quarter of revenue"
   ],
   "risks": [
-   "Short-stay licensing rules may tighten"
+   "Heritage overlay limits changes",
+   "Business-travel dependent midweek"
   ],
-  "image_query": "guesthouse room",
+  "image_query": "grand hotel lobby",
   "images": [
-   "/img/assets/kst-lis-002-0.jpg",
-   "/img/assets/kst-lis-002-1.jpg",
-   "/img/assets/kst-lis-002-2.jpg"
+   "/img/assets/kst-mel-002-0.jpg",
+   "/img/assets/kst-mel-002-1.jpg",
+   "/img/assets/kst-mel-002-2.jpg"
   ],
   "tour": [
    {
-    "pano": "/pano/wooden_lounge.jpg",
-    "preview": "/pano/wooden_lounge_preview.jpg",
-    "en": "Lounge",
-    "fr": "Le salon"
+    "pano": "/pano/music_hall_02.jpg",
+    "preview": "/pano/music_hall_02_preview.jpg",
+    "en": "Grand hall",
+    "fr": "Le grand hall"
+   },
+   {
+    "pano": "/pano/ballroom.jpg",
+    "preview": "/pano/ballroom_preview.jpg",
+    "en": "Ballroom",
+    "fr": "La salle de bal"
    },
    {
     "pano": "/pano/hotel_room.jpg",
@@ -1635,245 +1824,70 @@
     "fr": "La chambre"
    },
    {
-    "pano": "/pano/warm_restaurant.jpg",
-    "preview": "/pano/warm_restaurant_preview.jpg",
-    "en": "Breakfast room",
-    "fr": "La salle du petit-déjeuner"
-   },
-   {
-    "pano": "/pano/hotel_rooftop_balcony.jpg",
-    "preview": "/pano/hotel_rooftop_balcony_preview.jpg",
-    "en": "Rooftop",
-    "fr": "Le toit-terrasse"
+    "pano": "/pano/large_corridor.jpg",
+    "preview": "/pano/large_corridor_preview.jpg",
+    "en": "Corridor",
+    "fr": "Le couloir"
    }
   ]
  },
  {
-  "id": "KST-LIS-003",
-  "slug": "kst-lis-003",
-  "name": "Arroios Student House",
-  "name_fr": "Résidence étudiante Arroios",
-  "tagline": "26 rooms near the Instituto Superior Técnico",
-  "tagline_fr": "26 chambres près de l'Instituto Superior Técnico",
-  "city": "lisbon",
-  "city_name": "Lisbon",
-  "country": "Portugal",
-  "country_iso": 620,
-  "currency": "EUR",
-  "district": "Arroios",
-  "category": "student",
-  "category_index": 3,
-  "lat": 38.73,
-  "lon": -9.135,
-  "surface_m2": 640,
-  "units": 26,
-  "layout": "26 student rooms",
-  "year_built": 1970,
-  "energy_rating": "C",
-  "operator": "Student-housing operator",
-  "occupancy_pct": 96,
-  "valuation_eur": 2285500,
-  "share_price_eur": 50,
-  "total_shares": 45710,
-  "offered_shares": 27426,
-  "retained_shares": 18284,
-  "offered_pct": 60,
-  "gross_yield_pct": 7.67,
-  "net_yield_pct": 5.6,
-  "annual_noi_eur": 128000,
-  "monthly_distribution_eur": 10667,
-  "status": "live",
-  "valuation_evidence": {
-   "method": "Income capitalisation",
-   "reference": "Net operating income €128,000 capitalised at 5.6%",
-   "source": "Operator accounts (fictional) and market cap rates",
-   "adjustment": "None",
-   "indicative": true
-  },
-  "highlights": [
-   "Chronic undersupply of student beds in Lisbon",
-   "Metro Arroios at the door"
-  ],
-  "risks": [
-   "Operator concentration"
-  ],
-  "image_query": "student room desk",
-  "images": [
-   "/img/assets/kst-lis-003-0.jpg",
-   "/img/assets/kst-lis-003-1.jpg",
-   "/img/assets/kst-lis-003-2.jpg"
-  ],
-  "tour": [
-   {
-    "pano": "/pano/small_empty_room_1.jpg",
-    "preview": "/pano/small_empty_room_1_preview.jpg",
-    "en": "Studio",
-    "fr": "Le studio"
-   },
-   {
-    "pano": "/pano/school_hall.jpg",
-    "preview": "/pano/school_hall_preview.jpg",
-    "en": "Study hall",
-    "fr": "La salle d'étude"
-   },
-   {
-    "pano": "/pano/newman_cafeteria.jpg",
-    "preview": "/pano/newman_cafeteria_preview.jpg",
-    "en": "Canteen",
-    "fr": "La cantine"
-   },
-   {
-    "pano": "/pano/urban_courtyard_02.jpg",
-    "preview": "/pano/urban_courtyard_02_preview.jpg",
-    "en": "Courtyard",
-    "fr": "La cour"
-   }
-  ]
- },
- {
-  "id": "KST-LIS-004",
-  "slug": "kst-lis-004",
-  "name": "LX Workspace",
-  "name_fr": "LX Workspace",
-  "tagline": "A converted industrial hall turned coworking campus",
-  "tagline_fr": "Une halle industrielle reconvertie en campus de coworking",
-  "city": "lisbon",
-  "city_name": "Lisbon",
-  "country": "Portugal",
-  "country_iso": 620,
-  "currency": "EUR",
-  "district": "Alcântara",
-  "category": "commercial",
-  "category_index": 2,
-  "lat": 38.703,
-  "lon": -9.178,
-  "surface_m2": 1100,
-  "units": 1,
-  "layout": "Coworking campus",
-  "year_built": 1946,
-  "energy_rating": "B",
-  "operator": "Coworking operator (revenue share)",
-  "occupancy_pct": 88,
-  "valuation_eur": 5500000,
-  "share_price_eur": 100,
-  "total_shares": 55000,
-  "offered_shares": 27500,
-  "retained_shares": 27500,
-  "offered_pct": 50,
-  "gross_yield_pct": 8.22,
-  "net_yield_pct": 6.0,
-  "annual_noi_eur": 330000,
-  "monthly_distribution_eur": 27500,
-  "status": "live",
-  "valuation_evidence": {
-   "method": "Income capitalisation",
-   "reference": "Net operating income €330,000 capitalised at 6.0%",
-   "source": "Operator accounts (fictional) and market cap rates",
-   "adjustment": "None",
-   "indicative": true
-  },
-  "highlights": [
-   "Tech-startup tenant base",
-   "Revenue-share lease with a minimum rent"
-  ],
-  "risks": [
-   "Coworking revenue is more volatile than a fixed lease"
-  ],
-  "image_query": "coworking space",
-  "images": [
-   "/img/assets/kst-lis-004-0.jpg",
-   "/img/assets/kst-lis-004-1.jpg",
-   "/img/assets/kst-lis-004-2.jpg"
-  ],
-  "tour": [
-   {
-    "pano": "/pano/industrial_wooden_attic.jpg",
-    "preview": "/pano/industrial_wooden_attic_preview.jpg",
-    "en": "Open floor",
-    "fr": "Le plateau"
-   },
-   {
-    "pano": "/pano/poly_haven_studio.jpg",
-    "preview": "/pano/poly_haven_studio_preview.jpg",
-    "en": "Studio",
-    "fr": "Le studio"
-   },
-   {
-    "pano": "/pano/events_hall_interior.jpg",
-    "preview": "/pano/events_hall_interior_preview.jpg",
-    "en": "Event hall",
-    "fr": "La salle d'événements"
-   },
-   {
-    "pano": "/pano/unfinished_office.jpg",
-    "preview": "/pano/unfinished_office_preview.jpg",
-    "en": "Meeting room",
-    "fr": "La salle de réunion"
-   }
-  ]
- },
- {
-  "id": "KST-LIS-005",
-  "slug": "kst-lis-005",
-  "name": "Comporta Vineyard Estate",
-  "name_fr": "Domaine viticole de Comporta",
-  "tagline": "Eighteen hectares of vines on the Alentejo coast",
-  "tagline_fr": "Dix-huit hectares de vignes sur la côte de l'Alentejo",
-  "city": "lisbon",
-  "city_name": "Lisbon",
-  "country": "Portugal",
-  "country_iso": 620,
-  "currency": "EUR",
-  "district": "Comporta",
+  "id": "KST-MEL-003",
+  "slug": "kst-mel-003",
+  "name": "Yarra Valley Vineyard Estate",
+  "name_fr": "Domaine viticole de la Yarra Valley",
+  "tagline": "Cool-climate vines and a cellar door an hour from the city",
+  "tagline_fr": "Des vignes de climat frais et un caveau à une heure de la ville",
+  "city": "melbourne",
+  "city_name": "Melbourne",
+  "country": "Australia",
+  "country_iso": 36,
+  "currency": "AUD",
+  "district": "Yarra Valley",
   "category": "land",
   "category_index": 4,
-  "lat": 38.38,
-  "lon": -8.786,
-  "surface_m2": 180000,
+  "lat": -37.6553,
+  "lon": 145.4453,
+  "surface_m2": 420000,
   "units": 1,
-  "layout": "18 hectares of vines",
-  "year_built": 2004,
+  "layout": "42 hectares of pinot noir and chardonnay, cellar door",
+  "year_built": 1998,
   "energy_rating": "-",
-  "operator": "Winery (long-term land lease)",
+  "operator": "Winery (long-term lease with revenue share)",
   "occupancy_pct": 100,
-  "valuation_eur": 1040000,
+  "valuation_eur": 11636500,
   "share_price_eur": 50,
-  "total_shares": 20800,
-  "offered_shares": 11440,
-  "retained_shares": 9360,
+  "total_shares": 232730,
+  "offered_shares": 128001,
+  "retained_shares": 104729,
   "offered_pct": 55,
-  "gross_yield_pct": 6.85,
-  "net_yield_pct": 5.0,
-  "annual_noi_eur": 52000,
-  "monthly_distribution_eur": 4333,
+  "gross_yield_pct": 7.53,
+  "net_yield_pct": 5.5,
+  "annual_noi_eur": 640000,
+  "monthly_distribution_eur": 53333,
   "status": "live",
   "valuation_evidence": {
    "method": "Income capitalisation",
-   "reference": "Net operating income €52,000 capitalised at 5.0%",
+   "reference": "Net operating income €640,000 capitalised at 5.5%",
    "source": "Operator accounts (fictional) and market cap rates",
    "adjustment": "None",
    "indicative": true
   },
   "highlights": [
-   "Leased to an award-winning winery",
-   "Land in a protected natural area"
+   "42 hectares under vine",
+   "Cellar door and restaurant with 60,000 visitors a year"
   ],
   "risks": [
-   "Climate risk on harvests"
+   "Bushfire and frost risk",
+   "Wine prices move with export demand"
   ],
-  "image_query": "vineyard rows",
+  "image_query": "vineyard estate australia",
   "images": [
-   "/img/assets/kst-lis-005-0.jpg",
-   "/img/assets/kst-lis-005-1.jpg",
-   "/img/assets/kst-lis-005-2.jpg"
+   "/img/assets/kst-mel-003-0.jpg",
+   "/img/assets/kst-mel-003-1.jpg",
+   "/img/assets/kst-mel-003-2.jpg"
   ],
   "tour": [
-   {
-    "pano": "/pano/stone_pines.jpg",
-    "preview": "/pano/stone_pines_preview.jpg",
-    "en": "Stone pines",
-    "fr": "Les pins parasols"
-   },
    {
     "pano": "/pano/sunny_country_road.jpg",
     "preview": "/pano/sunny_country_road_preview.jpg",
@@ -1883,96 +1897,103 @@
    {
     "pano": "/pano/straw_rolls_field_01.jpg",
     "preview": "/pano/straw_rolls_field_01_preview.jpg",
-    "en": "Harvested fields",
-    "fr": "Les champs moissonnés"
+    "en": "The fields",
+    "fr": "Les champs"
    },
    {
     "pano": "/pano/lythwood_terrace.jpg",
     "preview": "/pano/lythwood_terrace_preview.jpg",
-    "en": "Terrace",
-    "fr": "La terrasse"
+    "en": "Cellar door terrace",
+    "fr": "La terrasse du caveau"
+   },
+   {
+    "pano": "/pano/sabie_tent.jpg",
+    "preview": "/pano/sabie_tent_preview.jpg",
+    "en": "Lodge",
+    "fr": "Le lodge"
    }
   ]
  },
  {
-  "id": "KST-LIS-006",
-  "slug": "kst-lis-006",
-  "name": "Belém Riverside",
-  "name_fr": "Belém bord du fleuve",
-  "tagline": "Riverside family apartment near the Jerónimos Monastery",
-  "tagline_fr": "Appartement familial au bord du fleuve près du monastère des Hiéronymites",
-  "city": "lisbon",
-  "city_name": "Lisbon",
-  "country": "Portugal",
-  "country_iso": 620,
-  "currency": "EUR",
-  "district": "Belém",
-  "category": "residential",
-  "category_index": 0,
-  "lat": 38.697,
-  "lon": -9.206,
-  "surface_m2": 92,
-  "units": 1,
-  "layout": "3 bedrooms",
-  "year_built": 2005,
-  "energy_rating": "B",
-  "operator": "Long-term tenant",
-  "occupancy_pct": 100,
-  "valuation_eur": 570500,
-  "share_price_eur": 50,
-  "total_shares": 11410,
-  "offered_shares": 5134,
-  "retained_shares": 6276,
-  "offered_pct": 45,
-  "gross_yield_pct": 4.5,
-  "net_yield_pct": 3.28,
-  "annual_noi_eur": 18741,
-  "monthly_distribution_eur": 1562,
+  "id": "KST-MEL-004",
+  "slug": "kst-mel-004",
+  "name": "Mornington Coastal Retreat",
+  "name_fr": "Retraite côtière de Mornington",
+  "tagline": "Eighteen villas between the vines and the ocean",
+  "tagline_fr": "Dix-huit villas entre les vignes et l'océan",
+  "city": "melbourne",
+  "city_name": "Melbourne",
+  "country": "Australia",
+  "country_iso": 36,
+  "currency": "AUD",
+  "district": "Mornington Peninsula",
+  "category": "resort",
+  "category_index": 3,
+  "lat": -38.3716,
+  "lon": 144.9126,
+  "surface_m2": 3900,
+  "units": 18,
+  "layout": "18 villas, hot springs spa",
+  "year_built": 2020,
+  "energy_rating": "A",
+  "operator": "Wellness resort operator",
+  "occupancy_pct": 75,
+  "valuation_eur": 14667000,
+  "share_price_eur": 100,
+  "total_shares": 146670,
+  "offered_shares": 73335,
+  "retained_shares": 73335,
+  "offered_pct": 50,
+  "gross_yield_pct": 8.22,
+  "net_yield_pct": 6.0,
+  "annual_noi_eur": 880000,
+  "monthly_distribution_eur": 73333,
   "status": "upcoming",
   "valuation_evidence": {
-   "method": "Indicative price per m²",
-   "reference": "Indicative €6,200/m² for Belém",
-   "source": "Keystonia indicative estimate (no open transaction dataset for this market)",
+   "method": "Income capitalisation",
+   "reference": "Net operating income €880,000 capitalised at 6.0%",
+   "source": "Operator accounts (fictional) and market cap rates",
    "adjustment": "None",
    "indicative": true
   },
   "highlights": [
-   "Parking and storage included",
-   "Riverside promenade"
+   "Geothermal hot-springs spa",
+   "Weekend occupancy above 95%"
   ],
   "risks": [
-   "Indicative valuation"
+   "Midweek demand is weaker",
+   "Coastal planning restrictions"
   ],
-  "image_query": "bright apartment living room",
+  "image_query": "coastal resort villa",
   "images": [
-   "/img/assets/kst-lis-006-0.jpg",
-   "/img/assets/kst-lis-006-1.jpg",
-   "/img/assets/kst-lis-006-2.jpg"
+   "/img/assets/kst-mel-004-0.jpg",
+   "/img/assets/kst-mel-004-1.jpg",
+   "/img/assets/kst-mel-004-2.jpg"
   ],
   "tour": [
    {
-    "pano": "/pano/glasshouse_interior.jpg",
-    "preview": "/pano/glasshouse_interior_preview.jpg",
-    "en": "Living room",
-    "fr": "Le séjour"
+    "pano": "/pano/illovo_beach_balcony.jpg",
+    "preview": "/pano/illovo_beach_balcony_preview.jpg",
+    "en": "Ocean deck",
+    "fr": "La terrasse océan"
    },
    {
-    "pano": "/pano/studio_country_hall.jpg",
-    "preview": "/pano/studio_country_hall_preview.jpg",
-    "en": "Hall",
-    "fr": "Le hall"
+    "pano": "/pano/indoor_pool.jpg",
+    "preview": "/pano/indoor_pool_preview.jpg",
+    "en": "Hot springs",
+    "fr": "Les sources chaudes"
    },
    {
-    "pano": "/pano/brown_photostudio_05.jpg",
-    "preview": "/pano/brown_photostudio_05_preview.jpg",
-    "en": "Bedroom",
-    "fr": "La chambre"
+    "pano": "/pano/relax_inn_seaview_suite.jpg",
+    "preview": "/pano/relax_inn_seaview_suite_preview.jpg",
+    "en": "Villa suite",
+    "fr": "La suite"
    },
    {
-    "pano": "/pano/palermo_sidewalk.jpg",
-    "preview": "/pano/palermo_sidewalk_preview.jpg",
-    "en": "The street",
-    "fr": "La rue"
+    "pano": "/pano/sundowner_deck.jpg",
+    "preview": "/pano/sundowner_deck_preview.jpg",
+    "en": "Sunset deck",
+    "fr": "La terrasse du couchant"
    }
   ]
  }

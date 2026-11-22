@@ -1,6 +1,6 @@
 # Keystonia
 
-**Real estate, tokenized: Paris, London, Marrakech and Lisbon, from contracts to a cinematic web app.**
+**Luxury real estate, tokenized: New York, Paris, Dubai, London, Marrakech and Melbourne, from contracts to a cinematic web app.**
 
 ### ▶ [Open the live demo](https://egberr.github.io/keystonia/) — runs in your browser, nothing to install
 
@@ -18,9 +18,9 @@ photographs, and an AI analyst answers questions with citations to the property'
 
 | | |
 | --- | --- |
-| ![A real building, cut into tokens](docs/screenshots/tokenize-cut.png) | ![One token lands in your wallet](docs/screenshots/tokenize-wallet.png) |
-| ![The collection](docs/screenshots/collection.png) | ![360° visit made of real photographs](docs/screenshots/visit.png) |
-| ![360° visit on an asset page](docs/screenshots/asset.png) | ![How it works](docs/screenshots/how.png) |
+| ![Floor by floor, into tokens](docs/screenshots/tokenize-floors.png) | ![One token lands in your wallet](docs/screenshots/tokenize-wallet.png) |
+| ![Rent, drawn](docs/screenshots/rent.png) | ![The collection](docs/screenshots/collection.png) |
+| ![360° visit on an asset page](docs/screenshots/asset.png) | ![Six cities](docs/screenshots/cities.png) |
 | ![Portfolio](docs/screenshots/portfolio.png) | ![Exchange](docs/screenshots/market.png) |
 | ![Home in French](docs/screenshots/home-fr.png) | ![Mobile, French](docs/screenshots/mobile-fr.png) |
 
@@ -28,8 +28,8 @@ photographs, and an AI analyst answers questions with citations to the property'
 
 | Area | Details |
 | --- | --- |
-| **Catalogue** | 24 assets, €60.2M tokenized, 4 cities × 5 asset classes. Each asset has a memorandum, a valuation report, a technical survey and a legal note (96 documents). |
-| **Valuations from open data** | Paris assets are priced from DVF 2024 transactions (median €/m² by postcode), London assets from HM Land Registry 2024 price-paid data. Marrakech and Lisbon use capitalised income and are flagged as indicative. |
+| **Catalogue** | 24 luxury assets, €515M tokenized, 6 cities × 5 asset classes (residences, five-star hotels and riads, flagships and dining, resorts, estates). Each asset has a memorandum, a valuation report, a technical survey and a legal note (96 documents). |
+| **Valuations from open data** | Paris residences are priced from DVF 2024 transactions (median €/m² by postcode), London residences from HM Land Registry 2024 price-paid data. Hotels, resorts, retail and estates capitalise their income; New York, Dubai, Melbourne and Marrakech figures are flagged as indicative. |
 | **Primary offerings** | All-or-nothing sales held in escrow by the offering contract. Sold out or deadline reached → settle (1% fee) and shares are claimable; target missed → full refund. |
 | **Compliance** | ERC-3643-style checks inside the token's `_update`: only verified wallets can receive shares on *any* path, per-asset country blocks (U.S. persons blocked, Reg S), holder cap, frozen wallets, agent forced transfers. |
 | **Monthly income** | Rent is distributed pro rata with a dividend-per-share accumulator (no loops, any number of holders) and claimed from the portfolio. |
@@ -37,11 +37,11 @@ photographs, and an AI analyst answers questions with citations to the property'
 | **Governance** | One share, one vote at a snapshot one second before the proposal opens (so later buys cannot swing a vote), 1% proposal threshold, 20% quorum. |
 | **Issuer flow** | Owners submit a listing request on-chain; the operator approves or rejects it with a note. |
 | **AI analyst** | Claude with tool use (`search_documents`, `get_asset`, `list_assets`, `compare_assets`) over BM25 retrieval and live indexed chain data. Answers cite passages `[S1]` and datasets `[D1]`, shown with their evidence. Without an API key, a rule-based offline analyst streams the same events. |
-| **History** | The seed replays ~13 months of activity (2,350 transactions in ~20 s): KYC, offerings, monthly rent, claims, trades, votes and listing requests, using `evm_setNextBlockTimestamp`. |
+| **History** | The seed replays ~13 months of activity (about 3,000 transactions in ~25 s): KYC, offerings, monthly rent, claims, trades, votes and listing requests, using `evm_setNextBlockTimestamp`. |
 | **360° visits from real photographs** | Every property opens as a WebGL 360° visit through four rooms or places, built from real equirectangular photographs (62 CC0 captures from Poly Haven). Progressive loading (1K then 4K), crossfade with a lens push between rooms, drag with inertia, auto-play, fullscreen. Card photos are real stills of the same places. |
-| **Tokenization, shown** | The home page pins a real façade to the scroll: it is cut into a grid, the tiles lift off in 3D, flip into €50 tokens, and one of them lands in a wallet with its monthly rent. |
+| **Tokenization, shown** | The home page is pure motion graphics on black: a building drawn as glowing isometric floors is pinned to the scroll, the floors lift apart, every cell becomes a €50 token, and one of them lands in a wallet with its monthly rent. An animated chart then draws twelve months of rent. |
 | **Motion everywhere** | GSAP + ScrollTrigger + SplitText and Lenis smooth scrolling: preloader, masked headline reveals, pinned horizontal collection rail, stacking cards, count-ups, parallax, magnetic buttons, page transitions. `prefers-reduced-motion` collapses everything to the final state. |
-| **Design** | Daylight editorial look after the reference the owner picked: inset photographic hero, Clash Display + General Sans, paper and ink with one signal orange reserved for tokens. English and French, responsive down to phone width. |
+| **Design** | Night home page with a WebGL colour field (burgundy, orange, violet) and no photography; daylight paper pages inside. Real photographs appear only on property pages. Clash Display + General Sans, one signal orange reserved for tokens. English and French, responsive down to phone width. |
 | **Public static demo** | `NEXT_PUBLIC_STATIC=1` exports the app for GitHub Pages: it reads a JSON snapshot of the API (`backend/app/export_static.py`), simulates investing, trading, rent, votes and KYC in the browser (`web/src/lib/demo.ts`), and runs the offline analyst client-side. Deployed by `.github/workflows/pages.yml`. |
 
 ## Architecture

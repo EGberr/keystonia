@@ -1,27 +1,28 @@
 ---
 id: KST-LON-004-memorandum
-title: Shoreditch Studio Offices — Investment memorandum
+title: Bond Street Gallery — Investment memorandum
 asset: KST-LON-004
 type: memorandum
 ---
-# Shoreditch Studio Offices — Investment memorandum
+# Bond Street Gallery — Investment memorandum
 
 > **Demo document.** This asset is fictional and part of the Keystonia demonstration network. No real investment is offered.
 
 ## Summary
-Shoreditch Studio Offices is a creative office floor (640 m²) in Shoreditch, London, United Kingdom. A loft office floor in the heart of Tech City. The asset is valued at €4,727,000 and divided into 47,270 shares of €100. 50% of the shares (23,635) are offered to investors; the owner retains 23,635 shares.
+Bond Street Gallery is a art gallery and private dining club (640 m²) in Bond Street, London, United Kingdom. A gallery and a members' dining club on Bond Street. The asset is valued at €23,333,000 and divided into 233,330 shares of €100. 45% of the shares (104,998) are offered to investors; the owner retains 128,332 shares.
 
 ## Income
-Gross yield is 7.53% and the projected net yield after operating costs is 5.5%, i.e. a net operating income of €260,000 per year, distributed monthly (€21,667 per month across all shares). Occupancy is 100%. Operator / tenant: Design agency (10-year lease).
+Gross yield is 5.75% and the projected net yield after operating costs is 4.2%, i.e. a net operating income of €980,000 per year, distributed monthly (€81,667 per month across all shares). Occupancy is 100%. Operator / tenant: Gallery and members' club (15-year leases).
 
 ## Highlights
-- 10-year lease with a 5-year break
-- Upward-only rent reviews
+- Two tenants on 15-year leases
+- Upward-only rent reviews every five years
 
 ## Key risks
-- Office demand uncertainty with hybrid work
+- Art-market tenants are cyclical
+- Business rates revaluation risk
 - Shares are illiquid outside the Keystonia secondary market; prices may differ from the valuation.
 - Valuations can go down as well as up.
 
 ## Location
-Shoreditch (London). Coordinates 51.5260, -0.0780.
+Bond Street (London). Coordinates 51.5124, -0.1447.

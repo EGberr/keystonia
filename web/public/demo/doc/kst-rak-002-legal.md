@@ -1,10 +1,10 @@
 ---
 id: KST-RAK-002-legal
-title: Palmeraie Villa Resort — Legal structure
+title: Palmeraie Royal Villas — Legal structure
 asset: KST-RAK-002
 type: legal
 ---
-# Palmeraie Villa Resort — Legal structure
+# Palmeraie Royal Villas — Legal structure
 
 > **Demo document.** This asset is fictional and part of the Keystonia demonstration network. No real investment is offered.
 

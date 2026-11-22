@@ -1,19 +1,19 @@
 ---
 id: KST-PAR-004-valuation
-title: Boutique Oberkampf — Valuation report
+title: Quai d'Anjou Residence — Valuation report
 asset: KST-PAR-004
 type: valuation
 ---
-# Boutique Oberkampf — Valuation report
+# Quai d'Anjou Residence — Valuation report
 
 > **Demo document.** This asset is fictional and part of the Keystonia demonstration network. No real investment is offered.
 
 ## Method
-Income capitalisation.
+Comparable sales.
 
 ## Market evidence
-Net operating income €41,000 capitalised at 5.2%. Source: Operator accounts (fictional) and market cap rates.
+Median €12,640/m² for apartments in 75004 (431 sales in 2024). Source: DVF 2024, data.gouv.fr (Licence Ouverte 2.0).
 The reference comes from official open transaction data.
 
 ## Conclusion
-Adjustment: None. Concluded value: €788,500 (€9,276 per m²). Share price: €50.
+Adjustment: +5% for condition and floor. Concluded value: €2,230,000 (€13,274 per m²). Share price: €100.

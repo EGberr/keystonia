@@ -1,29 +1,29 @@
 ---
 id: KST-PAR-001-memorandum
-title: Atelier du Marais — Investment memorandum
+title: Montaigne Penthouse — Investment memorandum
 asset: KST-PAR-001
 type: memorandum
 ---
-# Atelier du Marais — Investment memorandum
+# Montaigne Penthouse — Investment memorandum
 
 > **Demo document.** This asset is fictional and part of the Keystonia demonstration network. No real investment is offered.
 
 ## Summary
-Atelier du Marais is a 2 bedrooms (62 m²) in Le Marais, Paris, France. Exposed beams and a glass roof in the historic Marais. The asset is valued at €762,000 and divided into 15,240 shares of €50. 45% of the shares (6,858) are offered to investors; the owner retains 8,382 shares.
+Montaigne Penthouse is a 3 bedrooms, terrace facing the eiffel tower (215 m²) in Avenue Montaigne, Paris, France. A top-floor terrace in the Golden Triangle. The asset is valued at €2,754,000 and divided into 27,540 shares of €100. 45% of the shares (12,393) are offered to investors; the owner retains 15,147 shares.
 
 ## Income
-Gross yield is 3.6% and the projected net yield after operating costs is 2.63%, i.e. a net operating income of €20,025 per year, distributed monthly (€1,669 per month across all shares). Occupancy is 100%. Operator / tenant: Long-term tenant (3-year lease).
+Gross yield is 3.1% and the projected net yield after operating costs is 2.26%, i.e. a net operating income of €62,323 per year, distributed monthly (€5,194 per month across all shares). Occupancy is 100%. Operator / tenant: Long-term tenant (diplomatic lease).
 
 ## Highlights
-- Top-floor atelier with a 4 m glass roof
-- Three minutes from Saint-Paul metro
-- Lease indexed on the French rent reference index (IRL)
+- 60 m² terrace with an Eiffel Tower view
+- Haussmann building with concierge
+- Diplomatic lease renewed in 2025
 
 ## Key risks
-- Energy rating D: works needed before 2034 rental rules tighten
-- Historic building: renovations require heritage approval
+- Energy rating C: glazing upgrade planned
+- Prime Paris yields are low by design
 - Shares are illiquid outside the Keystonia secondary market; prices may differ from the valuation.
 - Valuations can go down as well as up.
 
 ## Location
-Le Marais (Paris). Coordinates 48.8627, 2.3622.
+Avenue Montaigne (Paris). Coordinates 48.8662, 2.3046.

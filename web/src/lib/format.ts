@@ -60,6 +60,7 @@ export const COUNTRIES: Record<number, { code: string; en: string; fr: string; f
   826: { code: "GB", en: "United Kingdom", fr: "Royaume-Uni", flag: "🇬🇧" },
   504: { code: "MA", en: "Morocco", fr: "Maroc", flag: "🇲🇦" },
   620: { code: "PT", en: "Portugal", fr: "Portugal", flag: "🇵🇹" },
+  36: { code: "AU", en: "Australia", fr: "Australie", flag: "🇦🇺" },
   724: { code: "ES", en: "Spain", fr: "Espagne", flag: "🇪🇸" },
   276: { code: "DE", en: "Germany", fr: "Allemagne", flag: "🇩🇪" },
   380: { code: "IT", en: "Italy", fr: "Italie", flag: "🇮🇹" },
@@ -72,7 +73,7 @@ export const CATEGORY_COLORS: Record<string, string> = {
   residential: "var(--chart-1)",
   hospitality: "var(--chart-2)",
   commercial: "var(--chart-3)",
-  student: "var(--chart-4)",
+  resort: "var(--chart-4)",
   land: "var(--chart-5)",
 };
 

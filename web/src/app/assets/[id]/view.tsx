@@ -452,7 +452,7 @@ function AssetView() {
       </div>
     );
 
-  const country = COUNTRIES[{ paris: 250, london: 826, marrakech: 504, lisbon: 620 }[a.city] ?? 0];
+  const country = COUNTRIES[{ paris: 250, london: 826, marrakech: 504, newyork: 840, dubai: 784, melbourne: 36 }[a.city] ?? 0];
   return (
     <div className="mx-auto max-w-[1320px] px-5 py-8 sm:px-8">
       <Link href="/invest" className="mb-5 inline-flex items-center gap-1.5 text-[13px] text-muted hover:text-ink"><ArrowLeft size={14} /> {t("asset.back")}</Link>

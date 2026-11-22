@@ -7,44 +7,27 @@ OPERATOR = 0  # platform operator: KYC agent, distributor, admin
 TREASURY = 1
 
 ISSUERS = {
-    2: {"name": "SCI Lumière Paris", "country": 250, "kind": "issuer"},
-    3: {"name": "Marais Hospitality SAS", "country": 250, "kind": "issuer"},
-    4: {"name": "Thames Living Ltd", "country": 826, "kind": "issuer"},
-    5: {"name": "Shoreditch Estates Ltd", "country": 826, "kind": "issuer"},
+    2: {"name": "SCI Montaigne Patrimoine", "country": 250, "kind": "issuer"},
+    3: {"name": "Rive Gauche Hospitality SAS", "country": 250, "kind": "issuer"},
+    4: {"name": "Belgravia Estates Ltd", "country": 826, "kind": "issuer"},
+    5: {"name": "Mayfair Hospitality Ltd", "country": 826, "kind": "issuer"},
     6: {"name": "Dar Zellij SARL", "country": 504, "kind": "issuer"},
-    7: {"name": "Atlas Agri Holding", "country": 504, "kind": "issuer"},
-    8: {"name": "Tejo Imobiliária Lda", "country": 620, "kind": "issuer"},
-    9: {"name": "Comporta Terra Lda", "country": 620, "kind": "issuer"},
+    # The New York assets are held through a UK holding: the tokens block U.S. persons (Regulation S).
+    7: {"name": "Hudson & Fifth Holdings Ltd", "country": 826, "kind": "issuer"},
+    8: {"name": "Palm Signature Holdings", "country": 784, "kind": "issuer"},
+    9: {"name": "Yarra Estates Pty Ltd", "country": 36, "kind": "issuer"},
 }
 
 ISSUER_FOR_ASSET = {
-    "KST-PAR-001": 2,
-    "KST-PAR-002": 2,
-    "KST-PAR-003": 2,
-    "KST-PAR-004": 3,
-    "KST-PAR-005": 3,
-    "KST-PAR-006": 2,
-    "KST-LON-001": 4,
-    "KST-LON-002": 4,
-    "KST-LON-003": 4,
-    "KST-LON-004": 5,
-    "KST-LON-005": 5,
-    "KST-LON-006": 4,
-    "KST-RAK-001": 6,
-    "KST-RAK-002": 6,
-    "KST-RAK-003": 6,
-    "KST-RAK-004": 6,
-    "KST-RAK-005": 7,
-    "KST-RAK-006": 6,
-    "KST-LIS-001": 8,
-    "KST-LIS-002": 8,
-    "KST-LIS-003": 8,
-    "KST-LIS-004": 8,
-    "KST-LIS-005": 9,
-    "KST-LIS-006": 8,
+    **{f"KST-PAR-00{i}": n for i, n in zip(range(1, 5), (2, 3, 3, 2), strict=True)},
+    **{f"KST-LON-00{i}": n for i, n in zip(range(1, 5), (4, 5, 4, 5), strict=True)},
+    **{f"KST-RAK-00{i}": 6 for i in range(1, 5)},
+    **{f"KST-NYC-00{i}": 7 for i in range(1, 5)},
+    **{f"KST-DXB-00{i}": 8 for i in range(1, 5)},
+    **{f"KST-MEL-00{i}": 9 for i in range(1, 5)},
 }
 
-# ISO 3166-1 numeric: FR 250, GB 826, MA 504, PT 620, ES 724, DE 276, IT 380, BE 56, AE 784, US 840.
+# ISO 3166-1 numeric: FR 250, GB 826, MA 504, AU 36, PT 620, ES 724, DE 276, IT 380, BE 56, AE 784, US 840.
 INVESTORS = {
     10: ("Inès Martin", 250),
     11: ("Lucas Bernard", 250),

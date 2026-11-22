@@ -1,10 +1,10 @@
 ---
 id: KST-PAR-003-legal
-title: Résidence Jussieu — Legal structure
+title: Saint-Honoré Flagship — Legal structure
 asset: KST-PAR-003
 type: legal
 ---
-# Résidence Jussieu — Legal structure
+# Saint-Honoré Flagship — Legal structure
 
 > **Demo document.** This asset is fictional and part of the Keystonia demonstration network. No real investment is offered.
 

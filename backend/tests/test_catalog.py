@@ -15,9 +15,11 @@ ASSETS = catalog()
 def test_catalogue_shape():
     assert len(ASSETS) == 24
     assert len({a["id"] for a in ASSETS}) == 24
-    assert Counter(a["city"] for a in ASSETS) == {"paris": 6, "london": 6, "marrakech": 6, "lisbon": 6}
+    assert Counter(a["city"] for a in ASSETS) == dict.fromkeys(
+        ("newyork", "paris", "dubai", "london", "marrakech", "melbourne"), 4
+    )
     assert {a["category"] for a in ASSETS} == set(categories())
-    assert set(cities()) == {"paris", "london", "marrakech", "lisbon"}
+    assert set(cities()) == {"newyork", "paris", "dubai", "london", "marrakech", "melbourne"}
 
 
 @pytest.mark.parametrize("a", ASSETS, ids=lambda a: a["id"])

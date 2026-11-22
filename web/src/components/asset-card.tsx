@@ -37,11 +37,11 @@ export function ProgressBar({ value, className }: { value: number; className?: s
 export function useCategoryLabel() {
   const { lang } = useLang();
   const labels: Record<string, [string, string]> = {
-    residential: ["Residential", "Résidentiel"],
-    hospitality: ["Hospitality", "Hôtellerie"],
-    commercial: ["Retail & offices", "Commerces & bureaux"],
-    student: ["Student living", "Logement étudiant"],
-    land: ["Land & vineyards", "Terres & vignobles"],
+    residential: ["Residences", "Résidences"],
+    hospitality: ["Hotels & riads", "Hôtels & riads"],
+    commercial: ["Flagships & dining", "Flagships & tables"],
+    resort: ["Resorts & villas", "Resorts & villas"],
+    land: ["Estates & vineyards", "Domaines & vignobles"],
   };
   return (c: string) => labels[c]?.[lang === "fr" ? 1 : 0] ?? c;
 }

@@ -1,10 +1,10 @@
 ---
 id: KST-LON-003-legal
-title: Southwark Student Quarter — Legal structure
+title: Belgravia Mews Residences — Legal structure
 asset: KST-LON-003
 type: legal
 ---
-# Southwark Student Quarter — Legal structure
+# Belgravia Mews Residences — Legal structure
 
 > **Demo document.** This asset is fictional and part of the Keystonia demonstration network. No real investment is offered.
 

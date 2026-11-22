@@ -1,19 +1,19 @@
 ---
 id: KST-RAK-003-valuation
-title: Résidence Hivernage — Valuation report
+title: Palais Kasbah & Spa — Valuation report
 asset: KST-RAK-003
 type: valuation
 ---
-# Résidence Hivernage — Valuation report
+# Palais Kasbah & Spa — Valuation report
 
 > **Demo document.** This asset is fictional and part of the Keystonia demonstration network. No real investment is offered.
 
 ## Method
-Indicative price per m².
+Income capitalisation.
 
 ## Market evidence
-Indicative €2,400/m² for Hivernage. Source: Keystonia indicative estimate (no open transaction dataset for this market).
+Net operating income €1,250,000 capitalised at 7.0%. Source: Operator accounts (fictional) and market cap rates.
 This market has no open transaction dataset: the figure is an indicative estimate and should be treated with caution.
 
 ## Conclusion
-Adjustment: None. Concluded value: €1,296,000 (€2,400 per m²). Share price: €50.
+Adjustment: None. Concluded value: €17,857,000 (€5,760 per m²). Share price: €100.

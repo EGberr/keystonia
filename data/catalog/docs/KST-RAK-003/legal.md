@@ -1,10 +1,10 @@
 ---
 id: KST-RAK-003-legal
-title: Résidence Hivernage — Legal structure
+title: Palais Kasbah & Spa — Legal structure
 asset: KST-RAK-003
 type: legal
 ---
-# Résidence Hivernage — Legal structure
+# Palais Kasbah & Spa — Legal structure
 
 > **Demo document.** This asset is fictional and part of the Keystonia demonstration network. No real investment is offered.
 

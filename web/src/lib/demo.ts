@@ -301,7 +301,7 @@ export const simulate = {
     return done();
   },
   async submitListing(addr: string, category: number, city: string, uri: string) {
-    const cats = ["residential", "hospitality", "commercial", "student", "land"];
+    const cats = ["residential", "hospitality", "commercial", "resort", "land"];
     load().requests.unshift({ id: 1000 + Math.floor(Math.random() * 9000), owner: addr, owner_name: null, category: cats[category] ?? "residential", city, uri, status: "pending", note: null, ts: now() });
     return done();
   },

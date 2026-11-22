@@ -1,10 +1,10 @@
 ---
 id: KST-PAR-002-legal
-title: Belvédère Montmartre — Legal structure
+title: Hôtel Particulier Saint-Germain — Legal structure
 asset: KST-PAR-002
 type: legal
 ---
-# Belvédère Montmartre — Legal structure
+# Hôtel Particulier Saint-Germain — Legal structure
 
 > **Demo document.** This asset is fictional and part of the Keystonia demonstration network. No real investment is offered.
 

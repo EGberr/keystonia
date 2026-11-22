@@ -1,10 +1,10 @@
 ---
 id: KST-PAR-001-legal
-title: Atelier du Marais — Legal structure
+title: Montaigne Penthouse — Legal structure
 asset: KST-PAR-001
 type: legal
 ---
-# Atelier du Marais — Legal structure
+# Montaigne Penthouse — Legal structure
 
 > **Demo document.** This asset is fictional and part of the Keystonia demonstration network. No real investment is offered.
 

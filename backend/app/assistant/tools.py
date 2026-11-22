@@ -57,8 +57,8 @@ class AssetInput(BaseModel):
 
 
 class ListInput(BaseModel):
-    city: Literal["paris", "london", "marrakech", "lisbon"] | None = None
-    category: Literal["residential", "hospitality", "commercial", "student", "land"] | None = None
+    city: Literal["newyork", "paris", "dubai", "london", "marrakech", "melbourne"] | None = None
+    category: Literal["residential", "hospitality", "commercial", "resort", "land"] | None = None
     phase: Literal["live", "funded", "upcoming"] | None = None
     sort_by: Literal["net_yield_pct", "valuation_eur", "progress_pct", "income_distributed_eur"] = "net_yield_pct"
 
@@ -114,7 +114,7 @@ TOOLS: list[dict[str, Any]] = [
             "properties": {
                 "city": {
                     "type": "string",
-                    "enum": ["paris", "london", "marrakech", "lisbon"],
+                    "enum": ["newyork", "paris", "dubai", "london", "marrakech", "melbourne"],
                 },
                 "category": {
                     "type": "string",
@@ -122,7 +122,7 @@ TOOLS: list[dict[str, Any]] = [
                         "residential",
                         "hospitality",
                         "commercial",
-                        "student",
+                        "resort",
                         "land",
                     ],
                 },

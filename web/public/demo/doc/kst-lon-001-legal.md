@@ -1,10 +1,10 @@
 ---
 id: KST-LON-001-legal
-title: Camden Lock Loft — Legal structure
+title: Chelsea Garden Townhouse — Legal structure
 asset: KST-LON-001
 type: legal
 ---
-# Camden Lock Loft — Legal structure
+# Chelsea Garden Townhouse — Legal structure
 
 > **Demo document.** This asset is fictional and part of the Keystonia demonstration network. No real investment is offered.
 

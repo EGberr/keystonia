@@ -53,7 +53,7 @@ def valuation(a: dict) -> tuple[float, dict]:
             "reference": f"Indicative {eur(ppm2)}/m² for {a['district']}",
             "source": "Keystonia indicative estimate (no open transaction dataset for this market)",
             "adjustment": "None",
-            "indicative": True,
+            "indicative": a["city"] not in ("paris", "london"),
         }
     v = a["noi"] / (a["cap_rate"] / 100)
     return v, {
@@ -61,7 +61,7 @@ def valuation(a: dict) -> tuple[float, dict]:
         "reference": f"Net operating income {eur(a['noi'])} capitalised at {a['cap_rate']}%",
         "source": "Operator accounts (fictional) and market cap rates",
         "adjustment": "None",
-        "indicative": a["city"] in ("marrakech", "lisbon"),
+        "indicative": a["city"] not in ("paris", "london"),
     }
 
 

@@ -1,0 +1,18 @@
+---
+id: KST-DXB-003-technical
+title: Marina Yacht Club Hotel — Technical survey
+asset: KST-DXB-003
+type: technical
+---
+# Marina Yacht Club Hotel — Technical survey
+
+> **Demo document.** This asset is fictional and part of the Keystonia demonstration network. No real investment is offered.
+
+## Building
+Built in 2016. Layout: 80-key five-star hotel with 12 berths. Surface: 9,800 m².
+
+## Energy
+Energy rating B. Meets current efficiency expectations.
+
+## Condition and capital expenditure
+Recent building: standard maintenance reserve of 0.8% of rent per year.

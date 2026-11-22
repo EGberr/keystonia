@@ -12,14 +12,10 @@ from PIL import Image  # noqa: E402
 
 # key -> (panorama, horizontal centre 0..1 of the view)
 CITIES = {
-    "cities/paris": ("konigsallee", 0.5),
-    "cities/london": ("leadenhall_market", 0.5),
-    "cities/marrakech": ("medieval_cafe", 0.5),
-    "cities/lisbon": ("vignaioli", 0.5),
     "categories/residential": ("combination_room", 0.5),
     "categories/hospitality": ("hotel_room", 0.5),
     "categories/commercial": ("decor_shop", 0.5),
-    "categories/student": ("newman_cafeteria", 0.5),
+    "categories/resort": ("pool", 0.5),
     "categories/land": ("stone_pines", 0.5),
 }
 

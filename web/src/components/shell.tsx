@@ -135,7 +135,7 @@ export function TopNav() {
   return (
     <>
       <header className="fixed inset-x-0 top-0 z-50">
-        <p className="flex items-center justify-center gap-2 bg-ink px-4 py-1.5 text-center font-mono text-[9.5px] uppercase tracking-[0.18em] text-white/70">
+        <p className="flex items-center justify-center gap-2 bg-black px-4 py-1.5 text-center font-mono text-[9.5px] uppercase tracking-[0.18em] text-white/70">
           <ShieldCheck size={11} className="shrink-0 text-accent" />
           {t("banner.demo")}
         </p>

@@ -1,10 +1,10 @@
 ---
 id: KST-LON-004-legal
-title: Shoreditch Studio Offices — Legal structure
+title: Bond Street Gallery — Legal structure
 asset: KST-LON-004
 type: legal
 ---
-# Shoreditch Studio Offices — Legal structure
+# Bond Street Gallery — Legal structure
 
 > **Demo document.** This asset is fictional and part of the Keystonia demonstration network. No real investment is offered.
 

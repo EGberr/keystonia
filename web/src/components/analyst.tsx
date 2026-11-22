@@ -22,8 +22,8 @@ const SUGGESTIONS = {
     fr: ["Qu'est-ce qui explique le rendement net ?", "Quels sont les trois principaux risques ?", "Comment la valorisation a-t-elle été construite ?", "Quelle structure juridique est-ce que je détiens ?"],
   },
   global: {
-    en: ["Which live offerings have the best net yield?", "Compare the Marrakech and Lisbon hospitality assets", "Which assets are cheapest per share?", "How does the income distribution work?"],
-    fr: ["Quelles levées en cours ont le meilleur rendement net ?", "Compare les actifs hôteliers de Marrakech et Lisbonne", "Quels biens ont la part la moins chère ?", "Comment fonctionne la distribution des revenus ?"],
+    en: ["Which live offerings have the best net yield?", "Compare the Marrakech and Dubai hotels", "Which assets are cheapest per share?", "How does the income distribution work?"],
+    fr: ["Quelles levées en cours ont le meilleur rendement net ?", "Compare les actifs hôteliers de Marrakech et Dubaï", "Quels biens ont la part la moins chère ?", "Comment fonctionne la distribution des revenus ?"],
   },
 };
 

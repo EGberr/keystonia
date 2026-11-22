@@ -1,177 +1,6 @@
 {
- "assets/kst-par-001-0.jpg": {
-  "file": "assets/kst-par-001-0.jpg",
-  "title": "Photo Studio Loft Hall",
-  "creator": "Sergej Majboroda",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/photo_studio_loft_hall"
- },
- "assets/kst-par-001-1.jpg": {
-  "file": "assets/kst-par-001-1.jpg",
-  "title": "Brown Photostudio 02",
-  "creator": "Sergej Majboroda",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/brown_photostudio_02"
- },
- "assets/kst-par-001-2.jpg": {
-  "file": "assets/kst-par-001-2.jpg",
-  "title": "Brown Photostudio 05",
-  "creator": "Sergej Majboroda",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/brown_photostudio_05"
- },
- "assets/kst-par-002-0.jpg": {
-  "file": "assets/kst-par-002-0.jpg",
-  "title": "Glasshouse Interior",
-  "creator": "Dario Barresi",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/glasshouse_interior"
- },
- "assets/kst-par-002-1.jpg": {
-  "file": "assets/kst-par-002-1.jpg",
-  "title": "Brown Photostudio 04",
-  "creator": "Sergej Majboroda",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/brown_photostudio_04"
- },
- "assets/kst-par-002-2.jpg": {
-  "file": "assets/kst-par-002-2.jpg",
-  "title": "Brown Photostudio 07",
-  "creator": "Sergej Majboroda",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/brown_photostudio_07"
- },
- "assets/kst-par-003-0.jpg": {
-  "file": "assets/kst-par-003-0.jpg",
-  "title": "Newman Lobby",
-  "creator": "Savva Zakharov",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/newman_lobby"
- },
- "assets/kst-par-003-1.jpg": {
-  "file": "assets/kst-par-003-1.jpg",
-  "title": "Small Empty Room 1",
-  "creator": "Sergej Majboroda",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/small_empty_room_1"
- },
- "assets/kst-par-003-2.jpg": {
-  "file": "assets/kst-par-003-2.jpg",
-  "title": "Newman Cafeteria",
-  "creator": "Savva Zakharov",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/newman_cafeteria"
- },
- "assets/kst-par-004-0.jpg": {
-  "file": "assets/kst-par-004-0.jpg",
-  "title": "Decor Shop",
-  "creator": "Sergej Majboroda",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/decor_shop"
- },
- "assets/kst-par-004-1.jpg": {
-  "file": "assets/kst-par-004-1.jpg",
-  "title": "Comfy Café",
-  "creator": "Sergej Majboroda",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/comfy_cafe"
- },
- "assets/kst-par-004-2.jpg": {
-  "file": "assets/kst-par-004-2.jpg",
-  "title": "Phone Shop",
-  "creator": "Philip Modin",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/phone_shop"
- },
- "assets/kst-par-005-0.jpg": {
-  "file": "assets/kst-par-005-0.jpg",
-  "title": "Entrance Hall",
-  "creator": "Sergej Majboroda",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/entrance_hall"
- },
- "assets/kst-par-005-1.jpg": {
-  "file": "assets/kst-par-005-1.jpg",
-  "title": "Large Corridor",
-  "creator": "Sergej Majboroda",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/large_corridor"
- },
- "assets/kst-par-005-2.jpg": {
-  "file": "assets/kst-par-005-2.jpg",
-  "title": "Hotel Room",
-  "creator": "Greg Zaal",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/hotel_room"
- },
- "assets/kst-par-006-0.jpg": {
-  "file": "assets/kst-par-006-0.jpg",
-  "title": "Combination Room",
-  "creator": "Sergej Majboroda",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/combination_room"
- },
- "assets/kst-par-006-1.jpg": {
-  "file": "assets/kst-par-006-1.jpg",
-  "title": "Entrance Hall",
-  "creator": "Sergej Majboroda",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/entrance_hall"
- },
- "assets/kst-par-006-2.jpg": {
-  "file": "assets/kst-par-006-2.jpg",
-  "title": "Anniversary Lounge",
-  "creator": "Greg Zaal",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/anniversary_lounge"
- },
- "assets/kst-lon-001-0.jpg": {
-  "file": "assets/kst-lon-001-0.jpg",
-  "title": "Brown Photostudio 01",
-  "creator": "Sergej Majboroda",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/brown_photostudio_01"
- },
- "assets/kst-lon-001-1.jpg": {
-  "file": "assets/kst-lon-001-1.jpg",
+ "assets/kst-nyc-001-0.jpg": {
+  "file": "assets/kst-nyc-001-0.jpg",
   "title": "Brown Photostudio 03",
   "creator": "Sergej Majboroda",
   "license": "CC0 1.0",
@@ -179,8 +8,80 @@
   "source": "polyhaven",
   "url": "https://polyhaven.com/a/brown_photostudio_03"
  },
- "assets/kst-lon-001-2.jpg": {
-  "file": "assets/kst-lon-001-2.jpg",
+ "assets/kst-nyc-001-1.jpg": {
+  "file": "assets/kst-nyc-001-1.jpg",
+  "title": "Glasshouse Interior",
+  "creator": "Dario Barresi",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/glasshouse_interior"
+ },
+ "assets/kst-nyc-001-2.jpg": {
+  "file": "assets/kst-nyc-001-2.jpg",
+  "title": "Modern Bathroom",
+  "creator": "Adrian Kubasa",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/modern_bathroom"
+ },
+ "assets/kst-nyc-002-0.jpg": {
+  "file": "assets/kst-nyc-002-0.jpg",
+  "title": "Vestibule",
+  "creator": "Sergej Majboroda",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/vestibule"
+ },
+ "assets/kst-nyc-002-1.jpg": {
+  "file": "assets/kst-nyc-002-1.jpg",
+  "title": "Warm Bar",
+  "creator": "Greg Zaal, Jarod Guest",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/warm_bar"
+ },
+ "assets/kst-nyc-002-2.jpg": {
+  "file": "assets/kst-nyc-002-2.jpg",
+  "title": "Hotel Room",
+  "creator": "Greg Zaal",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/hotel_room"
+ },
+ "assets/kst-nyc-003-0.jpg": {
+  "file": "assets/kst-nyc-003-0.jpg",
+  "title": "Decor Shop",
+  "creator": "Sergej Majboroda",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/decor_shop"
+ },
+ "assets/kst-nyc-003-1.jpg": {
+  "file": "assets/kst-nyc-003-1.jpg",
+  "title": "Art Studio",
+  "creator": "Oliksiy Yakovlyev",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/art_studio"
+ },
+ "assets/kst-nyc-003-2.jpg": {
+  "file": "assets/kst-nyc-003-2.jpg",
+  "title": "Comfy Café",
+  "creator": "Sergej Majboroda",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/comfy_cafe"
+ },
+ "assets/kst-nyc-004-0.jpg": {
+  "file": "assets/kst-nyc-004-0.jpg",
   "title": "Cayley Interior",
   "creator": "Greg Zaal",
   "license": "CC0 1.0",
@@ -188,59 +89,320 @@
   "source": "polyhaven",
   "url": "https://polyhaven.com/a/cayley_interior"
  },
- "assets/kst-lon-002-0.jpg": {
-  "file": "assets/kst-lon-002-0.jpg",
-  "title": "Photo Studio London Hall",
+ "assets/kst-nyc-004-1.jpg": {
+  "file": "assets/kst-nyc-004-1.jpg",
+  "title": "Brown Photostudio 04",
   "creator": "Sergej Majboroda",
   "license": "CC0 1.0",
   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
   "source": "polyhaven",
-  "url": "https://polyhaven.com/a/photo_studio_london_hall"
+  "url": "https://polyhaven.com/a/brown_photostudio_04"
  },
- "assets/kst-lon-002-1.jpg": {
-  "file": "assets/kst-lon-002-1.jpg",
-  "title": "Brown Photostudio 06",
+ "assets/kst-nyc-004-2.jpg": {
+  "file": "assets/kst-nyc-004-2.jpg",
+  "title": "Modern Bathroom",
+  "creator": "Adrian Kubasa",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/modern_bathroom"
+ },
+ "assets/kst-par-001-0.jpg": {
+  "file": "assets/kst-par-001-0.jpg",
+  "title": "Combination Room",
   "creator": "Sergej Majboroda",
   "license": "CC0 1.0",
   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
   "source": "polyhaven",
-  "url": "https://polyhaven.com/a/brown_photostudio_06"
+  "url": "https://polyhaven.com/a/combination_room"
  },
- "assets/kst-lon-002-2.jpg": {
-  "file": "assets/kst-lon-002-2.jpg",
-  "title": "Kiara Interior",
+ "assets/kst-par-001-1.jpg": {
+  "file": "assets/kst-par-001-1.jpg",
+  "title": "Anniversary Lounge",
   "creator": "Greg Zaal",
   "license": "CC0 1.0",
   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
   "source": "polyhaven",
-  "url": "https://polyhaven.com/a/kiara_interior"
+  "url": "https://polyhaven.com/a/anniversary_lounge"
  },
- "assets/kst-lon-003-0.jpg": {
-  "file": "assets/kst-lon-003-0.jpg",
-  "title": "Newman Lobby",
-  "creator": "Savva Zakharov",
+ "assets/kst-par-001-2.jpg": {
+  "file": "assets/kst-par-001-2.jpg",
+  "title": "Lythwood Room",
+  "creator": "Greg Zaal",
   "license": "CC0 1.0",
   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
   "source": "polyhaven",
-  "url": "https://polyhaven.com/a/newman_lobby"
+  "url": "https://polyhaven.com/a/lythwood_room"
  },
- "assets/kst-lon-003-1.jpg": {
-  "file": "assets/kst-lon-003-1.jpg",
-  "title": "Small Empty Room 3",
+ "assets/kst-par-002-0.jpg": {
+  "file": "assets/kst-par-002-0.jpg",
+  "title": "Entrance Hall",
   "creator": "Sergej Majboroda",
   "license": "CC0 1.0",
   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
   "source": "polyhaven",
-  "url": "https://polyhaven.com/a/small_empty_room_3"
+  "url": "https://polyhaven.com/a/entrance_hall"
  },
- "assets/kst-lon-003-2.jpg": {
-  "file": "assets/kst-lon-003-2.jpg",
-  "title": "Newman Cafeteria",
-  "creator": "Savva Zakharov",
+ "assets/kst-par-002-1.jpg": {
+  "file": "assets/kst-par-002-1.jpg",
+  "title": "Ballroom",
+  "creator": "Sergej Majboroda",
   "license": "CC0 1.0",
   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
   "source": "polyhaven",
-  "url": "https://polyhaven.com/a/newman_cafeteria"
+  "url": "https://polyhaven.com/a/ballroom"
+ },
+ "assets/kst-par-002-2.jpg": {
+  "file": "assets/kst-par-002-2.jpg",
+  "title": "Relax Inn Seaview Suite",
+  "creator": "Dario Barresi, Jenelle van Heerden",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/relax_inn_seaview_suite"
+ },
+ "assets/kst-par-003-0.jpg": {
+  "file": "assets/kst-par-003-0.jpg",
+  "title": "Decor Shop",
+  "creator": "Sergej Majboroda",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/decor_shop"
+ },
+ "assets/kst-par-003-1.jpg": {
+  "file": "assets/kst-par-003-1.jpg",
+  "title": "Large Corridor",
+  "creator": "Sergej Majboroda",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/large_corridor"
+ },
+ "assets/kst-par-003-2.jpg": {
+  "file": "assets/kst-par-003-2.jpg",
+  "title": "Comfy Café",
+  "creator": "Sergej Majboroda",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/comfy_cafe"
+ },
+ "assets/kst-par-004-0.jpg": {
+  "file": "assets/kst-par-004-0.jpg",
+  "title": "Old Room",
+  "creator": "Sergej Majboroda",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/old_room"
+ },
+ "assets/kst-par-004-1.jpg": {
+  "file": "assets/kst-par-004-1.jpg",
+  "title": "Reading Room",
+  "creator": "Greg Zaal",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/reading_room"
+ },
+ "assets/kst-par-004-2.jpg": {
+  "file": "assets/kst-par-004-2.jpg",
+  "title": "Brown Photostudio 05",
+  "creator": "Sergej Majboroda",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/brown_photostudio_05"
+ },
+ "assets/kst-dxb-001-0.jpg": {
+  "file": "assets/kst-dxb-001-0.jpg",
+  "title": "Pool",
+  "creator": "Greg Zaal",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/pool"
+ },
+ "assets/kst-dxb-001-1.jpg": {
+  "file": "assets/kst-dxb-001-1.jpg",
+  "title": "Lapa",
+  "creator": "Greg Zaal",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/lapa"
+ },
+ "assets/kst-dxb-001-2.jpg": {
+  "file": "assets/kst-dxb-001-2.jpg",
+  "title": "Sundowner Deck",
+  "creator": "Dario Barresi",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/sundowner_deck"
+ },
+ "assets/kst-dxb-002-0.jpg": {
+  "file": "assets/kst-dxb-002-0.jpg",
+  "title": "Glasshouse Interior",
+  "creator": "Dario Barresi",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/glasshouse_interior"
+ },
+ "assets/kst-dxb-002-1.jpg": {
+  "file": "assets/kst-dxb-002-1.jpg",
+  "title": "Cayley Interior",
+  "creator": "Greg Zaal",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/cayley_interior"
+ },
+ "assets/kst-dxb-002-2.jpg": {
+  "file": "assets/kst-dxb-002-2.jpg",
+  "title": "Modern Bathroom",
+  "creator": "Adrian Kubasa",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/modern_bathroom"
+ },
+ "assets/kst-dxb-003-0.jpg": {
+  "file": "assets/kst-dxb-003-0.jpg",
+  "title": "Country Club",
+  "creator": "Sergej Majboroda",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/country_club"
+ },
+ "assets/kst-dxb-003-1.jpg": {
+  "file": "assets/kst-dxb-003-1.jpg",
+  "title": "Indoor Pool",
+  "creator": "Oliksiy Yakovlyev",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/indoor_pool"
+ },
+ "assets/kst-dxb-003-2.jpg": {
+  "file": "assets/kst-dxb-003-2.jpg",
+  "title": "Hotel Room",
+  "creator": "Greg Zaal",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/hotel_room"
+ },
+ "assets/kst-dxb-004-0.jpg": {
+  "file": "assets/kst-dxb-004-0.jpg",
+  "title": "Warm Restaurant",
+  "creator": "Greg Zaal, Jarod Guest",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/warm_restaurant"
+ },
+ "assets/kst-dxb-004-1.jpg": {
+  "file": "assets/kst-dxb-004-1.jpg",
+  "title": "Warm Bar",
+  "creator": "Greg Zaal, Jarod Guest",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/warm_bar"
+ },
+ "assets/kst-dxb-004-2.jpg": {
+  "file": "assets/kst-dxb-004-2.jpg",
+  "title": "Wooden Lounge",
+  "creator": "Greg Zaal",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/wooden_lounge"
+ },
+ "assets/kst-lon-001-0.jpg": {
+  "file": "assets/kst-lon-001-0.jpg",
+  "title": "Lythwood Lounge",
+  "creator": "Greg Zaal",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/lythwood_lounge"
+ },
+ "assets/kst-lon-001-1.jpg": {
+  "file": "assets/kst-lon-001-1.jpg",
+  "title": "Lythwood Room",
+  "creator": "Greg Zaal",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/lythwood_room"
+ },
+ "assets/kst-lon-001-2.jpg": {
+  "file": "assets/kst-lon-001-2.jpg",
+  "title": "Reading Room",
+  "creator": "Greg Zaal",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/reading_room"
+ },
+ "assets/kst-lon-002-0.jpg": {
+  "file": "assets/kst-lon-002-0.jpg",
+  "title": "Country Club",
+  "creator": "Sergej Majboroda",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/country_club"
+ },
+ "assets/kst-lon-002-1.jpg": {
+  "file": "assets/kst-lon-002-1.jpg",
+  "title": "Ballroom",
+  "creator": "Sergej Majboroda",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/ballroom"
+ },
+ "assets/kst-lon-002-2.jpg": {
+  "file": "assets/kst-lon-002-2.jpg",
+  "title": "Hotel Room",
+  "creator": "Greg Zaal",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/hotel_room"
+ },
+ "assets/kst-lon-003-0.jpg": {
+  "file": "assets/kst-lon-003-0.jpg",
+  "title": "Brown Photostudio 02",
+  "creator": "Sergej Majboroda",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/brown_photostudio_02"
+ },
+ "assets/kst-lon-003-1.jpg": {
+  "file": "assets/kst-lon-003-1.jpg",
+  "title": "Fireplace",
+  "creator": "Greg Zaal",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/fireplace"
+ },
+ "assets/kst-lon-003-2.jpg": {
+  "file": "assets/kst-lon-003-2.jpg",
+  "title": "Brown Photostudio 07",
+  "creator": "Sergej Majboroda",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/brown_photostudio_07"
  },
  "assets/kst-lon-004-0.jpg": {
   "file": "assets/kst-lon-004-0.jpg",
@@ -253,75 +415,21 @@
  },
  "assets/kst-lon-004-1.jpg": {
   "file": "assets/kst-lon-004-1.jpg",
-  "title": "Poly Haven Studio",
-  "creator": "Greg Zaal",
+  "title": "Large Corridor",
+  "creator": "Sergej Majboroda",
   "license": "CC0 1.0",
   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
   "source": "polyhaven",
-  "url": "https://polyhaven.com/a/poly_haven_studio"
+  "url": "https://polyhaven.com/a/large_corridor"
  },
  "assets/kst-lon-004-2.jpg": {
   "file": "assets/kst-lon-004-2.jpg",
-  "title": "Events Hall Interior",
-  "creator": "Dimitrios Savva, Jarod Guest",
+  "title": "Warm Restaurant",
+  "creator": "Greg Zaal, Jarod Guest",
   "license": "CC0 1.0",
   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
   "source": "polyhaven",
-  "url": "https://polyhaven.com/a/events_hall_interior"
- },
- "assets/kst-lon-005-0.jpg": {
-  "file": "assets/kst-lon-005-0.jpg",
-  "title": "Country Club",
-  "creator": "Sergej Majboroda",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/country_club"
- },
- "assets/kst-lon-005-1.jpg": {
-  "file": "assets/kst-lon-005-1.jpg",
-  "title": "Ballroom",
-  "creator": "Sergej Majboroda",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/ballroom"
- },
- "assets/kst-lon-005-2.jpg": {
-  "file": "assets/kst-lon-005-2.jpg",
-  "title": "Relax Inn Seaview Suite",
-  "creator": "Dario Barresi, Jenelle van Heerden",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/relax_inn_seaview_suite"
- },
- "assets/kst-lon-006-0.jpg": {
-  "file": "assets/kst-lon-006-0.jpg",
-  "title": "Lythwood Lounge",
-  "creator": "Greg Zaal",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/lythwood_lounge"
- },
- "assets/kst-lon-006-1.jpg": {
-  "file": "assets/kst-lon-006-1.jpg",
-  "title": "Lythwood Room",
-  "creator": "Greg Zaal",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/lythwood_room"
- },
- "assets/kst-lon-006-2.jpg": {
-  "file": "assets/kst-lon-006-2.jpg",
-  "title": "Reading Room",
-  "creator": "Greg Zaal",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/reading_room"
+  "url": "https://polyhaven.com/a/warm_restaurant"
  },
  "assets/kst-rak-001-0.jpg": {
   "file": "assets/kst-rak-001-0.jpg",
@@ -379,60 +487,33 @@
  },
  "assets/kst-rak-003-0.jpg": {
   "file": "assets/kst-rak-003-0.jpg",
-  "title": "Old Room",
-  "creator": "Sergej Majboroda",
+  "title": "Sepulchral Chapel Rotunda",
+  "creator": "Andreas Mischok",
   "license": "CC0 1.0",
   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
   "source": "polyhaven",
-  "url": "https://polyhaven.com/a/old_room"
+  "url": "https://polyhaven.com/a/sepulchral_chapel_rotunda"
  },
  "assets/kst-rak-003-1.jpg": {
   "file": "assets/kst-rak-003-1.jpg",
-  "title": "Reading Room",
-  "creator": "Greg Zaal",
+  "title": "Historic Cloister Passage",
+  "creator": "Elvis Posa",
   "license": "CC0 1.0",
   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
   "source": "polyhaven",
-  "url": "https://polyhaven.com/a/reading_room"
+  "url": "https://polyhaven.com/a/historic_cloister_passage"
  },
  "assets/kst-rak-003-2.jpg": {
   "file": "assets/kst-rak-003-2.jpg",
-  "title": "Veranda",
-  "creator": "Greg Zaal",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/veranda"
- },
- "assets/kst-rak-004-0.jpg": {
-  "file": "assets/kst-rak-004-0.jpg",
-  "title": "Decor Shop",
-  "creator": "Sergej Majboroda",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/decor_shop"
- },
- "assets/kst-rak-004-1.jpg": {
-  "file": "assets/kst-rak-004-1.jpg",
-  "title": "Art Studio",
+  "title": "Indoor Pool",
   "creator": "Oliksiy Yakovlyev",
   "license": "CC0 1.0",
   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
   "source": "polyhaven",
-  "url": "https://polyhaven.com/a/art_studio"
+  "url": "https://polyhaven.com/a/indoor_pool"
  },
- "assets/kst-rak-004-2.jpg": {
-  "file": "assets/kst-rak-004-2.jpg",
-  "title": "Comfy Café",
-  "creator": "Sergej Majboroda",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/comfy_cafe"
- },
- "assets/kst-rak-005-0.jpg": {
-  "file": "assets/kst-rak-005-0.jpg",
+ "assets/kst-rak-004-0.jpg": {
+  "file": "assets/kst-rak-004-0.jpg",
   "title": "Lonely Road Afternoon",
   "creator": "Dimitrios Savva, Jarod Guest",
   "license": "CC0 1.0",
@@ -440,8 +521,8 @@
   "source": "polyhaven",
   "url": "https://polyhaven.com/a/lonely_road_afternoon"
  },
- "assets/kst-rak-005-1.jpg": {
-  "file": "assets/kst-rak-005-1.jpg",
+ "assets/kst-rak-004-1.jpg": {
+  "file": "assets/kst-rak-004-1.jpg",
   "title": "Waterkloof Farm",
   "creator": "Jenelle van Heerden",
   "license": "CC0 1.0",
@@ -449,8 +530,8 @@
   "source": "polyhaven",
   "url": "https://polyhaven.com/a/waterkloof_farm"
  },
- "assets/kst-rak-005-2.jpg": {
-  "file": "assets/kst-rak-005-2.jpg",
+ "assets/kst-rak-004-2.jpg": {
+  "file": "assets/kst-rak-004-2.jpg",
   "title": "Sabie Tent",
   "creator": "Greg Zaal",
   "license": "CC0 1.0",
@@ -458,170 +539,17 @@
   "source": "polyhaven",
   "url": "https://polyhaven.com/a/sabie_tent"
  },
- "assets/kst-rak-006-0.jpg": {
-  "file": "assets/kst-rak-006-0.jpg",
-  "title": "Medieval Cafe",
-  "creator": "Dimitrios Savva, Jarod Guest",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/medieval_cafe"
- },
- "assets/kst-rak-006-1.jpg": {
-  "file": "assets/kst-rak-006-1.jpg",
-  "title": "Stone Alley 02",
-  "creator": "Andreas Mischok",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/stone_alley_02"
- },
- "assets/kst-rak-006-2.jpg": {
-  "file": "assets/kst-rak-006-2.jpg",
-  "title": "Lapa",
-  "creator": "Greg Zaal",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/lapa"
- },
- "assets/kst-lis-001-0.jpg": {
-  "file": "assets/kst-lis-001-0.jpg",
-  "title": "Vignaioli",
-  "creator": "Greg Zaal, Rico Cilliers",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/vignaioli"
- },
- "assets/kst-lis-001-1.jpg": {
-  "file": "assets/kst-lis-001-1.jpg",
-  "title": "Cayley Interior",
-  "creator": "Greg Zaal",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/cayley_interior"
- },
- "assets/kst-lis-001-2.jpg": {
-  "file": "assets/kst-lis-001-2.jpg",
-  "title": "Brown Photostudio 04",
+ "assets/kst-mel-001-0.jpg": {
+  "file": "assets/kst-mel-001-0.jpg",
+  "title": "Brown Photostudio 03",
   "creator": "Sergej Majboroda",
   "license": "CC0 1.0",
   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
   "source": "polyhaven",
-  "url": "https://polyhaven.com/a/brown_photostudio_04"
+  "url": "https://polyhaven.com/a/brown_photostudio_03"
  },
- "assets/kst-lis-002-0.jpg": {
-  "file": "assets/kst-lis-002-0.jpg",
-  "title": "Wooden Lounge",
-  "creator": "Greg Zaal",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/wooden_lounge"
- },
- "assets/kst-lis-002-1.jpg": {
-  "file": "assets/kst-lis-002-1.jpg",
-  "title": "Hotel Room",
-  "creator": "Greg Zaal",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/hotel_room"
- },
- "assets/kst-lis-002-2.jpg": {
-  "file": "assets/kst-lis-002-2.jpg",
-  "title": "Warm Restaurant",
-  "creator": "Greg Zaal, Jarod Guest",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/warm_restaurant"
- },
- "assets/kst-lis-003-0.jpg": {
-  "file": "assets/kst-lis-003-0.jpg",
-  "title": "Small Empty Room 1",
-  "creator": "Sergej Majboroda",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/small_empty_room_1"
- },
- "assets/kst-lis-003-1.jpg": {
-  "file": "assets/kst-lis-003-1.jpg",
-  "title": "School Hall",
-  "creator": "Dimitrios Savva, Jarod Guest",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/school_hall"
- },
- "assets/kst-lis-003-2.jpg": {
-  "file": "assets/kst-lis-003-2.jpg",
-  "title": "Newman Cafeteria",
-  "creator": "Savva Zakharov",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/newman_cafeteria"
- },
- "assets/kst-lis-004-0.jpg": {
-  "file": "assets/kst-lis-004-0.jpg",
-  "title": "Industrial Wooden Attic",
-  "creator": "Grzegorz Wronkowski",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/industrial_wooden_attic"
- },
- "assets/kst-lis-004-1.jpg": {
-  "file": "assets/kst-lis-004-1.jpg",
-  "title": "Poly Haven Studio",
-  "creator": "Greg Zaal",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/poly_haven_studio"
- },
- "assets/kst-lis-004-2.jpg": {
-  "file": "assets/kst-lis-004-2.jpg",
-  "title": "Events Hall Interior",
-  "creator": "Dimitrios Savva, Jarod Guest",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/events_hall_interior"
- },
- "assets/kst-lis-005-0.jpg": {
-  "file": "assets/kst-lis-005-0.jpg",
-  "title": "Stone Pines",
-  "creator": "Greg Zaal, Rico Cilliers",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/stone_pines"
- },
- "assets/kst-lis-005-1.jpg": {
-  "file": "assets/kst-lis-005-1.jpg",
-  "title": "Sunny Country Road",
-  "creator": "Grzegorz Wronkowski",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/sunny_country_road"
- },
- "assets/kst-lis-005-2.jpg": {
-  "file": "assets/kst-lis-005-2.jpg",
-  "title": "Straw Rolls Field 01",
-  "creator": "Sergej Majboroda",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/straw_rolls_field_01"
- },
- "assets/kst-lis-006-0.jpg": {
-  "file": "assets/kst-lis-006-0.jpg",
+ "assets/kst-mel-001-1.jpg": {
+  "file": "assets/kst-mel-001-1.jpg",
   "title": "Glasshouse Interior",
   "creator": "Dario Barresi",
   "license": "CC0 1.0",
@@ -629,23 +557,104 @@
   "source": "polyhaven",
   "url": "https://polyhaven.com/a/glasshouse_interior"
  },
- "assets/kst-lis-006-1.jpg": {
-  "file": "assets/kst-lis-006-1.jpg",
-  "title": "Studio Country Hall",
+ "assets/kst-mel-001-2.jpg": {
+  "file": "assets/kst-mel-001-2.jpg",
+  "title": "Brown Photostudio 04",
   "creator": "Sergej Majboroda",
   "license": "CC0 1.0",
   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
   "source": "polyhaven",
-  "url": "https://polyhaven.com/a/studio_country_hall"
+  "url": "https://polyhaven.com/a/brown_photostudio_04"
  },
- "assets/kst-lis-006-2.jpg": {
-  "file": "assets/kst-lis-006-2.jpg",
-  "title": "Brown Photostudio 05",
+ "assets/kst-mel-002-0.jpg": {
+  "file": "assets/kst-mel-002-0.jpg",
+  "title": "Music Hall 02",
   "creator": "Sergej Majboroda",
   "license": "CC0 1.0",
   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
   "source": "polyhaven",
-  "url": "https://polyhaven.com/a/brown_photostudio_05"
+  "url": "https://polyhaven.com/a/music_hall_02"
+ },
+ "assets/kst-mel-002-1.jpg": {
+  "file": "assets/kst-mel-002-1.jpg",
+  "title": "Ballroom",
+  "creator": "Sergej Majboroda",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/ballroom"
+ },
+ "assets/kst-mel-002-2.jpg": {
+  "file": "assets/kst-mel-002-2.jpg",
+  "title": "Hotel Room",
+  "creator": "Greg Zaal",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/hotel_room"
+ },
+ "assets/kst-mel-003-0.jpg": {
+  "file": "assets/kst-mel-003-0.jpg",
+  "title": "Sunny Country Road",
+  "creator": "Grzegorz Wronkowski",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/sunny_country_road"
+ },
+ "assets/kst-mel-003-1.jpg": {
+  "file": "assets/kst-mel-003-1.jpg",
+  "title": "Straw Rolls Field 01",
+  "creator": "Sergej Majboroda",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/straw_rolls_field_01"
+ },
+ "assets/kst-mel-003-2.jpg": {
+  "file": "assets/kst-mel-003-2.jpg",
+  "title": "Lythwood Terrace",
+  "creator": "Greg Zaal",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/lythwood_terrace"
+ },
+ "assets/kst-mel-004-0.jpg": {
+  "file": "assets/kst-mel-004-0.jpg",
+  "title": "Illovo Beach Balcony",
+  "creator": "Greg Zaal",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/illovo_beach_balcony"
+ },
+ "assets/kst-mel-004-1.jpg": {
+  "file": "assets/kst-mel-004-1.jpg",
+  "title": "Indoor Pool",
+  "creator": "Oliksiy Yakovlyev",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/indoor_pool"
+ },
+ "assets/kst-mel-004-2.jpg": {
+  "file": "assets/kst-mel-004-2.jpg",
+  "title": "Relax Inn Seaview Suite",
+  "creator": "Dario Barresi, Jenelle van Heerden",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/relax_inn_seaview_suite"
+ },
+ "pano/aft_lounge.jpg": {
+  "file": "pano/aft_lounge.jpg",
+  "title": "Aft Lounge (360°)",
+  "creator": "Greg Zaal",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/aft_lounge"
  },
  "pano/anniversary_lounge.jpg": {
   "file": "pano/anniversary_lounge.jpg",
@@ -673,15 +682,6 @@
   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
   "source": "polyhaven",
   "url": "https://polyhaven.com/a/ballroom"
- },
- "pano/brown_photostudio_01.jpg": {
-  "file": "pano/brown_photostudio_01.jpg",
-  "title": "Brown Photostudio 01 (360°)",
-  "creator": "Sergej Majboroda",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/brown_photostudio_01"
  },
  "pano/brown_photostudio_02.jpg": {
   "file": "pano/brown_photostudio_02.jpg",
@@ -718,15 +718,6 @@
   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
   "source": "polyhaven",
   "url": "https://polyhaven.com/a/brown_photostudio_05"
- },
- "pano/brown_photostudio_06.jpg": {
-  "file": "pano/brown_photostudio_06.jpg",
-  "title": "Brown Photostudio 06 (360°)",
-  "creator": "Sergej Majboroda",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/brown_photostudio_06"
  },
  "pano/brown_photostudio_07.jpg": {
   "file": "pano/brown_photostudio_07.jpg",
@@ -791,14 +782,14 @@
   "source": "polyhaven",
   "url": "https://polyhaven.com/a/entrance_hall"
  },
- "pano/events_hall_interior.jpg": {
-  "file": "pano/events_hall_interior.jpg",
-  "title": "Events Hall Interior (360°)",
-  "creator": "Dimitrios Savva, Jarod Guest",
+ "pano/fireplace.jpg": {
+  "file": "pano/fireplace.jpg",
+  "title": "Fireplace (360°)",
+  "creator": "Greg Zaal",
   "license": "CC0 1.0",
   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
   "source": "polyhaven",
-  "url": "https://polyhaven.com/a/events_hall_interior"
+  "url": "https://polyhaven.com/a/fireplace"
  },
  "pano/glasshouse_interior.jpg": {
   "file": "pano/glasshouse_interior.jpg",
@@ -836,6 +827,15 @@
   "source": "polyhaven",
   "url": "https://polyhaven.com/a/hotel_room"
  },
+ "pano/illovo_beach_balcony.jpg": {
+  "file": "pano/illovo_beach_balcony.jpg",
+  "title": "Illovo Beach Balcony (360°)",
+  "creator": "Greg Zaal",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/illovo_beach_balcony"
+ },
  "pano/indoor_pool.jpg": {
   "file": "pano/indoor_pool.jpg",
   "title": "Indoor Pool (360°)",
@@ -844,24 +844,6 @@
   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
   "source": "polyhaven",
   "url": "https://polyhaven.com/a/indoor_pool"
- },
- "pano/industrial_wooden_attic.jpg": {
-  "file": "pano/industrial_wooden_attic.jpg",
-  "title": "Industrial Wooden Attic (360°)",
-  "creator": "Grzegorz Wronkowski",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/industrial_wooden_attic"
- },
- "pano/kiara_interior.jpg": {
-  "file": "pano/kiara_interior.jpg",
-  "title": "Kiara Interior (360°)",
-  "creator": "Greg Zaal",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/kiara_interior"
  },
  "pano/lapa.jpg": {
   "file": "pano/lapa.jpg",
@@ -926,23 +908,32 @@
   "source": "polyhaven",
   "url": "https://polyhaven.com/a/medieval_cafe"
  },
- "pano/newman_cafeteria.jpg": {
-  "file": "pano/newman_cafeteria.jpg",
-  "title": "Newman Cafeteria (360°)",
-  "creator": "Savva Zakharov",
+ "pano/modern_bathroom.jpg": {
+  "file": "pano/modern_bathroom.jpg",
+  "title": "Modern Bathroom (360°)",
+  "creator": "Adrian Kubasa",
   "license": "CC0 1.0",
   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
   "source": "polyhaven",
-  "url": "https://polyhaven.com/a/newman_cafeteria"
+  "url": "https://polyhaven.com/a/modern_bathroom"
  },
- "pano/newman_lobby.jpg": {
-  "file": "pano/newman_lobby.jpg",
-  "title": "Newman Lobby (360°)",
-  "creator": "Savva Zakharov",
+ "pano/modern_evening_street.jpg": {
+  "file": "pano/modern_evening_street.jpg",
+  "title": "Modern Evening Street (360°)",
+  "creator": "Grzegorz Wronkowski",
   "license": "CC0 1.0",
   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
   "source": "polyhaven",
-  "url": "https://polyhaven.com/a/newman_lobby"
+  "url": "https://polyhaven.com/a/modern_evening_street"
+ },
+ "pano/music_hall_02.jpg": {
+  "file": "pano/music_hall_02.jpg",
+  "title": "Music Hall 02 (360°)",
+  "creator": "Sergej Majboroda",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/music_hall_02"
  },
  "pano/old_room.jpg": {
   "file": "pano/old_room.jpg",
@@ -952,51 +943,6 @@
   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
   "source": "polyhaven",
   "url": "https://polyhaven.com/a/old_room"
- },
- "pano/palermo_sidewalk.jpg": {
-  "file": "pano/palermo_sidewalk.jpg",
-  "title": "Palermo Sidewalk (360°)",
-  "creator": "Andreas Mischok",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/palermo_sidewalk"
- },
- "pano/phone_shop.jpg": {
-  "file": "pano/phone_shop.jpg",
-  "title": "Phone Shop (360°)",
-  "creator": "Philip Modin",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/phone_shop"
- },
- "pano/photo_studio_loft_hall.jpg": {
-  "file": "pano/photo_studio_loft_hall.jpg",
-  "title": "Photo Studio Loft Hall (360°)",
-  "creator": "Sergej Majboroda",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/photo_studio_loft_hall"
- },
- "pano/photo_studio_london_hall.jpg": {
-  "file": "pano/photo_studio_london_hall.jpg",
-  "title": "Photo Studio London Hall (360°)",
-  "creator": "Sergej Majboroda",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/photo_studio_london_hall"
- },
- "pano/poly_haven_studio.jpg": {
-  "file": "pano/poly_haven_studio.jpg",
-  "title": "Poly Haven Studio (360°)",
-  "creator": "Greg Zaal",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/poly_haven_studio"
  },
  "pano/pool.jpg": {
   "file": "pano/pool.jpg",
@@ -1034,15 +980,6 @@
   "source": "polyhaven",
   "url": "https://polyhaven.com/a/sabie_tent"
  },
- "pano/school_hall.jpg": {
-  "file": "pano/school_hall.jpg",
-  "title": "School Hall (360°)",
-  "creator": "Dimitrios Savva, Jarod Guest",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/school_hall"
- },
  "pano/sepulchral_chapel_rotunda.jpg": {
   "file": "pano/sepulchral_chapel_rotunda.jpg",
   "title": "Sepulchral Chapel Rotunda (360°)",
@@ -1052,24 +989,6 @@
   "source": "polyhaven",
   "url": "https://polyhaven.com/a/sepulchral_chapel_rotunda"
  },
- "pano/small_empty_room_1.jpg": {
-  "file": "pano/small_empty_room_1.jpg",
-  "title": "Small Empty Room 1 (360°)",
-  "creator": "Sergej Majboroda",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/small_empty_room_1"
- },
- "pano/small_empty_room_3.jpg": {
-  "file": "pano/small_empty_room_3.jpg",
-  "title": "Small Empty Room 3 (360°)",
-  "creator": "Sergej Majboroda",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/small_empty_room_3"
- },
  "pano/stone_alley.jpg": {
   "file": "pano/stone_alley.jpg",
   "title": "Stone Alley (360°)",
@@ -1078,15 +997,6 @@
   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
   "source": "polyhaven",
   "url": "https://polyhaven.com/a/stone_alley"
- },
- "pano/stone_alley_02.jpg": {
-  "file": "pano/stone_alley_02.jpg",
-  "title": "Stone Alley 02 (360°)",
-  "creator": "Andreas Mischok",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/stone_alley_02"
  },
  "pano/stone_pines.jpg": {
   "file": "pano/stone_pines.jpg",
@@ -1115,6 +1025,15 @@
   "source": "polyhaven",
   "url": "https://polyhaven.com/a/studio_country_hall"
  },
+ "pano/sundowner_deck.jpg": {
+  "file": "pano/sundowner_deck.jpg",
+  "title": "Sundowner Deck (360°)",
+  "creator": "Dario Barresi",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/sundowner_deck"
+ },
  "pano/sunny_country_road.jpg": {
   "file": "pano/sunny_country_road.jpg",
   "title": "Sunny Country Road (360°)",
@@ -1133,33 +1052,6 @@
   "source": "polyhaven",
   "url": "https://polyhaven.com/a/treetop_balcony"
  },
- "pano/unfinished_office.jpg": {
-  "file": "pano/unfinished_office.jpg",
-  "title": "Unfinished Office (360°)",
-  "creator": "Sergej Majboroda",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/unfinished_office"
- },
- "pano/urban_courtyard.jpg": {
-  "file": "pano/urban_courtyard.jpg",
-  "title": "Urban Courtyard (360°)",
-  "creator": "Greg Zaal, Rico Cilliers",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/urban_courtyard"
- },
- "pano/urban_courtyard_02.jpg": {
-  "file": "pano/urban_courtyard_02.jpg",
-  "title": "Urban Courtyard 02 (360°)",
-  "creator": "Sergej Majboroda",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/urban_courtyard_02"
- },
  "pano/veranda.jpg": {
   "file": "pano/veranda.jpg",
   "title": "Veranda (360°)",
@@ -1169,14 +1061,23 @@
   "source": "polyhaven",
   "url": "https://polyhaven.com/a/veranda"
  },
- "pano/vignaioli.jpg": {
-  "file": "pano/vignaioli.jpg",
-  "title": "Vignaioli (360°)",
-  "creator": "Greg Zaal, Rico Cilliers",
+ "pano/vestibule.jpg": {
+  "file": "pano/vestibule.jpg",
+  "title": "Vestibule (360°)",
+  "creator": "Sergej Majboroda",
   "license": "CC0 1.0",
   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
   "source": "polyhaven",
-  "url": "https://polyhaven.com/a/vignaioli"
+  "url": "https://polyhaven.com/a/vestibule"
+ },
+ "pano/warm_bar.jpg": {
+  "file": "pano/warm_bar.jpg",
+  "title": "Warm Bar (360°)",
+  "creator": "Greg Zaal, Jarod Guest",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "polyhaven",
+  "url": "https://polyhaven.com/a/warm_bar"
  },
  "pano/warm_restaurant.jpg": {
   "file": "pano/warm_restaurant.jpg",
@@ -1205,42 +1106,6 @@
   "source": "polyhaven",
   "url": "https://polyhaven.com/a/wooden_lounge"
  },
- "cities/paris.jpg": {
-  "file": "cities/paris.jpg",
-  "title": "Konigsallee",
-  "creator": "Greg Zaal",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/konigsallee"
- },
- "cities/london.jpg": {
-  "file": "cities/london.jpg",
-  "title": "Leadenhall Market",
-  "creator": "Andreas Mischok",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/leadenhall_market"
- },
- "cities/marrakech.jpg": {
-  "file": "cities/marrakech.jpg",
-  "title": "Medieval Cafe",
-  "creator": "Dimitrios Savva, Jarod Guest",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/medieval_cafe"
- },
- "cities/lisbon.jpg": {
-  "file": "cities/lisbon.jpg",
-  "title": "Vignaioli",
-  "creator": "Greg Zaal, Rico Cilliers",
-  "license": "CC0 1.0",
-  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "source": "polyhaven",
-  "url": "https://polyhaven.com/a/vignaioli"
- },
  "categories/residential.jpg": {
   "file": "categories/residential.jpg",
   "title": "Combination Room",
@@ -1268,14 +1133,14 @@
   "source": "polyhaven",
   "url": "https://polyhaven.com/a/decor_shop"
  },
- "categories/student.jpg": {
-  "file": "categories/student.jpg",
-  "title": "Newman Cafeteria",
-  "creator": "Savva Zakharov",
+ "categories/resort.jpg": {
+  "file": "categories/resort.jpg",
+  "title": "Pool",
+  "creator": "Greg Zaal",
   "license": "CC0 1.0",
   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
   "source": "polyhaven",
-  "url": "https://polyhaven.com/a/newman_cafeteria"
+  "url": "https://polyhaven.com/a/pool"
  },
  "categories/land.jpg": {
   "file": "categories/land.jpg",

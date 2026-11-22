@@ -1,32 +1,32 @@
 {
  "residential": {
-  "en": "Residential",
-  "fr": "Résidentiel",
+  "en": "Residences",
+  "fr": "Résidences",
   "index": 0,
-  "image_query": "apartment interior living room"
+  "image_query": "luxury penthouse interior"
  },
  "hospitality": {
-  "en": "Hotels & hospitality",
-  "fr": "Hôtellerie",
+  "en": "Hotels & riads",
+  "fr": "Hôtels & riads",
   "index": 1,
-  "image_query": "boutique hotel room"
+  "image_query": "five star hotel suite"
  },
  "commercial": {
-  "en": "Retail & offices",
-  "fr": "Commerces & bureaux",
+  "en": "Flagships & dining",
+  "fr": "Flagships & tables",
   "index": 2,
-  "image_query": "modern office space"
+  "image_query": "luxury boutique interior"
  },
- "student": {
-  "en": "Student living",
-  "fr": "Logement étudiant",
+ "resort": {
+  "en": "Resorts & villas",
+  "fr": "Resorts & villas",
   "index": 3,
-  "image_query": "student room desk"
+  "image_query": "luxury villa pool"
  },
  "land": {
-  "en": "Land & vineyards",
-  "fr": "Terres & vignobles",
+  "en": "Estates & vineyards",
+  "fr": "Domaines & vignobles",
   "index": 4,
-  "image_query": "vineyard landscape"
+  "image_query": "vineyard estate"
  }
 }

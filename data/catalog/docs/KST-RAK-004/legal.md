@@ -1,10 +1,10 @@
 ---
 id: KST-RAK-004-legal
-title: Guéliz Concept Store — Legal structure
+title: Atlas Olive & Wine Estate — Legal structure
 asset: KST-RAK-004
 type: legal
 ---
-# Guéliz Concept Store — Legal structure
+# Atlas Olive & Wine Estate — Legal structure
 
 > **Demo document.** This asset is fictional and part of the Keystonia demonstration network. No real investment is offered.
 

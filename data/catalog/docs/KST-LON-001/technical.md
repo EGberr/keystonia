@@ -1,18 +1,18 @@
 ---
 id: KST-LON-001-technical
-title: Camden Lock Loft — Technical survey
+title: Chelsea Garden Townhouse — Technical survey
 asset: KST-LON-001
 type: technical
 ---
-# Camden Lock Loft — Technical survey
+# Chelsea Garden Townhouse — Technical survey
 
 > **Demo document.** This asset is fictional and part of the Keystonia demonstration network. No real investment is offered.
 
 ## Building
-Built in 1998. Layout: 2 bedrooms. Surface: 74 m².
+Built in 1856. Layout: Three lateral apartments and a private garden. Surface: 420 m².
 
 ## Energy
 Energy rating C. Meets current efficiency expectations.
 
 ## Condition and capital expenditure
-Recent building: standard maintenance reserve of 0.8% of rent per year.
+Older building: a maintenance reserve of 1.5% of rent per year is held by the SPV.

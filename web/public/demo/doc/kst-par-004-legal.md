@@ -1,10 +1,10 @@
 ---
 id: KST-PAR-004-legal
-title: Boutique Oberkampf — Legal structure
+title: Quai d'Anjou Residence — Legal structure
 asset: KST-PAR-004
 type: legal
 ---
-# Boutique Oberkampf — Legal structure
+# Quai d'Anjou Residence — Legal structure
 
 > **Demo document.** This asset is fictional and part of the Keystonia demonstration network. No real investment is offered.
 

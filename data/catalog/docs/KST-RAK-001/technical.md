@@ -9,7 +9,7 @@ type: technical
 > **Demo document.** This asset is fictional and part of the Keystonia demonstration network. No real investment is offered.
 
 ## Building
-Built in 1920. Layout: 7-suite riad. Surface: 420 m².
+Built in 1820. Layout: 12-suite five-star riad, patio pool, hammam. Surface: 1,100 m².
 
 ## Energy
 No energy performance certificate applies to this asset type in this market.
