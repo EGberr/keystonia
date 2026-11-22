@@ -10,9 +10,10 @@ month, resell tokens peer-to-peer and vote on decisions about the building. Ever
 refunds, rent splits, quorum) is enforced by smart contracts, every property opens as a 360° visit made of real
 photographs, and an AI analyst answers questions with citations to the property's documents.
 
-> **Demonstration project.** Assets are fictional, money is a test token (kEUR), identity checks are simulated and no
-> document is collected. Nothing here is an offer to invest. The live demo replays a snapshot of the local chain and
-> simulates transactions in your browser; the full stack (Foundry contracts, API, indexer) runs locally.
+> **This is a fictional portfolio project.** Keystonia is not a real company and offers nothing for sale. The
+> properties do not exist, the money is a test token with no value (kEUR), identity checks are simulated and no
+> personal data is collected. The live demo does not connect to any public blockchain: it replays recorded data and
+> simulates transactions in your browser. The smart contracts are real code, tested, and run on a local test chain only.
 
 ![Demo: the tokenization sequence, then picking a floor on a property](docs/demo.gif)
 
