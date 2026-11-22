@@ -317,20 +317,21 @@ export const simulate = {
   async advanceMonth() {
     const s = load();
     s.months += 1;
-    // Rent for every holding of every simulated wallet, and pending offerings settle.
-    const config = await file<{ personas: { address: string }[] }>("config.json");
-    const addrs = new Set([...Object.keys(s.wallets), ...config.personas.map((p) => p.address.toLowerCase())]);
+    // Rent for every holding of the active wallet and of every wallet touched in this demo
+    // (other profiles are credited when you switch to them), and pending offerings settle.
+    const { currentAddress } = await import("@/lib/chain");
+    const addrs = [...new Set([currentAddress().toLowerCase(), ...Object.keys(s.wallets)])];
+    const portfolios = await Promise.all(addrs.map((a) => staticGet<Portfolio>(`/portfolio/${a}`)));
     const paid: string[] = [];
-    for (const addr of addrs) {
-      const p = await staticGet<Portfolio>(`/portfolio/${addr}`);
+    addrs.forEach((addr, i) => {
       const w = wallet(addr);
-      for (const h of p.holdings) {
+      for (const h of portfolios[i].holdings) {
         if (!h.monthly_income_eur) continue;
         w.accrued[h.asset_id] = (w.accrued[h.asset_id] ?? 0) + h.monthly_income_eur;
         paid.push(h.asset_id);
       }
       for (const o of Object.values(w.pending)) o.settled = true;
-    }
+    });
     save();
     const d = new Date((await staticGet<{ chain_time: number }>("/health")).chain_time * 1000);
     return { period: `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, "0")}`, income_paid: [...new Set(paid)], offerings_settled: [] };

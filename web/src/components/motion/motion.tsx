@@ -112,7 +112,7 @@ export function CountUp({ value, format, className }: { value: number; format: (
     { dependencies: [value], revertOnUpdate: true },
   );
   return (
-    <span ref={ref} className={className}>
+    <span ref={ref} className={className} suppressHydrationWarning>
       {format(value)}
     </span>
   );

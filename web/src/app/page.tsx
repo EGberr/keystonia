@@ -270,15 +270,15 @@ function Hero({ c, start }: { c: Copy; start: boolean }) {
             <div className="mt-4 grid grid-cols-2 gap-3 border-t border-white/20 pt-4 text-[12.5px]">
               <div>
                 <p className="text-white/65">{c.price}</p>
-                <p className="num mt-0.5 text-[17px]">{eur(50, 0, lang)}</p>
+                <p suppressHydrationWarning className="num mt-0.5 text-[17px]">{eur(50, 0, lang)}</p>
               </div>
               <div>
                 <p className="text-white/65">{c.yield}</p>
-                <p className="num mt-0.5 text-[17px]">{pct(6.2)}</p>
+                <p suppressHydrationWarning className="num mt-0.5 text-[17px]">{pct(6.2)}</p>
               </div>
             </div>
             <p className="mt-4 text-[11.5px] text-white/65">{c.accrued}</p>
-            <span ref={rent} className="num text-[20px] text-white">
+            <span ref={rent} suppressHydrationWarning className="num text-[20px] text-white">
               {eur(0, 4, lang)}
             </span>
           </div>
@@ -370,20 +370,20 @@ function Tokenize({ c }: { c: Copy }) {
                 />
                 <div className={cx("absolute inset-[4%] flex flex-col justify-between rounded-[6px] p-[8%] [backface-visibility:hidden] [transform:rotateY(180deg)]", i === MINE ? "bg-accent text-white" : "bg-white text-ink shadow-[0_6px_18px_-8px_rgba(0,0,0,0.3)]")}>
                   <span className="font-mono text-[clamp(5px,0.5vw,8.5px)] opacity-70">KST #{t.n}</span>
-                  <span className="font-display text-[clamp(8px,1vw,15px)] leading-none">{eur(50, 0, lang)}</span>
+                  <span suppressHydrationWarning className="font-display text-[clamp(8px,1vw,15px)] leading-none">{eur(50, 0, lang)}</span>
                 </div>
               </div>
             ))}
             <div className="tk-grid pointer-events-none absolute inset-0 opacity-0" style={{ backgroundImage: "linear-gradient(to right, rgba(255,91,31,.9) 1.5px, transparent 1.5px), linear-gradient(to bottom, rgba(255,91,31,.9) 1.5px, transparent 1.5px)", backgroundSize: `${100 / COLS}% ${100 / ROWS}%` }} />
           </div>
-          <p className="tk-count num absolute bottom-2 left-1/2 -translate-x-1/2 translate-y-4 whitespace-nowrap rounded-full bg-ink px-4 py-2 text-[12px] text-white opacity-0">20 000 tokens × {eur(50, 0, lang)} = {eur(1_000_000, 0, lang)}</p>
+          <p suppressHydrationWarning className="tk-count num absolute bottom-2 left-1/2 -translate-x-1/2 translate-y-4 whitespace-nowrap rounded-full bg-ink px-4 py-2 text-[12px] text-white opacity-0">20 000 tokens × {eur(50, 0, lang)} = {eur(1_000_000, 0, lang)}</p>
           <div className="tk-wallet card absolute right-0 top-1/2 w-[220px] -translate-y-1/2 translate-x-10 p-5 opacity-0 sm:w-[260px]">
             <p className="label">{c.wallet}</p>
             <p className="font-display mt-3 text-[30px] leading-none">1 token</p>
             <p className="num mt-1 text-[12px] text-muted">KST-LIS-001 · #{tiles[MINE].n}</p>
             <div className="mt-4 border-t hairline pt-3">
               <p className="text-[12px] text-muted">{c.wallet_rent}</p>
-              <p className="num text-[20px] text-positive">+{eur(0.26, 2, lang)}</p>
+              <p suppressHydrationWarning className="num text-[20px] text-positive">+{eur(0.26, 2, lang)}</p>
             </div>
           </div>
         </div>
