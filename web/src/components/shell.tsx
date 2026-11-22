@@ -18,15 +18,15 @@ const NAV: { href: string; key: TKey }[] = [
   { href: "/transparency", key: "nav.transparency" },
 ];
 
-export function Logo() {
+export function Logo({ size = 22 }: { size?: number }) {
   return (
-    <span className="flex items-center gap-2.5">
-      <svg width="28" height="28" viewBox="0 0 32 32" aria-hidden>
-        <path d="M16 3 4 9v14l12 6 12-6V9L16 3Z" fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
-        <path d="M16 3v26M4 9l12 6 12-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
-        <path d="M16 15 28 9v14l-12 6V15Z" fill="var(--accent)" opacity="0.85" />
-      </svg>
-      <span className="font-serif text-[21px] leading-none tracking-tight">Keystonia</span>
+    <span className="flex items-baseline gap-1 leading-none">
+      <span className="font-serif tracking-[-0.03em]" style={{ fontSize: size }}>
+        Keystonia
+      </span>
+      <span aria-hidden className="text-accent" style={{ fontSize: size * 0.5 }}>
+        ✦
+      </span>
     </span>
   );
 }
@@ -34,9 +34,9 @@ export function Logo() {
 function LangSwitch() {
   const { lang, setLang } = useLang();
   return (
-    <div className="flex rounded-full border hairline bg-surface p-0.5 text-[11.5px] font-medium" role="group" aria-label="Language">
+    <div className="flex items-center gap-0.5 font-mono text-[10.5px] tracking-[0.14em]" role="group" aria-label="Language">
       {(["en", "fr"] as const).map((l) => (
-        <button key={l} onClick={() => setLang(l)} aria-pressed={lang === l} className={cx("rounded-full px-2.5 py-1 uppercase transition-colors", lang === l ? "bg-ink text-bg" : "text-muted hover:text-ink")}>
+        <button key={l} onClick={() => setLang(l)} aria-pressed={lang === l} className={cx("rounded-full px-2 py-1 uppercase transition-colors", lang === l ? "text-ink" : "text-muted/70 hover:text-ink")}>
           {l}
         </button>
       ))}
@@ -61,8 +61,8 @@ function WalletMenu() {
   const group = (role: "investor" | "issuer") => config?.personas.filter((p) => p.role === role) ?? [];
   return (
     <div ref={ref} className="relative">
-      <button onClick={() => setOpen((o) => !o)} className="flex items-center gap-2 rounded-full border hairline bg-surface py-1.5 pl-2 pr-3 text-[13px] hover:border-line-strong">
-        <span className="flex h-6 w-6 items-center justify-center rounded-full bg-accent-ink text-[11px] font-semibold text-bg">
+      <button onClick={() => setOpen((o) => !o)} className="flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] py-1 pl-1 pr-3 text-[13px] transition hover:bg-white/[0.08]">
+        <span className="flex h-7 w-7 items-center justify-center rounded-full bg-accent text-[11px] font-semibold text-[#1a140b]">
           {(persona?.name ?? "W").slice(0, 1)}
         </span>
         <span className="hidden max-w-[130px] truncate sm:block">{persona?.name ?? shortAddr(wallet.address)}</span>
@@ -122,43 +122,57 @@ export function TopNav() {
   const pathname = usePathname();
   const { t } = useLang();
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const home = pathname === "/";
   const active = (href: string) => pathname.startsWith(href) || (href === "/invest" && pathname.startsWith("/assets"));
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <>
-      <div className="bg-accent-ink px-4 py-1.5 text-center text-[11.5px] font-medium text-bg">
-        <ShieldCheck size={12} className="mr-1.5 inline -translate-y-px" />
-        {t("banner.demo")}
-      </div>
-      <header className="sticky top-0 z-40 border-b hairline bg-bg/80 backdrop-blur-xl">
-        <div className="mx-auto flex h-16 max-w-[1320px] items-center gap-6 px-5 sm:px-8">
-          <Link href="/" aria-label="Keystonia" onClick={() => setOpen(false)}>
-            <Logo />
-          </Link>
-          <nav className="hidden items-center gap-0.5 xl:flex">
-            {NAV.map(({ href, key }) => (
-              <Link key={href} href={href} className={cx("rounded-full px-3.5 py-1.5 text-[13.5px] transition-colors", active(href) ? "bg-surface-2 font-medium text-ink" : "text-ink-2 hover:text-ink")}>
-                {t(key)}
-              </Link>
-            ))}
-          </nav>
-          <div className="ml-auto flex items-center gap-2.5">
-            <LangSwitch />
-            <WalletMenu />
-            <button aria-label={t("nav.menu")} onClick={() => setOpen((o) => !o)} className="rounded-lg p-2 hover:bg-surface-2 xl:hidden">
-              {open ? <X size={18} /> : <Menu size={18} />}
-            </button>
+      <header className="fixed inset-x-0 top-0 z-50">
+        <p className="flex items-center justify-center gap-2 bg-black/60 px-4 py-1.5 text-center font-mono text-[9.5px] uppercase tracking-[0.2em] text-muted backdrop-blur">
+          <ShieldCheck size={11} className="shrink-0 text-accent" />
+          {t("banner.demo")}
+        </p>
+        <div className="px-3 pt-3 sm:px-5">
+          <div className={cx("mx-auto flex h-14 max-w-[1320px] items-center gap-6 rounded-full pl-6 pr-2 transition-all duration-500", scrolled || !home || open ? "glass" : "border border-transparent")}>
+            <Link href="/" aria-label="Keystonia" onClick={() => setOpen(false)}>
+              <Logo />
+            </Link>
+            <nav className="hidden items-center gap-1 xl:flex">
+              {NAV.map(({ href, key }) => (
+                <Link key={href} href={href} className={cx("relative rounded-full px-3.5 py-1.5 text-[13px] tracking-[-0.005em] transition-colors", active(href) ? "text-ink" : "text-ink-2 hover:text-ink")}>
+                  {t(key)}
+                  {active(href) && <span className="absolute inset-x-3.5 -bottom-0.5 h-px bg-accent" />}
+                </Link>
+              ))}
+            </nav>
+            <div className="ml-auto flex items-center gap-2">
+              <LangSwitch />
+              <WalletMenu />
+              <button aria-label={t("nav.menu")} onClick={() => setOpen((o) => !o)} className="rounded-full p-2.5 hover:bg-white/5 xl:hidden">
+                {open ? <X size={18} /> : <Menu size={18} />}
+              </button>
+            </div>
           </div>
+          {open && (
+            <nav className="glass mx-auto mt-2 flex max-w-[1320px] flex-col gap-1 rounded-[28px] p-3 xl:hidden">
+              {NAV.map(({ href, key }) => (
+                <Link key={href} href={href} onClick={() => setOpen(false)} className={cx("rounded-2xl px-4 py-3 font-serif text-[22px]", active(href) ? "text-ink" : "text-ink-2")}>
+                  {t(key)}
+                </Link>
+              ))}
+            </nav>
+          )}
         </div>
-        {open && (
-          <nav className="flex flex-col gap-1 border-t hairline px-5 py-3 xl:hidden">
-            {NAV.map(({ href, key }) => (
-              <Link key={href} href={href} onClick={() => setOpen(false)} className={cx("rounded-xl px-3 py-2.5 text-[14px]", active(href) ? "bg-surface-2 font-medium" : "text-ink-2")}>
-                {t(key)}
-              </Link>
-            ))}
-          </nav>
-        )}
       </header>
+      {!home && <div aria-hidden className="h-[112px]" />}
     </>
   );
 }
@@ -166,22 +180,25 @@ export function TopNav() {
 export function Footer() {
   const { t } = useLang();
   return (
-    <footer className="mt-24 border-t hairline">
-      <div className="mx-auto grid max-w-[1320px] gap-8 px-5 py-12 text-[12.5px] text-muted sm:px-8 md:grid-cols-[1.4fr_1fr_1fr]">
-        <div className="flex flex-col gap-3">
-          <Logo />
-          <p className="max-w-md leading-relaxed">{t("footer.text")}</p>
+    <footer className="relative mt-32 overflow-hidden border-t hairline">
+      <div className="mx-auto grid max-w-[1320px] gap-10 px-5 pb-10 pt-16 text-[13px] text-muted sm:px-8 md:grid-cols-[1.6fr_1fr_1fr]">
+        <div className="flex flex-col gap-4">
+          <p className="label">— {t("footer.kicker")}</p>
+          <p className="max-w-md leading-relaxed text-ink-2">{t("footer.text")}</p>
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2.5">
           {NAV.slice(0, 4).map(({ href, key }) => (
             <Link key={href} href={href} className="hover:text-ink">
               {t(key)}
             </Link>
           ))}
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2.5">
           <Link href="/transparency" className="hover:text-ink">
             {t("nav.transparency")}
+          </Link>
+          <Link href="/list" className="hover:text-ink">
+            {t("nav.list")}
           </Link>
           <Link href="/credits" className="hover:text-ink">
             {t("footer.credits")}
@@ -191,6 +208,9 @@ export function Footer() {
           </a>
         </div>
       </div>
+      <p aria-hidden className="pointer-events-none -mb-[0.2em] select-none whitespace-nowrap text-center font-serif text-[23vw] leading-[0.8] tracking-[-0.06em] text-white/[0.035]">
+        Keystonia
+      </p>
     </footer>
   );
 }

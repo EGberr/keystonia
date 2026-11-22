@@ -43,7 +43,7 @@ function Invest() {
         {t("invest.subtitle")}
       </PageHeader>
 
-      <div className="sticky top-16 z-10 -mx-5 flex flex-col gap-3 bg-bg/90 px-5 py-3 backdrop-blur sm:-mx-8 sm:px-8">
+      <div className="sticky top-[100px] z-10 -mx-5 flex flex-col gap-3 bg-bg/90 px-5 py-3 backdrop-blur sm:-mx-8 sm:px-8">
         <div className="scroll-thin -mx-1 flex gap-1.5 overflow-x-auto px-1 pb-1">
           <Chip active={city === "all"} onClick={() => setCity("all")}>
             {t("invest.all")}

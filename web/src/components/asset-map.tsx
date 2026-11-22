@@ -27,7 +27,7 @@ export function AssetMap({ assets, height = 520 }: { assets: Asset[]; height?: n
         const label = `${Math.round(a.net_yield_pct * 10) / 10}%`;
         const icon = L.divIcon({
           className: "",
-          html: `<div style="background:${a.phase === "live" ? "var(--accent)" : "var(--accent-ink)"};color:${a.phase === "live" ? "#1b1409" : "var(--bg)"};font:600 11px var(--font-geist-mono),monospace;padding:4px 8px;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.25);white-space:nowrap;transform:translate(-50%,-50%)">${label}</div>`,
+          html: `<div style="background:${a.phase === "live" ? "var(--accent)" : "var(--accent-ink)"};color:${a.phase === "live" ? "#1b1409" : "var(--bg)"};font:600 11px var(--font-label),monospace;padding:4px 8px;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.25);white-space:nowrap;transform:translate(-50%,-50%)">${label}</div>`,
           iconSize: [0, 0],
         });
         L.marker([a.lat, a.lon], { icon })

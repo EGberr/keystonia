@@ -7,7 +7,8 @@ import type { Address } from "viem";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { Area, AreaChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
-import { ArrowLeft, Building2, CalendarDays, Check, Copy, FileText, Gauge, Layers, Leaf, MapPin, Minus, Plus, ShieldCheck, Users } from "lucide-react";
+import dynamic from "next/dynamic";
+import { ArrowLeft, Box as BoxIcon, Building2, Image as ImageIcon, CalendarDays, Check, Copy, FileText, Gauge, Layers, Leaf, MapPin, Minus, Plus, ShieldCheck, Users } from "lucide-react";
 import { api, type AssetDetail, type Config, type Health, type Portfolio } from "@/lib/api";
 import { actions } from "@/lib/actions";
 import { demoCall, runTx, useApi, useWallet } from "@/lib/chain";
@@ -20,6 +21,8 @@ import { Columns } from "@/components/charts";
 import { Photo } from "@/components/photo";
 import { ProposalCard } from "@/components/proposal-card";
 import { ErrorState, Panel, Skeleton } from "@/components/ui";
+
+const Walkthrough = dynamic(() => import("@/components/three/walkthrough"), { ssr: false });
 
 const TABS = ["overview", "financials", "documents", "ownership", "market", "governance"] as const;
 type Tab = (typeof TABS)[number];
@@ -37,6 +40,29 @@ function Gallery({ images, alt }: { images: string[]; alt: string }) {
           </button>
         ))}
       </div>
+    </div>
+  );
+}
+
+/** Top of the asset page: the 3D walkthrough first, photos one click away. */
+function MediaStage({ a }: { a: AssetDetail }) {
+  const { t, pick } = useLang();
+  const [mode, setMode] = useState<"tour" | "photos">("tour");
+  return (
+    <div>
+      <div className="mb-4 flex gap-1.5">
+        {(
+          [
+            ["tour", BoxIcon, t("asset.walk")],
+            ["photos", ImageIcon, t("asset.photos")],
+          ] as const
+        ).map(([m, Icon, label]) => (
+          <button key={m} onClick={() => setMode(m)} className={cx("flex items-center gap-2 rounded-full px-4 py-2 text-[13px] transition", mode === m ? "bg-accent-ink text-[#14110c]" : "glass text-ink-2 hover:text-ink")}>
+            <Icon size={14} /> {label}
+          </button>
+        ))}
+      </div>
+      {mode === "tour" ? <Walkthrough asset={a} /> : <Gallery images={a.images} alt={pick(a, "name")} />}
     </div>
   );
 }
@@ -430,7 +456,7 @@ function AssetView() {
   return (
     <div className="mx-auto max-w-[1320px] px-5 py-8 sm:px-8">
       <Link href="/invest" className="mb-5 inline-flex items-center gap-1.5 text-[13px] text-muted hover:text-ink"><ArrowLeft size={14} /> {t("asset.back")}</Link>
-      <Gallery images={a.images} alt={pick(a, "name")} />
+      <MediaStage a={a} />
 
       <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_360px]">
         <div className="min-w-0">
@@ -457,7 +483,7 @@ function AssetView() {
             ))}
           </div>
 
-          <div className="scroll-thin sticky top-16 z-10 -mx-1 mt-8 flex gap-1 overflow-x-auto border-b hairline bg-bg/90 px-1 backdrop-blur">
+          <div className="scroll-thin sticky top-[100px] z-10 -mx-1 mt-8 flex gap-1 overflow-x-auto border-b hairline bg-bg/90 px-1 backdrop-blur">
             {TABS.map((k) => (
               <button key={k} onClick={() => setTab(k)} className={cx("relative whitespace-nowrap px-3.5 py-3 text-[13.5px] transition-colors", tab === k ? "font-medium text-ink" : "text-muted hover:text-ink")}>
                 {t(`asset.tab.${k}` as TKey)}
@@ -482,7 +508,7 @@ function AssetView() {
           </div>
         </div>
 
-        <aside className="flex flex-col gap-5 lg:sticky lg:top-20 lg:self-start">
+        <aside className="flex flex-col gap-5 lg:sticky lg:top-[112px] lg:self-start">
           <InvestBox a={a} now={now} portfolio={portfolio} config={config} />
           <Analyst assetId={a.id} height={520} />
           <p className="num text-center text-[11px] text-muted">{t("asset.updated")} · block {health?.block ?? "—"} · {dateLabel(now, lang)}</p>

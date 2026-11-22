@@ -10,13 +10,19 @@ contracts, and an AI analyst answers questions with citations to each asset's do
 > **Demonstration project.** Everything runs on a local Anvil test network. Assets are fictional, money is a test
 > token (kEUR), identity checks are simulated and no document is collected. Nothing here is an offer to invest.
 
-![Home](docs/screenshots/home.png)
+![Home: the share tower](docs/screenshots/home.png)
+
+The hero is a real-time 3D building made of its own shares. Scrolling turns it into an exploded drawing of
+thousands of blocks, then one block leaves the facade in brass: *one of them is yours*.
 
 | | |
 | --- | --- |
-| ![Asset page](docs/screenshots/asset.png) | ![AI analyst](docs/screenshots/analyst.png) |
-| ![Portfolio](docs/screenshots/portfolio.png) | ![Secondary market](docs/screenshots/market.png) |
-| ![Governance](docs/screenshots/governance.png) | ![Asset in French, dark mode](docs/screenshots/asset-dark-fr.png) |
+| ![Exploded into shares](docs/screenshots/exploded.png) | ![One share, yours](docs/screenshots/share.png) |
+| ![3D walkthrough: riad courtyard](docs/screenshots/riad.png) | ![3D walkthrough: Haussmann apartment](docs/screenshots/apartment.png) |
+| ![3D walkthrough: vineyard estate](docs/screenshots/vineyard.png) | ![3D walkthrough: hotel lobby](docs/screenshots/hotel.png) |
+| ![The collection](docs/screenshots/collection.png) | ![Asset page](docs/screenshots/asset.png) |
+| ![Portfolio](docs/screenshots/portfolio.png) | ![Exchange](docs/screenshots/market.png) |
+| ![Home in French](docs/screenshots/home-fr.png) | ![Mobile, French](docs/screenshots/mobile-fr.png) |
 
 ## What it does
 
@@ -32,14 +38,15 @@ contracts, and an AI analyst answers questions with citations to each asset's do
 | **Issuer flow** | Owners submit a listing request on-chain; the operator approves or rejects it with a note. |
 | **AI analyst** | Claude with tool use (`search_documents`, `get_asset`, `list_assets`, `compare_assets`) over BM25 retrieval and live indexed chain data. Answers cite passages `[S1]` and datasets `[D1]`, shown with their evidence. Without an API key, a rule-based offline analyst streams the same events. |
 | **History** | The seed replays ~13 months of activity (2,350 transactions in ~20 s): KYC, offerings, monthly rent, claims, trades, votes and listing requests, using `evm_setNextBlockTimestamp`. |
-| **Bilingual UI** | English and French, light and dark themes, responsive down to phone width. |
+| **3D walkthroughs** | Every property opens as a real-time visit built procedurally from its type: Haussmann enfilade, riad courtyard with zellige and a roof terrace, hotel lobby and suite, student hall, loft offices, vineyard or olive estate at golden hour. Camera paths with chapters, auto-play, drag to look, fullscreen. No 3D files are downloaded: textures are drawn on canvas and furniture is built from primitives. |
+| **Cinematic UI** | React Three Fiber hero pinned over 280vh of scroll, bloom and vignette, Bodoni Moda / Manrope / JetBrains Mono, one brass accent on warm black. English and French, responsive down to phone width, `prefers-reduced-motion` respected. Spec in [`docs/design.md`](docs/design.md). |
 
 ## Architecture
 
 ```
 contracts/   Solidity 0.8.31 · OpenZeppelin 5 · Foundry      40 tests, 96.9% line coverage
 backend/     Python 3.12 · FastAPI · web3.py · SQLite indexer · Anthropic SDK
-web/         Next.js 16 · React 19 · Tailwind v4 · viem · Recharts · Leaflet
+web/         Next.js 16 · React 19 · Tailwind v4 · React Three Fiber · viem · Recharts · Leaflet
 scripts/     catalogue builder, open-data market reference, image fetcher, chain reset
 data/        catalogue + generated documents, market reference (chain state is local only)
 ```
