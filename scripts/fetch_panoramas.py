@@ -63,7 +63,12 @@ def fetch_pano(pid: str) -> dict:
     if plates:
         name = sorted(plates)[len(plates) // 2]
         still = plates[name]["jpg_pretty"]["url"]
-    return {"id": pid, "name": info.get("name", pid), "authors": list((info.get("authors") or {}).keys()), "still": still}
+    return {
+        "id": pid,
+        "name": info.get("name", pid),
+        "authors": list((info.get("authors") or {}).keys()),
+        "still": still,
+    }
 
 
 def still_from(meta: dict, dest: Path) -> None:
@@ -93,17 +98,35 @@ def main() -> None:
     credits: dict[str, dict] = {}
     for a in assets:
         rooms = TOURS[a["id"]]
-        a["tour"] = [{"pano": f"/pano/{p}.jpg", "preview": f"/pano/{p}_preview.jpg", "en": en, "fr": fr} for p, en, fr in rooms]
+        a["tour"] = [
+            {"pano": f"/pano/{p}.jpg", "preview": f"/pano/{p}_preview.jpg", "en": en, "fr": fr} for p, en, fr in rooms
+        ]
         images = []
         for i, (pid, _, _) in enumerate(rooms[:3]):
             name = f"{a['id'].lower()}-{i}.jpg"
             still_from(metas[pid], IMG_DIR / name)
             images.append(f"/img/assets/{name}")
-            credits[f"assets/{name}"] = {"file": f"assets/{name}", "title": metas[pid]["name"], "creator": ", ".join(metas[pid]["authors"]) or None, "license": "CC0 1.0", "license_url": "https://creativecommons.org/publicdomain/zero/1.0/", "source": "polyhaven", "url": f"https://polyhaven.com/a/{pid}"}
+            credits[f"assets/{name}"] = {
+                "file": f"assets/{name}",
+                "title": metas[pid]["name"],
+                "creator": ", ".join(metas[pid]["authors"]) or None,
+                "license": "CC0 1.0",
+                "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+                "source": "polyhaven",
+                "url": f"https://polyhaven.com/a/{pid}",
+            }
         a["images"] = images
         print("asset", a["id"], flush=True)
     for pid, m in metas.items():
-        credits[f"pano/{pid}.jpg"] = {"file": f"pano/{pid}.jpg", "title": f"{m['name']} (360°)", "creator": ", ".join(m["authors"]) or None, "license": "CC0 1.0", "license_url": "https://creativecommons.org/publicdomain/zero/1.0/", "source": "polyhaven", "url": f"https://polyhaven.com/a/{pid}"}
+        credits[f"pano/{pid}.jpg"] = {
+            "file": f"pano/{pid}.jpg",
+            "title": f"{m['name']} (360°)",
+            "creator": ", ".join(m["authors"]) or None,
+            "license": "CC0 1.0",
+            "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "source": "polyhaven",
+            "url": f"https://polyhaven.com/a/{pid}",
+        }
     catalog_path.write_text(json.dumps(assets, indent=1, ensure_ascii=False))
     (ROOT / "web" / "public" / "img" / "credits.json").write_text(json.dumps(credits, indent=1, ensure_ascii=False))
     print(f"{len(metas)} panoramas, {len(assets)} assets", file=sys.stderr)

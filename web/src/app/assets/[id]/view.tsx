@@ -7,7 +7,6 @@ import type { Address } from "viem";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { Area, AreaChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
-import dynamic from "next/dynamic";
 import { ArrowLeft, Box as BoxIcon, Building2, Image as ImageIcon, CalendarDays, Check, Copy, FileText, Gauge, Layers, Leaf, MapPin, Minus, Plus, ShieldCheck, Users } from "lucide-react";
 import { api, type AssetDetail, type Config, type Health, type Portfolio } from "@/lib/api";
 import { actions } from "@/lib/actions";
@@ -21,8 +20,8 @@ import { Columns } from "@/components/charts";
 import { Photo } from "@/components/photo";
 import { ProposalCard } from "@/components/proposal-card";
 import { ErrorState, Panel, Skeleton } from "@/components/ui";
+import { FloorExplorer } from "@/components/floor-explorer";
 
-const PanoTour = dynamic(() => import("@/components/three/pano-tour"), { ssr: false });
 
 const TABS = ["overview", "financials", "documents", "ownership", "market", "governance"] as const;
 type Tab = (typeof TABS)[number];
@@ -57,12 +56,12 @@ function MediaStage({ a }: { a: AssetDetail }) {
             ["photos", ImageIcon, t("asset.photos")],
           ] as const
         ).map(([m, Icon, label]) => (
-          <button key={m} onClick={() => setMode(m)} className={cx("flex items-center gap-2 rounded-full px-4 py-2 text-[13px] transition", mode === m ? "bg-ink text-white" : "border hairline bg-surface text-ink-2 hover:text-ink")}>
+          <button key={m} onClick={() => setMode(m)} className={cx("flex items-center gap-2 rounded-full px-4 py-2 text-[13px] transition", mode === m ? "bg-ink text-bg" : "border hairline bg-surface text-ink-2 hover:text-ink")}>
             <Icon size={14} /> {label}
           </button>
         ))}
       </div>
-      {mode === "tour" ? <PanoTour asset={a} /> : <Gallery images={a.images} alt={pick(a, "name")} />}
+      {mode === "tour" ? <FloorExplorer asset={a} /> : <Gallery images={a.images} alt={pick(a, "name")} />}
     </div>
   );
 }

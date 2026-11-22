@@ -28,7 +28,9 @@ def paris() -> dict:
             by_mutation[row["id_mutation"]].append(row)
     per_arr: dict[str, list[float]] = defaultdict(list)
     for rows in by_mutation.values():
-        locals_ = [r for r in rows if r["type_local"] in ("Appartement", "Maison", "Local industriel. commercial ou assimilé")]
+        locals_ = [
+            r for r in rows if r["type_local"] in ("Appartement", "Maison", "Local industriel. commercial ou assimilé")
+        ]
         apartments = [r for r in locals_ if r["type_local"] == "Appartement"]
         if len(apartments) != 1 or len(locals_) != 1:
             continue  # keep clean single-apartment sales only

@@ -64,10 +64,10 @@ export function ProposalCard({ p, now, showAsset = false, votingPower }: { p: Pr
         {open && (
           <div className="ml-auto flex items-center gap-1.5">
             {votingPower !== undefined && <span className="num mr-1 text-[11.5px] text-muted">{num(votingPower, lang)} {t("common.shares")}</span>}
-            <button onClick={() => vote(1)} className="flex items-center gap-1 rounded-full bg-positive px-3 py-1.5 text-[12.5px] font-medium text-white hover:brightness-110">
+            <button onClick={() => vote(1)} className="flex items-center gap-1 rounded-full bg-positive px-3 py-1.5 text-[12.5px] font-medium text-[#08120c] hover:brightness-110">
               <Check size={13} /> {t("governance.for")}
             </button>
-            <button onClick={() => vote(0)} className="flex items-center gap-1 rounded-full bg-negative px-3 py-1.5 text-[12.5px] font-medium text-white hover:brightness-110">
+            <button onClick={() => vote(0)} className="flex items-center gap-1 rounded-full bg-negative px-3 py-1.5 text-[12.5px] font-medium text-[#1a0806] hover:brightness-110">
               <X size={13} /> {t("governance.against")}
             </button>
             <button onClick={() => vote(2)} className="flex items-center gap-1 rounded-full border hairline px-3 py-1.5 text-[12.5px] hover:bg-surface-2">

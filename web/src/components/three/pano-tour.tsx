@@ -144,7 +144,7 @@ function Spheres({ rooms, idx, lookRef, still, onReady }: { rooms: Room[]; idx: 
   );
 }
 
-export default function PanoTour({ asset, className, compact = false }: { asset: Asset; className?: string; compact?: boolean }) {
+export default function PanoTour({ asset, className, compact = false, room, onRoomChange }: { asset: Asset; className?: string; compact?: boolean; room?: number; onRoomChange?: (i: number) => void }) {
   const { lang, pick } = useLang();
   const fr = lang === "fr";
   const rooms = useMemo(() => asset.tour ?? [], [asset.tour]);
@@ -153,7 +153,8 @@ export default function PanoTour({ asset, className, compact = false }: { asset:
   const look = useRef<Look>({ yaw: 0, pitch: -0.05, vYaw: 0, vPitch: 0, dragging: false, idle: 0 });
   // Client-only component (loaded with ssr: false), so window is available here.
   const [still] = useState(() => window.matchMedia("(prefers-reduced-motion: reduce)").matches);
-  const [idx, setIdx] = useState(0);
+  const [own, setOwn] = useState(0);
+  const idx = room ?? own; // controlled by a floor picker when `room` is given
   const [playing, setPlaying] = useState(() => !still);
   const [visible, setVisible] = useState(false);
   const [ready, setReady] = useState(false);
@@ -166,7 +167,11 @@ export default function PanoTour({ asset, className, compact = false }: { asset:
   }, []);
 
   if (!rooms.length) return null;
-  const go = (i: number) => setIdx(((i % rooms.length) + rooms.length) % rooms.length);
+  const go = (i: number) => {
+    const next = ((i % rooms.length) + rooms.length) % rooms.length;
+    setOwn(next);
+    onRoomChange?.(next);
+  };
   const active = playing && visible && ready;
   const fullscreen = () => {
     if (document.fullscreenElement) document.exitFullscreen();
@@ -174,7 +179,7 @@ export default function PanoTour({ asset, className, compact = false }: { asset:
   };
 
   return (
-    <div ref={wrap} className={cx("group/tour relative w-full overflow-hidden rounded-[28px] bg-ink [&:fullscreen]:rounded-none", compact ? "aspect-[4/5] sm:aspect-[16/9]" : "aspect-[4/5] sm:aspect-[16/8.5]", className)}>
+    <div ref={wrap} className={cx("group/tour relative w-full overflow-hidden rounded-[28px] bg-black [&:fullscreen]:rounded-none", compact ? "aspect-[4/5] sm:aspect-[16/9]" : "aspect-[4/5] sm:aspect-[16/8.5]", className)}>
       <Canvas
         frameloop={visible ? "always" : "never"}
         dpr={[1, 2]}

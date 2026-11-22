@@ -1,36 +1,36 @@
 @import "tailwindcss";
 
 /* ── Design tokens ───────────────────────────────────────────────────────────
-   Daylight editorial (after the Mostar reference): paper, ink, real photography,
-   one signal orange reserved for tokens. Clash Display + General Sans. See docs/design.md. */
+   One night palette for every page: warm near-black, cream type, signal orange for tokens,
+   with pink and violet as secondary lights. Clash Display + General Sans. See docs/design.md. */
 :root {
-  color-scheme: light;
+  color-scheme: dark;
   --font-display: "Clash Display";
   --font-text: "General Sans";
-  --bg: #f2f0eb;
-  --surface: #ffffff;
-  --surface-2: #e9e6df;
-  --surface-3: #dcd8cf;
-  --border: rgba(15, 15, 13, 0.1);
-  --border-strong: rgba(15, 15, 13, 0.2);
-  --text: #0f0f0d;
-  --text-2: rgba(15, 15, 13, 0.68);
-  --muted: #77736a;
+  --bg: #080506;
+  --surface: #140c0d;
+  --surface-2: #1d1213;
+  --surface-3: #2a1a1b;
+  --border: rgba(244, 236, 228, 0.1);
+  --border-strong: rgba(244, 236, 228, 0.2);
+  --text: #f4ece4;
+  --text-2: rgba(244, 236, 228, 0.7);
+  --muted: #9c8f88;
   --accent: #ff5b1f;
-  --accent-ink: #0f0f0d;
-  --accent-soft: rgba(255, 91, 31, 0.1);
-  --positive: #1f8a5b;
-  --negative: #d2452b;
-  --warning: #b7791f;
-  --shadow: 0 1px 2px rgba(15, 15, 13, 0.04), 0 18px 40px -24px rgba(15, 15, 13, 0.25);
+  --accent-ink: #f4ece4;
+  --accent-soft: rgba(255, 91, 31, 0.14);
+  --positive: #4fd08f;
+  --negative: #ff6b57;
+  --warning: #f2b441;
+  --shadow: 0 30px 80px -40px rgba(0, 0, 0, 0.9);
   --chart-1: #ff5b1f;
-  --chart-2: #0f0f0d;
-  --chart-3: #5b7fa6;
-  --chart-4: #c9a26b;
-  --chart-5: #6f8f6a;
-  --chart-6: #a0a0a0;
-  --chart-7: #d98c6a;
-  --chart-grid: rgba(15, 15, 13, 0.07);
+  --chart-2: #ff3d81;
+  --chart-3: #7c5cff;
+  --chart-4: #ffb347;
+  --chart-5: #4fd08f;
+  --chart-6: #f4ece4;
+  --chart-7: #c2185b;
+  --chart-grid: rgba(244, 236, 228, 0.07);
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -108,11 +108,10 @@ body {
 
 /* The one material: smoked glass for anything that floats over imagery or WebGL. */
 .glass {
-  background: rgba(255, 255, 255, 0.62);
+  background: rgba(20, 12, 13, 0.6);
   backdrop-filter: blur(20px) saturate(160%);
   -webkit-backdrop-filter: blur(20px) saturate(160%);
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  box-shadow: 0 8px 30px -12px rgba(15, 15, 13, 0.18);
+  border: 1px solid rgba(244, 236, 228, 0.12);
 }
 /* Glass over photography (white text) */
 .glass-dark {
@@ -339,8 +338,8 @@ body {
   }
 }
 
-/* Map tiles: OpenStreetMap, desaturated to sit in the paper palette. */
-.ks-tiles { filter: saturate(0.35) contrast(0.95) brightness(1.02); }
+/* Map tiles: OpenStreetMap, inverted and desaturated for the night palette. */
+.ks-tiles { filter: invert(0.93) hue-rotate(180deg) saturate(0.3) brightness(0.85) contrast(0.9); }
 
 @keyframes tour-progress {
   from { width: 0%; }
@@ -352,26 +351,6 @@ html.lenis, html.lenis body { height: auto; }
 .lenis.lenis-smooth { scroll-behavior: auto !important; }
 .lenis.lenis-stopped { overflow: hidden; }
 
-/* Night theme: the home page sets .theme-night and the whole document follows (nav, footer). */
-body:has(.theme-night) {
-  color-scheme: dark;
-  --bg: #080506;
-  --surface: #140c0d;
-  --surface-2: #1d1213;
-  --surface-3: #2a1a1b;
-  --border: rgba(244, 236, 228, 0.1);
-  --border-strong: rgba(244, 236, 228, 0.2);
-  --text: #f4ece4;
-  --text-2: rgba(244, 236, 228, 0.7);
-  --muted: #9c8f88;
-  --accent-ink: #f4ece4;
-  --shadow: 0 30px 80px -40px rgba(0, 0, 0, 0.9);
-}
-body:has(.theme-night) .glass {
-  background: rgba(20, 12, 13, 0.55);
-  border-color: rgba(244, 236, 228, 0.12);
-  box-shadow: none;
-}
 @keyframes iso-blink {
   0%, 100% { stroke-opacity: 0.9; }
   50% { stroke-opacity: 0.25; }
@@ -380,4 +359,17 @@ body:has(.theme-night) .glass {
 .iso-floor { will-change: transform; }
 @media (prefers-reduced-motion: reduce) {
   .iso-lit { animation: none; }
+}
+
+/* A fixed, slow colour wash behind every page keeps the home page's light on the inner pages. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(60vw 50vh at 85% -10%, rgba(255, 91, 31, 0.16), transparent 70%),
+    radial-gradient(50vw 45vh at -10% 30%, rgba(194, 24, 91, 0.13), transparent 70%),
+    radial-gradient(60vw 50vh at 60% 110%, rgba(124, 92, 255, 0.12), transparent 70%);
 }

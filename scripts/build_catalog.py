@@ -119,7 +119,10 @@ def build_asset(a: dict) -> dict:
         "risks": a["risks"],
         "image_query": a["image_query"],
         "images": [f"/img/assets/{a['id'].lower()}-{i}.jpg" for i in range(3)],
-        "tour": [{"pano": f"/pano/{p}.jpg", "preview": f"/pano/{p}_preview.jpg", "en": en, "fr": fr} for p, en, fr in TOURS[a["id"]]],
+        "tour": [
+            {"pano": f"/pano/{p}.jpg", "preview": f"/pano/{p}_preview.jpg", "en": en, "fr": fr}
+            for p, en, fr in TOURS[a["id"]]
+        ],
     }
 
 
@@ -130,10 +133,11 @@ def documents(x: dict) -> dict[str, str]:
         "> **Demo document.** This asset is fictional and part of the Keystonia demonstration network. "
         "No real investment is offered."
     )
-    memo = f"""---
-id: {x['id']}-memorandum
+    memo = (
+        f"""---
+id: {x["id"]}-memorandum
 title: {name} — Investment memorandum
-asset: {x['id']}
+asset: {x["id"]}
 type: memorandum
 ---
 # {name} — Investment memorandum
@@ -141,31 +145,36 @@ type: memorandum
 {disclaimer}
 
 ## Summary
-{name} is a {x['layout'].lower()} ({x['surface_m2']:,} m²) in {x['district']}, {x['city_name']}, {x['country']}. \
-{x['tagline']}. The asset is valued at {eur(x['valuation_eur'])} and divided into {x['total_shares']:,} shares of \
-{eur(x['share_price_eur'])}. {x['offered_pct']}% of the shares ({x['offered_shares']:,}) are offered to investors; the \
-owner retains {x['retained_shares']:,} shares.
+{name} is a {x["layout"].lower()} ({x["surface_m2"]:,} m²) in {x["district"]}, {x["city_name"]}, {x["country"]}. \
+{x["tagline"]}. The asset is valued at {eur(x["valuation_eur"])} and divided into {x["total_shares"]:,} shares of \
+{eur(x["share_price_eur"])}. {x["offered_pct"]}% of the shares ({x["offered_shares"]:,}) are offered to investors; the \
+owner retains {x["retained_shares"]:,} shares.
 
 ## Income
-Gross yield is {x['gross_yield_pct']}% and the projected net yield after operating costs is {x['net_yield_pct']}%, i.e. a \
-net operating income of {eur(x['annual_noi_eur'])} per year, distributed monthly ({eur(x['monthly_distribution_eur'])} per \
-month across all shares). Occupancy is {x['occupancy_pct']}%. Operator / tenant: {x['operator']}.
+Gross yield is {x["gross_yield_pct"]}% and the projected net yield after operating costs is {x["net_yield_pct"]}%, i.e. a \
+net operating income of {eur(x["annual_noi_eur"])} per year, distributed monthly ({eur(x["monthly_distribution_eur"])} per \
+month across all shares). Occupancy is {x["occupancy_pct"]}%. Operator / tenant: {x["operator"]}.
 
 ## Highlights
-""" + "\n".join(f"- {h}" for h in x["highlights"]) + """
+"""
+        + "\n".join(f"- {h}" for h in x["highlights"])
+        + """
 
 ## Key risks
-""" + "\n".join(f"- {r}" for r in x["risks"]) + f"""
+"""
+        + "\n".join(f"- {r}" for r in x["risks"])
+        + f"""
 - Shares are illiquid outside the Keystonia secondary market; prices may differ from the valuation.
 - Valuations can go down as well as up.
 
 ## Location
-{x['district']} ({x['city_name']}). Coordinates {x['lat']:.4f}, {x['lon']:.4f}.
+{x["district"]} ({x["city_name"]}). Coordinates {x["lat"]:.4f}, {x["lon"]:.4f}.
 """
+    )
     val = f"""---
-id: {x['id']}-valuation
+id: {x["id"]}-valuation
 title: {name} — Valuation report
-asset: {x['id']}
+asset: {x["id"]}
 type: valuation
 ---
 # {name} — Valuation report
@@ -173,28 +182,31 @@ type: valuation
 {disclaimer}
 
 ## Method
-{ev['method']}.
+{ev["method"]}.
 
 ## Market evidence
-{ev['reference']}. Source: {ev['source']}.
-{'This market has no open transaction dataset: the figure is an indicative estimate and should be treated with caution.' if ev['indicative'] else 'The reference comes from official open transaction data.'}
+{ev["reference"]}. Source: {ev["source"]}.
+{"This market has no open transaction dataset: the figure is an indicative estimate and should be treated with caution." if ev["indicative"] else "The reference comes from official open transaction data."}
 
 ## Conclusion
-Adjustment: {ev['adjustment']}. Concluded value: {eur(x['valuation_eur'])} \
-({eur(x['valuation_eur'] / max(x['surface_m2'], 1))} per m²). Share price: {eur(x['share_price_eur'])}.
+Adjustment: {ev["adjustment"]}. Concluded value: {eur(x["valuation_eur"])} \
+({eur(x["valuation_eur"] / max(x["surface_m2"], 1))} per m²). Share price: {eur(x["share_price_eur"])}.
 """
     energy = x["energy_rating"]
     energy_note = (
         "No energy performance certificate applies to this asset type in this market."
         if energy == "-"
         else f"Energy rating {energy}. "
-        + ("Below C: improvement works are budgeted over the next five years." if energy in "DEFG" else
-           "Meets current efficiency expectations.")
+        + (
+            "Below C: improvement works are budgeted over the next five years."
+            if energy in "DEFG"
+            else "Meets current efficiency expectations."
+        )
     )
     tech = f"""---
-id: {x['id']}-technical
+id: {x["id"]}-technical
 title: {name} — Technical survey
-asset: {x['id']}
+asset: {x["id"]}
 type: technical
 ---
 # {name} — Technical survey
@@ -202,18 +214,18 @@ type: technical
 {disclaimer}
 
 ## Building
-Built in {x['year_built']}. Layout: {x['layout']}. Surface: {x['surface_m2']:,} m².
+Built in {x["year_built"]}. Layout: {x["layout"]}. Surface: {x["surface_m2"]:,} m².
 
 ## Energy
 {energy_note}
 
 ## Condition and capital expenditure
-{'Older building: a maintenance reserve of 1.5% of rent per year is held by the SPV.' if x['year_built'] < 1950 else 'Recent building: standard maintenance reserve of 0.8% of rent per year.'}
+{"Older building: a maintenance reserve of 1.5% of rent per year is held by the SPV." if x["year_built"] < 1950 else "Recent building: standard maintenance reserve of 0.8% of rent per year."}
 """
     legal = f"""---
-id: {x['id']}-legal
+id: {x["id"]}-legal
 title: {name} — Legal structure
-asset: {x['id']}
+asset: {x["id"]}
 type: legal
 ---
 # {name} — Legal structure
@@ -221,7 +233,7 @@ type: legal
 {disclaimer}
 
 ## Ownership
-The asset is held by a dedicated special-purpose vehicle (SPV) registered in {x['country']}. Each Keystonia share token \
+The asset is held by a dedicated special-purpose vehicle (SPV) registered in {x["country"]}. Each Keystonia share token \
 represents one share of that SPV. Token holders receive income pro rata and vote on major decisions (works, refinancing, \
 sale, change of operator) through on-chain proposals with a 20% quorum.
 
@@ -253,8 +265,10 @@ def main() -> None:
     total = sum(a["valuation_eur"] for a in assets)
     print(f"{len(assets)} assets, {sum(1 for _ in OUT.glob('docs/*/*.md'))} documents, total value {eur(total)}")
     for a in assets:
-        print(f"{a['id']:12s} {a['status']:9s} {eur(a['valuation_eur']):>13s} {a['total_shares']:>7,} sh "
-              f"net {a['net_yield_pct']:>5}%  {a['name']}")
+        print(
+            f"{a['id']:12s} {a['status']:9s} {eur(a['valuation_eur']):>13s} {a['total_shares']:>7,} sh "
+            f"net {a['net_yield_pct']:>5}%  {a['name']}"
+        )
 
 
 if __name__ == "__main__":

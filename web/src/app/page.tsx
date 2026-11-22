@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { ArrowUpRight, Play } from "lucide-react";
 import { api, type Activity, type Asset, type Overview } from "@/lib/api";
@@ -14,6 +15,7 @@ import { ErrorState } from "@/components/ui";
 import { CountUp, Magnetic, Reveal, SplitReveal, Stagger, reduced } from "@/components/motion/motion";
 import { Aurora } from "@/components/motion/aurora";
 import { FLOORS, IsoTower } from "@/components/motion/iso-tower";
+import { FloorExplorer } from "@/components/floor-explorer";
 
 
 const CITY_FR: Record<string, string> = { London: "Londres", Dubai: "Dubaï" };
@@ -47,9 +49,9 @@ const COPY = {
     collection_label: "The collection",
     collection: "Twenty-four addresses. Six cities. Only the best.",
     collection_cta: "See the full collection",
-    visit_label: "360° visit",
-    visit: "Walk in before you buy a single token.",
-    visit_sub: "Every property opens as a 360° visit made of real photographs. Let it play, or drag to look around.",
+    visit_label: "Pick a level",
+    visit: "Click a floor. Step inside.",
+    visit_sub: "Every property opens level by level. Pick a floor on the building and look around the room in 360°, in real photographs.",
     how_label: "How it works",
     how: "From the walls to your wallet.",
     how_steps: [
@@ -95,9 +97,9 @@ const COPY = {
     collection_label: "La collection",
     collection: "Vingt-quatre adresses. Six villes. Le très haut de gamme.",
     collection_cta: "Voir toute la collection",
-    visit_label: "Visite 360°",
-    visit: "Entrez avant d'acheter un seul token.",
-    visit_sub: "Chaque bien s'ouvre en visite 360° faite de vraies photographies. Laissez défiler, ou glissez pour regarder autour.",
+    visit_label: "Choisissez un niveau",
+    visit: "Cliquez sur un étage. Entrez.",
+    visit_sub: "Chaque bien s'ouvre niveau par niveau. Choisissez un étage sur l'immeuble et regardez la pièce à 360°, en vraies photographies.",
     how_label: "Comment ça marche",
     how: "Des murs à votre wallet.",
     how_steps: [
@@ -214,8 +216,21 @@ function Hero({ c, start }: { c: Copy; start: boolean }) {
           // idle: the floors breathe
           gsap.to(".hero-tower .iso-floor", { y: "-=7", duration: 2.6, ease: "sine.inOut", yoyo: true, repeat: -1, stagger: { each: 0.12, from: "start" } });
         });
+      // the tower leans toward the pointer
+      const rx = gsap.quickTo(".hero-tower svg", "x", { duration: 1.2, ease: "power3.out" });
+      const ry = gsap.quickTo(".hero-tower svg", "y", { duration: 1.2, ease: "power3.out" });
+      const rr = gsap.quickTo(".hero-tower svg", "rotation", { duration: 1.4, ease: "power3.out" });
+      const onMove = (e: PointerEvent) => {
+        const nx = e.clientX / window.innerWidth - 0.5;
+        const ny = e.clientY / window.innerHeight - 0.5;
+        rx(nx * 34);
+        ry(ny * 22);
+        rr(nx * 3);
+      };
+      window.addEventListener("pointermove", onMove, { passive: true });
       gsap.to(".hero-word", { yPercent: -45, opacity: 0, ease: "none", scrollTrigger: { trigger: root.current, start: "top top", end: "70% top", scrub: true } });
       gsap.to(".hero-tower", { yPercent: 12, scale: 1.06, ease: "none", scrollTrigger: { trigger: root.current, start: "top top", end: "bottom top", scrub: true } });
+      return () => window.removeEventListener("pointermove", onMove);
     },
     { scope: root, dependencies: [start] },
   );
@@ -380,6 +395,46 @@ function Tokenize({ c }: { c: Copy }) {
   );
 }
 
+// ── City marquee: speeds up and leans with the scroll ─────────────────────────
+function CityMarquee() {
+  const root = useRef<HTMLDivElement>(null);
+  useGSAP(
+    () => {
+      if (reduced()) return;
+      const track = root.current!.querySelector<HTMLElement>(".cm-track")!;
+      const loop = gsap.to(track, { xPercent: -50, duration: 28, ease: "none", repeat: -1 });
+      const skew = gsap.quickTo(track, "skewX", { duration: 0.5, ease: "power3.out" });
+      ScrollTrigger.create({
+        trigger: root.current,
+        start: "top bottom",
+        end: "bottom top",
+        onUpdate: (st) => {
+          const v = st.getVelocity();
+          loop.timeScale(1 + Math.min(6, Math.abs(v) / 300));
+          skew(gsap.utils.clamp(-12, 12, v / -150));
+        },
+      });
+    },
+    { scope: root },
+  );
+  const words = ["New York", "Paris", "Dubai", "London", "Marrakech", "Melbourne"];
+  const row = (k: string) =>
+    words.map((w, i) => (
+      <span key={k + w} className="flex shrink-0 items-center gap-8 pr-8">
+        <span className={cx("font-display text-[clamp(56px,9vw,150px)] leading-none tracking-[-0.05em]", i % 2 ? "text-transparent [-webkit-text-stroke:1.5px_var(--text)]" : "text-ink")}>{w}</span>
+        <span className="text-[clamp(28px,4vw,60px)] text-accent">✦</span>
+      </span>
+    ));
+  return (
+    <div ref={root} className="overflow-hidden py-16">
+      <div className="cm-track flex w-max will-change-transform">
+        {row("a")}
+        {row("b")}
+      </div>
+    </div>
+  );
+}
+
 // ── 2b. Rent, drawn: an animated payout chart ─────────────────────────────────
 function RentChart({ c }: { c: Copy }) {
   const { lang } = useLang();
@@ -403,7 +458,7 @@ function RentChart({ c }: { c: Copy }) {
     <section ref={root} className="mx-auto max-w-[1400px] px-5 pt-28 sm:px-10">
       <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
         <div>
-          <Label n="03">{c.rent_label}</Label>
+          <Label n="04">{c.rent_label}</Label>
           <SplitReveal className="font-display mt-5 text-[clamp(40px,5.6vw,88px)] leading-[0.92] tracking-[-0.04em]">{c.rent_title}</SplitReveal>
           <Reveal className="mt-6 max-w-md text-[16px] leading-relaxed text-ink-2">{c.rent_sub}</Reveal>
         </div>
@@ -471,11 +526,11 @@ function Collection({ c, assets }: { c: Copy; assets: Asset[] }) {
     { scope: root, dependencies: [assets.length] },
   );
   return (
-    <section ref={root} className="relative overflow-hidden bg-bg py-24 md:flex md:h-[100svh] md:flex-col md:justify-center md:pb-0 md:pt-24">
-      <div className="mx-auto mb-10 flex w-full max-w-[1400px] flex-col gap-5 px-5 sm:px-10 md:flex-row md:items-end md:justify-between">
+    <section ref={root} className="relative overflow-hidden py-24 md:flex md:h-[100svh] md:flex-col md:justify-center md:pb-6 md:pt-[112px]">
+      <div className="mx-auto mb-6 flex w-full max-w-[1400px] flex-col gap-5 px-5 sm:px-10 md:flex-row md:items-end md:justify-between">
         <div>
-          <Label n="04">{c.collection_label}</Label>
-          <SplitReveal className="font-display mt-5 max-w-3xl text-[clamp(38px,5.4vw,84px)] leading-[0.95] tracking-[-0.04em]">{c.collection}</SplitReveal>
+          <Label n="05">{c.collection_label}</Label>
+          <SplitReveal className="font-display mt-4 max-w-4xl text-[clamp(30px,3.6vw,60px)] leading-[0.98] tracking-[-0.04em]">{c.collection}</SplitReveal>
         </div>
         <Link href="/invest" className="group inline-flex items-center gap-2 text-[14px] font-medium">
           {c.collection_cta} <ArrowUpRight size={16} className="transition-transform group-hover:rotate-45" />
@@ -484,8 +539,8 @@ function Collection({ c, assets }: { c: Copy; assets: Asset[] }) {
       <div ref={track} className="no-scrollbar flex gap-4 overflow-x-auto px-5 sm:px-10 md:overflow-visible">
         {assets.map((a, i) => (
           <Link key={a.id} href={`/assets/${a.id.toLowerCase()}`} className="group relative block w-[78vw] shrink-0 overflow-hidden rounded-[26px] sm:w-[340px] lg:w-[400px]">
-            <div className="aspect-[4/5] bg-surface transition-transform duration-[1200ms] ease-[var(--ease-out)] group-hover:scale-[1.04]" style={{ backgroundImage: `radial-gradient(120% 90% at ${20 + ((i * 37) % 60)}% 0%, ${RAIL_HUES[i % RAIL_HUES.length]} 0%, transparent 62%), radial-gradient(90% 70% at 100% 100%, rgba(124,92,255,0.28), transparent 60%)` }} />
-            <span aria-hidden className="font-display pointer-events-none absolute -right-3 top-10 text-[190px] font-semibold leading-none tracking-[-0.06em] text-white/[0.07]">
+            <div className="aspect-[4/5] bg-surface md:aspect-auto md:h-[clamp(220px,calc(100svh-330px),560px)] transition-transform duration-[1200ms] ease-[var(--ease-out)] group-hover:scale-[1.04]" style={{ backgroundImage: `radial-gradient(120% 90% at ${20 + ((i * 37) % 60)}% 0%, ${RAIL_HUES[i % RAIL_HUES.length]} 0%, transparent 62%), radial-gradient(90% 70% at 100% 100%, rgba(124,92,255,0.28), transparent 60%)` }} />
+            <span aria-hidden className="font-display pointer-events-none absolute -right-3 top-10 text-[150px] font-semibold leading-none tracking-[-0.06em] text-white/[0.07]">
               {a.id.split("-")[1]}
             </span>
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
@@ -505,7 +560,7 @@ function Collection({ c, assets }: { c: Copy; assets: Asset[] }) {
             </div>
           </Link>
         ))}
-        <Link href="/invest" className="group flex w-[78vw] shrink-0 flex-col justify-between rounded-[26px] bg-accent p-7 text-white sm:w-[340px] lg:w-[400px]">
+        <Link href="/invest" className="group flex w-[78vw] shrink-0 flex-col justify-between rounded-[26px] bg-accent p-7 text-white sm:w-[340px] md:h-[clamp(220px,calc(100svh-330px),560px)] lg:w-[400px]">
           <span className="num text-[12px] text-white/60">+12</span>
           <span>
             <span className="font-display block text-[44px] leading-[0.95] tracking-[-0.03em]">{c.collection_cta}</span>
@@ -537,7 +592,7 @@ function HowItWorks({ c }: { c: Copy }) {
   const tones = ["bg-surface", "bg-surface-2", "bg-[#f4ece4] text-[#120a0b]", "bg-accent text-white"];
   return (
     <section ref={root} className="mx-auto max-w-[1400px] px-5 pt-32 sm:px-10">
-      <Label n="05">{c.how_label}</Label>
+      <Label n="06">{c.how_label}</Label>
       <SplitReveal className="font-display mt-5 max-w-4xl text-[clamp(40px,6vw,96px)] leading-[0.92] tracking-[-0.04em]">{c.how}</SplitReveal>
       <div className="mt-14">
         {c.how_steps.map(([title, text, big], i) => (
@@ -568,7 +623,7 @@ function Cities({ c, ov }: { c: Copy; ov?: Overview }) {
       className="mx-auto max-w-[1400px] px-5 pt-32 sm:px-10"
       onMouseLeave={() => setHover(null)}
     >
-      <Label n="06">{c.cities_label}</Label>
+      <Label n="07">{c.cities_label}</Label>
       <SplitReveal className="font-display mb-12 mt-5 text-[clamp(40px,6vw,96px)] leading-[0.92] tracking-[-0.04em]">{c.cities}</SplitReveal>
       <Stagger className="border-t hairline">
         {(ov?.cities ?? []).map((city, i) => (
@@ -618,7 +673,7 @@ function Ledger({ items, block, c }: { items: Activity[]; block?: string; c: Cop
   return (
     <section className="pt-32">
       <div className="mx-auto mb-6 flex max-w-[1400px] items-center justify-between px-5 sm:px-10">
-        <Label n="07">{c.ledger}</Label>
+        <Label n="08">{c.ledger}</Label>
         <span className="label flex items-center gap-2">
           <span className="relative flex h-2 w-2">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60" />
@@ -653,6 +708,8 @@ export default function Home() {
     .sort((a, b) => ORDER[a.phase] - ORDER[b.phase] || b.net_yield_pct - a.net_yield_pct)
     .slice(0, 12);
 
+  const featured = assets?.find((a) => a.id === "KST-PAR-002");
+
   const stats: [number, (v: number) => string][] = [
     [ov?.assets ?? 24, (v) => String(Math.round(v))],
     [ov?.tokenized_value_eur ?? 0, (v) => compactEur(v, lang)],
@@ -665,6 +722,19 @@ export default function Home() {
       <Preloader c={c} onDone={() => setStarted(true)} />
       <Hero c={c} start={started} />
       <Tokenize c={c} />
+      <CityMarquee />
+
+      <section id="visit" className="mx-auto max-w-[1400px] scroll-mt-24 px-5 pt-28 sm:px-10">
+        <div className="mb-10 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+          <div>
+            <Label n="03">{c.visit_label}</Label>
+            <SplitReveal className="font-display mt-5 max-w-4xl text-[clamp(40px,5.6vw,88px)] leading-[0.92] tracking-[-0.04em]">{c.visit}</SplitReveal>
+          </div>
+          <Reveal className="max-w-sm text-[15.5px] leading-relaxed text-ink-2">{c.visit_sub}</Reveal>
+        </div>
+        <Reveal y={80}>{featured ? <FloorExplorer asset={featured} /> : <div className="aspect-[16/8.5] rounded-[28px] bg-surface" />}</Reveal>
+      </section>
+
       <RentChart c={c} />
 
       <section className="mx-auto max-w-[1400px] px-5 pt-28 sm:px-10">

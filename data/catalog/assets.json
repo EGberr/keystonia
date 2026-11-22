@@ -58,16 +58,16 @@
   ],
   "tour": [
    {
-    "pano": "/pano/brown_photostudio_03.jpg",
-    "preview": "/pano/brown_photostudio_03_preview.jpg",
-    "en": "Living room",
-    "fr": "Le séjour"
-   },
-   {
     "pano": "/pano/glasshouse_interior.jpg",
     "preview": "/pano/glasshouse_interior_preview.jpg",
     "en": "Great room",
     "fr": "La grande pièce"
+   },
+   {
+    "pano": "/pano/cayley_interior.jpg",
+    "preview": "/pano/cayley_interior_preview.jpg",
+    "en": "Lounge",
+    "fr": "Le salon"
    },
    {
     "pano": "/pano/modern_bathroom.jpg",
@@ -148,10 +148,10 @@
     "fr": "Le lobby"
    },
    {
-    "pano": "/pano/warm_bar.jpg",
-    "preview": "/pano/warm_bar_preview.jpg",
-    "en": "Rooftop bar",
-    "fr": "Le bar"
+    "pano": "/pano/aft_lounge.jpg",
+    "preview": "/pano/aft_lounge_preview.jpg",
+    "en": "Lounge bar",
+    "fr": "Le bar lounge"
    },
    {
     "pano": "/pano/hotel_room.jpg",
@@ -225,28 +225,28 @@
   ],
   "tour": [
    {
-    "pano": "/pano/decor_shop.jpg",
-    "preview": "/pano/decor_shop_preview.jpg",
+    "pano": "/pano/music_hall_02.jpg",
+    "preview": "/pano/music_hall_02_preview.jpg",
     "en": "Sales floor",
     "fr": "L'espace de vente"
    },
    {
-    "pano": "/pano/art_studio.jpg",
-    "preview": "/pano/art_studio_preview.jpg",
-    "en": "Atelier",
-    "fr": "L'atelier"
+    "pano": "/pano/large_corridor.jpg",
+    "preview": "/pano/large_corridor_preview.jpg",
+    "en": "Gallery",
+    "fr": "La galerie"
    },
    {
-    "pano": "/pano/comfy_cafe.jpg",
-    "preview": "/pano/comfy_cafe_preview.jpg",
-    "en": "Client lounge",
-    "fr": "Le salon clients"
+    "pano": "/pano/anniversary_lounge.jpg",
+    "preview": "/pano/anniversary_lounge_preview.jpg",
+    "en": "Private salon",
+    "fr": "Le salon privé"
    },
    {
-    "pano": "/pano/modern_evening_street.jpg",
-    "preview": "/pano/modern_evening_street_preview.jpg",
-    "en": "The avenue",
-    "fr": "L'avenue"
+    "pano": "/pano/aft_lounge.jpg",
+    "preview": "/pano/aft_lounge_preview.jpg",
+    "en": "VIP lounge",
+    "fr": "Le salon VIP"
    }
   ]
  },
@@ -410,8 +410,8 @@
     "fr": "La chambre"
    },
    {
-    "pano": "/pano/treetop_balcony.jpg",
-    "preview": "/pano/treetop_balcony_preview.jpg",
+    "pano": "/pano/hotel_rooftop_balcony.jpg",
+    "preview": "/pano/hotel_rooftop_balcony_preview.jpg",
     "en": "Terrace",
     "fr": "La terrasse"
    }
@@ -494,10 +494,10 @@
     "fr": "La suite"
    },
    {
-    "pano": "/pano/warm_restaurant.jpg",
-    "preview": "/pano/warm_restaurant_preview.jpg",
-    "en": "Restaurant",
-    "fr": "Le restaurant"
+    "pano": "/pano/country_club.jpg",
+    "preview": "/pano/country_club_preview.jpg",
+    "en": "Salon",
+    "fr": "Le salon"
    }
   ]
  },
@@ -559,28 +559,28 @@
   ],
   "tour": [
    {
-    "pano": "/pano/decor_shop.jpg",
-    "preview": "/pano/decor_shop_preview.jpg",
-    "en": "Boutique",
-    "fr": "La boutique"
-   },
-   {
     "pano": "/pano/large_corridor.jpg",
     "preview": "/pano/large_corridor_preview.jpg",
     "en": "Gallery",
     "fr": "La galerie"
    },
    {
-    "pano": "/pano/comfy_cafe.jpg",
-    "preview": "/pano/comfy_cafe_preview.jpg",
+    "pano": "/pano/vestibule.jpg",
+    "preview": "/pano/vestibule_preview.jpg",
+    "en": "Boutique hall",
+    "fr": "Le hall de la boutique"
+   },
+   {
+    "pano": "/pano/anniversary_lounge.jpg",
+    "preview": "/pano/anniversary_lounge_preview.jpg",
     "en": "Private salon",
     "fr": "Le salon privé"
    },
    {
-    "pano": "/pano/art_studio.jpg",
-    "preview": "/pano/art_studio_preview.jpg",
-    "en": "Atelier",
-    "fr": "L'atelier"
+    "pano": "/pano/entrance_hall.jpg",
+    "preview": "/pano/entrance_hall_preview.jpg",
+    "en": "Fitting salons",
+    "fr": "Les salons d'essayage"
    }
   ]
  },
@@ -642,28 +642,28 @@
   ],
   "tour": [
    {
-    "pano": "/pano/old_room.jpg",
-    "preview": "/pano/old_room_preview.jpg",
+    "pano": "/pano/lythwood_lounge.jpg",
+    "preview": "/pano/lythwood_lounge_preview.jpg",
     "en": "Salon",
     "fr": "Le salon"
    },
    {
-    "pano": "/pano/reading_room.jpg",
-    "preview": "/pano/reading_room_preview.jpg",
-    "en": "Library",
-    "fr": "La bibliothèque"
+    "pano": "/pano/entrance_hall.jpg",
+    "preview": "/pano/entrance_hall_preview.jpg",
+    "en": "Vestibule",
+    "fr": "Le vestibule"
    },
    {
-    "pano": "/pano/brown_photostudio_05.jpg",
-    "preview": "/pano/brown_photostudio_05_preview.jpg",
+    "pano": "/pano/lythwood_room.jpg",
+    "preview": "/pano/lythwood_room_preview.jpg",
     "en": "Bedroom",
     "fr": "La chambre"
    },
    {
-    "pano": "/pano/studio_country_hall.jpg",
-    "preview": "/pano/studio_country_hall_preview.jpg",
-    "en": "Hall",
-    "fr": "Le hall"
+    "pano": "/pano/fireplace.jpg",
+    "preview": "/pano/fireplace_preview.jpg",
+    "en": "Library",
+    "fr": "La bibliothèque"
    }
   ]
  },
@@ -732,12 +732,6 @@
     "fr": "La piscine privée"
    },
    {
-    "pano": "/pano/lapa.jpg",
-    "preview": "/pano/lapa_preview.jpg",
-    "en": "Pool lounge",
-    "fr": "Le salon de piscine"
-   },
-   {
     "pano": "/pano/sundowner_deck.jpg",
     "preview": "/pano/sundowner_deck_preview.jpg",
     "en": "Sunset deck",
@@ -748,6 +742,12 @@
     "preview": "/pano/relax_inn_seaview_suite_preview.jpg",
     "en": "Master suite",
     "fr": "La suite"
+   },
+   {
+    "pano": "/pano/illovo_beach_balcony.jpg",
+    "preview": "/pano/illovo_beach_balcony_preview.jpg",
+    "en": "Sea balcony",
+    "fr": "Le balcon sur la mer"
    }
   ]
  },
@@ -975,22 +975,22 @@
   ],
   "tour": [
    {
-    "pano": "/pano/warm_restaurant.jpg",
-    "preview": "/pano/warm_restaurant_preview.jpg",
+    "pano": "/pano/aft_lounge.jpg",
+    "preview": "/pano/aft_lounge_preview.jpg",
     "en": "Dining room",
     "fr": "La salle"
-   },
-   {
-    "pano": "/pano/warm_bar.jpg",
-    "preview": "/pano/warm_bar_preview.jpg",
-    "en": "Bar",
-    "fr": "Le bar"
    },
    {
     "pano": "/pano/wooden_lounge.jpg",
     "preview": "/pano/wooden_lounge_preview.jpg",
     "en": "Lounge",
     "fr": "Le salon"
+   },
+   {
+    "pano": "/pano/country_club.jpg",
+    "preview": "/pano/country_club_preview.jpg",
+    "en": "Private room",
+    "fr": "Le salon privé"
    },
    {
     "pano": "/pano/sundowner_deck.jpg",
@@ -1070,8 +1070,8 @@
     "fr": "La chambre"
    },
    {
-    "pano": "/pano/reading_room.jpg",
-    "preview": "/pano/reading_room_preview.jpg",
+    "pano": "/pano/anniversary_lounge.jpg",
+    "preview": "/pano/anniversary_lounge_preview.jpg",
     "en": "Study",
     "fr": "Le bureau"
    },
@@ -1159,8 +1159,8 @@
     "fr": "La chambre"
    },
    {
-    "pano": "/pano/warm_bar.jpg",
-    "preview": "/pano/warm_bar_preview.jpg",
+    "pano": "/pano/wooden_lounge.jpg",
+    "preview": "/pano/wooden_lounge_preview.jpg",
     "en": "Bar",
     "fr": "Le bar"
    }
@@ -1224,8 +1224,8 @@
   ],
   "tour": [
    {
-    "pano": "/pano/brown_photostudio_02.jpg",
-    "preview": "/pano/brown_photostudio_02_preview.jpg",
+    "pano": "/pano/brown_photostudio_03.jpg",
+    "preview": "/pano/brown_photostudio_03_preview.jpg",
     "en": "Living room",
     "fr": "Le séjour"
    },
@@ -1236,16 +1236,16 @@
     "fr": "Le petit salon"
    },
    {
-    "pano": "/pano/brown_photostudio_07.jpg",
-    "preview": "/pano/brown_photostudio_07_preview.jpg",
+    "pano": "/pano/brown_photostudio_04.jpg",
+    "preview": "/pano/brown_photostudio_04_preview.jpg",
     "en": "Bedroom",
     "fr": "La chambre"
    },
    {
-    "pano": "/pano/stone_alley.jpg",
-    "preview": "/pano/stone_alley_preview.jpg",
-    "en": "The mews",
-    "fr": "L'allée"
+    "pano": "/pano/lythwood_terrace.jpg",
+    "preview": "/pano/lythwood_terrace_preview.jpg",
+    "en": "Garden",
+    "fr": "Le jardin"
    }
   ]
  },
@@ -1307,28 +1307,28 @@
   ],
   "tour": [
    {
-    "pano": "/pano/art_studio.jpg",
-    "preview": "/pano/art_studio_preview.jpg",
-    "en": "Gallery",
-    "fr": "La galerie"
-   },
-   {
     "pano": "/pano/large_corridor.jpg",
     "preview": "/pano/large_corridor_preview.jpg",
-    "en": "Enfilade",
-    "fr": "L'enfilade"
-   },
-   {
-    "pano": "/pano/warm_restaurant.jpg",
-    "preview": "/pano/warm_restaurant_preview.jpg",
-    "en": "Members' dining",
-    "fr": "La salle du club"
+    "en": "Gallery",
+    "fr": "La galerie"
    },
    {
     "pano": "/pano/music_hall_02.jpg",
     "preview": "/pano/music_hall_02_preview.jpg",
     "en": "Salon",
     "fr": "Le salon"
+   },
+   {
+    "pano": "/pano/vestibule.jpg",
+    "preview": "/pano/vestibule_preview.jpg",
+    "en": "Hall",
+    "fr": "Le hall"
+   },
+   {
+    "pano": "/pano/ballroom.jpg",
+    "preview": "/pano/ballroom_preview.jpg",
+    "en": "Members' dining",
+    "fr": "La salle du club"
    }
   ]
  },
@@ -1403,16 +1403,16 @@
     "fr": "Le hammam"
    },
    {
-    "pano": "/pano/medieval_cafe.jpg",
-    "preview": "/pano/medieval_cafe_preview.jpg",
-    "en": "Courtyard",
-    "fr": "La cour"
+    "pano": "/pano/pool.jpg",
+    "preview": "/pano/pool_preview.jpg",
+    "en": "Patio pool",
+    "fr": "Le bassin du patio"
    },
    {
-    "pano": "/pano/veranda.jpg",
-    "preview": "/pano/veranda_preview.jpg",
-    "en": "Veranda",
-    "fr": "La véranda"
+    "pano": "/pano/sundowner_deck.jpg",
+    "preview": "/pano/sundowner_deck_preview.jpg",
+    "en": "Roof terrace",
+    "fr": "La terrasse"
    }
   ]
  },
@@ -1480,22 +1480,22 @@
     "fr": "La piscine"
    },
    {
-    "pano": "/pano/lapa.jpg",
-    "preview": "/pano/lapa_preview.jpg",
-    "en": "Garden lounge",
-    "fr": "Le salon de jardin"
-   },
-   {
-    "pano": "/pano/veranda.jpg",
-    "preview": "/pano/veranda_preview.jpg",
-    "en": "Veranda",
-    "fr": "La véranda"
+    "pano": "/pano/sundowner_deck.jpg",
+    "preview": "/pano/sundowner_deck_preview.jpg",
+    "en": "Sunset deck",
+    "fr": "La terrasse du couchant"
    },
    {
     "pano": "/pano/relax_inn_seaview_suite.jpg",
     "preview": "/pano/relax_inn_seaview_suite_preview.jpg",
     "en": "Villa suite",
     "fr": "La suite"
+   },
+   {
+    "pano": "/pano/stone_pines.jpg",
+    "preview": "/pano/stone_pines_preview.jpg",
+    "en": "Gardens",
+    "fr": "Les jardins"
    }
   ]
  },
@@ -1640,28 +1640,28 @@
   ],
   "tour": [
    {
-    "pano": "/pano/lonely_road_afternoon.jpg",
-    "preview": "/pano/lonely_road_afternoon_preview.jpg",
-    "en": "Valley road",
-    "fr": "La route de la vallée"
-   },
-   {
-    "pano": "/pano/waterkloof_farm.jpg",
-    "preview": "/pano/waterkloof_farm_preview.jpg",
-    "en": "Farmland",
-    "fr": "Les terres"
-   },
-   {
-    "pano": "/pano/sabie_tent.jpg",
-    "preview": "/pano/sabie_tent_preview.jpg",
-    "en": "Guest lodge",
-    "fr": "Le lodge"
-   },
-   {
     "pano": "/pano/stone_pines.jpg",
     "preview": "/pano/stone_pines_preview.jpg",
     "en": "The grove",
     "fr": "Le bosquet"
+   },
+   {
+    "pano": "/pano/sunny_country_road.jpg",
+    "preview": "/pano/sunny_country_road_preview.jpg",
+    "en": "Estate road",
+    "fr": "Le chemin du domaine"
+   },
+   {
+    "pano": "/pano/lythwood_terrace.jpg",
+    "preview": "/pano/lythwood_terrace_preview.jpg",
+    "en": "Guest house",
+    "fr": "La maison d'hôtes"
+   },
+   {
+    "pano": "/pano/sundowner_deck.jpg",
+    "preview": "/pano/sundowner_deck_preview.jpg",
+    "en": "Valley deck",
+    "fr": "La terrasse sur la vallée"
    }
   ]
  },
@@ -1741,10 +1741,10 @@
     "fr": "La chambre"
    },
    {
-    "pano": "/pano/treetop_balcony.jpg",
-    "preview": "/pano/treetop_balcony_preview.jpg",
-    "en": "Balcony",
-    "fr": "Le balcon"
+    "pano": "/pano/hotel_rooftop_balcony.jpg",
+    "preview": "/pano/hotel_rooftop_balcony_preview.jpg",
+    "en": "Sky terrace",
+    "fr": "La terrasse"
    }
   ]
  },
@@ -1895,10 +1895,10 @@
     "fr": "Le chemin du domaine"
    },
    {
-    "pano": "/pano/straw_rolls_field_01.jpg",
-    "preview": "/pano/straw_rolls_field_01_preview.jpg",
-    "en": "The fields",
-    "fr": "Les champs"
+    "pano": "/pano/stone_pines.jpg",
+    "preview": "/pano/stone_pines_preview.jpg",
+    "en": "The grounds",
+    "fr": "Le parc"
    },
    {
     "pano": "/pano/lythwood_terrace.jpg",
@@ -1907,10 +1907,10 @@
     "fr": "La terrasse du caveau"
    },
    {
-    "pano": "/pano/sabie_tent.jpg",
-    "preview": "/pano/sabie_tent_preview.jpg",
-    "en": "Lodge",
-    "fr": "Le lodge"
+    "pano": "/pano/sundowner_deck.jpg",
+    "preview": "/pano/sundowner_deck_preview.jpg",
+    "en": "Tasting deck",
+    "fr": "La terrasse de dégustation"
    }
   ]
  },

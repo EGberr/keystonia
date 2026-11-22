@@ -62,13 +62,24 @@ ASSET_THEMES = {
 }
 FALLBACK = {"morocco": "pool", "lisbon": "facade", "desk": "living", "shop": "office"}
 CITY_COVER = {"marrakech": "morocco", "lisbon": "lisbon", "paris": "paris", "london": "london"}
-CATEGORY_POOL = {"residential": "living", "hospitality": "hotel", "commercial": "office", "student": "desk",
-                 "land": "land"}
+CATEGORY_POOL = {
+    "residential": "living",
+    "hospitality": "hotel",
+    "commercial": "office",
+    "student": "desk",
+    "land": "land",
+}
 
 
 def search(source: str, query: str, page: int) -> list[dict]:
-    params = {"q": query, "source": source, "license": "cc0,pdm,by,by-sa", "page_size": 20, "page": page,
-              "mature": "false"}
+    params = {
+        "q": query,
+        "source": source,
+        "license": "cc0,pdm,by,by-sa",
+        "page_size": 20,
+        "page": page,
+        "mature": "false",
+    }
     req = urllib.request.Request(f"{API}?{urllib.parse.urlencode(params)}", headers={"User-Agent": UA})
     data: dict = {}
     for attempt in range(4):
@@ -89,8 +100,24 @@ def search(source: str, query: str, page: int) -> list[dict]:
             continue
         if source == "rawpixel" and not re.search(r"photo|image|view|architecture|street|tram|courtyard", title):
             continue  # rawpixel also hosts digitised artwork; keep its photographs only
-        out.append({k: r.get(k) for k in ("id", "title", "creator", "license", "license_version", "license_url",
-                                          "source", "url", "foreign_landing_url", "width", "height")})
+        out.append(
+            {
+                k: r.get(k)
+                for k in (
+                    "id",
+                    "title",
+                    "creator",
+                    "license",
+                    "license_version",
+                    "license_url",
+                    "source",
+                    "url",
+                    "foreign_landing_url",
+                    "width",
+                    "height",
+                )
+            }
+        )
     return out
 
 
@@ -129,9 +156,15 @@ def download(url: str, max_w: int, dest: Path) -> bool:
 
 
 def credit(c: dict, file: str) -> dict:
-    return {"file": file, "title": c["title"], "creator": c["creator"],
-            "license": f"{c['license'].upper()} {c.get('license_version') or ''}".strip(),
-            "license_url": c["license_url"], "source": c["source"], "url": c["foreign_landing_url"]}
+    return {
+        "file": file,
+        "title": c["title"],
+        "creator": c["creator"],
+        "license": f"{c['license'].upper()} {c.get('license_version') or ''}".strip(),
+        "license_url": c["license_url"],
+        "source": c["source"],
+        "url": c["foreign_landing_url"],
+    }
 
 
 def main() -> None:

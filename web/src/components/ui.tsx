@@ -3,13 +3,16 @@
 import type { ReactNode } from "react";
 import { cx } from "@/lib/format";
 import { useLang } from "@/lib/i18n";
+import { SplitReveal } from "@/components/motion/motion";
 
 export function PageHeader({ eyebrow, title, children, actions }: { eyebrow?: string; title: ReactNode; children?: ReactNode; actions?: ReactNode }) {
   return (
     <header className="flex flex-col gap-4 pb-8 sm:flex-row sm:items-end sm:justify-between">
       <div className="max-w-2xl">
         {eyebrow && <p className="mb-2 text-[11px] font-medium uppercase tracking-[0.16em] text-accent-ink">{eyebrow}</p>}
-        <h1 className="font-serif text-[40px] leading-[1.04] tracking-tight sm:text-[48px]">{title}</h1>
+        <SplitReveal as="h1" immediate delay={0.35} className="font-display text-[44px] leading-[0.98] tracking-[-0.04em] sm:text-[64px]">
+          {title}
+        </SplitReveal>
         {children && <div className="mt-3 text-[14.5px] leading-relaxed text-ink-2">{children}</div>}
       </div>
       {actions}

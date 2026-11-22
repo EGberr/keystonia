@@ -14,7 +14,7 @@ from PIL import Image  # noqa: E402
 CITIES = {
     "categories/residential": ("combination_room", 0.5),
     "categories/hospitality": ("hotel_room", 0.5),
-    "categories/commercial": ("decor_shop", 0.5),
+    "categories/commercial": ("vestibule", 0.5),
     "categories/resort": ("pool", 0.5),
     "categories/land": ("stone_pines", 0.5),
 }
@@ -36,9 +36,21 @@ def main() -> None:
         old = dest.with_suffix(".webp")
         if old.exists():
             old.unlink()
-        credits[f"{key}.jpg"] = {"file": f"{key}.jpg", "title": meta["name"], "creator": ", ".join(meta["authors"]) or None, "license": "CC0 1.0", "license_url": "https://creativecommons.org/publicdomain/zero/1.0/", "source": "polyhaven", "url": f"https://polyhaven.com/a/{pid}"}
+        credits[f"{key}.jpg"] = {
+            "file": f"{key}.jpg",
+            "title": meta["name"],
+            "creator": ", ".join(meta["authors"]) or None,
+            "license": "CC0 1.0",
+            "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "source": "polyhaven",
+            "url": f"https://polyhaven.com/a/{pid}",
+        }
         print(key, pid)
-    credits = {k: v for k, v in credits.items() if (ROOT / "web" / "public" / ("img/" + k if not k.startswith("pano/") else k)).exists()}
+    credits = {
+        k: v
+        for k, v in credits.items()
+        if (ROOT / "web" / "public" / ("img/" + k if not k.startswith("pano/") else k)).exists()
+    }
     credits_path.write_text(json.dumps(credits, indent=1, ensure_ascii=False))
 
 

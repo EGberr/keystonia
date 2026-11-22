@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 
 /**
  * A building drawn as a stack of glowing isometric floors (pure SVG, animated by GSAP from the
@@ -33,7 +33,25 @@ export function floorColor(k: number) {
   return `rgb(${c.join(",")})`;
 }
 
-export function IsoTower({ className, selected = 6, mine = 12 }: { className?: string; selected?: number; mine?: number }) {
+export const BANDS = 4; // interactive mode groups the floors into four clickable levels
+
+export function IsoTower({
+  className,
+  selected = 6,
+  mine = 12,
+  active,
+  onPick,
+}: {
+  className?: string;
+  selected?: number;
+  mine?: number;
+  /** Interactive mode: index of the highlighted level (0 = ground). */
+  active?: number;
+  onPick?: (level: number) => void;
+}) {
+  const [hover, setHover] = useState<number | null>(null);
+  const interactive = onPick !== undefined;
+  const levelOf = (k: number) => Math.floor(k / (FLOORS / BANDS)); // 0 = ground level
   const floors = useMemo(
     () =>
       Array.from({ length: FLOORS }, (_, k) => {
@@ -77,7 +95,7 @@ export function IsoTower({ className, selected = 6, mine = 12 }: { className?: s
   const top = FLOORS * H * S;
   const half = W * S * COS;
   return (
-    <svg className={className} viewBox={`${-half - 150} ${-top - 150} ${half * 2 + 300} ${top + W * S + 300}`} role="img" aria-label="A building made of floors, each floor divided into tokens" overflow="visible">
+    <svg className={className} viewBox={interactive ? `${-half - 30} ${-top - 40} ${half * 2 + 100} ${top + W * S + 70}` : `${-half - 150} ${-top - 150} ${half * 2 + 300} ${top + W * S + 300}`} role="img" aria-label="A building made of floors, each floor divided into tokens" overflow="visible">
       <defs>
         {floors.map((f) => (
           <linearGradient key={f.k} id={`glass${f.k}`} x1="0" y1="0" x2="0" y2="1">
@@ -92,7 +110,29 @@ export function IsoTower({ className, selected = 6, mine = 12 }: { className?: s
       {/* ground glow */}
       <ellipse className="iso-ground" cx="0" cy={W * S * 0.5} rx={half * 1.25} ry={W * S * 0.62} fill="#ff5b1f" opacity="0.22" filter="url(#isoGlow)" />
       {floors.map((f) => (
-        <g key={f.k} className="iso-floor" data-k={f.k}>
+        <g
+          key={f.k}
+          className="iso-floor"
+          data-k={f.k}
+          {...(interactive
+            ? {
+                role: "button",
+                tabIndex: f.k % (FLOORS / BANDS) === 0 ? 0 : -1,
+                "aria-label": `Level ${levelOf(f.k) + 1}`,
+                onClick: () => onPick(levelOf(f.k)),
+                onKeyDown: (e: React.KeyboardEvent) => e.key === "Enter" && onPick(levelOf(f.k)),
+                onMouseEnter: () => setHover(levelOf(f.k)),
+                onMouseLeave: () => setHover(null),
+                style: {
+                  cursor: "pointer",
+                  transition: "transform 0.7s cubic-bezier(0.16,1,0.3,1), opacity 0.5s",
+                  // the picked level slides out of the stack; levels above it lift to make room
+                  transform: `translate(${levelOf(f.k) === active ? 34 : 0}px, ${levelOf(f.k) > (active ?? 99) ? -22 : levelOf(f.k) === active ? -11 : 0}px)`,
+                  opacity: levelOf(f.k) === active ? 1 : hover === levelOf(f.k) ? 0.85 : 0.38,
+                },
+              }
+            : {})}
+        >
           <polygon points={f.left} fill={`url(#glass${f.k})`} />
           <polygon points={f.right} fill={`url(#glass${f.k})`} opacity="0.62" />
           {f.mullions.map(([a, b], i) => (
