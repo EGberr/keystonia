@@ -6,6 +6,7 @@ import { api, type Asset, type Config, type Health, type Overview } from "@/lib/
 import { demoCall, useApi } from "@/lib/chain";
 import { compactEur, eur, num } from "@/lib/format";
 import { useLang, type TKey } from "@/lib/i18n";
+import { tourMark } from "@/lib/tour";
 import { ErrorState, PageHeader, Panel, Stat } from "@/components/ui";
 
 const CONTRACTS: [keyof Config["contracts"], string, TKey][] = [
@@ -37,6 +38,7 @@ export default function TransparencyPage() {
   const advance = () =>
     demoCall(t("transparency.advance"), async () => {
       const r = await api.advanceMonth();
+      tourMark("month");
       setLast(`${r.period} · ${r.income_paid.length} ${t("transparency.paid")} · ${r.offerings_settled.length} ${t("transparency.settled")}`);
     }, t("transparency.advanced"));
 

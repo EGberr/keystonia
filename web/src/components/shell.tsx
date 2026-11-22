@@ -196,6 +196,12 @@ export function Footer() {
           <Link href="/transparency" className="hover:text-ink">
             {t("nav.transparency")}
           </Link>
+          <Link href="/tech" className="hover:text-ink">
+            Under the hood
+          </Link>
+          <Link href="/compare" className="hover:text-ink">
+            {t("footer.compare")}
+          </Link>
           <Link href="/list" className="hover:text-ink">
             {t("nav.list")}
           </Link>

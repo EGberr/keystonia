@@ -16,6 +16,8 @@ import { CountUp, Magnetic, Reveal, SplitReveal, Stagger, reduced } from "@/comp
 import { Aurora } from "@/components/motion/aurora";
 import { FLOORS, IsoTower } from "@/components/motion/iso-tower";
 import { FloorExplorer } from "@/components/floor-explorer";
+import { Simulator } from "@/components/simulator";
+import { WorldMap } from "@/components/motion/world-map";
 
 
 const CITY_FR: Record<string, string> = { London: "Londres", Dubai: "Dubaï" };
@@ -529,7 +531,7 @@ function Collection({ c, assets }: { c: Copy; assets: Asset[] }) {
     <section ref={root} className="relative overflow-hidden py-24 md:flex md:h-[100svh] md:flex-col md:justify-center md:pb-6 md:pt-[112px]">
       <div className="mx-auto mb-6 flex w-full max-w-[1400px] flex-col gap-5 px-5 sm:px-10 md:flex-row md:items-end md:justify-between">
         <div>
-          <Label n="05">{c.collection_label}</Label>
+          <Label n="06">{c.collection_label}</Label>
           <SplitReveal className="font-display mt-4 max-w-4xl text-[clamp(30px,3.6vw,60px)] leading-[0.98] tracking-[-0.04em]">{c.collection}</SplitReveal>
         </div>
         <Link href="/invest" className="group inline-flex items-center gap-2 text-[14px] font-medium">
@@ -592,7 +594,7 @@ function HowItWorks({ c }: { c: Copy }) {
   const tones = ["bg-surface", "bg-surface-2", "bg-[#f4ece4] text-[#120a0b]", "bg-accent text-white"];
   return (
     <section ref={root} className="mx-auto max-w-[1400px] px-5 pt-32 sm:px-10">
-      <Label n="06">{c.how_label}</Label>
+      <Label n="07">{c.how_label}</Label>
       <SplitReveal className="font-display mt-5 max-w-4xl text-[clamp(40px,6vw,96px)] leading-[0.92] tracking-[-0.04em]">{c.how}</SplitReveal>
       <div className="mt-14">
         {c.how_steps.map(([title, text, big], i) => (
@@ -623,8 +625,9 @@ function Cities({ c, ov }: { c: Copy; ov?: Overview }) {
       className="mx-auto max-w-[1400px] px-5 pt-32 sm:px-10"
       onMouseLeave={() => setHover(null)}
     >
-      <Label n="07">{c.cities_label}</Label>
+      <Label n="08">{c.cities_label}</Label>
       <SplitReveal className="font-display mb-12 mt-5 text-[clamp(40px,6vw,96px)] leading-[0.92] tracking-[-0.04em]">{c.cities}</SplitReveal>
+      {ov && <WorldMap cities={ov.cities} className="mb-12 w-full text-ink" />}
       <Stagger className="border-t hairline">
         {(ov?.cities ?? []).map((city, i) => (
           <Link key={city.id} href={`/invest?city=${city.id}`} onMouseEnter={() => setHover(city.id)} className="group grid grid-cols-[1fr_auto] items-end gap-4 border-b hairline py-6 sm:grid-cols-[60px_1fr_200px_160px] sm:py-8">
@@ -673,7 +676,7 @@ function Ledger({ items, block, c }: { items: Activity[]; block?: string; c: Cop
   return (
     <section className="pt-32">
       <div className="mx-auto mb-6 flex max-w-[1400px] items-center justify-between px-5 sm:px-10">
-        <Label n="08">{c.ledger}</Label>
+        <Label n="09">{c.ledger}</Label>
         <span className="label flex items-center gap-2">
           <span className="relative flex h-2 w-2">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60" />
@@ -738,10 +741,16 @@ export default function Home() {
       <RentChart c={c} />
 
       <section className="mx-auto max-w-[1400px] px-5 pt-28 sm:px-10">
+        <Label n="05">{lang === "fr" ? "Simulateur" : "Simulator"}</Label>
+        <SplitReveal className="font-display mb-10 mt-5 max-w-4xl text-[clamp(40px,5.6vw,88px)] leading-[0.92] tracking-[-0.04em]">{lang === "fr" ? "Et si vous investissiez 5 000 € ?" : "What if you invested €5,000?"}</SplitReveal>
+        <Reveal y={60}>{assets && <Simulator assets={[...assets].sort((x, y) => y.net_yield_pct - x.net_yield_pct)} />}</Reveal>
+      </section>
+
+      <section className="mx-auto max-w-[1400px] px-5 pt-28 sm:px-10">
         <Stagger className="grid grid-cols-2 gap-px overflow-hidden rounded-[28px] border hairline bg-line lg:grid-cols-4">
           {stats.map(([v, f], i) => (
             <div key={i} className="bg-bg p-6 sm:p-8">
-              <CountUp key={lang + i} value={v} format={f} className="font-display block text-[clamp(36px,5vw,72px)] leading-none tracking-[-0.04em]" />
+              <CountUp key={lang + i} value={v} format={f} className="font-display block whitespace-nowrap text-[clamp(30px,4vw,60px)] leading-none tracking-[-0.04em]" />
               <p className="mt-3 text-[13.5px] text-muted">{c.stats[i]}</p>
             </div>
           ))}

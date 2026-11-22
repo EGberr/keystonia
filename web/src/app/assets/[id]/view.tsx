@@ -21,6 +21,8 @@ import { Photo } from "@/components/photo";
 import { ProposalCard } from "@/components/proposal-card";
 import { ErrorState, Panel, Skeleton } from "@/components/ui";
 import { FloorExplorer } from "@/components/floor-explorer";
+import { tourMark } from "@/lib/tour";
+import { Simulator } from "@/components/simulator";
 
 
 const TABS = ["overview", "financials", "documents", "ownership", "market", "governance"] as const;
@@ -96,8 +98,11 @@ function InvestBox({ a, now, portfolio, config }: { a: AssetDetail; now: number;
   const cash = portfolio?.cash_eur ?? 0;
   const live = a.phase === "live" && a.ends_at > now;
 
-  const invest = () =>
-    config && runTx(`${t("invest.box.cta")} · ${qty} ${t("common.shares")}`, actions.invest(config.contracts.keur as Address, a.offering as Address, qty, a.share_price_eur), wallet.state, t("invest.box.success"));
+  const invest = async () => {
+    if (!config) return;
+    const ok = await runTx(`${t("invest.box.cta")} · ${qty} ${t("common.shares")}`, actions.invest(config.contracts.keur as Address, a.offering as Address, qty, a.share_price_eur), wallet.state, t("invest.box.success"));
+    if (ok) tourMark("invest");
+  };
 
   return (
     <div className="card p-5">
@@ -279,6 +284,7 @@ function Financials({ a }: { a: AssetDetail }) {
           </div>
         </Panel>
       )}
+      <Simulator assets={[a]} fixed />
     </div>
   );
 }

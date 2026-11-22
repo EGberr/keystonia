@@ -9,6 +9,7 @@ import { actions } from "@/lib/actions";
 import { demoCall, runTx, useApi, useWallet } from "@/lib/chain";
 import { COUNTRIES, cx, dateLabel, eur, num, pct } from "@/lib/format";
 import { useLang, type TKey } from "@/lib/i18n";
+import { tourMark } from "@/lib/tour";
 import { useCategoryLabel } from "@/components/asset-card";
 import { Columns, Donut } from "@/components/charts";
 import { Photo } from "@/components/photo";
@@ -76,7 +77,7 @@ export default function PortfolioPage() {
             </button>
             {claimable.length > 0 && (
               <button
-                onClick={() => runTx(t("portfolio.claim_all"), actions.claimIncome(claimable.map((h) => h.token as Address)), wallet.state, t("portfolio.claimed"))}
+                onClick={() => runTx(t("portfolio.claim_all"), actions.claimIncome(claimable.map((h) => h.token as Address)), wallet.state, t("portfolio.claimed")).then((ok) => ok && tourMark("claim"))}
                 className="flex items-center gap-1.5 rounded-full bg-accent-ink px-4 py-2 text-[13px] font-medium text-bg"
               >
                 <Coins size={14} /> {t("portfolio.claim_all")} · {eur(p?.income_withdrawable_eur ?? 0, 2, lang)}
@@ -111,9 +112,9 @@ export default function PortfolioPage() {
 
       {p && p.pending.length > 0 && (
         <Panel title={t("portfolio.pending")} className="mt-6">
-          <div className="grid gap-3 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
             {p.pending.map((o) => (
-              <div key={o.offering} className="flex items-center gap-3 rounded-2xl border hairline p-3">
+              <div key={o.offering} className="flex min-w-0 flex-wrap items-center gap-3 rounded-2xl border hairline p-3">
                 <Photo src={o.image} alt="" className="h-14 w-20 shrink-0" rounded="rounded-xl" sizes="80px" />
                 <div className="min-w-0 flex-1">
                   <Link href={`/assets/${o.asset_id.toLowerCase()}`} className="block truncate text-[14px] font-medium hover:underline">{pick(o, "name")}</Link>
@@ -172,7 +173,7 @@ export default function PortfolioPage() {
                       <td className="num py-3 text-right">{eur(h.monthly_income_eur, 2, lang)}</td>
                       <td className="num py-3 text-right">
                         {h.income_withdrawable_eur > 0.005 ? (
-                          <button onClick={() => runTx(t("portfolio.claim"), actions.claimIncome([h.token as Address]), wallet.state, t("portfolio.claimed"))} className="rounded-full bg-accent-soft px-2.5 py-1 text-[12px] text-accent-ink hover:brightness-95">
+                          <button onClick={() => runTx(t("portfolio.claim"), actions.claimIncome([h.token as Address]), wallet.state, t("portfolio.claimed")).then((ok) => ok && tourMark("claim"))} className="rounded-full bg-accent-soft px-2.5 py-1 text-[12px] text-accent-ink hover:brightness-95">
                             {eur(h.income_withdrawable_eur, 2, lang)}
                           </button>
                         ) : (

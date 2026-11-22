@@ -14,6 +14,8 @@ photographs, and an AI analyst answers questions with citations to the property'
 > document is collected. Nothing here is an offer to invest. The live demo replays a snapshot of the local chain and
 > simulates transactions in your browser; the full stack (Foundry contracts, API, indexer) runs locally.
 
+![Demo: the tokenization sequence, then picking a floor on a property](docs/demo.gif)
+
 ![Home](docs/screenshots/home.png)
 
 | | |
@@ -40,6 +42,9 @@ photographs, and an AI analyst answers questions with citations to the property'
 | **History** | The seed replays ~13 months of activity (about 3,000 transactions in ~25 s): KYC, offerings, monthly rent, claims, trades, votes and listing requests, using `evm_setNextBlockTimestamp`. |
 | **Pick a level, step inside** | Every property has a clickable building: choose a level on the isometric tower, it slides out of the stack and the WebGL viewer cuts to that room in 360°, built from real equirectangular photographs (30 curated CC0 captures from Poly Haven). Progressive loading (1K then 4K), crossfade with a lens push between rooms, drag with inertia, auto-play, fullscreen. Card photos are real stills of the same places. |
 | **Tokenization, shown** | The home page is pure motion graphics on black: a building drawn as glowing isometric floors is pinned to the scroll, the floors lift apart, every cell becomes a €50 token, and one of them lands in a wallet with its monthly rent. An animated chart then draws twelve months of rent. |
+| **Guided demo** | A floating four-step checklist walks a first-time visitor through the product with real actions: verify identity, buy tokens, jump a month ahead, collect the rent. |
+| **Simulator and comparator** | "What if I invested €5,000?": amount, horizon and rent reinvestment drive a live projection for any property. `/compare` puts three properties side by side and highlights the best value on each line. |
+| **Under the hood** | `/tech` shows the four design decisions with the actual Solidity, read from the repository at build time. |
 | **Motion everywhere** | GSAP + ScrollTrigger + SplitText and Lenis smooth scrolling: preloader, masked headline reveals, pinned horizontal collection rail, stacking cards, count-ups, parallax, magnetic buttons, page transitions. `prefers-reduced-motion` collapses everything to the final state. |
 | **Design** | One night palette on every page, with a WebGL colour field (burgundy, orange, violet) on the home page and no photography there. Real photographs appear only on property pages. Clash Display + General Sans, one signal orange reserved for tokens. English and French, responsive down to phone width. |
 | **Public static demo** | `NEXT_PUBLIC_STATIC=1` exports the app for GitHub Pages: it reads a JSON snapshot of the API (`backend/app/export_static.py`), simulates investing, trading, rent, votes and KYC in the browser (`web/src/lib/demo.ts`), and runs the offline analyst client-side. Deployed by `.github/workflows/pages.yml`. |
@@ -75,6 +80,24 @@ read-only apart from three demo endpoints that stand in for the operator: the KY
 | `Marketplace` | non-custodial secondary market |
 | `AssetRegistry` | listed assets, listing requests, valuations |
 | `AssetGovernor` | proposals and snapshot voting for every asset |
+
+## Design decisions
+
+- **Compliance lives inside the token.** Offerings, the exchange and plain transfers all end in `AssetToken._update`, which checks identity, country, frozen wallets and the holder cap. No route can bypass it, and the exchange needs no compliance code of its own.
+- **Rent is paid without loops.** `distributeIncome` only updates one accumulator (rent per token, scaled by 2^128); each holder's share is derived at claim time and corrected on every transfer. Paying 10 holders or 10,000 costs the same gas.
+- **Votes use a snapshot.** Voting power is read one second before a proposal opens (`ERC20Votes` with a timestamp clock), so tokens bought afterwards cannot swing a vote.
+- **Offerings are all or nothing.** Funds stay in the offering contract until settlement; a missed target lets every investor withdraw exactly what they paid.
+- **The chain is the source of truth.** The API never stores business state: an indexer rebuilds everything from contract events into SQLite, so the app can be reset and replayed.
+- **A public demo without a server.** The same React app runs against a JSON snapshot with transactions simulated in the browser, so a recruiter can try every flow from a link. The simulation is an overlay on the snapshot, not a second code path for the UI.
+
+## Deploy the contracts to a public test network
+
+The core contracts deploy with one command to any EVM test network (for example Base Sepolia). You need a wallet holding
+a little test ETH from a faucet, imported once into Foundry's encrypted keystore (`cast wallet import deployer --interactive`):
+
+```bash
+cd contracts && forge script script/Deploy.s.sol --rpc-url https://sepolia.base.org --account deployer --broadcast
+```
 
 ## Run it locally
 

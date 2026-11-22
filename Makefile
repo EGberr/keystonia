@@ -23,7 +23,7 @@ test: ## Contracts, backend (needs `make chain`) and web checks
 	cd web && pnpm exec tsc --noEmit && pnpm lint
 
 lint:
-	cd contracts && forge fmt --check src test
+	cd contracts && forge fmt --check src test script
 	cd backend && uv run ruff check . && uv run ruff format --check .
 	cd web && pnpm lint
 

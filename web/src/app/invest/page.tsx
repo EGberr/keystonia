@@ -1,6 +1,7 @@
 "use client";
 
 import { Suspense, useMemo, useState } from "react";
+import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { LayoutGrid, Map as MapIcon } from "lucide-react";
 import { api, type Asset, type Overview } from "@/lib/api";
@@ -39,7 +40,15 @@ function Invest() {
 
   return (
     <div className="mx-auto max-w-[1320px] px-5 py-12 sm:px-8">
-      <PageHeader eyebrow={t("nav.invest")} title={t("invest.title")}>
+      <PageHeader
+        eyebrow={t("nav.invest")}
+        title={t("invest.title")}
+        actions={
+          <Link href="/compare" className="rounded-full border hairline bg-surface px-4 py-2 text-[13px] hover:border-line-strong">
+            {lang === "fr" ? "Comparer des biens" : "Compare properties"}
+          </Link>
+        }
+      >
         {t("invest.subtitle")}
       </PageHeader>
 

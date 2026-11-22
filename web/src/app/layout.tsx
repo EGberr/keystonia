@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import { Suspense } from "react";
 import { Footer, Toasts, TopNav } from "@/components/shell";
+import { GuidedTour } from "@/components/guided-tour";
 import { SmoothScroll } from "@/components/motion/smooth-scroll";
 import { LangProvider } from "@/lib/i18n";
 import "leaflet/dist/leaflet.css";
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <main className="min-w-0 flex-1">{children}</main>
           <Footer />
           <Toasts />
+          <GuidedTour />
           <Suspense fallback={null}>
             <SmoothScroll />
           </Suspense>
