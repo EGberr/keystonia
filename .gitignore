@@ -20,3 +20,4 @@ data/raw/
 .env.*
 !.env.example
 .DS_Store
+data/chain/

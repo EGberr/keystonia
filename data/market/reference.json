@@ -1,0 +1,224 @@
+{
+ "paris": {
+  "source": "DVF 2024, data.gouv.fr (Licence Ouverte 2.0)",
+  "by_postcode": {
+   "75001": {
+    "median_eur_m2": 12542,
+    "sales": 236
+   },
+   "75002": {
+    "median_eur_m2": 11250,
+    "sales": 310
+   },
+   "75003": {
+    "median_eur_m2": 11707,
+    "sales": 520
+   },
+   "75004": {
+    "median_eur_m2": 12640,
+    "sales": 431
+   },
+   "75005": {
+    "median_eur_m2": 11733,
+    "sales": 725
+   },
+   "75006": {
+    "median_eur_m2": 14583,
+    "sales": 679
+   },
+   "75007": {
+    "median_eur_m2": 13803,
+    "sales": 735
+   },
+   "75008": {
+    "median_eur_m2": 12198,
+    "sales": 552
+   },
+   "75009": {
+    "median_eur_m2": 10611,
+    "sales": 896
+   },
+   "75010": {
+    "median_eur_m2": 9226,
+    "sales": 1148
+   },
+   "75011": {
+    "median_eur_m2": 9811,
+    "sales": 2003
+   },
+   "75012": {
+    "median_eur_m2": 8862,
+    "sales": 1330
+   },
+   "75013": {
+    "median_eur_m2": 8655,
+    "sales": 1271
+   },
+   "75014": {
+    "median_eur_m2": 9255,
+    "sales": 1288
+   },
+   "75015": {
+    "median_eur_m2": 9444,
+    "sales": 2592
+   },
+   "75016": {
+    "median_eur_m2": 10800,
+    "sales": 1860
+   },
+   "75017": {
+    "median_eur_m2": 10072,
+    "sales": 2077
+   },
+   "75018": {
+    "median_eur_m2": 8654,
+    "sales": 2337
+   },
+   "75019": {
+    "median_eur_m2": 7842,
+    "sales": 1285
+   },
+   "75020": {
+    "median_eur_m2": 8217,
+    "sales": 1652
+   }
+  }
+ },
+ "london": {
+  "source": "HM Land Registry Price Paid 2024 (OGL v3.0)",
+  "by_borough": {
+   "Barking And Dagenham": {
+    "median_flat_gbp": 250000,
+    "sales": 403
+   },
+   "Barnet": {
+    "median_flat_gbp": 410000,
+    "sales": 1618
+   },
+   "Bexley": {
+    "median_flat_gbp": 270000,
+    "sales": 649
+   },
+   "Brent": {
+    "median_flat_gbp": 437500,
+    "sales": 921
+   },
+   "Bromley": {
+    "median_flat_gbp": 330000,
+    "sales": 1366
+   },
+   "Camden": {
+    "median_flat_gbp": 720000,
+    "sales": 1854
+   },
+   "City Of London": {
+    "median_flat_gbp": 795000,
+    "sales": 213
+   },
+   "City Of Westminster": {
+    "median_flat_gbp": 875000,
+    "sales": 2072
+   },
+   "Croydon": {
+    "median_flat_gbp": 280000,
+    "sales": 1260
+   },
+   "Ealing": {
+    "median_flat_gbp": 425000,
+    "sales": 1591
+   },
+   "Enfield": {
+    "median_flat_gbp": 324500,
+    "sales": 760
+   },
+   "Greenwich": {
+    "median_flat_gbp": 425000,
+    "sales": 1609
+   },
+   "Hackney": {
+    "median_flat_gbp": 548625,
+    "sales": 1861
+   },
+   "Hammersmith And Fulham": {
+    "median_flat_gbp": 679250,
+    "sales": 1765
+   },
+   "Haringey": {
+    "median_flat_gbp": 463000,
+    "sales": 1313
+   },
+   "Harrow": {
+    "median_flat_gbp": 350000,
+    "sales": 610
+   },
+   "Havering": {
+    "median_flat_gbp": 265000,
+    "sales": 618
+   },
+   "Hillingdon": {
+    "median_flat_gbp": 300000,
+    "sales": 676
+   },
+   "Hounslow": {
+    "median_flat_gbp": 375000,
+    "sales": 983
+   },
+   "Islington": {
+    "median_flat_gbp": 620000,
+    "sales": 1809
+   },
+   "Kensington And Chelsea": {
+    "median_flat_gbp": 1010000,
+    "sales": 1415
+   },
+   "Kingston Upon Thames": {
+    "median_flat_gbp": 375000,
+    "sales": 765
+   },
+   "Lambeth": {
+    "median_flat_gbp": 475000,
+    "sales": 2704
+   },
+   "Lewisham": {
+    "median_flat_gbp": 375000,
+    "sales": 1584
+   },
+   "Merton": {
+    "median_flat_gbp": 400000,
+    "sales": 987
+   },
+   "Newham": {
+    "median_flat_gbp": 435000,
+    "sales": 1196
+   },
+   "Redbridge": {
+    "median_flat_gbp": 321000,
+    "sales": 670
+   },
+   "Richmond Upon Thames": {
+    "median_flat_gbp": 465000,
+    "sales": 1069
+   },
+   "Southwark": {
+    "median_flat_gbp": 480000,
+    "sales": 2302
+   },
+   "Sutton": {
+    "median_flat_gbp": 285000,
+    "sales": 815
+   },
+   "Tower Hamlets": {
+    "median_flat_gbp": 496250,
+    "sales": 2752
+   },
+   "Waltham Forest": {
+    "median_flat_gbp": 395000,
+    "sales": 1258
+   },
+   "Wandsworth": {
+    "median_flat_gbp": 552000,
+    "sales": 3460
+   }
+  }
+ }
+}

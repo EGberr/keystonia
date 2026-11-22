@@ -1,0 +1,32 @@
+{
+ "residential": {
+  "en": "Residential",
+  "fr": "Résidentiel",
+  "index": 0,
+  "image_query": "apartment interior living room"
+ },
+ "hospitality": {
+  "en": "Hotels & hospitality",
+  "fr": "Hôtellerie",
+  "index": 1,
+  "image_query": "boutique hotel room"
+ },
+ "commercial": {
+  "en": "Retail & offices",
+  "fr": "Commerces & bureaux",
+  "index": 2,
+  "image_query": "modern office space"
+ },
+ "student": {
+  "en": "Student living",
+  "fr": "Logement étudiant",
+  "index": 3,
+  "image_query": "student room desk"
+ },
+ "land": {
+  "en": "Land & vineyards",
+  "fr": "Terres & vignobles",
+  "index": 4,
+  "image_query": "vineyard landscape"
+ }
+}

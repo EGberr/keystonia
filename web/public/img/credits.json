@@ -1,0 +1,731 @@
+{
+ "assets/kst-lis-001-0.webp": {
+  "file": "assets/kst-lis-001-0.webp",
+  "title": "Building Facades",
+  "creator": "Matt Bango",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/building-facades-8J1DZ0C3IZ"
+ },
+ "assets/kst-lis-001-1.webp": {
+  "file": "assets/kst-lis-001-1.webp",
+  "title": "House Interior",
+  "creator": "Tim Wright",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/house-interior-XCOZ3XTV7M"
+ },
+ "assets/kst-lis-001-2.webp": {
+  "file": "assets/kst-lis-001-2.webp",
+  "title": "House Kitchen",
+  "creator": "Jaros%u0142aw%20Ceborski",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/house-kitchen-PST1NUKHXP"
+ },
+ "assets/kst-lis-002-0.webp": {
+  "file": "assets/kst-lis-002-0.webp",
+  "title": "Hotel Bed",
+  "creator": "Travel Adventures",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/hotel-bed-XVTMPEYKEE"
+ },
+ "assets/kst-lis-002-1.webp": {
+  "file": "assets/kst-lis-002-1.webp",
+  "title": "Swimming Pool",
+  "creator": "David Di Veroli",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/swimming-pool-EA13CF3BB7"
+ },
+ "assets/kst-lis-002-2.webp": {
+  "file": "assets/kst-lis-002-2.webp",
+  "title": "Interior Hotel",
+  "creator": "Justin Hamilton",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/interior-hotel-OXY1EEPM0M"
+ },
+ "assets/kst-lis-003-0.webp": {
+  "file": "assets/kst-lis-003-0.webp",
+  "title": "Ornate Facade",
+  "creator": "One Idea LLC",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/ornate-facade-8UGLCVVZR7"
+ },
+ "assets/kst-lis-003-1.webp": {
+  "file": "assets/kst-lis-003-1.webp",
+  "title": "Office Desk",
+  "creator": "Joey Sforza",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/office-desk-H5HE9KUGX1"
+ },
+ "assets/kst-lis-003-2.webp": {
+  "file": "assets/kst-lis-003-2.webp",
+  "title": "Kitchen Open",
+  "creator": "Patrick Tomasso",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/kitchen-open-J6XYZH67B1"
+ },
+ "assets/kst-lis-004-0.webp": {
+  "file": "assets/kst-lis-004-0.webp",
+  "title": "Coffee Shop",
+  "creator": "Jordan Sanchez",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/coffee-shop-CYWVWT28TI"
+ },
+ "assets/kst-lis-004-1.webp": {
+  "file": "assets/kst-lis-004-1.webp",
+  "title": "Office Work",
+  "creator": "Matt Hoffman",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/office-work-JQLWMUC4GD"
+ },
+ "assets/kst-lis-004-2.webp": {
+  "file": "assets/kst-lis-004-2.webp",
+  "title": "Office Work",
+  "creator": "energepic.com",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/office-work-E4PSRGAB8Y"
+ },
+ "assets/kst-lis-005-0.webp": {
+  "file": "assets/kst-lis-005-0.webp",
+  "title": "Wine Vineyard",
+  "creator": "Matt Bango",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/wine-vineyard-L6FECK4JP0"
+ },
+ "assets/kst-lis-005-1.webp": {
+  "file": "assets/kst-lis-005-1.webp",
+  "title": "Wine Vineyard",
+  "creator": "Bob Richards",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/wine-vineyard-ALPJJAT9JG"
+ },
+ "assets/kst-lis-005-2.webp": {
+  "file": "assets/kst-lis-005-2.webp",
+  "title": "Green Vineyard",
+  "creator": "MARK ADRIANE",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/green-vineyard-K3YYILIVBR"
+ },
+ "assets/kst-lis-006-0.webp": {
+  "file": "assets/kst-lis-006-0.webp",
+  "title": "Building Facades",
+  "creator": "Matt Bango",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/building-facades-KGCQEN3GSQ"
+ },
+ "assets/kst-lis-006-1.webp": {
+  "file": "assets/kst-lis-006-1.webp",
+  "title": "Bicycle Road",
+  "creator": "donterase",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/bicycle-road-MWL2LBZHBB"
+ },
+ "assets/kst-lis-006-2.webp": {
+  "file": "assets/kst-lis-006-2.webp",
+  "title": "Kitchen Utensils",
+  "creator": "Burst",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/kitchen-utensils-RBLLOI7IGR"
+ },
+ "assets/kst-lon-001-0.webp": {
+  "file": "assets/kst-lon-001-0.webp",
+  "title": "Ornate Facade",
+  "creator": "One Idea LLC",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/ornate-facade-NMKKFKEPFN"
+ },
+ "assets/kst-lon-001-1.webp": {
+  "file": "assets/kst-lon-001-1.webp",
+  "title": "House Home",
+  "creator": "Mike Birdy",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/house-home-6KJ12UWOKQ"
+ },
+ "assets/kst-lon-001-2.webp": {
+  "file": "assets/kst-lon-001-2.webp",
+  "title": "Kitchen Sink",
+  "creator": "Jim DiGritz",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/kitchen-sink-VO57T4JVJU"
+ },
+ "assets/kst-lon-002-0.webp": {
+  "file": "assets/kst-lon-002-0.webp",
+  "title": "Building Facade",
+  "creator": "Bob Richards",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/building-facade-5BOQQTBM7W"
+ },
+ "assets/kst-lon-002-1.webp": {
+  "file": "assets/kst-lon-002-1.webp",
+  "title": "House Home",
+  "creator": "Kari Shea",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/house-home-6M49G7YDLK"
+ },
+ "assets/kst-lon-002-2.webp": {
+  "file": "assets/kst-lon-002-2.webp",
+  "title": "Restaurant Kitchen",
+  "creator": "Alex Robert",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/restaurant-kitchen-BQ9K4RFVAM"
+ },
+ "assets/kst-lon-003-0.webp": {
+  "file": "assets/kst-lon-003-0.webp",
+  "title": "Building Facade",
+  "creator": "Matt Bango",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/building-facade-NJ7HAIDRGG"
+ },
+ "assets/kst-lon-003-1.webp": {
+  "file": "assets/kst-lon-003-1.webp",
+  "title": "Office Desk",
+  "creator": "Startup Stock Photos",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/office-desk-MWVZ2HPTP0"
+ },
+ "assets/kst-lon-003-2.webp": {
+  "file": "assets/kst-lon-003-2.webp",
+  "title": "Kitchen Restaurant",
+  "creator": "Daria Nepriakhina",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/kitchen-restaurant-JJFJCSLWON"
+ },
+ "assets/kst-lon-004-0.webp": {
+  "file": "assets/kst-lon-004-0.webp",
+  "title": "Flower Shop",
+  "creator": "Studio 7042",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/flower-shop-IV7EK6TSJS"
+ },
+ "assets/kst-lon-004-1.webp": {
+  "file": "assets/kst-lon-004-1.webp",
+  "title": "Office Work",
+  "creator": "Benjamin Child",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/office-work-FSU5SG0X4U"
+ },
+ "assets/kst-lon-004-2.webp": {
+  "file": "assets/kst-lon-004-2.webp",
+  "title": "Office Work",
+  "creator": "Fabian Irsara",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/office-work-X4AAF4SU9Q"
+ },
+ "assets/kst-lon-005-0.webp": {
+  "file": "assets/kst-lon-005-0.webp",
+  "title": "Hotel Resort",
+  "creator": "Mike Moloney",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/hotel-resort-CPFJYMYEQH"
+ },
+ "assets/kst-lon-005-1.webp": {
+  "file": "assets/kst-lon-005-1.webp",
+  "title": "Pool Swimming",
+  "creator": "Brooklyn Morgan",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/pool-swimming-92FD3561EC"
+ },
+ "assets/kst-lon-005-2.webp": {
+  "file": "assets/kst-lon-005-2.webp",
+  "title": "Resort Hotel",
+  "creator": "Nick Karvounis",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/resort-hotel-E0RGSJ0T9R"
+ },
+ "assets/kst-lon-006-0.webp": {
+  "file": "assets/kst-lon-006-0.webp",
+  "title": "Building Facades",
+  "creator": "Matt Bango",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/building-facades-WKKPW8YLX9"
+ },
+ "assets/kst-lon-006-1.webp": {
+  "file": "assets/kst-lon-006-1.webp",
+  "title": "Interior Design",
+  "creator": "Kristin Hardwick",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/interior-design-HIH67XC5G0"
+ },
+ "assets/kst-lon-006-2.webp": {
+  "file": "assets/kst-lon-006-2.webp",
+  "title": "Kitchen Interior",
+  "creator": "Matt Bango",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/kitchen-interior-3ZX53UFU8B"
+ },
+ "assets/kst-par-001-0.webp": {
+  "file": "assets/kst-par-001-0.webp",
+  "title": "Building Facades",
+  "creator": "Matt Bango",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/building-facades-BAXJHTLAWN"
+ },
+ "assets/kst-par-001-1.webp": {
+  "file": "assets/kst-par-001-1.webp",
+  "title": "Living Room",
+  "creator": "Dan Gold",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/living-room-Q3N84SQ4YQ"
+ },
+ "assets/kst-par-001-2.webp": {
+  "file": "assets/kst-par-001-2.webp",
+  "title": "Restaurant Kitchen",
+  "creator": "Joanna Boj",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/restaurant-kitchen-RE54D4GOX0"
+ },
+ "assets/kst-par-002-0.webp": {
+  "file": "assets/kst-par-002-0.webp",
+  "title": "Building Facades",
+  "creator": "Matt Bango",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/building-facades-EH3CULAOSY"
+ },
+ "assets/kst-par-002-1.webp": {
+  "file": "assets/kst-par-002-1.webp",
+  "title": "House Home",
+  "creator": "Joshua Ness",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/house-home-CLD6T4J9VZ"
+ },
+ "assets/kst-par-002-2.webp": {
+  "file": "assets/kst-par-002-2.webp",
+  "title": "Kitchen Stove",
+  "creator": "Jordan Sanchez",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/kitchen-stove-T79SNT9MGV"
+ },
+ "assets/kst-par-003-0.webp": {
+  "file": "assets/kst-par-003-0.webp",
+  "title": "Building Facades",
+  "creator": "Bob Richards",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/building-facades-CSIE5ZSCRD"
+ },
+ "assets/kst-par-003-1.webp": {
+  "file": "assets/kst-par-003-1.webp",
+  "title": "Office Desk",
+  "creator": "Snappa.io",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/office-desk-QFLSQDYET6"
+ },
+ "assets/kst-par-003-2.webp": {
+  "file": "assets/kst-par-003-2.webp",
+  "title": "Kitchen Sink",
+  "creator": "The Pic Pac",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/kitchen-sink-L07UXRLREE"
+ },
+ "assets/kst-par-004-0.webp": {
+  "file": "assets/kst-par-004-0.webp",
+  "title": "Shop Store",
+  "creator": "Mike Petrucci",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/shop-store-I93PW8NE0F"
+ },
+ "assets/kst-par-004-1.webp": {
+  "file": "assets/kst-par-004-1.webp",
+  "title": "Office Work",
+  "creator": "energepic.com",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/office-work-42H3JH8QI5"
+ },
+ "assets/kst-par-004-2.webp": {
+  "file": "assets/kst-par-004-2.webp",
+  "title": "Office Startup",
+  "creator": "Startup Stock Photos",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/office-startup-FF93I0N2C1"
+ },
+ "assets/kst-par-005-0.webp": {
+  "file": "assets/kst-par-005-0.webp",
+  "title": "Hotel Sign",
+  "creator": "Ryan McGuire",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/hotel-sign-1FDAA51CC0"
+ },
+ "assets/kst-par-005-1.webp": {
+  "file": "assets/kst-par-005-1.webp",
+  "title": "Swimming Pool",
+  "creator": "Ian Prince",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/swimming-pool-EQOZK44067"
+ },
+ "assets/kst-par-005-2.webp": {
+  "file": "assets/kst-par-005-2.webp",
+  "title": "Chateaulaurier Hotel",
+  "creator": "Drew Coffman",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/chateaulaurier-hotel-36AC0B2F7B"
+ },
+ "assets/kst-par-006-0.webp": {
+  "file": "assets/kst-par-006-0.webp",
+  "title": "Building Facades",
+  "creator": "Matt Bango",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/building-facades-KUYEZH0RYV"
+ },
+ "assets/kst-par-006-1.webp": {
+  "file": "assets/kst-par-006-1.webp",
+  "title": "Home House",
+  "creator": "Breather",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/home-house-87ONRC5PWV"
+ },
+ "assets/kst-par-006-2.webp": {
+  "file": "assets/kst-par-006-2.webp",
+  "title": "Kitchen Stove",
+  "creator": "Jens Johnsson",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/kitchen-stove-5SBBBGM9KH"
+ },
+ "assets/kst-rak-001-0.webp": {
+  "file": "assets/kst-rak-001-0.webp",
+  "title": "Free Marrakech desert resort image",
+  "creator": null,
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "rawpixel",
+  "url": "https://www.rawpixel.com/image/5915375/photo-image-public-domain-free-desert"
+ },
+ "assets/kst-rak-001-1.webp": {
+  "file": "assets/kst-rak-001-1.webp",
+  "title": "Pool Backyard",
+  "creator": "Vita Vilcina",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/pool-backyard-8512A55AD8"
+ },
+ "assets/kst-rak-001-2.webp": {
+  "file": "assets/kst-rak-001-2.webp",
+  "title": "Hotel Architecture",
+  "creator": "Daria Nepriakhina",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/hotel-architecture-BBB7761BC2"
+ },
+ "assets/kst-rak-002-0.webp": {
+  "file": "assets/kst-rak-002-0.webp",
+  "title": "Colorful aesthetic Moroccan architecture",
+  "creator": "Peace Corps",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "rawpixel",
+  "url": "https://www.rawpixel.com/image/3388640/free-photo-image-morocco-pattern"
+ },
+ "assets/kst-rak-002-1.webp": {
+  "file": "assets/kst-rak-002-1.webp",
+  "title": "Water Pool",
+  "creator": "David Lezcano",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/water-pool-DROOJGOJTE"
+ },
+ "assets/kst-rak-002-2.webp": {
+  "file": "assets/kst-rak-002-2.webp",
+  "title": "Hotel Minimal",
+  "creator": "Min An",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/hotel-minimal-RMCWHEAPRC"
+ },
+ "assets/kst-rak-003-0.webp": {
+  "file": "assets/kst-rak-003-0.webp",
+  "title": "Free Morocco photo",
+  "creator": null,
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "rawpixel",
+  "url": "https://www.rawpixel.com/image/5924973/photo-image-public-domain-free-city"
+ },
+ "assets/kst-rak-003-1.webp": {
+  "file": "assets/kst-rak-003-1.webp",
+  "title": "House Interior",
+  "creator": "Justin Schüler",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/house-interior-NF6P1OX124"
+ },
+ "assets/kst-rak-003-2.webp": {
+  "file": "assets/kst-rak-003-2.webp",
+  "title": "Kitchen Cook",
+  "creator": "Zachary Staines",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/kitchen-cook-BKYKF373YG"
+ },
+ "assets/kst-rak-004-0.webp": {
+  "file": "assets/kst-rak-004-0.webp",
+  "title": "Swimming Pool",
+  "creator": "Angello Lopez",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/swimming-pool-3ROBRVH98T"
+ },
+ "assets/kst-rak-004-1.webp": {
+  "file": "assets/kst-rak-004-1.webp",
+  "title": "Computer Office",
+  "creator": "Lukas",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/computer-office-XGXORJWZIX"
+ },
+ "assets/kst-rak-004-2.webp": {
+  "file": "assets/kst-rak-004-2.webp",
+  "title": "Business Office",
+  "creator": "Wilfred Iven",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/business-office-FY58O0P400"
+ },
+ "assets/kst-rak-005-0.webp": {
+  "file": "assets/kst-rak-005-0.webp",
+  "title": "Vineyard Farm",
+  "creator": "Jay Mantri",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/vineyard-farm-0D03C4C679"
+ },
+ "assets/kst-rak-005-1.webp": {
+  "file": "assets/kst-rak-005-1.webp",
+  "title": "Wine Vineyard",
+  "creator": "Matt Bango",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/wine-vineyard-0OMFG21GUB"
+ },
+ "assets/kst-rak-005-2.webp": {
+  "file": "assets/kst-rak-005-2.webp",
+  "title": "Wine Vineyard",
+  "creator": "Matt Bango",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/wine-vineyard-8XESEZRYBV"
+ },
+ "assets/kst-rak-006-0.webp": {
+  "file": "assets/kst-rak-006-0.webp",
+  "title": "Swimming Pool",
+  "creator": "Maarten van den Heuvel",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/swimming-pool-IZ0MD6YABG"
+ },
+ "assets/kst-rak-006-1.webp": {
+  "file": "assets/kst-rak-006-1.webp",
+  "title": "Pool Backyard",
+  "creator": "Jay Mantri",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/pool-backyard-215EB03724"
+ },
+ "assets/kst-rak-006-2.webp": {
+  "file": "assets/kst-rak-006-2.webp",
+  "title": "Hotel Room",
+  "creator": "Travel Adventures",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/hotel-room-DGBAEIS339"
+ },
+ "categories/commercial.webp": {
+  "file": "categories/commercial.webp",
+  "title": "Office Desk",
+  "creator": "Bench Accounting",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/office-desk-N7FUTW0RY5"
+ },
+ "categories/hospitality.webp": {
+  "file": "categories/hospitality.webp",
+  "title": "Hotel Lounge",
+  "creator": "Daria Nepriakhina",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/hotel-lounge-904EAD50B0"
+ },
+ "categories/land.webp": {
+  "file": "categories/land.webp",
+  "title": "Vineyard Farm",
+  "creator": "Tim Mossholder",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/vineyard-farm-CA2BR3JS31"
+ },
+ "categories/residential.webp": {
+  "file": "categories/residential.webp",
+  "title": "Living Room",
+  "creator": "Dan Gold",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/living-room-BI0P6D3WL9"
+ },
+ "categories/student.webp": {
+  "file": "categories/student.webp",
+  "title": "Office Desk",
+  "creator": "Cathryn Lavery",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/office-desk-0EFDQKW84D"
+ },
+ "cities/lisbon.webp": {
+  "file": "cities/lisbon.webp",
+  "title": "Lisbon Tram",
+  "creator": null,
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "rawpixel",
+  "url": "https://www.rawpixel.com/image/8811981/lisbon-tram"
+ },
+ "cities/london.webp": {
+  "file": "cities/london.webp",
+  "title": "London Underground",
+  "creator": "Anna Dziubinska",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/london-underground-7E71222234"
+ },
+ "cities/marrakech.webp": {
+  "file": "cities/marrakech.webp",
+  "title": "Morocco Oriental Marrakech Orient Architecture",
+  "creator": null,
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "rawpixel",
+  "url": "https://www.rawpixel.com/image/3338297/free-photo-image-travel-morocco-aerial-view"
+ },
+ "cities/paris.webp": {
+  "file": "cities/paris.webp",
+  "title": "Blackandwhite Paris",
+  "creator": "Louis Pellissier",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "stocksnap",
+  "url": "https://stocksnap.io/photo/blackandwhite-paris-B013AD944C"
+ }
+}

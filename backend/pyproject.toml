@@ -1,0 +1,35 @@
+[project]
+name = "keystonia-backend"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=2.12.0",
+    "fastapi>=0.165.0",
+    "numpy>=2.5.5",
+    "pydantic-settings>=2.16.3",
+    "sse-starlette>=3.7.0",
+    "uvicorn[standard]>=0.54.0",
+    "web3>=8.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.2.0",
+    "pytest-asyncio>=1.5.0",
+    "ruff>=0.17.6",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "C4"]
+ignore = ["E501", "E731"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+testpaths = ["tests"]

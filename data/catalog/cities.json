@@ -1,0 +1,50 @@
+{
+ "paris": {
+  "name": "Paris",
+  "country": "France",
+  "iso": 250,
+  "currency": "EUR",
+  "lat": 48.8566,
+  "lon": 2.3522,
+  "tagline_en": "Haussmann stone, timeless demand",
+  "tagline_fr": "La pierre haussmannienne, une demande intemporelle",
+  "image_query": "paris rooftops",
+  "assets": 6
+ },
+ "london": {
+  "name": "London",
+  "country": "United Kingdom",
+  "iso": 826,
+  "currency": "GBP",
+  "lat": 51.5072,
+  "lon": -0.1276,
+  "tagline_en": "Global capital, deep rental market",
+  "tagline_fr": "Capitale mondiale, marché locatif profond",
+  "image_query": "london street houses",
+  "assets": 6
+ },
+ "marrakech": {
+  "name": "Marrakech",
+  "country": "Morocco",
+  "iso": 504,
+  "currency": "MAD",
+  "lat": 31.6295,
+  "lon": -7.9811,
+  "tagline_en": "Riads, resorts and a tourism boom",
+  "tagline_fr": "Riads, resorts et boom touristique",
+  "image_query": "marrakech riad",
+  "assets": 6
+ },
+ "lisbon": {
+  "name": "Lisbon",
+  "country": "Portugal",
+  "iso": 620,
+  "currency": "EUR",
+  "lat": 38.7223,
+  "lon": -9.1393,
+  "tagline_en": "Europe's sunniest growth story",
+  "tagline_fr": "La croissance la plus ensoleillée d'Europe",
+  "image_query": "lisbon tram street",
+  "assets": 6
+ }
+}
