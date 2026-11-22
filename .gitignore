@@ -1,0 +1,22 @@
+# Foundry
+contracts/out/
+contracts/cache/
+contracts/broadcast/
+# Python
+__pycache__/
+.venv/
+.pytest_cache/
+.ruff_cache/
+# Node
+node_modules/
+.next/
+*.tsbuildinfo
+next-env.d.ts
+# Data / local state
+data/raw/
+*.sqlite
+*.sqlite-journal
+.env
+.env.*
+!.env.example
+.DS_Store
